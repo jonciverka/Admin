@@ -1,6 +1,6 @@
 Proyecto Administracion-Proyectos
 ==============================
-Author  & Colaboradores
+Autores y Colaboradores.
 -----------------------------
 Jonathan A.
 
