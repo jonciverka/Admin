@@ -3,11 +3,18 @@ Proyecto Administracion-Proyectos
 Author  & Colaboradores
 -----------------------------
 Jonathan A.
+
 Carlos Z.
+
 Itzel A.
+
 Javier F.
+
 Jazmin P.
+
 Max S.
+
+
 Elementos externos
 -----------------
 	*react-native
