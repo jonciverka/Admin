@@ -9,16 +9,16 @@ import {
 import { DrawerNavigator } from 'react-navigation';
 
 import {Button,Content,Container} from 'native-base'
-import introduccion from './Drawer/Introduccion'
-import encuadre from './Drawer/encuadre'
-import unidades from './Drawer/unidades'
-import opinion from './Drawer/opinion'
+import FinanzasPersonales from './Drawer/FinanzasPersonales'
+import ProyectosdeInversion from './Drawer/ProyectosdeInversion'
+import Innovacion from './Drawer/Innovacion'
+import Cursos from './Drawer/Cursos'
 
 const RootDrawer = DrawerNavigator({
-    introduccion:{screen: introduccion},
-    encuadre:{ screen: encuadre},
-    unidades:{screen:unidades},
-    opinion:{screen:opinion}
+    FinanzasPersonales:{screen: FinanzasPersonales},
+    ProyectosdeInversion:{ screen: ProyectosdeInversion},
+    Innovacion:{screen:Innovacion},
+    Cursos:{screen:Cursos}
 })
 
 export default RootDrawer;

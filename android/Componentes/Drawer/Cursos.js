@@ -16,13 +16,13 @@ import {Header,Body,Title,Grid,Container,Col,H2} from 'native-base'
 
 
 
-export default class unidades extends Component {
+export default class Cursos extends Component {
   render() {
     return (
       <Container style={{backgroundColor:'white'}}>
         <Header style={{backgroundColor:'white'}}>
           <Body>
-            <Title style={{color:'#FF473A'}}>Unidades</Title>
+            <Title style={{color:'#FF473A'}}>Cursos.</Title>
           </Body>
         </Header>        
         <ImageBackground source={require('../../images/fondo.png')}  style={{flex:1}}>        
