@@ -29,7 +29,6 @@ export default class Cursos extends Component {
           <TouchableHighlight 
             style={styles.botones}
             onPress={() => this.props.navigation.navigate('unidad1')}>
-            <Text ><H2 style={{color:'#FF473A'}}>Unidad 1</H2></Text>
           </TouchableHighlight>
           <TouchableHighlight style={styles.botones}>
             <Text>hola</Text>

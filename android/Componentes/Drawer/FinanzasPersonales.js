@@ -23,6 +23,7 @@ export default class FinanzasPersonales extends Component {
   static navigationOptions={
     header: null,
 }
+
   render() {
     return (
       <View style={styles.container}>
