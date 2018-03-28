@@ -9,7 +9,7 @@ import {
   Platform,
   StyleSheet,
   Text,
-  View,
+  View,StatusBar,
   Image,Dimensions,ImageBackground,TouchableHighlight
 } from 'react-native';
 import {Header,Body,Title,Grid,Container,Col,H2} from 'native-base'
@@ -19,7 +19,12 @@ import {Header,Body,Title,Grid,Container,Col,H2} from 'native-base'
 export default class Cursos extends Component {
   render() {
     return (
-      <Container style={{backgroundColor:'white'}}>
+      <Container style={{backgroundColor:'white'}}>      
+      <StatusBar 
+            barStyle="light-content"
+            backgroundColor='white'
+            animated = {true}
+            hidden = {false} /> 
         <Header style={{backgroundColor:'white'}}>
           <Body>
             <Title style={{color:'#FF473A'}}>Cursos.</Title>
@@ -29,6 +34,7 @@ export default class Cursos extends Component {
           <TouchableHighlight 
             style={styles.botones}
             onPress={() => this.props.navigation.navigate('unidad1')}>
+            <Text></Text>
           </TouchableHighlight>
           <TouchableHighlight style={styles.botones}>
             <Text>hola</Text>

@@ -11,18 +11,25 @@ import {
   Text,
   View,
   Image,
-  ImageBackground
+  ImageBackground,StatusBar 
 } from 'react-native';
 import {Button,Content,Form,Item,Input,Container} from 'native-base'
 
 
 export default class login extends Component {
+    
     static navigationOptions={
         header: null,
     }
   render() {
     return (
-        <ImageBackground source={require('../images/ipn.png')}  style={styles.fondo}>        
+        
+        <ImageBackground source={require('../images/ipn.png')}  style={styles.fondo}>  
+        <StatusBar 
+            barStyle="light-content"
+            backgroundColor='#FF473A'
+            animated = {true}
+            hidden = {false} />      
             <Container>
                 <View style={styles.formu}>
                     <View style={{width : 300}}>
@@ -51,6 +58,8 @@ export default class login extends Component {
     );
   }
 }
+
+
 
 const styles = StyleSheet.create({
   container: {

@@ -17,13 +17,7 @@ import Innovacion from './Drawer/Innovacion'
 import Cursos from './Drawer/Cursos'
 
 const RootDrawer = DrawerNavigator({
-    FinanzasPersonales:{screen: FinanzasPersonales,
-      contentOptions:{
-        activeTintColor: '#e91e63',
-        activeBackgroundColor: '#eeeeee',
-        inactiveTintColor :'#000000',
-        inactiveBackgroundColor  :'#000000'
-      }},
+    FinanzasPersonales:{screen: FinanzasPersonales},
     ProyectosdeInversion:{ screen: ProyectosdeInversion},
     Administracion :{screen: Administracion},
     Contabilidad:{screen: Contabilidad},
