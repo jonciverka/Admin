@@ -1,25 +1,3 @@
-//-tienda.
-//--User.
-//---Usuario.
-//-----Correo.
-//-----Nombre de usuario.
-//-------detalles.
-//---------fotoUsuario.
-//---------NumeroTelefonico.
-//-------Productos.
-//---------Titulo.
-//-----------Precio.
-//-----------Lugar.
-//-----------Imagenes.
-//-----------DescripcionDelProducto.
-//-----------NotaDelProducto
-//---------Titulo.
-//-----------Precio.
-//-----------Lugar.
-//-----------Imagenes. 
-//-----------DescripcionDelProducto.
-//-----------NotaDelProducto
-
 import React, { Component } from 'react';
 import {
   Platform,
