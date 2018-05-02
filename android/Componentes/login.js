@@ -52,6 +52,14 @@ export default class login extends Component {
                         <Text style = {{color : 'white'}}>Log in.</Text>
                     </Button>   
                 </View>
+                <View style={{width:300}}>
+                    <Button light
+                        block 
+                       // style={{backgroundColor:'#FF473A'}}
+                        onPress={() => this.props.navigation.navigate('index')}>
+                        <Text style = {{color : 'black'}}>Entra como invitado.</Text>
+                    </Button>   
+                </View>
                 </View>
             </Container>
         </ImageBackground>

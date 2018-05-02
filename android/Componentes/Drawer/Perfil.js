@@ -19,7 +19,7 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 });
 
-export default class FinanzasPersonales extends Component {
+export default class Perfil extends Component {
   static navigationOptions={
     header: null,
 }
@@ -28,7 +28,7 @@ export default class FinanzasPersonales extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to FinanzasPersonales
+          Welcome to Perfil
         </Text>
         <Text style={styles.instructions}>
           To get started, edit App.js

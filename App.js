@@ -15,6 +15,7 @@ import {StackNavigator} from 'react-navigation'
 import login from './android/Componentes/login'
 import index from './android/Componentes/index'
 import unidad1 from './android/Componentes/Unidades/Unidad1/Unidad1'
+import unidad2 from './android/Componentes/Unidades/Unidad2/Unidad2'
 
 export default class App extends Component {
   render() {
@@ -34,6 +35,8 @@ const RootStack = StackNavigator ({
   },
   unidad1:{
     screen:unidad1
+  },unidad2:{
+    screen:unidad2
   },
 },{
   navigationOptions : {
