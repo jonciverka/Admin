@@ -47,10 +47,41 @@ export default class Cursos extends Component {
             <Text></Text>
           </TouchableHighlight>
           <TouchableHighlight 
-            style={styles.botones2}
+            style={styles.botones}
             onPress={() => this.props.navigation.navigate('unidad2')}>
             <Text></Text>
+          </TouchableHighlight>          
+        </View>
+        <View style={{
+           alignItems: 'flex-start',
+           justifyContent: 'flex-start',
+           flexDirection: 'row'
+           }}>
+          <TouchableHighlight 
+            style={styles.botones}
+            onPress={() => this.props.navigation.navigate('unidad3')}>
+            <Text></Text>
           </TouchableHighlight>
+          <TouchableHighlight 
+            style={styles.botones}
+            onPress={() => this.props.navigation.navigate('unidad4')}>
+            <Text></Text>
+          </TouchableHighlight>          
+        </View><View style={{
+           alignItems: 'flex-start',
+           justifyContent: 'flex-start',
+           flexDirection: 'row'
+           }}>
+          <TouchableHighlight 
+            style={styles.botones}
+            onPress={() => this.props.navigation.navigate('unidad5')}>
+            <Text></Text>
+          </TouchableHighlight>
+          <TouchableHighlight 
+            style={styles.botones}
+            onPress={() => this.props.navigation.navigate('unidad6')}>
+            <Text></Text>
+          </TouchableHighlight>          
         </View>
         </ImageBackground>
       </Container>
@@ -63,10 +94,6 @@ const styles = StyleSheet.create({
 
   botones:{
     width:(width/2),
-    height:width/2+10,
-  },
-  botones2:{
-    width:(width/2),
-    height:width/2+10,
+    height:width/2+10
   }
 });
