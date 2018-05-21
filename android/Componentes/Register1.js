@@ -1,8 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
 
 import React, { Component } from 'react';
 import {
@@ -10,41 +5,54 @@ import {
   StyleSheet,
   Text,
   View,
-  Image,
-  ImageBackground,StatusBar,Alert
+  Image,Alert,
+  ImageBackground,StatusBar 
 } from 'react-native';
 import {Button,Content,Form,Item,Input,Container} from 'native-base'
 import * as firebase from 'firebase';
-
-
-export default class login extends Component {
-    constructor (props){
+export default class Register1 extends Component {
+    constructor(props){        
         super(props)
+        const { navigation } = this.props;
         this.state={
             Email:'',
             Password:'',
-            user :''
+            uid :'',
+            grupo:navigation.getParam('grupo', 'NO-ID')
         }
+        
     }
-    
+
+
     static navigationOptions={
         header: null,
     }
-    Login=()=>{
-        firebase.auth().signInWithEmailAndPassword(this.state.Email,this.state.Password)
+
+    Registro= () =>{
+        firebase.auth().createUserWithEmailAndPassword(this.state.Email,this.state.Password)
         .then((LoggedInUser)=>{
-          this.setState({user:LoggedInUser})
-          Alert.alert("Usuario logueado Correctamente")      
-          this.props.navigation.navigate("index")
+         let user = firebase.auth().currentUser;
+         this.setState({
+            uid:user.uid
+         })
+          let Path = "/Grupos/"+this.state.grupo+"/Alumnos/"+this.state.uid+"/Tareas/Tarea1"
+          firebase.database().ref(Path).set({
+            Calificacion:"Sin Calificar",
+            Comentario :"Sin Calificar"
+        })
+          Alert.alert("Usuario Registrado")
+
+          this.props.navigation.navigate("login")
         }).catch((error)=>{
           let errors = error.message
           Alert.alert("error",`${errors}`)
         })
-    }
+    }    
+    
   render() {
     return (
         
-        <ImageBackground source={require('../images/ipn.png')}  style={styles.fondo}>  
+        <ImageBackground source={require('../images/ipn_register.png')}  style={styles.fondo}>  
         <StatusBar 
             barStyle="light-content"
             backgroundColor='#FF473A'
@@ -54,7 +62,7 @@ export default class login extends Component {
                 <View style={styles.formu}>
                     <View style={{width : 300}}>
                     <Form style={{backgroundColor : 'white'}}>
-                        <Item>
+                        <Item last>
                             <Input 
                             onChangeText ={
                                 (text)=>{
@@ -62,45 +70,33 @@ export default class login extends Component {
                                 }
                             }
                             placeholder="Correo electronico" />
-                        </Item>
+                        </Item>                        
                         <Item last>
-                            <Input                            
-                            secureTextEntry={true}
-                            onChangeText ={
-                                (text)=>{
+                            <Input 
+                            onChangeText = {
+                                (text) =>{
                                     this.setState({Password:text})
                                 }
-                            } 
-                            placeholder="Contraseña personal" />
+                            }
+                            placeholder="Contraseña Personal" />
                         </Item>
                     </Form>
                     </View>
-                </View>              
+                </View> 
                 <View style = {styles.Boton}>
-                <View style={{width:300}}>
-                    <Button 
-                        block 
-                        style={{backgroundColor:'#FF473A'}}
-                        onPress ={this.Login}>
-                        <Text style = {{color : 'white'}}>Log in.</Text>
-                    </Button>   
+                    <View style={{width:300}}>
+                        <Button 
+                            block 
+                            //style={{backgroundColor:'#FF473A'}}
+                            success
+                            onPress ={this.Registro}
+                            >
+                           
+                            <Text style = {{color : 'white'}}>Registrar!.</Text>
+                        </Button>   
+                    </View>
                 </View>
-                              
-                <View style={{width:300}}>
-                    <Button dark
-                        block 
-                        onPress={() => this.props.navigation.navigate('Register')}>
-                        <Text style = {{color : 'white'}}>¡Registrate!</Text>
-                    </Button>   
-                </View>
-                <View style={{width:300}}>
-                    <Button light
-                        block 
-                        onPress={() => this.props.navigation.navigate('index')}>
-                        <Text style = {{color : 'black'}}>Entra como invitado.</Text>
-                    </Button>   
-                </View>  
-                </View>
+
             </Container>
         </ImageBackground>
     );

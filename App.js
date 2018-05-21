@@ -20,8 +20,23 @@ import unidad3 from './android/Componentes/Unidades/Unidad3/Unidad3'
 import unidad4 from './android/Componentes/Unidades/Unidad4/Unidad4'
 import unidad5 from './android/Componentes/Unidades/Unidad5/Unidad5'
 import unidad6 from './android/Componentes/Unidades/Unidad6/Unidad6'
-
+import Register from './android/Componentes/Register'
+import Register1 from './android/Componentes/Register1'
+import * as firebase from 'firebase';
 export default class App extends Component {
+  constructor(props){
+    super(props)
+    firebase.initializeApp({
+        apiKey: "AIzaSyAhfE_suTjV7EsT-gOluBtnecTeCiI6TKk",
+        authDomain: "polilibro.firebaseapp.com",
+        databaseURL: "https://polilibro.firebaseio.com",
+        projectId: "polilibro",
+        storageBucket: "polilibro.appspot.com",
+        messagingSenderId: "616532161554"
+    
+
+  });
+}
   render() {
     return (
       <RootStack />
@@ -49,6 +64,10 @@ const RootStack = StackNavigator ({
     screen:unidad5
   },unidad6:{
     screen:unidad6
+  },Register:{
+    screen:Register
+  },Register1:{
+    screen:Register1
   },
 },{
   navigationOptions : {
