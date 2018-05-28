@@ -5,11 +5,24 @@ import {
   Text,
   View,
   Dimensions,
-  Image,StatusBar,
+  Image,StatusBar,ImageBackground,
   ListView,ScrollView, TouchableNativeFeedback,Alert,TouchableOpacity,TouchableWithoutFeedback,TouchableHighlight
 } from 'react-native';
 import {Button,Content,Container,ListItem,List,Card,Body,H1,Thumbnail,Rightpla,CardItem} from 'native-base'
 import { TabNavigator } from 'react-navigation';
+class inicio extends React.Component {
+  render() {
+    return (        
+      <Container style={styles.fondo}>
+      <StatusBar 
+          barStyle="light-content"
+          backgroundColor='#F64747'
+          animated = {true}
+          hidden = {false} /> 
+      </Container>
+    );
+  }
+}
 
   class unopuntouno extends React.Component {
     render() {
@@ -698,6 +711,9 @@ import { TabNavigator } from 'react-navigation';
     },
     letras:{
       color:'black'
+    },
+    imagefondo:{
+      flex:1
     }
   });
   
@@ -717,7 +733,7 @@ import { TabNavigator } from 'react-navigation';
           fontSize: 12,
         },
         style: {
-          backgroundColor: '#FF473A',
+          backgroundColor: '#F64747',
         },
       }
 

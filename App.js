@@ -22,6 +22,11 @@ import unidad5 from './android/Componentes/Unidades/Unidad5/Unidad5'
 import unidad6 from './android/Componentes/Unidades/Unidad6/Unidad6'
 import Register from './android/Componentes/Register'
 import Register1 from './android/Componentes/Register1'
+import Bibliografia from './android/Componentes/Home/Bibliografia'
+import Metodologia from './android/Componentes/Home/Metodologia'
+import Bienvenida from './android/Componentes/Home/Bienvenida'
+import Programa from './android/Componentes/Home/Programa'
+
 import * as firebase from 'firebase';
 export default class App extends Component {
   constructor(props){
@@ -68,7 +73,15 @@ const RootStack = StackNavigator ({
     screen:Register
   },Register1:{
     screen:Register1
-  },
+  },Bibliografia:{
+    screen:Bibliografia
+  },Metodologia:{
+    screen:Metodologia
+  },Bienvenida:{
+    screen:Bienvenida
+  },Programa:{
+    screen:Programa
+  }
 },{
   navigationOptions : {
     header:null

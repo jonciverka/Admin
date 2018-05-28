@@ -47,7 +47,7 @@ export default class login extends Component {
         <ImageBackground source={require('../images/ipn.png')}  style={styles.fondo}>  
         <StatusBar 
             barStyle="light-content"
-            backgroundColor='#FF473A'
+            backgroundColor='#F64747'
             animated = {true}
             hidden = {false} />      
             <Container>
@@ -80,7 +80,7 @@ export default class login extends Component {
                 <View style={{width:300}}>
                     <Button 
                         block 
-                        style={{backgroundColor:'#FF473A'}}
+                        style={{backgroundColor:'#F64747'}}
                         onPress ={this.Login}>
                         <Text style = {{color : 'white'}}>Log in.</Text>
                     </Button>   

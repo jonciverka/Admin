@@ -21,8 +21,7 @@ export default class Register extends Component {
         super(props)
         this.state={
             grupo:'',
-            contra:'',
-            grupo_DB:'',
+            contra:''
 
         }
     }
@@ -75,7 +74,7 @@ export default class Register extends Component {
                                 }
                             }
                             placeholder="Clave del grupo" />
-                        </Item>
+                        </Item>  
                     </Form>
                     </View>
                 </View> 

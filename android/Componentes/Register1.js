@@ -18,7 +18,8 @@ export default class Register1 extends Component {
             Email:'',
             Password:'',
             uid :'',
-            grupo:navigation.getParam('grupo', 'NO-ID')
+            grupo:navigation.getParam('grupo', 'NO-ID'),
+            Nombre:''
         }
         
     }
@@ -32,16 +33,18 @@ export default class Register1 extends Component {
         firebase.auth().createUserWithEmailAndPassword(this.state.Email,this.state.Password)
         .then((LoggedInUser)=>{
          let user = firebase.auth().currentUser;
+         user.updateProfile({
+            displayName: this.state.Nombre
+         })
          this.setState({
             uid:user.uid
          })
-          let Path = "/Grupos/"+this.state.grupo+"/Alumnos/"+this.state.uid+"/Tareas/Tarea1"
+          let Path = "/Grupos/"+this.state.grupo+"/Alumnos/"+this.state.uid+"/Tareas/Tarea1"         
           firebase.database().ref(Path).set({
             Calificacion:"Sin Calificar",
             Comentario :"Sin Calificar"
-        })
+        })        
           Alert.alert("Usuario Registrado")
-
           this.props.navigation.navigate("login")
         }).catch((error)=>{
           let errors = error.message
@@ -79,6 +82,15 @@ export default class Register1 extends Component {
                                 }
                             }
                             placeholder="Contraseña Personal" />
+                        </Item>                                              
+                        <Item last>
+                            <Input 
+                            onChangeText = {
+                                (text) =>{
+                                    this.setState({Nombre:text})
+                                }
+                            }
+                            placeholder="Nombre completo" />
                         </Item>
                     </Form>
                     </View>
