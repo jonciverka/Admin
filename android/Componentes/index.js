@@ -14,7 +14,7 @@ import Home from './Drawer/Home'
 import Perfil from './Drawer/Perfil'
 import Cursos from './Drawer/Cursos'
 
-export default class index extends Component{
+class index extends Component{
   constructor(props){
     super(props)
     this.state={
@@ -40,11 +40,6 @@ export default class index extends Component{
       Alert.alert("error al sacar uid")
     }
   }
-
-  render() {
-    return (      
-      <RootDrawer />
-    )}
 
 }
 
@@ -109,3 +104,5 @@ const styles = StyleSheet.create({
   }
 
 })
+
+export default RootDrawer
