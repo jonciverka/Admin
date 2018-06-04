@@ -37,7 +37,7 @@ import { TabNavigator } from 'react-navigation';
             Resulta sorprendente la cantidad y variedad de bienes y servicios que existen en el mercado; y espérate, 
             porque con todo lo que hay en la actualidad ¡lo mejor está por venir!.{"\n"}{"\n"}
           
-            Son muy pocos los productos que su éxito es meramente accidental
+            Son muy pocos los productos que su éxito es meramente accidentaññññññ
             https://www.merca20.com/4-productos-que-se-hicieron-exitosos-por-accidente/ ;otros, son igual o más exitosos 
             y han seguido un camino distinto, entonces la pregunta es ¿qué hay detrás de los productos y servicios exitosos?  
             {"\n"}{"\n"}
