@@ -11,289 +11,88 @@ import {
 import {Button,Content,Container,ListItem,List,Card,Body,H1,Thumbnail,Rightpla,CardItem} from 'native-base'
 import { TabNavigator } from 'react-navigation';
 
-  class unopuntouno extends React.Component {
+import ImageZoom from 'react-native-image-pan-zoom';
+//3.1
+
+  class trespuntouno extends React.Component {
     render() {
-      return (        
-        <Container style={styles.fondo}>
-        <StatusBar 
-            barStyle="light-content"
-            backgroundColor='#FF473A'
-            animated = {true}
-            hidden = {false} /> 
+      return (  
+	      <Container style={styles.fondo}>
+        	<StatusBar 
+            	barStyle="light-content"
+            	backgroundColor='#FF473A'
+            	animated = {true}
+            	hidden = {false} />
           <ScrollView>
-        <View style={styles.titulo}> 
-          <Text><H1>¿Qué es un proyecto?</H1></Text>          
-        </View>
-        <View
-          style={{
-            borderBottomColor: '#eeeeee',
-            borderBottomWidth: 1,
-            marginLeft:10,
-            marginRight:10,
-          }}
-        />
-        <View style={styles.cuerpo}>
-          <Text style={styles.letras}>
-            Resulta sorprendente la cantidad y variedad de bienes y servicios que existen en el mercado; y espérate, 
-            porque con todo lo que hay en la actualidad ¡lo mejor está por venir!.{"\n"}{"\n"}
-          
-            Son muy pocos los productos que su éxito es meramente accidental
-            https://www.merca20.com/4-productos-que-se-hicieron-exitosos-por-accidente/ ;otros, son igual o más exitosos 
-            y han seguido un camino distinto, entonces la pregunta es ¿qué hay detrás de los productos y servicios exitosos?  
-            {"\n"}{"\n"}
-            Detrás de los productos y servicios exitosos hay: 
-            {"\n"}{"\n"}
-            Un equipo diverso y multidisciplinario
-            {"\n"}{"\n"}
-            Gran cantidad de horas invertidas en investigación, análisis, 
-            evaluación y documentación; es decir, se requiere de la generación y
-            evaluación de un proyecto de inversión
-            {"\n"}{"\n"}
-            Toma de decisiones
-            {"\n"}{"\n"}
-            Riesgos
-            {"\n"}{"\n"}
-            El término proyecto, tiene diferentes significados según el contexto en donde se utilice;
-            podemos hablar de un proyecto de vida, un proyecto académico o un proyecto de inversión,
-            entre otros. 
-            {"\n"}{"\n"}
-            La palabra proyecto proviene del latín proiectus, que a su vez deriva de proicere, 
-            pro (hacia delante) y iacere (lanzar) que literalmente significa lanzamiento hacia adelante,
-            hacia el futuro; entonces, el proyecto es un plan que se hace antes de dar forma definitiva a algo; 
-            se define como un conjunto de actividades coordinadas e interrelacionadas con las que se pretende 
-            cumplir con un fin específico.
-            {"\n"}{"\n"}
-            En cambio un PROYECTO DE INVERSIÓN es: 
-            {"\n"}{"\n"}
-            La búsqueda de una solución inteligente al planteamiento 
-            de un problema tendente a resolver, entre muchas, una necesidad humana. (citado en Geldes, n.d) 
-            {"\n"}{"\n"}
-            Es un plan que, si se le asigna determinado monto de capital y se le proporcionan insumos de varios tipos,
-            podrá producir un bien o un servicio, útil al ser humano o a la sociedad en general. (Baca, 2006) 
-            {"\n"}{"\n"}
-            Aquella propuesta de inversión, documentada y analizada técnica y económicamente, destinada a una futura 
-            unidad productiva, que prevé la obtención garantizada de bienes o servicios para satisfacer necesidades físicas
-            y psicosociales de una comunidad, en un tiempo y espacio definidos. (Nacional Financiera). 
-            {"\n"}{"\n"}
-            Para que lo visualices de manera más clara, te mostramos el siguiente esquema que representa lo que es un proyecto de inversión. 
-          </Text>          
-          </View>
-          <Image
-          style = {[styles.imagenes,{height:300}]}
-          source={require('../../../images/inv.png')}
-          resizeMode = 'cover'
-          />
-          
-        <View style={styles.cuerpo}>
-          <Text style={styles.letras}>
-          ¿Notas la diferencia entre un proyecto y un proyecto de inversión?
-          </Text>
-          <Card>
-            <CardItem>
-              <Body>
+            <View style={styles.titulo}>  
+              <Text><H1>3.1 Elementos que integran el estudio técnico</H1></Text>
+            </View>
+            <View
+              style={{
+              borderBottomColor: '#eeeeee',
+              borderBottomWidth: 1,
+              marginLeft:10,
+              marginRight:10,
+            }}
+            />	
+            <View style={styles.cuerpo}>
               <Text style={styles.letras}>
-                Recuerda, el proyecto de inversión es un plan al que se le asignan recursos
-                 (humanos, materiales, técnicos y económicos) para la creación de bienes y/o la prestación de servicios que satisfagan una necesidad humana, con una intención económica 
-                (obtención de ganancias) o social (bienestar común, sin ánimo de lucro). 
-                </Text>
-              </Body>
-            </CardItem>
-          </Card>
-          <Text style={styles.letras}>
-          Ahora tienes los conocimientos necesarios 
-          para realizar la primera evidencia de aprendizaje, a medida que vayas
-           avanzado en el curso, encontrarás algunas otras: 
-          </Text>
-          </View>
-          <TouchableHighlight>
+                El estudio técnico comprende todo aquello que tenga relación con el funcionamiento y la operatividad del proyecto. Con este estudio se pretende 
+                dar respuesta a las siguientes preguntas (desliza el cursor sobre ellas):
+              </Text>          
+            </View>	
           <Image
-          style = {[styles.imagenes,{height:70}]}
-          source={require('../../../images/boton1.png')}
+            style = {[styles.imagenes,{height:300}]}
+            source={require('../../../images/Unidad3/EstudioTecnico.png')}
+            resizeMode = 'center'
+            />
+	        </ScrollView>
+        </Container>
+      );
+    }
+  }
+
+  class trespuntodos extends React.Component {
+    render() {
+      return (  
+        <Container style={styles.fondo}>
+          <StatusBar 
+              barStyle="light-content"
+              backgroundColor='#FF473A'
+              animated = {true}
+              hidden = {false} />              
+          <ScrollView>
+        <View style={styles.titulo}>  
+          <Text><H1>3.2 Localización general y específica de la planta</H1></Text>
+        </View>
+        <View
+          style={{
+            borderBottomColor: '#eeeeee',
+            borderBottomWidth: 1,
+            marginLeft:10,
+            marginRight:10,
+          }}
+        />  
+        <View style={styles.cuerpo}>
+          <Text style={styles.letras}>
+          ¿Dónde localizar la empresa?, es una decisión muy importante, que impacta a los costos y en consecuencia las utilidades. 
+          Antes de determinar en dónde ubicarás tu negocio, tendrás que analizar algunas variables tales como: 
+          </Text>          
+        </View>  
+        <ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={200}
+                       imageWidth={width}
+                       imageHeight={200}>
+                <Image style={{width:width, height:200}}
+                        source={require('../../../images/Unidad3/locgeneral.png')}/>
+          </ImageZoom> 
+        <Image
+          style = {[styles.imagenes,{widht:200,height:200}]}
+          source={require('../../../images/Unidad3/location.png')}
           resizeMode = 'stretch'
           />
-          </TouchableHighlight>
-        </ScrollView>
-        </Container>
-      );
-    }
-  }  
-  class unopuntodos extends React.Component {
-    render() {
-      return (
-        <Container style={styles.fondo}>
-          <ScrollView>
-          <View style={styles.titulo}> 
-            <Text><H1>Tipos de proyectos de inversión </H1></Text>          
-          </View>
-          <View
-          style={{
-            borderBottomColor: '#eeeeee',
-            borderBottomWidth: 1,
-            marginLeft:10,
-            marginRight:10,
-          }}
-        />
-          <View style={styles.cuerpo}>
-            <Text style={styles.letras}>
-              En este momento te encuentras en un lugar específico, tal vez en tu casa, en la escuela, 
-              en el transporte o en cualquier otro sitio; independientemente de donde te encuentres, observa a tu alrededor
-              y te darás cuenta, por la gran cantidad de bienes y servicios, de la “presencia” de varias empresas que satisfacen
-              las necesidades de las personas en todos los aspectos de la vida cotidiana (vestimenta, calzado, útiles 
-              escolares, tecnología, alimentos, cosméticos, transporte, energía eléctrica, entre muchos otros) .
-              {"\n"}{"\n"}
-              Recuerda, siempre que haya necesidades que satisfacer o problemas que resolver existe la posibilidad de realizar un 
-              proyecto de inversión. Para que tengas una idea de algunas de las áreas en las que se pueden realizar proyectos de 
-              inversión, te invitamos a revisar el siguiente cuadro: 
-            </Text>
-          </View>
-            <Image
-            style = {[styles.imagenes,{height:580}]}
-            source={require('../../../images/1.2.png')}
-            resizeMode = 'cover'
-            />          
-          <View style={styles.cuerpo}>            
-            <Text style={styles.letras}>
-              Cabe destacar que la clasificación de los proyectos no es mutuamente excluyente y se logra combinando 
-              los criterios con los que se identifica; por ejemplo, puede existir un proyecto de carácter privado, que 
-              pertenezca al sector industrial, cuya área de influencia sea local, de propósito múltiple con el objetivo de
-              ampliar la planta y de tamaño mediano.  
-            </Text>
-          </View>
-          <Image
-          style = {[styles.imagenes,{height:250}]}
-          source={require('../../../images/img1.png')}
-          resizeMode = 'cover'
-          />
-        </ScrollView>
-        </Container>
-      );
-    }
-  }
-  class unopuntotres extends React.Component {
-    render() {
-      return (
-        <Container style={styles.fondo}>
-          <ScrollView>
-          <View style={styles.titulo}> 
-            <Text><H1>Modelos de inversiones</H1></Text>          
-          </View>
-          <View
-          style={{
-            borderBottomColor: '#eeeeee',
-            borderBottomWidth: 1,
-            marginLeft:10,
-            marginRight:10,
-          }}
-        />
-        <View style={styles.cuerpo}>         
-          <Text style={styles.letras}>
-            Los modelos de inversión son un apoyo importante para el emprendedor o empresario debido a que le permiten 
-            tener un mejor panorama de los futuros beneficios o posibles pérdidas que obtendrá al invertir en un proyecto 
-            determinado. Estos modelos coadyuvan a disminuir los riesgos derivados de toda inversión; dada la complejidad del mundo
-            de los negocios es imposible pensar que toda inversión va a ser exitosa por estar bien planeada y documentada.
-            {"\n"}{"\n"}
-            Existen diferentes clasificaciones de modelos de inversión, para efectos de esta UA abordaremos los siguientes:
-            por su operación, por su flujo de efectivo y por su punto de vista económico.
-          </Text>  
-          </View>        
-          <Image
-          style = {[styles.imagenes,{height:250}]}
-          source={require('../../../images/1.3.png')}
-          resizeMode = 'cover'
-          />
-          <View style={styles.titulo}> 
-            <Text><H1>Por su operación </H1></Text>          
-          </View>
-          <View
-          style={{
-            borderBottomColor: '#eeeeee',
-            borderBottomWidth: 1,
-            marginLeft:10,
-            marginRight:10,
-          }}
-        />
-        
-          <View style={styles.cuerpo}>
-            <Text style={styles.letras}>
-            Este modelo está en función del tipo de proyecto y de sus características. Por ejemplo, 
-            se puede tener un proyecto para la prestación de algún servicio, para la compra-venta (comercio)
-            de bienes, o para la transformación de materia prima en bienes de consumo intermedio o en bienes de consumo final.
-            La operación en cada uno de estos proyectos es diferente, como también lo son el valor de la inversión y el
-            tiempo necesario para ponerlos en marcha. Adicionalmente, hay que considerar que hay proyectos que se caracterizan
-            por ser intensivos en capital (más automatizados) y otros por ser intensivos en mano de obra. 
-            </Text>
-          </View>
-          <Image
-          style = {[styles.imagenes,{height:250}]}
-          source={require('../../../images/1.3.1.png')}
-          resizeMode = 'cover'
-          />
-          <View style={styles.titulo}> 
-            <Text><H1>Por su flujo de efectivo  </H1></Text>          
-          </View>
-          <View
-          style={{
-            borderBottomColor: '#eeeeee',
-            borderBottomWidth: 1,
-            marginLeft:10,
-            marginRight:10,
-          }}
-        />
-        
-          <View style={styles.cuerpo}>
-            <Text style={styles.letras}>
-            El flujo neto de efectivo (FNE) es el efectivo que queda una vez que se restan los egresos (costos y gastos)
-            a los ingresos. Antes de emprender un proyecto (realizar alguna inversión) se deben estimar los flujos netos
-            de efectivo que generará dicha inversión en un período de tiempo determinado.  
-            {"\n"}{"\n"}
-            La decisión de emprender o no un proyecto está en función de los FNE que se generan a partir de una inversión; 
-            un flujo de efectivo amplio da mayor seguridad y tranquilidad al inversionista permitiéndole cubrir los gastos y 
-            costos derivados del proyecto, brindándole la posibilidad de recuperar la inversión inicial y por otro lado, tomar 
-            nuevas decisiones de inversión.  
-            </Text>
-          </View>
-          <Image
-          style = {[styles.imagenes,{height:250}]}
-          source={require('../../../images/1.3.2.png')}
-          resizeMode = 'cover'
-          />
-          <View style={styles.titulo}> 
-            <Text><H1>Por punto de vista económico  </H1></Text>          
-          </View>
-          <View
-          style={{
-            borderBottomColor: '#eeeeee',
-            borderBottomWidth: 1,
-            marginLeft:10,
-            marginRight:10,
-          }}
-        />        
-          <View style={styles.cuerpo}>
-            <Text style={styles.letras}>
-            Ninguna inversión está exenta de riesgo; sin embargo, lo que todo inversionista busca es maximizar utilidades; es decir, 
-            que su inversión sea rentable y recuperarla en el menor tiempo posible. Antes de emprender un proyecto éste debe ser 
-            evaluado desde el punto de vista económico, para determinar si es o no conveniente emprenderlo (viabilidad económico-financiera). 
-            Para evaluar un proyecto de inversión existen diferentes métodos que nos permiten determinar el tiempo en que se recupera la
-            inversión y calcular la rentabilidad del mismo, entre los métodos más comunes se encuentran:   
-            </Text>
-          </View>
-          <Image
-          style = {[styles.imagenes,{height:250}]}
-          source={require('../../../images/1.3.3.png')}
-          resizeMode = 'cover'
-          />
-          </ScrollView>
-        </Container>
-      );
-    }
-  }
-  class unopuntocuatro extends React.Component {
-    render() {
-      return (
-      <Container style={styles.fondo}>
-        <ScrollView>
-          <View style={styles.titulo}> 
-          <Text><H1>¿Por qué son necesarios los proyectos de inversión?</H1></Text>          
+        <View style={styles.titulo}>  
+          <Text><H1>3.2.1 Macro localización</H1></Text>
         </View>
         <View
           style={{
@@ -303,127 +102,312 @@ import { TabNavigator } from 'react-navigation';
             marginRight:10,
           }}
         />
-        <View style={styles.cuerpo}>            
+        <View style={styles.cuerpo}>
           <Text style={styles.letras}>
-            La respuesta a la pregunta de ¿Por qué se invierte y por qué son necesarios los proyectos?, 
-            es evidente si consideramos que siempre que exista una necesidad humana que satisfacer habrá 
-            la posibilidad de invertir y para ello se requiere hacer un proyecto de inversión bien estructurado y evaluado. 
-          </Text>
-        </View>                  
+            También llamada macro zona, se refiere a la región, el territorio o el estado en donde se pretende realizar el proyecto. 
+            Se comparan alternativas entre las zonas del país y se selecciona la que ofrece mayores ventajas para el proyecto. 
+          </Text>          
+        </View>
         <Image
-          style = {[styles.imagenes,{height:400}]}
-          source={require('../../../images/1.4.png')}
-          resizeMode = 'cover'
-          />
-          <View style={styles.cuerpo}>            
-            <Text style={styles.letras}>
-              Una vez que revisaste el tema, elabora la siguiente evidencia de aprendizaje:  
-            </Text>
-          </View>
-          
-          <Image
-          style = {[styles.imagenes,{height:70}]}
-          source={require('../../../images/EA2.png')}
-          resizeMode = 'stretch'
-          />
-        </ScrollView>
-        </Container>
-      );
-    }
-  }
-  class unopuntocinco extends React.Component {
-    render() {
-      return (
-        <Container style={styles.fondo}>
-        <ScrollView>
-          <View style={styles.titulo}> 
-          <Text><H1> Ciclo de vida de los proyectos </H1></Text>          
-        </View>        
-        <View
-          style={{
-            borderBottomColor: '#eeeeee',
-            borderBottomWidth: 1,
-            marginLeft:10,
-            marginRight:10,
-          }}
-        />
-        <View style={styles.cuerpo}>            
-          <Text style={styles.letras}>
-            De acuerdo con Fernández (2010) el ciclo de vida de un proyecto tiene las siguientes fases  
-          </Text>    
-        </View>              
-        <Image
-          style = {[styles.imagenes,{height:200}]}
-          source={require('../../../images/ciclo.png')}
-          resizeMode = 'cover'
-          />
-          <View style={styles.cuerpo}>            
-            <Text style={styles.letras}>
-              El ciclo de vida de un proyecto de inversión está en función del sector al que pertenece. 
-              Por ejemplo, si el proyecto es del sector privado, su ciclo empieza cuando se visualiza una 
-              necesidad que debe ser satisfecha o cuando se detecta la existencia de una oportunidad de inversión. 
-              En cambio, si se trata de un proyecto del sector público, el ciclo iniciará cuando se identifica la
-              existencia de un problema que debe ser resuelto. 
-              {"\n"}{"\n"}
-              En términos generales el ciclo de vida de un proyecto está conformado por al menos cuatro fases. 
-            </Text> 
-          </View>         
-          <Image
-          style = {[styles.imagenes,{height:400}]}
-          source={require('../../../images/etapa1.png')}
-          resizeMode = 'stretch'
-          />
-          <Image
           style = {[styles.imagenes,{height:300}]}
-          source={require('../../../images/etapa2.png')}
+          source={require('../../../images/Unidad3/macro.png')}
           resizeMode = 'stretch'
           />
-          <Image
-          style = {[styles.imagenes,{height:200}]}
-          source={require('../../../images/etapa3.png')}
+        <View style={styles.titulo}>  
+          <Text><H1>3.2.2 Micro localización</H1></Text>
+        </View>
+
+        <View style={styles.cuerpo}>
+          <Text style={styles.letras}>
+            Una vez que se tiene definida la macro localización se identifica, en función de los factores o variables evaluadas, 
+            la micro localización; es decir, el sitio exacto (calle, número, colonia, delegación o municipio etc.) en donde se ubicará la empresa.
+          </Text>          
+        </View>
+        <Image
+          style = {[styles.imagenes,{height:300}]}
+          source={require('../../../images/Unidad3/micro.png')}
           resizeMode = 'stretch'
           />
-          <View style={styles.cuerpo}>            
+        <View style={styles.titulo}>  
+          <Text><H1>3.2.3 Evaluación de alternativas de localización</H1></Text>
+        </View>
+        <View style={styles.cuerpo}>
+          <Text style={styles.letras}>
+            Existen diferentes métodos que ayudan a analizar, evaluar y seleccionar la mejor alternativa 
+            del lugar en donde debe establecerse la empresa. Dichos métodos son:
+          </Text>          
+        </View>
+        <Image
+          style = {[styles.imagenes,{height:300}]}
+          source={require('../../../images/Unidad3/3.2.3.png')}
+          resizeMode = 'stretch'
+          />
+          <View style={styles.cuerpo}>
             <Text style={styles.letras}>
-              Por otro lado, Nacional Financiera (2001), también aborda el proceso de inversión así como 
-              del ciclo de vida de un proyecto. En este sentido, la institución menciona que en los sistemas 
-              socioeconómicos donde prevalecen economías de mercado, se entiende por proceso de inversión a la 
-              actividad que consiste en asignar recursos económicos a fines productivos, mediante la formación 
-              bruta de capital fijo, con el propósito de recuperar con creces los recursos asignados. El proceso de
-              inversión comprende cuatro etapas completamente diferenciables en contenido y prácticamente sucesivas
-                e irreductibles: Preinversión, decisión, inversión y recuperación.  
+              En la siguiente lectura "Métodos para la evaluación de opciones de localización" 
+              encontrarás más información de cada uno de los métodos antes mencionados.  
             </Text>
           </View>
           <Image
-          style = {[styles.imagenes,{height:150}]}
-          source={require('../../../images/1.1.4.png')}
-          resizeMode = 'stretch'
-          />
-          <View style={styles.cuerpo}>            
+            style = {[styles.imagenes,{height:300}]}
+            source={require('../../../images/Unidad3/L4.png')}
+            resizeMode = 'stretch'
+            />
+          <View style={styles.cuerpo}>
             <Text style={styles.letras}>
-             A continuación se explican cada una de estas etapas.   
+              Una vez que leíste el material anterior, realiza la siguiente evidencia de aprendizaje:  
             </Text>
           </View>
           <Image
-          style = {[styles.imagenes,{height:500}]}
-          source={require('../../../images/imagen9.png')}
-          resizeMode = 'stretch'
-          />
+            style = {[styles.imagenes,{height:300}]}
+            source={require('../../../images/Unidad3/ea6.png')}
+            resizeMode = 'stretch'
+            />
+
+          <View style={styles.titulo}>  
+            <Text><H1>3.2.4 Localización específica</H1></Text>
+          </View>
+          <View style={styles.cuerpo}>
+            <Text style={styles.letras}>
+              Una vez que se han evaluado, por algún método, las ventajas y desventajas de los posibles lugares que se tienen contemplados para localizar la empresa, 
+              se selecciona la alternativa que resulte más conveniente para el proyecto. 
+              No debes olvidar que la localización de la empresa es sin duda una decisión estratégica.
+            </Text>
+          </View>
+          <Image
+            style = {[styles.imagenes,{height:300}]}
+            source={require('../../../images/Unidad3/locesp.png')}
+            resizeMode = 'center'
+            />          
+          <View style={styles.titulo}>  
+            <Text>Imagen 3.7. Fuente: Elaboración propia</Text>
+          </View>
 
         </ScrollView>
+          
+        </Container>
+      );
+    }
+  } 
+  
+  
+  class trespuntotres extends React.Component {
+    render() {
+      return (  
+	      <Container style={styles.fondo}>
+        	<StatusBar 
+            	barStyle="light-content"
+            	backgroundColor='#FF473A'
+            	animated = {true}
+            	hidden = {false} />               
+          <ScrollView>
+          <View style={styles.titulo}>  
+           <Text><H1>3.3 Tamaño o capacidad del proyecto</H1></Text>
+          </View>
+	        <View
+            style={{
+              borderBottomColor: '#eeeeee',
+              borderBottomWidth: 1,
+              marginLeft:10,
+              marginRight:10,
+            }}
+          />
+	
+          <View style={styles.cuerpo}>
+              <Text style={styles.letras}>
+                De acuerdo con Baca (2006), el tamaño de un proyecto puede estar en función de dos rubros:
+              </Text>          
+          </View>	
+	        <Image
+            style = {[styles.imagenes,{height:300}]}
+            source={require('../../../images/Unidad3/porcentaje.png')}
+            resizeMode = 'center'
+            />
+          <View style={styles.cuerpo}>
+            <Text style={styles.letras}>
+              El porcentaje del área de mercado que cubrirá   	
+            </Text>          
+          </View>          
+          <View style={styles.cuerpo}>
+            <Text >
+              Es decir, como empresarios debemos tener una idea clara del porcentaje de mercado que estimamos cubrir o atender. 
+            Este porcentaje está en función de factores tales como la demanda, la oferta y también de la capacidad productiva de la empresa. 
+            Puede darse el caso que la demanda sea mayor a lo que la empresa puede producir dada su infraestructura.  	
+            </Text>          
+          </View>          
+          <Image
+            style = {[styles.imagenes,{height:300}]}
+            source={require('../../../images/Unidad3/cantidad.png')}
+            resizeMode = 'center'
+          />
+          <View style={styles.cuerpo}>
+            <Text style={styles.letras}>
+              La cantidad de bienes o servicios que producirá  	
+            </Text>          
+          </View>          
+          <View style={styles.cuerpo}>
+              <Text >
+                Se refiere al tamaño técnico o capacidad instalada, 
+                  ésta última se expresa en unidades de producción en una unidad de tiempo  	
+              </Text>          
+          </View>         
+          <View style={styles.cuerpo}>
+          <Text style={styles.letras}>
+           Tabla 6. Fuente: Elaboración propia con base en Baca, G. (2006). 
+           Evaluación de proyectos. México: Mc Graw Hill, 5ta. Edición	
+            </Text>        
+          </View>
+          
+          
+          <View style={styles.cuerpo}>
+          <Text >
+           Otros factores que nos permiten definir el tamaño de un proyecto son: el monto de la inversión, 
+          la ocupación de fuerza laboral y el tipo de proceso productivo 
+          (automatizado, semiautomatizado o extensivo en mano de obra).  	
+            </Text>          
+          </View>
+          
+          <View style={styles.titulo}>  
+	<Text><H1>3.3.1 Tipos de capacidades</H1></Text>
+	</View>
+        
+        <View style={styles.cuerpo}>
+          <Text >
+           El “tamaño de un proyecto” es su capacidad instalada y se expresa en unidades de producción (volumen) en una unidad de tiempo. 
+        Existen tres tipos de capacidad instalada: 	
+            </Text>          
+          </View>
+          
+          <View style={styles.cuerpo}>
+          <Text >
+          a.- Capacidad de diseño: es la producción máxima estimada (planeada) que se puede lograr bajo condiciones ideales de operación.
+
+          b.-Capacidad del sistema: es la producción máxima que el sistema (recursos humanos, maquinaria e infraestructura ) puede generar en forma integrada.
+          Cabe mencionar que, la mayoría de las empresas no operan a su máxima capacidad, por factores como la falta de mantenimiento de la maquinaria, 
+          los errores en el personal, los tiempos perdidos, los cuellos de botella etc.
+          
+          c.- Capacidad real: es la producción real obtenida en un período determinado, tomando en cuenta las contingencias que se presentaron en la producción.
+            </Text>          
+          </View>
+          
+          <Image
+          style = {[styles.imagenes,{height:300}]}
+          source={require('../../../images/Unidad3/capacidades.png')}
+          resizeMode = 'center'
+          />
+             
+        <View style={styles.cuerpo}>
+          <Text >
+           Imagen 3.8. Fuente: Elaboración propia 	
+            </Text>          
+          </View>
+          
+          <View style={styles.titulo}>  
+	<Text><H1>3.3.2 Factores a considerar para fijar la capacidad o tamaño del proyecto</H1></Text>
+	</View>
+        
+        <View style={styles.cuerpo}>
+          <Text >
+            Si tenemos claro cuál es el tamaño de nuestro proyecto podremos estimar en forma más objetiva el monto de la inversión requerida y el nivel de operación, que a su vez, 
+            nos permitirá cuantificar los costos de funcionamiento y los ingresos proyectados. 
+
+            Los factores que determinan el tamaño de una nueva unidad de producción (proyecto) son:
+            </Text>          
+          </View>
+          
+          <Image
+          style = {[styles.imagenes,{height:300}]}
+          source={require('../../../images/Unidad3/3.3.2.png')}
+          resizeMode = 'center'
+          />
+          <View style={styles.cuerpo}>
+          <Text >
+          Imagen 3.9. Fuente: Elaboración propia
+            </Text>          
+          </View>
+          <View style={styles.cuerpo}>
+          <Text >
+          A.-El tamaño del proyecto y la demanda. Es quizá el factor más importante para determinar el tamaño del proyecto; para estimar en términos objetivos la demanda actual y futura que habrá de atenderse, se debe tomar en cuenta tanto la dinámica del mercado como la capacidad productiva de la empresa.
+            En cuanto a la demanda y la capacidad instalada se pueden presentar estas situaciones:
+            -Si la capacidad es: es mayor que la demanda; es decir, tener un tamaño sobreestimado puede generar capacidad instalada ociosa, lo que significa que se está invirtiendo en activos improductivos.
+            -Si la capacidad es menor que la demanda; es decir, tener capacidad instalada insuficiente se puede perder mercado por falta de atención.
+          B.-El tamaño del proyecto y la tecnología Existen procesos productivos que exigen una cantidad mínima de producción, porque si se produce debajo de dicha cantidad los costos serían tan elevados que no se justificaría la operación de la planta. Lo que significa que la automatización de un proceso exige un nivel mínimo de producción para que sea rentable.
+          C.-El tamaño del proyecto y la disponibilidad de insumos Se tendrá que hacer un estudio de quiénes serán los proveedores de los insumos actuales y futuros requeridos para fabricar los productos o para prestar los servicios durante el tiempo que funcionará el proyecto de inversión. Es importante que en la medida de lo posible se garantice el volumen, precio, calidad y tiempos de entrega de los insumos; aunque también valdría la pena considerar un plan de contingencia para aquellos casos en el que el abastecimiento no sea totalmente seguro y poder adquirir insumos sustitutos o bien conseguirlos en el extranjero.
+          D.-El tamaño del proyecto y el financiamiento. Si eres microempresario te recomendamos acercarte a la banca de desarrollo o de segundo piso quienes, siempre y cuando cumplas con los requisitos solicitados, pueden financiarte tu proyecto con tasas de interés más bajas que las que puedes conseguir en la banca comercial. Adicionalmente, hoy día tienes varias opciones como las fondeadoras.
+          E.-El tamaño del proyecto y la inversión. Definitivamente este factor va de la mano con el tamaño del proyecto, proyectos más grandes requerirán mayores montos de inversión lo que muchas veces exige recurrir a fuentes de financiamiento.
+        </Text>          
+          </View>
+          <View style={styles.titulo}>  
+	<Text><H1>3.3.3 Programa de producción y ventas</H1></Text>
+	</View>
+        <Image
+          style = {[styles.imagenes,{height:300}]}
+          source={require('../../../images/Unidad3/333.png')}
+          resizeMode = 'center'
+          />
+          
+          <View style={styles.cuerpo}>
+          <Text >
+          El programa de producción es un documento en donde se especifica por escrito la cantidad de producción por unidad de tiempo. Con dicha programación se determina cuándo se debe iniciar y terminar cada lote de producción, qué operaciones se van a utilizar, con qué máquina y con qué operarios y demás recursos que se necesiten. 
+
+          El programa de producción se formula con base en un presupuesto de ventas, el cual puede fundamentarse en la demanda estimada y/o en la capacidad productiva de la empresa de acuerdo a su infraestructura. 
+            </Text>          
+          </View>
+        <View style={styles.titulo}>  
+	<Text><H1>3.3.4 Método para calcular el tamaño óptimo</H1></Text>
+	</View>
+        
+        <View style={styles.cuerpo}>
+          <Text >
+         Debido a variedad y complejidad de los procesos productivos es casi imposible desarrollar un método estandarizado que nos ayude a determinar la capacidad actual y futura de una planta productiva. 
+
+         Existen al menos tres métodos con los que podemos estimar las dimensiones de la planta:
+            </Text>          
+          </View>
+          
+          <Image
+          style = {[styles.imagenes,{height:300}]}
+          source={require('../../../images/Unidad3/3.3.4.png')}
+          resizeMode = 'center'
+          />
+          
+          <View style={styles.cuerpo}>
+          <Text >
+          En la siguiente lectura "Métodos para determinar el tamaño del proyecto" 
+          encontrarás más información de cada uno de los métodos mencionados anteriormente.
+            </Text>          
+          </View>
+          
+         <Image
+          style = {[styles.imagenes,{height:300}]}
+          source={require('../../../images/Unidad3/L5.png')}
+          resizeMode = 'center'
+          />
+        
+        
+          
+          
+	</ScrollView>
         </Container>
       );
     }
   }
-  class unopuntoseis extends React.Component {
+  
+  class trespuntocuatro extends React.Component {
     render() {
-      return (
-      <Container style={styles.fondo}>
-        <ScrollView>
-        <View style={styles.titulo}> 
-          <Text><H1> Formulación de proyectos  </H1></Text>          
-        </View>
-        <View
+      return (  
+	<Container style={styles.fondo}>
+        	<StatusBar 
+            	barStyle="light-content"
+            	backgroundColor='#FF473A'
+            	animated = {true}
+            	hidden = {false} />
+               
+          	<ScrollView>
+        <View style={styles.titulo}>  
+	<Text><H1>3.4 Ingeniería del proyecto</H1></Text>
+	</View>
+	<View
           style={{
             borderBottomColor: '#eeeeee',
             borderBottomWidth: 1,
@@ -431,255 +415,399 @@ import { TabNavigator } from 'react-navigation';
             marginRight:10,
           }}
         />
-        <View style={styles.cuerpo}>            
+	
+	<View style={styles.cuerpo}>
           <Text style={styles.letras}>
-            La primera parte de todo proyecto de inversión deberá ser su presentación formal, 
-            misma que iniciará con una breve introducción que describa la reseña histórica del desarrollo del 
-            bien o servicio (incluyendo el por qué se pensó en emprenderlo vinculándolo con las condiciones 
-            económicas y sociales), el target al que va dirigido, el problema que resolverá o la necesidad que
-            cubrirá, los factores relevantes que influyen en su consumo, así como los principales usos del producto 
-            o servicio, y finalmente, los objetivos y limitaciones del proyecto. 
-            {"\n"}{"\n"}
-            Todo proyecto de inversión contiene al menos cinco secciones debidamente analizadas, documentadas y evaluadas: 
-          </Text> 
-        </View>                
-        <Image
-          style = {[styles.imagenes,{height:400}]}
-          source={require('../../../images/1.6.png')}
-          resizeMode = 'cover'
-          /> 
-          <View style={styles.cuerpo}>            
-            <Text style={styles.letras}>
-              Estas secciones se pueden apreciar en la siguiente imagen.  
-            </Text> 
-        </View> 
-          <Image
-          style = {[styles.imagenes,{height:200}]}
-          source={require('../../../images/2.png')}
-          resizeMode = 'cover'
-          /> 
-          <View style={styles.titulo}> 
-          <Text><H1>Estudio de mercado</H1></Text>          
-         </View>
-         <View
-          style={{
-            borderBottomColor: '#eeeeee',
-            borderBottomWidth: 1,
-            marginLeft:10,
-            marginRight:10,
-          }}
-        />
-        <View style={styles.cuerpo}>            
-          <Text style={styles.letras}>
-            El objetivo general de este estudio es verificar la existencia de un mercado potencial insatisfecho y 
-            la factibilidad de introducir un bien o prestar un servicio en dicho mercado.           
-          </Text> 
-        </View> 
-          <Image
-          style = {[styles.imagenes,{height:250}]}
-          source={require('../../../images/1.6.1.png')}
-          resizeMode = 'cover'
-          /> 
-          <View
-          style={{
-            borderBottomColor: '#eeeeee',
-            borderBottomWidth: 1,
-            marginLeft:10,
-            marginRight:10,
-          }}
-        />
-        <View style={styles.cuerpo}>            
-          <Text style={styles.letras}>
-            Una vez que se ha descrito, en términos precisos, el producto o el servicio es necesario llevar 
-            a cabo una serie de estudios en fuentes primarias y secundarias para obtener información acerca de la 
-            oferta y la demanda tanto histórica como proyectada; se realiza un estudio de precios; se analizan y 
-            se definen los canales de distribución más adecuados y finalmente, se establecen estrategias de promoción 
-            y publicidad. 
-          </Text> 
-        </View>
-          <View style={styles.titulo}> 
-          <Text><H1>Estudio técnico</H1></Text>          
-         </View>
-         <View
-          style={{
-            borderBottomColor: '#eeeeee',
-            borderBottomWidth: 1,
-            marginLeft:10,
-            marginRight:10,
-          }}
-        />
-        <View style={styles.cuerpo}>            
-          <Text style={styles.letras}>
-              Tiene como objetivo demostrar que tecnológicamente es posible producir un bien o prestar un servicio una vez
-              que se verificó que no existe impedimento alguno en el abasto de todos los insumos necesarios para su producción.         
-            </Text> 
-        </View> 
-          <Image
-          style = {[styles.imagenes,{height:300}]}
-          source={require('../../../images/1.6.2.png')}
-          resizeMode = 'cover'
-          />
-          <View style={styles.titulo}> 
-          <Text><H1>Estudio administrativo y de organización</H1></Text>          
-         </View>          
-         <View
-          style={{
-            borderBottomColor: '#eeeeee',
-            borderBottomWidth: 1,
-            marginLeft:10,
-            marginRight:10,
-          }}
-        /> 
-          <Image
-          style = {[styles.imagenes,{height:300}]}
-          source={require('../../../images/1.6.3.png')}
-          resizeMode = 'cover'
-          />
-          <View style={styles.titulo}>
-          <Text><H1>Estudio financiero</H1></Text>          
-         </View>  
-         <View
-          style={{
-            borderBottomColor: '#eeeeee',
-            borderBottomWidth: 1,
-            marginLeft:10,
-            marginRight:10,
-          }}
-        /> 
-          <Image
-          style = {[styles.imagenes,{height:200}]}
-          source={require('../../../images/1.6.4.png')}
-          resizeMode = 'cover'
-          />
-          <View style={styles.titulo}>
-          <Text><H1>Estudio sustentable, social y financiero</H1></Text>          
-         </View>
-         <View
-          style={{
-            borderBottomColor: '#eeeeee',
-            borderBottomWidth: 1,
-            marginLeft:10,
-            marginRight:10,
-          }}
-        /> 
-        <View style={styles.cuerpo}>            
-          <Text style={styles.letras}>
-            Existe un compromiso mundial en cuanto a
-            la necesidad de realizar estudios y evaluación
-            del impacto ambiental que pueda derivarse de
-            la ejecución de un proyecto, lo que permite
-            tomar decisiones sobre su factibilidad ambiental. 
-            El impacto ambiental se refiere a los daños o transformaciones que las
-            acciones del ser humano pueden generar en la naturaleza. Cabe señalar que, 
-            con el crecimiento de las sociedades industrializadas y de los centros urbanos el impacto ambiental
-            es cada vez más notorio. El estudio de impacto ambiental puede hacerse en varias etapas, 
-            en paralelo con las etapas del proyecto que se pretende evaluar.
-          </Text> 
-        </View>  
-          <Image
-          style = {[styles.imagenes,{height:150}]}
-          source={require('../../../images/1.6.5.png')}
-          resizeMode = 'cover'
-          />
-        </ScrollView>
-      </Container>
-      );
-    }
-  }
-  class unopuntosiete extends React.Component {
-    render() {
-      return (
-        <Container style={styles.fondo}>
-        <ScrollView>
-          <View style={styles.titulo}> 
-            <Text><H1> Técnica para la administración del proyecto Gráfica de Gantt  </H1></Text>          
+	  La ingeniería del proyecto se refiere a la etapa técnica del proyecto la cual comprende:
+	</Text>          
           </View>
-          <View
-          style={{
-            borderBottomColor: '#eeeeee',
-            borderBottomWidth: 1,
-            marginLeft:10,
-            marginRight:10,
-          }}
+		
+	 <Image
+          style = {[styles.imagenes,{height:300}]}
+          source={require('../../../images/Unidad3/34.png')}
+          resizeMode = 'center'
           />
           <View style={styles.cuerpo}>
-            <Text style={styles.letras}>
-              La gráfica de Gantt fue diseñada en 1910 por el ingeniero industrial de nacionalidad norteamericana Henry L. Gantt;
-              es una herramienta utilizada para la planeación, programación y seguimiento de las actividades de un proyecto; 
-              consta de un sistema de coordenadas:  
-              {"\n"}{"\n"}
-              Eje vertical. Se detallan las actividades o tareas del proyecto
-              {"\n"}{"\n"}
-              Eje horizontal. Se indican fechas en una escala de tiempo (hora, día, semana, mes, etc.)
-            </Text>
-          </View>                 
-          <Image
-            style = {[styles.imagenes,{height:150}]}
-            source={require('../../../images/gantt.png')}
-            resizeMode = 'cover'
-            /> 
-            <View style={styles.cuerpo}>
-              <Text style={styles.letras}>
-                Cada actividad se representa mediante un bloque rectangular cuya longitud indica por un lado,
-                la duración de cada una de las actividades y por otro, las tareas que se pueden realizar simultáneamente.
-                </Text>
-          </View>                   
-          <Image
-            style = {[styles.imagenes,{height:150}]}
-            source={require('../../../images/ventajas.png')}
-            resizeMode = 'cover'
-            />  
-            <View style={styles.cuerpo}>
-              <Text style={styles.letras}>
-                La Gráfica de Gantt es el antecedente de las técnicas que existen para la administración de proyectos.
-                La complejidad creciente de los proyectos actuales, ha exigido la utilización de técnicas y herramientas de
-                planeación más sistemáticas y más efectivas, con el propósito de optimizar la eficiencia en la ejecución de proyectos. 
-                {"\n"}{"\n"}
-                Para concluir esta unidad es necesario que realices, las evidencias de aprendizale 3,4 y 5 que a continuación encontrarás: 
-            </Text>
-          </View>    
-            
-          <TouchableHighlight>
-          <Image
-          style = {[styles.imagenes,{height:70}]}
-          source={require('../../../images/EA3.png')}
-          resizeMode = 'stretch'
+          <Text>
+            Imagen 3.12. Fuente: Elaboración propia con base en la bibliografía consultada 
+	</Text>          
+          </View>
+          <View style={styles.titulo}>  
+	<Text><H1>3.4.1 Definición técnica del producto</H1></Text>
+	</View>
+        <View style={styles.cuerpo}>
+          <Text style={styles.letras}>
+	  La especificación técnica de un producto se documenta en lo que se conoce como ficha técnica, 
+          la cual contiene información básica, útil, clara y concisa del producto.
+	</Text>          
+          </View>
+        <Image
+          style = {[styles.imagenes,{height:300}]}
+          source={require('../../../images/Unidad3/341.png')}
+          resizeMode = 'center'
           />
-          </TouchableHighlight>
+          <View style={styles.cuerpo}>
+          <Text>
+            Imagen 3.13. Fuente: Elaboración propia	
+            </Text>          
+          </View>
+          <View style={styles.cuerpo}>
+          <Text style={styles.letras}>
+	            Además de la información anterior, se puede añadir cualquier otro dato que se considere importante.
+	</Text>          
+          </View>
           
-          <TouchableHighlight>
+          <View style={styles.titulo}>  
+	<Text><H1>3.4.2 Planos y especificaciones</H1></Text>
+	</View>
+        <View style={styles.cuerpo}>
+          <Text style={styles.letras}>
+	  Una vez que se han definido las dimensiones, características y la ubicación de cada una de las áreas que conformarán la empresa, se deberán diseñar los planos (representación gráfica a escala) correspondientes con todas las especificaciones. 
+          Hay que considerar que no solo se realiza el plano de la construcción,
+          sino también el de instalaciones eléctricas, sanitarias, gas, etc. 
+	</Text>          
+          </View>
           <Image
-          style = {[styles.imagenes,{height:70}]}
-          source={require('../../../images/EA4.png')}
-          resizeMode = 'stretch'
+          style = {[styles.imagenes,{height:300}]}
+          source={require('../../../images/Unidad3/Planos.jpg')}
+          resizeMode = 'center'
           />
-          </TouchableHighlight>
+          <View style={styles.cuerpo}>
+          <Text>
+                Imagen 3.14. Fuente: Elaboración propia            
+          </Text>          
+          </View>
+           <View style={styles.titulo}>  
+	<Text><H1>3.4.3 Descripción y diseño del proceso de producción</H1></Text>
+	</View>
+        
+
+          <View style={styles.cuerpo}>
+          <Text style={styles.letras}>
+	  Un proceso de producción es un procedimiento técnico que se utiliza para obtener los bienes y servicios a partir de insumos.
+
+  En sumamente importante tener bien definido el proceso productivo porque a partir de éste podrás determinar los requerimientos de insumos, mano de obra, infraestructura, maquinaria y equipos, mismos que deben cuantificarse en términos monetarios para saber el monto de la inversión inicial así como los costos de operación.
+
+  El proceso productivo debe describirse de manera clara y detallada; para posteriormente representarse en un diagrama. Algunos de los diagramas que existen para representar el proceso productivo son: diagrama de bloques, diagrama de flujo del proceso, cursograma analítico, diagrama de hilos y diagrama de recorrido. 
+
+  Ventajas e importancia de representar los procesos y procedimientos mediante diagramas:
+	</Text>          
+          </View>
           
-          <TouchableHighlight>
           <Image
-          style = {[styles.imagenes,{height:70}]}
-          source={require('../../../images/EA5.png')}
-          resizeMode = 'stretch'
+          style = {[styles.imagenes,{height:300}]}
+          source={require('../../../images/Unidad3/ventajas.png')}
+          resizeMode = 'center'
           />
-          </TouchableHighlight>
+          
+          <View style={styles.cuerpo}>
+          <Text>
+                Imagen 3.15. Fuente: Elaboración propia            
+          </Text>          
+          </View>
+          
+          <View style={styles.cuerpo}>
+          <Text>
+             En la siguiente lectura "Diagramas del proceso de producción" encontrarás más información sobre el tema 
+          </Text>          
+          </View>
+          
+          <Image
+          style = {[styles.imagenes,{height:300}]}
+          source={require('../../../images/Unidad3/L3.png')}
+          resizeMode = 'center'
+          />
+          <View style={styles.cuerpo}>
+          <Text>
+                Después de leer el material anterior, realiza las evidencias de aprendizaje          
+           </Text>          
+          </View>
+          
+          <Image
+          style = {[styles.imagenes,{height:300}]}
+          source={require('../../../images/Unidad3/ea1.png')}
+          resizeMode = 'center'
+          />
+          <Image
+          style = {[styles.imagenes,{height:300}]}
+          source={require('../../../images/Unidad3/ea2.png')}
+          resizeMode = 'center'
+          />
+          <View style={styles.titulo}>  
+	<Text><H1>3.4.4 Materia prima</H1></Text>
+	</View>
+        <View style={styles.cuerpo}>
+          <Text style={styles.letras}>
+	  Uno de los principales insumos en un proceso productivo es la materia prima, ésta forma parte del producto, por lo general los insumos son de origen agrícola (trigo, soya, frutas, etc);
+        acuícola (productos del mar); pecuario (ganadería), forestal (madera, leña, pasto, etc) y mineros (metales y minerales).
+	</Text>          
+          </View>
+          
+          <Image
+          style = {[styles.imagenes,{height:300}]}
+          source={require('../../../images/Unidad3/345.png')}
+          resizeMode = 'center'
+          />
+          <View style={styles.cuerpo}>
+          <Text>
+                Imagen 3.16. Fuente: Elaboración propia 
+           </Text>          
+          </View>
+           
+           <View style={styles.titulo}>  
+	<Text><H1>3.4.5 Determinación de los requerimientos y disponibilidad de materia prima</H1></Text>
+	</View>
+        
+        <Image
+          style = {[styles.imagenes,{height:300}]}
+          source={require('../../../images/Unidad3/3.4.6.png')}
+          resizeMode = 'center'
+          />
+           <View style={styles.cuerpo}>
+          <Text>
+          Imagen 3.17. Fuente: Elaboración propia 
+           </Text>          
+          </View>
+          
+          <View style={styles.cuerpo}>
+          <Text style={styles.letras}>
+	  Para determinar la cantidad de materia prima que necesitas tendrás que basarte tanto en tu plan de producción (estimación del número de unidades a producir en un periodo de tiempo) 
+           así como en tu proceso productivo,para que entre otros aspectos tomes en cuenta las mermas y los desperdicios y tengas la materia prima suficiente para cumplir con el plan de producción.
+           
+           Por otro lado, en la medida de lo posible, debes garantizar el abastecimiento y la calidad de las materias primas que requieres para tu proceso productivo e inclusive, 
+           es recomendable investigar sobre la existencia de materias primas sustitutas para aquellos casos en que se escasee la materia prima que regularmente se ocupa en el proceso productivo.
+	</Text>          
+          </View>
+          <View style={styles.titulo}>  
+	<Text><H1>3.4.6 Estudio del medio ambiente</H1></Text>
+	</View>
+        
+        <View style={styles.cuerpo}>
+          <Text style={styles.letras}>
+	  Los proyectos impactan en mayor o menor medida al medio ambiente, aunque cabe señalar que existen proyectos que su principal compromiso es mejorar 
+           las condiciones ambientales a través de acciones para minimizar o anular el impacto negativo del proyecto sobre su entorno.
+	</Text>          
+          </View>
+           
+          <Image
+          style = {[styles.imagenes,{height:300}]}
+          source={require('../../../images/Unidad3/347.png')}
+          resizeMode = 'center'
+          />
+           <View style={styles.cuerpo}>
+          <Text>
+          Imagen 3.18. Fuente: Elaboración propia 
+           </Text>          
+          </View>
+          <View style={styles.titulo}>  
+	<Text><H1>3.4.7 Estimación de requerimientos de mano de obra</H1></Text>
+	</View>
+        <View style={styles.cuerpo}>
+          <Text style={styles.letras}>
+	  Después de determinar la cantidad y características de la maquinaria, equipo, tecnología y turnos de trabajo que se ocuparán en el proceso productivo, 
+        es posible definir las necesidades de personal técnico.
+        
+        El personal técnico comprende:
+	</Text>          
+          </View>
+          <View style={styles.cuerpo}>
+          <Text>
+          Mano de obra directa
+           </Text>          
+          </View>
+          <Image
+          style = {[styles.imagenes,{height:300}]}
+          source={require('../../../images/Unidad3/1.png')}
+          resizeMode = 'center'
+          />
+          <View style={styles.cuerpo}>
+              <Text style={styles.letras}>
+              Personal que interviene directamente en el proceso productivo.
+              </Text>          
+          </View>
+          <View style={styles.cuerpo}>
+          <Text>
+          Mano de obra indirecta
+           </Text>          
+          </View>
+          <Image
+          style = {[styles.imagenes,{height:300}]}
+          source={require('../../../images/Unidad3/4.png')}
+          resizeMode = 'center'
+          /> 
+          <View style={styles.cuerpo}>
+              <Text style={styles.letras}>
+              Personal que no interviene en forma directa en el proceso productivo; sin embargo, las actividades que realizan son igualmente importantes para que sea posible llevar a cabo la producción. 
+          Por ejemplo, personal de limpieza, de vigilancia, supervisores de producción, etc.
+              </Text>          
+          </View>
           
           <View style={styles.cuerpo}>
               <Text style={styles.letras}>
-                ¡Felicidades! ya concluiste esta unidad temática; esperamos que ahora tengas una idea más clara de: lo que son los proyectos
-                de inversión, su clasificación, la razón de su importancia, su ciclo de vida, y su estructura, ésta última comprende los 
-                siguientes estudios: mercado, técnico, administración y organización, financiero y finalmente, el estudio sustentable. Cada
-                uno de dichos estudios requiere una exhaustiva investigación que nos brindará información y aprendizajes muy valiosos, base
-                para la toma de decisiones razonadas y fundamentadas; es por esta razón por la que en esta unidad de aprendizaje dedicamos 
-                una unidad temática para cada uno se estos estudios. En la siguiente unidad abordaremos el primero de ellos: el estudio de
-                mercado.
-              </Text>
-          </View> 
-          </ScrollView>
-          </Container>
+              Una vez que se ha determinado la cantidad y características del personal técnico que se requerirá, 
+           es importante calcular cuál será el costo que implica tener a dicho personal; de manera muy sencilla 
+           }se puede calcular en una tabla como la siguiente:
+              </Text>          
+          </View>
+           <View style={styles.titulo}>  
+	<Text><H1>COSTO ANUAL DE PERSONAL TÉCNICO</H1></Text>
+	</View>
+        <Image
+          style = {[styles.imagenes,{height:300}]}
+          source={require('../../../images/Unidad3/tabla.png')}
+          resizeMode = 'center'
+          /> 
+          <View style={styles.cuerpo}>
+          <Text>
+          Tabla 8. Fuente: Elaboración propia
+           </Text> 
+           </View>
+           <View style={styles.titulo}>  
+	<Text><H1>3.4.8 Selección de maquinaria y equipo</H1></Text>
+	</View>
+        
+        <View style={styles.cuerpo}>
+              <Text style={styles.letras}>
+              La maquinaria y el equipo se seleccionan en función de las características del proceso productivo, del nivel de operación requerido y en general, del tamaño del proyecto.
+           Para seleccionar la maquinaria y equipo es importante tomar en cuenta los siguientes factores:
+              </Text>          
+          </View>
+          
+          <View style={styles.cuerpo}>
+          <Text>
+          Tabla 9. Fuente: Elaboración propia con base en la bibliografía consultada
+           </Text> 
+           </View>
+          <View style={styles.cuerpo}>
+              <Text style={styles.letras}>
+              Los requerimientos en cuanto a espacio físico se calculan una vez que se ha:
+
+                A.-Definido el proceso productivo
+                B.-Determinado la cantidad y características de la maquinaria y el equipo
+                C.-Definido la cantidad de trabajadores y empleados necesarios para el funcionamiento de la empresa
+              </Text>          
+          </View>
+          
+          <View style={styles.cuerpo}>
+              <Text style={styles.letras}>
+                Adicionalmente, se deben considerar los espacios en metros cuadrados para el almacén, bodegas, salas de espera, comedor, sala de juntas, 
+                rutas de evacuación y de emergencia, sanitarios, estacionamiento, áreas verdes, caseta de vigilancia, 
+                áreas de carga y de descarga, en caso de requerirse y cualquier otro espacio que se considere necesario.
+              </Text>          
+          </View>
+           <Image
+          style = {[styles.imagenes,{height:300}]}
+          source={require('../../../images/Unidad3/3.4.10.png')}
+          resizeMode = 'center'
+          /> 
+          <View style={styles.cuerpo}>
+          <Text>
+         Imagen 3.19. Fuente: Elaboración propia 
+           </Text> 
+           </View>
+           
+           <View style={styles.cuerpo}>
+          <Text>
+            Es el momento de realizar la siguiente evidencia de aprendizaje
+           </Text> 
+           </View>
+           <Image
+          style = {[styles.imagenes,{height:300}]}
+          source={require('../../../images/Unidad3/ea4.png')}
+          resizeMode = 'center'
+          /> 
+          
+          <View style={styles.titulo}>  
+	<Text><H1>3.4.10 Distribución de planta</H1></Text>
+	</View>
+        
+        <View style={styles.cuerpo}>
+              <Text style={styles.letras}>
+                Se refiere a la asignación de áreas y disposición física de las máquinas, departamentos, 
+                estaciones de trabajo, áreas de almacenamiento, pasillos, espacios comunes y de seguridad 
+                dentro de una instalación productiva.
+
+              </Text>          
+          </View>
+          
+          <View style={styles.cuerpo}>
+              <Text style={styles.letras}>
+                Los objetivos y principios básicos en la distribución de instalaciones son:
+
+A.-Integración total. Consiste en incluir y unir todos los factores (personas, departamentos, maquinaria, etc) que intervienen en la distribución, de manera que se haga más eficiente el funcionamiento y la operación de la empresa.
+B.-Mínima distancia de recorrido. Busca que los materiales recorran una distancia mínima al menor costo.
+C.-Utilización del espacio cúbico. Consiste en ocupar el especio vertical y horizontal, sobre todo cuando los espacios son reducidos.
+D.-Seguridad y bienestar del trabajador. Éste debe ser el principal objetivo en toda distribución, se deben proporcionar las condiciones óptimas de seguridad y bienestar para los trabajadores.
+E.-Flexibilidad. En la medida de lo posible se debe procurar que la distribución sea fácilmente reajustable a los cambios que pudieran surgir; por ejemplo, un cambio en el tipo de proceso o bien el crecimiento de la planta.
+
+              </Text>          
+          </View>
+          
+           <Image
+               style = {[styles.imagenes, {height:300}]}
+               source={require('../../../images/Unidad3/1.png')}
+               resizeMode = 'center'
+               />
+               
+               <View style={styles.cuerpo}>
+              <Text style={styles.letras}>
+                En la siguiente tabla encontrarás más información de cada uno de los tipos de distribución:
+              </Text>          
+          </View>
+          
+          <Image
+               style = {[styles.imagenes, {height:300}]}
+               source={require('../../../images/Unidad3/tabla2.png')}
+               resizeMode = 'center'
+               />
+               
+               <View style={styles.cuerpo}>
+          <Text>
+            Tabla 10. Fuente: Elaboración propia con base en la bibliografía consultada 
+           </Text> 
+           </View>
+           
+           <View style={styles.cuerpo}>
+              <Text style={styles.letras}>
+                Existen algunos métodos de los cuales podemos auxiliarnos al momento de diseñar la distribución de las instalaciones. Al respecto, 
+                Baca (2006) sugiere el diagrama de recorrido y el Systematic Layout Planning (SLP). 
+                En la siguiente lectura "Métodos para la distribución de las instalaciones" encontrarás más información acerca de estos métodos. 
+              </Text>          
+          </View>
+           
+           <Image
+               style = {[styles.imagenes, {height:300}]}
+               source={require('../../../images/Unidad3/L1.png')}
+               resizeMode = 'center'
+               />
+           <View style={styles.cuerpo}>
+              <Text style={styles.letras}>
+                Ahora tienes un panorama de los aspectos que forman parte del estudio técnico, que en términos generales abarca el estudio y análisis de todo lo referente a la operación o funcionamiento del proyecto. 
+                
+                Cuando existe evidencia clara de la factibilidad en el estudio técnico, se podrá continuar con el estudio administrativo y de organización, del que encontrarás información en la siguiente unidad temática.
+                
+                Basándote en el tema "distribución de planta" así como en la lectura anterior, resuelve la siguiente evidencia:
+              </Text>          
+          </View>
+           
+           <Image
+               style = {[styles.imagenes, {height:300}]}
+               source={require('../../../images/Unidad3/ea5.png')}
+               resizeMode = 'center'
+               />
+               
+          
+	</ScrollView>
+        </Container>
       );
     }
   }
-  var {width} = Dimensions.get('window');
+  
+
+
+  
+
+var {width} = Dimensions.get('window');
   const styles = StyleSheet.create({
     fondo:{
       backgroundColor : 'white'
@@ -702,13 +830,11 @@ import { TabNavigator } from 'react-navigation';
   });
   
   export default TabNavigator({
-    '1.1': { screen: unopuntouno },
-    '1.2': { screen: unopuntodos },
-    '1.3': { screen: unopuntotres },
-    '1.4': { screen: unopuntocuatro },
-    '1.5': { screen: unopuntocinco },
-    '1.6': { screen: unopuntoseis },
-    '1.7': { screen: unopuntosiete }
+    '3.1': { screen: trespuntouno },
+    '3.2': { screen: trespuntodos },
+    '3.3': { screen: trespuntotres},
+    '3.4': { screen: trespuntocuatro},
+    
   },{
     tabBarOptions: {
         activeTintColor: 'white',
