@@ -11,7 +11,7 @@ import {
 import {Button,Content,Container,ListItem,List,Card,Body,H1,Thumbnail,Rightpla,CardItem} from 'native-base'
 import { TabNavigator } from 'react-navigation';
 
-  class unopuntouno extends React.Component {
+  class cincopuntouno extends React.Component {
     render() {
       return (        
         <Container style={styles.fondo}>
@@ -20,103 +20,110 @@ import { TabNavigator } from 'react-navigation';
             backgroundColor='#FF473A'
             animated = {true}
             hidden = {false} /> 
-          <ScrollView>
-        <View style={styles.titulo}> 
-          <Text><H1>¿Qué es un proyecto?</H1></Text>          
-        </View>
-        <View
-          style={{
-            borderBottomColor: '#eeeeee',
-            borderBottomWidth: 1,
-            marginLeft:10,
-            marginRight:10,
-          }}
-        />
-        <View style={styles.cuerpo}>
-          <Text style={styles.letras}>
-            Resulta sorprendente la cantidad y variedad de bienes y servicios que existen en el mercado; y espérate, 
-            porque con todo lo que hay en la actualidad ¡lo mejor está por venir!.{"\n"}{"\n"}
-          
-            Son muy pocos los productos que su éxito es meramente accidental
-            https://www.merca20.com/4-productos-que-se-hicieron-exitosos-por-accidente/ ;otros, son igual o más exitosos 
-            y han seguido un camino distinto, entonces la pregunta es ¿qué hay detrás de los productos y servicios exitosos?  
-            {"\n"}{"\n"}
-            Detrás de los productos y servicios exitosos hay: 
-            {"\n"}{"\n"}
-            Un equipo diverso y multidisciplinario
-            {"\n"}{"\n"}
-            Gran cantidad de horas invertidas en investigación, análisis, 
-            evaluación y documentación; es decir, se requiere de la generación y
-            evaluación de un proyecto de inversión
-            {"\n"}{"\n"}
-            Toma de decisiones
-            {"\n"}{"\n"}
-            Riesgos
-            {"\n"}{"\n"}
-            El término proyecto, tiene diferentes significados según el contexto en donde se utilice;
-            podemos hablar de un proyecto de vida, un proyecto académico o un proyecto de inversión,
-            entre otros. 
-            {"\n"}{"\n"}
-            La palabra proyecto proviene del latín proiectus, que a su vez deriva de proicere, 
-            pro (hacia delante) y iacere (lanzar) que literalmente significa lanzamiento hacia adelante,
-            hacia el futuro; entonces, el proyecto es un plan que se hace antes de dar forma definitiva a algo; 
-            se define como un conjunto de actividades coordinadas e interrelacionadas con las que se pretende 
-            cumplir con un fin específico.
-            {"\n"}{"\n"}
-            En cambio un PROYECTO DE INVERSIÓN es: 
-            {"\n"}{"\n"}
-            La búsqueda de una solución inteligente al planteamiento 
-            de un problema tendente a resolver, entre muchas, una necesidad humana. (citado en Geldes, n.d) 
-            {"\n"}{"\n"}
-            Es un plan que, si se le asigna determinado monto de capital y se le proporcionan insumos de varios tipos,
-            podrá producir un bien o un servicio, útil al ser humano o a la sociedad en general. (Baca, 2006) 
-            {"\n"}{"\n"}
-            Aquella propuesta de inversión, documentada y analizada técnica y económicamente, destinada a una futura 
-            unidad productiva, que prevé la obtención garantizada de bienes o servicios para satisfacer necesidades físicas
-            y psicosociales de una comunidad, en un tiempo y espacio definidos. (Nacional Financiera). 
-            {"\n"}{"\n"}
-            Para que lo visualices de manera más clara, te mostramos el siguiente esquema que representa lo que es un proyecto de inversión. 
-          </Text>          
+        <ScrollView>
+          <View style={styles.titulo}> 
+            <Text><H1>Presupuestos para la elaboración del estudio financiero</H1></Text>          
           </View>
-          <Image
-          style = {[styles.imagenes,{height:300}]}
-          source={require('../../../images/inv.png')}
-          resizeMode = 'cover'
+          <View
+            style={{
+              borderBottomColor: '#eeeeee',
+              borderBottomWidth: 1,
+              marginLeft:10,
+              marginRight:10,
+            }}
           />
-          
-        <View style={styles.cuerpo}>
-          <Text style={styles.letras}>
-          ¿Notas la diferencia entre un proyecto y un proyecto de inversión?
-          </Text>
-          <Card>
-            <CardItem>
-              <Body>
-              <Text style={styles.letras}>
-                Recuerda, el proyecto de inversión es un plan al que se le asignan recursos
-                 (humanos, materiales, técnicos y económicos) para la creación de bienes y/o la prestación de servicios que satisfagan una necesidad humana, con una intención económica 
-                (obtención de ganancias) o social (bienestar común, sin ánimo de lucro). 
-                </Text>
-              </Body>
-            </CardItem>
-          </Card>
-          <Text style={styles.letras}>
-          Ahora tienes los conocimientos necesarios 
-          para realizar la primera evidencia de aprendizaje, a medida que vayas
-           avanzado en el curso, encontrarás algunas otras: 
-          </Text>
+          <View style={styles.cuerpo}>
+            <Text style={styles.letras}>
+              El estudio financiero de un proyecto de inversión se hace con base en los presupuestos. Un presupuesto es una estimación en términos monetarios tanto de los ingresos como de los egresos de una empresa.   
+              {"\n"}{"\n"}
+              El principal presupuesto de ingresos es el presupuesto de ventas; en tanto que los presupuestos de egresos son:
+              {"\n"}{"\n"}
+              Presupuesto de costos de producción o costo de ventas según sea el caso
+              {"\n"}{"\n"}
+              Presupuesto de gastos de administración 
+              {"\n"}{"\n"}
+              Presupuesto de gastos de venta 
+              {"\n"}{"\n"}
+              Riesgos
+              {"\n"}{"\n"}
+              Presupuesto de gastos financieros 
+              {"\n"}{"\n"}
+              Presupuesto de pago de impuestos 
+              {"\n"}{"\n"}            
+            </Text>          
+            </View>
+            <Image
+            style = {[styles.imagenes,{height:300}]}
+            source={require('../../../images/Unidad5/5.1.png')}
+            resizeMode = 'cover'
+            />
+            <View style={styles.titulo}> 
+            <Text><H1> Presupuesto de egresos </H1></Text>          
           </View>
-          <TouchableHighlight>
-          <Image
-          style = {[styles.imagenes,{height:70}]}
-          source={require('../../../images/boton1.png')}
-          resizeMode = 'stretch'
+          <View
+            style={{
+              borderBottomColor: '#eeeeee',
+              borderBottomWidth: 1,
+              marginLeft:10,
+              marginRight:10,
+            }}
           />
-          </TouchableHighlight>
-        </ScrollView>
-        </Container>
+          <View style={styles.cuerpo}>
+            <Text style={styles.letras}>
+              Así como es necesario calcular el monto de la inversión, analizar las fuentes de financiamiento y estimar los ingresos para el proyecto, también es indispensable estimar los costos y gastos (costo de producción, gastos de venta, gastos de administración, gastos financieros e impuestos) que se derivan de la operación (funcionamiento) del proyecto por unidad de tiempo (semana, mes, año, etc.).
+              {"\n"}{"\n"}
+              Solo teniendo la información anterior podrás: elaborar el presupuesto de efectivo (flujo de caja), calcular el punto de equilibrio así como los indicadores financieros que te permitirán evaluar el proyecto y así tomar decisiones
+              {"\n"}{"\n"}                         
+            </Text>          
+            </View>
+            <Image
+            style = {[styles.imagenes,{height:300}]}
+            source={require('../../../images/Unidad5/5.1.1.png')}
+            resizeMode = 'cover'
+            />
+            <View style={styles.titulo}> 
+            <Text><H1>Costos de producción </H1></Text>          
+          </View>
+          <View
+            style={{
+              borderBottomColor: '#eeeeee',
+              borderBottomWidth: 1,
+              marginLeft:10,
+              marginRight:10,
+            }}
+          />
+          <View style={styles.cuerpo}>
+            <Text style={styles.letras}>
+            Si el negocio tiene un giro comercial exclusivamente, no se tienen costos de producción porque no se fabrica, en todo caso se tendría un costo de venta o de adquisición (el de los productos que se adquieren para revender); sin embargo, si se produce un bien en una pequeña fábrica, industria o taller, definitivamente se van a tener costos de producción.
+              {"\n"}{"\n"}
+              Los COSTOS de producción se integran de la siguiente manera:
+              {"\n"}{"\n"}   
+              Materia prima e insumos directos.
+              {"\n"}{"\n"}    
+              Se refiere a los materiales principales que se utilizan en la producción de un bien. En el caso de fabricar muebles de madera la materia prima es la madera, el triplay, los aglomerados etc. Los insumos directos son aquellos que se utilizan en la producción pero que no corresponden a los materiales principales (no se transforman, no se les hace cambios), en el ejemplo serían clavos, pegamentos, jaladeras, bisagras etc.
+              {"\n"}{"\n"}    
+              Mano de obra directa
+              {"\n"}{"\n"}    
+              Es aquella que interviene directamente en la transformación de materia prima en producto terminado, específicamente se refiere a los obreros (operarios de maquinaria y equipo, cortadores, pintores, soldadores, entre otros). Se debe determinar cuánto personal se requiere para el proceso productivo y cuantificar cuánto se les va a pagar, en este sentido, Baca (2006), señala que el método de costeo que se utiliza en la evaluación de proyectos se llama costeo absorbente. Lo que significa, en el caso de la mano de obra, que se deberá agregar al menos 35% de prestaciones sociales al costo total anual. 
+              {"\n"}{"\n"}       
+              Materiales e insumos indirectos.
+              {"\n"}{"\n"}    
+              Se necesitan para realizar la producción, pero que no es posible o práctico identificarlos en el producto y por lo general representan un valor muy bajo. En el ejemplo de la fábrica de muebles, podrían ser las lijas y la energía eléctrica, y en otros procesos productivos serían los combustibles, lubricantes, grasas, bandas que se requieren para la maquinaria, etc. 
+              {"\n"}{"\n"}       
+              Los COSTOS de producción o fabricación incluyen
+              {"\n"}{"\n"}    
+              Mano de obra indirecta. Personal que es necesario para la producción pero no interviene directamente en la fabricación del producto (gerentes, supervisores, jefe del taller, electricistas, mecánicos etc.). Al igual que en la mano de obra directa, de acuerdo con Baca (2006) a los sueldos y salarios por mano de obra indirecta se le agrega el 35% por concepto de prestaciones. 
+              {"\n"}{"\n"}   
+              Otros cargos (gastos) indirectos. Corresponde a los gastos vinculados indirectamente al proceso productivo, generalmente son pagos por servicios, como por ejemplo: la energía eléctrica que consumen las máquinas, la energía para el alumbrado de la fábrica o taller, el consumo de agua, el pago del seguro contra daños e incendios en la fábrica, el mantenimiento etc.
+              {"\n"}{"\n"}                      
+            </Text>          
+            </View>          
+        
+          </ScrollView>
+          </Container>
       );
     }
-  }  
+  }
   class unopuntodos extends React.Component {
     render() {
       return (
@@ -702,7 +709,7 @@ import { TabNavigator } from 'react-navigation';
   });
   
   export default TabNavigator({
-    '1.1': { screen: unopuntouno },
+    '5.1': { screen: cincopuntouno },
     '1.2': { screen: unopuntodos },
     '1.3': { screen: unopuntotres },
     '1.4': { screen: unopuntocuatro },

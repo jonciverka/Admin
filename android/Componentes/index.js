@@ -13,6 +13,7 @@ import {Button,Content,Container,Body,Header} from 'native-base'
 import Home from './Drawer/Home'
 import Perfil from './Drawer/Perfil'
 import Cursos from './Drawer/Cursos'
+import Noticias  from './Drawer/Noticias'
 
 class index extends Component{
   constructor(props){
@@ -46,7 +47,8 @@ class index extends Component{
 const RootDrawer = DrawerNavigator({
     Home:{screen: Home},
     Perfil:{screen: Perfil},
-    Cursos:{screen:Cursos}
+    Cursos:{screen:Cursos},
+    Noticias:{screen:Noticias}
     
 },{
   drawerBackgroundColor:'#F64747',

@@ -12,7 +12,7 @@ import {
   View,StatusBar,
   Image,Dimensions,ImageBackground,TouchableHighlight
 } from 'react-native';
-import {Header,Body,Title,Grid,Container,Col,H2,Left,Right} from 'native-base'
+import {Header,Body,Title,Grid,Container,Col,H2,Left,Right,Button} from 'native-base'
 
 
 
@@ -33,9 +33,7 @@ export default class Cursos extends Component {
             <Title style={{color:'#FF473A'}}>Cursos.</Title>
           </Body>
         </Header>        
-        <ImageBackground source={require('../../images/fondo.png')}  style={{flex:1}}>   
-
-
+        <ImageBackground source={require('../../images/fondo.png')}  style={{flex:1}}>      
         <View style={{
            alignItems: 'flex-start',
            justifyContent: 'flex-start',
