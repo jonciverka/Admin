@@ -10,6 +10,7 @@ import {
 } from 'react-native';
 import {Button,Content,Container,ListItem,List,Card,Body,H1,Thumbnail,Rightpla,CardItem} from 'native-base'
 import { TabNavigator } from 'react-navigation';
+import ImageZoom from 'react-native-image-pan-zoom';
 class inicio extends React.Component {
   render() {
     return (        
@@ -91,11 +92,13 @@ class inicio extends React.Component {
             Para que lo visualices de manera más clara, te mostramos el siguiente esquema que representa lo que es un proyecto de inversión. 
           </Text>          
           </View>
-          <Image
-          style = {[styles.imagenes,{height:300}]}
-          source={require('../../../images/inv.png')}
-          resizeMode = 'cover'
-          />
+          <ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={250}
+                       imageWidth={320}
+                       imageHeight={250}>
+                <Image style={{width:320, height:250}}
+                       source={require('../../../images/inv.png')}/>
+          </ImageZoom>
           
         <View style={styles.cuerpo}>
           <Text style={styles.letras}>
@@ -159,11 +162,13 @@ class inicio extends React.Component {
               inversión, te invitamos a revisar el siguiente cuadro: 
             </Text>
           </View>
-            <Image
-            style = {[styles.imagenes,{height:580}]}
-            source={require('../../../images/1.2.png')}
-            resizeMode = 'cover'
-            />          
+          <ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={400}
+                       imageWidth={250}
+                       imageHeight={400}>
+                <Image style={{width:250, height:400}}
+                       source={require('../../../images/1.2.png')}/>
+          </ImageZoom>         
           <View style={styles.cuerpo}>            
             <Text style={styles.letras}>
               Cabe destacar que la clasificación de los proyectos no es mutuamente excluyente y se logra combinando 
@@ -172,11 +177,15 @@ class inicio extends React.Component {
               ampliar la planta y de tamaño mediano.  
             </Text>
           </View>
-          <Image
-          style = {[styles.imagenes,{height:250}]}
-          source={require('../../../images/img1.png')}
-          resizeMode = 'cover'
-          />
+          <ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={250}
+                       imageWidth={360}
+                       imageHeight={250}>
+                <Image style={{width:360, height:250}}
+                        source={require('../../../images/img1.png')}/>
+          </ImageZoom>  
+
+         
         </ScrollView>
         </Container>
       );
@@ -208,7 +217,8 @@ class inicio extends React.Component {
             Existen diferentes clasificaciones de modelos de inversión, para efectos de esta UA abordaremos los siguientes:
             por su operación, por su flujo de efectivo y por su punto de vista económico.
           </Text>  
-          </View>        
+          </View>   
+
           <Image
           style = {[styles.imagenes,{height:250}]}
           source={require('../../../images/1.3.png')}
@@ -364,12 +374,14 @@ class inicio extends React.Component {
           <Text style={styles.letras}>
             De acuerdo con Fernández (2010) el ciclo de vida de un proyecto tiene las siguientes fases  
           </Text>    
-        </View>              
-        <Image
-          style = {[styles.imagenes,{height:200}]}
-          source={require('../../../images/ciclo.png')}
-          resizeMode = 'cover'
-          />
+        </View>  
+        <ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={200}
+                       imageWidth={360}
+                       imageHeight={200}>
+                <Image style={{width:360, height:200}}
+                          source={require('../../../images/ciclo.png')}/>
+          </ImageZoom>    
           <View style={styles.cuerpo}>            
             <Text style={styles.letras}>
               El ciclo de vida de un proyecto de inversión está en función del sector al que pertenece. 
@@ -380,12 +392,14 @@ class inicio extends React.Component {
               {"\n"}{"\n"}
               En términos generales el ciclo de vida de un proyecto está conformado por al menos cuatro fases. 
             </Text> 
-          </View>         
-          <Image
-          style = {[styles.imagenes,{height:400}]}
-          source={require('../../../images/etapa1.png')}
-          resizeMode = 'stretch'
-          />
+          </View>  
+          <ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={300}
+                       imageWidth={260}
+                       imageHeight={300}>
+                <Image style={{width:260, height:300}}
+                          source={require('../../../images/etapa1.png')}/>
+          </ImageZoom> 
           <Image
           style = {[styles.imagenes,{height:300}]}
           source={require('../../../images/etapa2.png')}
@@ -417,11 +431,15 @@ class inicio extends React.Component {
              A continuación se explican cada una de estas etapas.   
             </Text>
           </View>
-          <Image
-          style = {[styles.imagenes,{height:500}]}
-          source={require('../../../images/imagen9.png')}
-          resizeMode = 'stretch'
-          />
+          <ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={450}
+                       imageWidth={300}
+                       imageHeight={450}>
+                <Image style={{width:300, height:450}}
+                           source={require('../../../images/imagen9.png')}/>
+          </ImageZoom> 
+
+          
 
         </ScrollView>
         </Container>
@@ -466,11 +484,14 @@ class inicio extends React.Component {
               Estas secciones se pueden apreciar en la siguiente imagen.  
             </Text> 
         </View> 
-          <Image
-          style = {[styles.imagenes,{height:200}]}
-          source={require('../../../images/2.png')}
-          resizeMode = 'cover'
-          /> 
+        
+        <ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={200}
+                       imageWidth={width}
+                       imageHeight={200}>
+                <Image style={{width:width, height:200}}
+                           source={require('../../../images/2.png')}/>
+          </ImageZoom>
           <View style={styles.titulo}> 
           <Text><H1>Estudio de mercado</H1></Text>          
          </View>
@@ -488,11 +509,13 @@ class inicio extends React.Component {
             la factibilidad de introducir un bien o prestar un servicio en dicho mercado.           
           </Text> 
         </View> 
-          <Image
-          style = {[styles.imagenes,{height:250}]}
-          source={require('../../../images/1.6.1.png')}
-          resizeMode = 'cover'
-          /> 
+        <ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={250}
+                       imageWidth={width}
+                       imageHeight={250}>
+                <Image style={{width:width, height:250}}
+                           source={require('../../../images/1.6.1.png')}/>
+          </ImageZoom>
           <View
           style={{
             borderBottomColor: '#eeeeee',
@@ -527,11 +550,14 @@ class inicio extends React.Component {
               que se verificó que no existe impedimento alguno en el abasto de todos los insumos necesarios para su producción.         
             </Text> 
         </View> 
-          <Image
-          style = {[styles.imagenes,{height:300}]}
-          source={require('../../../images/1.6.2.png')}
-          resizeMode = 'cover'
-          />
+        <ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={300}
+                       imageWidth={width}
+                       imageHeight={300}>
+                <Image style={{width:width, height:300}}
+                          source={require('../../../images/1.6.2.png')}/>
+          </ImageZoom>
+      
           <View style={styles.titulo}> 
           <Text><H1>Estudio administrativo y de organización</H1></Text>          
          </View>          
@@ -543,11 +569,14 @@ class inicio extends React.Component {
             marginRight:10,
           }}
         /> 
-          <Image
-          style = {[styles.imagenes,{height:300}]}
-          source={require('../../../images/1.6.3.png')}
-          resizeMode = 'cover'
-          />
+        
+        <ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={300}
+                       imageWidth={width}
+                       imageHeight={300}>
+                <Image style={{width:width, height:300}}
+                        source={require('../../../images/1.6.3.png')}/>
+          </ImageZoom>
           <View style={styles.titulo}>
           <Text><H1>Estudio financiero</H1></Text>          
          </View>  
@@ -625,12 +654,15 @@ class inicio extends React.Component {
               {"\n"}{"\n"}
               Eje horizontal. Se indican fechas en una escala de tiempo (hora, día, semana, mes, etc.)
             </Text>
-          </View>                 
-          <Image
-            style = {[styles.imagenes,{height:150}]}
-            source={require('../../../images/gantt.png')}
-            resizeMode = 'cover'
-            /> 
+          </View>               
+          
+        <ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={150}
+                       imageWidth={width}
+                       imageHeight={150}>
+                <Image style={{width:width, height:150}}
+                        source={require('../../../images/gantt.png')}/>
+          </ImageZoom> 
             <View style={styles.cuerpo}>
               <Text style={styles.letras}>
                 Cada actividad se representa mediante un bloque rectangular cuya longitud indica por un lado,

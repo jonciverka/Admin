@@ -20,7 +20,7 @@ export default class Unidad1 extends Component {
   render() {
     return (
         <Container>  
-        <Header style={{backgroundColor:'#F64747'}}>
+        <Header noShadow style={{backgroundColor:'#F64747'}}>
         <Left>
             <Button transparent onPress={() => this.props.navigation.goBack()}>
                 <MaterialIcons name="keyboard-arrow-left" size={34} style={{color:'white'}}/>
