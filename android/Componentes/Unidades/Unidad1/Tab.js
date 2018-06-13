@@ -11,7 +11,7 @@ import {
 import {Button,Content,Container,ListItem,List,Card,Body,H1,Thumbnail,Rightpla,CardItem} from 'native-base'
 import { TabNavigator } from 'react-navigation';
 import ImageZoom from 'react-native-image-pan-zoom';
-import RNFetchBlob from 'react-native-fetch-blob'
+import RNFetchBlob from 'react-native-fetch-blob';
 class inicio extends React.Component {
   render() {
     return (        
