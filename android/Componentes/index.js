@@ -24,24 +24,6 @@ class index extends Component{
       Nombre:''
     }
   }
-  async componentWillMount(props){
-    try{
-      let user = await firebase.auth().currentUser;
-      if(user){
-        this.setState({
-          uid: user.uid,
-          email: user.email,
-          Nombre : user.displayName
-        })
-       // Alert.alert("Si hay personas logeadaas",JSON.stringify(this.state.Nombre))
-      }else{
-        Alert.alert("Es anonimo")
-      }     
-    }catch(error){
-      Alert.alert("error al sacar uid")
-    }
-  }
-
 }
 
 const RootDrawer = DrawerNavigator({
