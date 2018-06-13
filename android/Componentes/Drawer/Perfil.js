@@ -9,7 +9,7 @@ import {
   Platform,
   StyleSheet,
   Text,Image,
-  View
+  View,Linking
 } from 'react-native';
 
 HEADER_MAX_HEIGHT = 120
@@ -50,6 +50,7 @@ export default class Perfil extends Component {
           >
           </Image>
           </View>
+          
       </View>
     );
   }

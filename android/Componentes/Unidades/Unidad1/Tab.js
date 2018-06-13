@@ -4,7 +4,7 @@ import {
   StyleSheet,
   Text,
   View,
-  Dimensions,
+  Dimensions,Linking,
   Image,StatusBar,ImageBackground,
   ListView,ScrollView, TouchableNativeFeedback,Alert,TouchableOpacity,TouchableWithoutFeedback,TouchableHighlight
 } from 'react-native';
@@ -122,7 +122,7 @@ class inicio extends React.Component {
            avanzado en el curso, encontrarás algunas otras: 
           </Text>
           </View>
-          <TouchableHighlight>
+          <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/s/rr0ijeh9yqfxvhl/EvidenciaAprendizajeI1.pdf?dl=1')}>
           <Image
           style = {[styles.imagenes,{height:70}]}
           source={require('../../../images/boton1.png')}
@@ -344,12 +344,13 @@ class inicio extends React.Component {
               Una vez que revisaste el tema, elabora la siguiente evidencia de aprendizaje:  
             </Text>
           </View>
-          
+          <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/s/2n2h8uzw9b9eb2g/EvidenciaAprendizajeI2.pdf?dl=0')}>
           <Image
           style = {[styles.imagenes,{height:70}]}
           source={require('../../../images/EA2.png')}
           resizeMode = 'stretch'
           />
+          </TouchableHighlight>
         </ScrollView>
         </Container>
       );
@@ -685,7 +686,7 @@ class inicio extends React.Component {
             </Text>
           </View>    
             
-          <TouchableHighlight>
+          <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/s/ntpj1z1yojskr24/EvidenciaAprendizajeI3.pdf?dl=1')}>
           <Image
           style = {[styles.imagenes,{height:70}]}
           source={require('../../../images/EA3.png')}
@@ -693,7 +694,7 @@ class inicio extends React.Component {
           />
           </TouchableHighlight>
           
-          <TouchableHighlight>
+          <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/s/ozkbs1amw472r7w/EvidenciaAprendizajeI4.pdf?dl=1')}>
           <Image
           style = {[styles.imagenes,{height:70}]}
           source={require('../../../images/EA4.png')}
@@ -701,7 +702,7 @@ class inicio extends React.Component {
           />
           </TouchableHighlight>
           
-          <TouchableHighlight>
+          <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/s/xvoxf9c7vct99il/EvidenciaAprendizajeI5.pdf?dl=1')}>
           <Image
           style = {[styles.imagenes,{height:70}]}
           source={require('../../../images/EA5.png')}
