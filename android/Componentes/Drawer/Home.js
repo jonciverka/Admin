@@ -10,7 +10,7 @@ import {
   StyleSheet,
   Text,
   View,StatusBar,
-  Image,Dimensions,ImageBackground,TouchableHighlight
+  Image,Dimensions,ImageBackground,TouchableHighlight,Linking
 } from 'react-native';
 import {Header,Body,Title,Grid,Container,Col,H2,Left,Right} from 'native-base'
 
@@ -25,7 +25,7 @@ export default class Home extends Component {
         }}>      
       <StatusBar 
             barStyle="light-content"
-            backgroundColor='white'
+            backgroundColor='#007AF5'
             animated = {true}
             hidden = {false} />      
         <ImageBackground source={require('./../../images/fondo_home.png')}  style={{flex:1}}>   
@@ -57,9 +57,10 @@ export default class Home extends Component {
             onPress={() => this.props.navigation.navigate('Bibliografia')}>
             <Text></Text>
           </TouchableHighlight>
+          
           <TouchableHighlight 
             style={styles.botones}
-            onPress={() => this.props.navigation.navigate('Programa')}>
+            onPress={() => Linking.openURL('https://www.dropbox.com/s/na29cizeral894h/trescinco.pdf?dl=1')}>
             <Text></Text>
           </TouchableHighlight>          
         </View>

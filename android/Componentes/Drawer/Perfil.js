@@ -51,9 +51,8 @@ export default class Perfil extends Component {
 
   render() {
     const perfil = <View style={{marginTop: 40}}>
-                  <Text style={{marginTop: 5}}><H1> Anonimo</H1> </Text>
-                  <Text style={{marginTop: 5}}><H2> Anonimo</H2></Text>
-                  <Text style={{marginTop: 5}}> <H2>Anonimo </H2></Text>
+                  <Text style={{marginTop: 5}}><H1> Inicia sesion para poer ver tu perfil.</H1> </Text>
+                  
                   </View>;
     const perfil2 =   <View style={{marginTop: 50}}>
                       <Text style={{marginTop: 5}}><H1> {this.state.Nombre}</H1> </Text>
