@@ -4,97 +4,114 @@ import {
   StyleSheet,
   Text,
   View,
-  Dimensions,
-  Image,StatusBar,
+  Dimensions,Linking,
+  Image,StatusBar,ImageBackground,
   ListView,ScrollView, TouchableNativeFeedback,Alert,TouchableOpacity,TouchableWithoutFeedback,TouchableHighlight
 } from 'react-native';
 import {Button,Content,Container,ListItem,List,Card,Body,H1,Thumbnail,Rightpla,CardItem} from 'native-base'
 import { TabNavigator } from 'react-navigation';
-
 import ImageZoom from 'react-native-image-pan-zoom';
-//3.1
+class inicio extends React.Component {
+  render() {
+    return (        
+      <Container style={styles.fondo}>
+      <StatusBar 
+          barStyle="light-content"
+          backgroundColor='#F64747'
+          animated = {true}
+          hidden = {false} /> 
+      </Container>
+    );
+  }
+}
 
-  class trespuntouno extends React.Component {
+class trespuntouno extends React.Component {
     render() {
       return (  
-	      <Container style={styles.fondo}>
-        	<StatusBar 
-            	barStyle="light-content"
-            	backgroundColor='#FF473A'
-            	animated = {true}
-            	hidden = {false} />
-          <ScrollView>
-            <View style={styles.titulo}>  
-              <Text><H1>3.1 Elementos que integran el estudio técnico</H1></Text>
-            </View>
-            <View
-              style={{
+    <Container style={styles.fondo}>
+            <StatusBar 
+                barStyle="light-content"
+                backgroundColor='#FF473A'
+                animated = {true}
+                hidden = {false} />
+                
+              <ScrollView>
+          <View style={styles.titulo}>  
+    <Text><H1>3.1 Elementos que integran el estudio técnico</H1></Text>
+    </View>
+    <View
+            style={{
               borderBottomColor: '#eeeeee',
               borderBottomWidth: 1,
               marginLeft:10,
               marginRight:10,
             }}
-            />	
-            <View style={styles.cuerpo}>
-              <Text style={styles.letras}>
-                El estudio técnico comprende todo aquello que tenga relación con el funcionamiento y la operatividad del proyecto. Con este estudio se pretende 
-                dar respuesta a las siguientes preguntas (desliza el cursor sobre ellas):
-              </Text>          
-            </View>	
-          <Image
+          />
+    
+    <View style={styles.cuerpo}>
+            <Text style={styles.letras}>
+      El estudio técnico comprende todo aquello que tenga relación con el funcionamiento y la operatividad del proyecto. Con este estudio se pretende 
+      dar respuesta a las siguientes preguntas (desliza el cursor sobre ellas):
+    </Text>          
+            </View>
+      
+    <Image
             style = {[styles.imagenes,{height:300}]}
-            source={require('../../../images/Unidad3/EstudioTecnico.png')}
+            source={require('../../../images/unidad3/EstudioTecnico.png')}
             resizeMode = 'center'
             />
-	        </ScrollView>
-        </Container>
-      );
-    }
+    </ScrollView>
+          </Container>
+        );
+      }
   }
 
-  class trespuntodos extends React.Component {
+class trespuntodos extends React.Component {
     render() {
       return (  
-        <Container style={styles.fondo}>
+  <Container style={styles.fondo}>
           <StatusBar 
               barStyle="light-content"
               backgroundColor='#FF473A'
               animated = {true}
-              hidden = {false} />              
-          <ScrollView>
+              hidden = {false} />
+               
+            <ScrollView>
         <View style={styles.titulo}>  
-          <Text><H1>3.2 Localización general y específica de la planta</H1></Text>
-        </View>
-        <View
+  <Text><H1>3.2 Localización general y específica de la planta</H1></Text>
+  </View>
+  <View
           style={{
             borderBottomColor: '#eeeeee',
             borderBottomWidth: 1,
             marginLeft:10,
             marginRight:10,
           }}
-        />  
-        <View style={styles.cuerpo}>
+        />
+  
+  <View style={styles.cuerpo}>
           <Text style={styles.letras}>
-          ¿Dónde localizar la empresa?, es una decisión muy importante, que impacta a los costos y en consecuencia las utilidades. 
-          Antes de determinar en dónde ubicarás tu negocio, tendrás que analizar algunas variables tales como: 
-          </Text>          
-        </View>  
-        <ImageZoom cropWidth={Dimensions.get('window').width}
-                       cropHeight={200}
-                       imageWidth={width}
-                       imageHeight={200}>
-                <Image style={{width:width, height:200}}
-                        source={require('../../../images/Unidad3/locgeneral.png')}/>
-          </ImageZoom> 
-        <Image
-          style = {[styles.imagenes,{widht:200,height:200}]}
-          source={require('../../../images/Unidad3/location.png')}
-          resizeMode = 'stretch'
+    ¿Dónde localizar la empresa?, es una decisión muy importante, que impacta a los costos y en consecuencia las utilidades. 
+    Antes de determinar en dónde ubicarás tu negocio, tendrás que analizar algunas variables tales como: 
+  </Text>          
+          </View>
+    
+   <Image
+          style = {[styles.imagenes,{height:150}]}
+          source={require('../../../images/unidad3/locgeneral.png')}
+          resizeMode = 'center'
           />
-        <View style={styles.titulo}>  
-          <Text><H1>3.2.1 Macro localización</H1></Text>
-        </View>
-        <View
+  <Image
+          style = {[styles.imagenes,{height:150}]}
+          source={require('../../../images/unidad3/location.png')}
+          resizeMode = 'center'
+          />
+  
+
+  <View style={styles.titulo}>  
+  <Text><H1>3.2.1 Macro localización</H1></Text>
+  </View>
+  <View
           style={{
             borderBottomColor: '#eeeeee',
             borderBottomWidth: 1,
@@ -104,83 +121,94 @@ import ImageZoom from 'react-native-image-pan-zoom';
         />
         <View style={styles.cuerpo}>
           <Text style={styles.letras}>
-            También llamada macro zona, se refiere a la región, el territorio o el estado en donde se pretende realizar el proyecto. 
-            Se comparan alternativas entre las zonas del país y se selecciona la que ofrece mayores ventajas para el proyecto. 
-          </Text>          
-        </View>
-        <Image
-          style = {[styles.imagenes,{height:300}]}
-          source={require('../../../images/Unidad3/macro.png')}
-          resizeMode = 'stretch'
+    También llamada macro zona, se refiere a la región, el territorio o el estado en donde se pretende realizar el proyecto. 
+    Se comparan alternativas entre las zonas del país y se selecciona la que ofrece mayores ventajas para el proyecto. 
+  </Text>          
+          </View>
+          <Image
+          style = {[styles.imagenes,{height:200}]}
+          source={require('../../../images/unidad3/macro.png')}
+          resizeMode = 'center'
           />
-        <View style={styles.titulo}>  
-          <Text><H1>3.2.2 Micro localización</H1></Text>
-        </View>
+  <View style={styles.titulo}>  
+  <Text><H1>3.2.2 Micro localización</H1></Text>
+  </View>
 
-        <View style={styles.cuerpo}>
-          <Text style={styles.letras}>
-            Una vez que se tiene definida la macro localización se identifica, en función de los factores o variables evaluadas, 
-            la micro localización; es decir, el sitio exacto (calle, número, colonia, delegación o municipio etc.) en donde se ubicará la empresa.
-          </Text>          
-        </View>
-        <Image
-          style = {[styles.imagenes,{height:300}]}
-          source={require('../../../images/Unidad3/micro.png')}
-          resizeMode = 'stretch'
+   <View style={styles.cuerpo}>
+  <Text style={styles.letras}>
+    Una vez que se tiene definida la macro localización se identifica, en función de los factores o variables evaluadas, 
+    la micro localización; es decir, el sitio exacto (calle, número, colonia, delegación o municipio etc.) en donde se ubicará la empresa.
+  </Text>          
+    </View>
+  <Image
+          style = {[styles.imagenes,{height:200}]}
+          source={require('../../../images/unidad3/micro.png')}
+          resizeMode = 'center'
           />
-        <View style={styles.titulo}>  
-          <Text><H1>3.2.3 Evaluación de alternativas de localización</H1></Text>
-        </View>
-        <View style={styles.cuerpo}>
-          <Text style={styles.letras}>
-            Existen diferentes métodos que ayudan a analizar, evaluar y seleccionar la mejor alternativa 
-            del lugar en donde debe establecerse la empresa. Dichos métodos son:
-          </Text>          
-        </View>
-        <Image
-          style = {[styles.imagenes,{height:300}]}
-          source={require('../../../images/Unidad3/3.2.3.png')}
-          resizeMode = 'stretch'
-          />
-          <View style={styles.cuerpo}>
-            <Text style={styles.letras}>
-              En la siguiente lectura "Métodos para la evaluación de opciones de localización" 
-              encontrarás más información de cada uno de los métodos antes mencionados.  
-            </Text>
-          </View>
-          <Image
-            style = {[styles.imagenes,{height:300}]}
-            source={require('../../../images/Unidad3/L4.png')}
-            resizeMode = 'stretch'
-            />
-          <View style={styles.cuerpo}>
-            <Text style={styles.letras}>
-              Una vez que leíste el material anterior, realiza la siguiente evidencia de aprendizaje:  
-            </Text>
-          </View>
-          <Image
-            style = {[styles.imagenes,{height:300}]}
-            source={require('../../../images/Unidad3/ea6.png')}
-            resizeMode = 'stretch'
-            />
+  <View style={styles.titulo}>  
+  <Text><H1>3.2.3 Evaluación de alternativas de localización</H1></Text>
+  </View>
 
+  <View style={styles.cuerpo}>
+  <Text style={styles.letras}>
+    Existen diferentes métodos que ayudan a analizar, evaluar y seleccionar la mejor alternativa 
+    del lugar en donde debe establecerse la empresa. Dichos métodos son:
+  </Text>          
+    </View>
+     <Image
+          style = {[styles.imagenes,{height:200}]}
+          source={require('../../../images/unidad3/3.2.3.png')}
+          resizeMode = 'center'
+          />
+          <View style={styles.cuerpo}>
+  <Text style={styles.letras}>
+    Imagen 3.6. Fuente: Elaboración propia con base en la bibliografía consultada 
+  </Text>
+  </View>
+  <View style={styles.cuerpo}>
+  <Text style={styles.letras}>
+    En la siguiente lectura "Métodos para la evaluación de opciones de localización" 
+    encontrarás más información de cada uno de los métodos antes mencionados.  
+  </Text>
+  </View>
+  <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/s/crqshwpjmxy2sfc/evaluacion.pdf?dl=1')}>
+      <Image
+          style = {[styles.imagenes,{height:100}]}
+          source={require('../../../images/unidad3/L4.png')}
+          resizeMode = 'center'
+          />
+          </TouchableHighlight>
+      <View style={styles.cuerpo}>
+  <Text style={styles.letras}>
+    Una vez que leíste el material anterior, realiza la siguiente evidencia de aprendizaje:  
+  </Text>
+  </View>
+        <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/s/k2ry8uyogmhgl6a/tresseis.pdf?dl=1')}>
+          <Image
+              style = {[styles.imagenes,{height:100}]}
+              source={require('../../../images/unidad3/ea6.png')}
+              resizeMode = 'center'
+              />
+          </TouchableHighlight>
           <View style={styles.titulo}>  
-            <Text><H1>3.2.4 Localización específica</H1></Text>
+          <Text><H1>3.2.4 Localización específica</H1></Text>
           </View>
           <View style={styles.cuerpo}>
-            <Text style={styles.letras}>
-              Una vez que se han evaluado, por algún método, las ventajas y desventajas de los posibles lugares que se tienen contemplados para localizar la empresa, 
-              se selecciona la alternativa que resulte más conveniente para el proyecto. 
-              No debes olvidar que la localización de la empresa es sin duda una decisión estratégica.
-            </Text>
+          <Text style={styles.letras}>
+            Una vez que se han evaluado, por algún método, las ventajas y desventajas de los posibles lugares que se tienen contemplados para localizar la empresa, 
+            se selecciona la alternativa que resulte más conveniente para el proyecto. 
+            No debes olvidar que la localización de la empresa es sin duda una decisión estratégica.
+          </Text>
           </View>
+
           <Image
-            style = {[styles.imagenes,{height:300}]}
-            source={require('../../../images/Unidad3/locesp.png')}
-            resizeMode = 'center'
-            />          
+          style = {[styles.imagenes,{height:200}]}
+          source={require('../../../images/unidad3/locesp.png')}
+          resizeMode = 'center'
+          />
+          
           <View style={styles.titulo}>  
-            <Text>Imagen 3.7. Fuente: Elaboración propia</Text>
+          <Text>Imagen 3.7. Fuente: Elaboración propia</Text>
           </View>
 
         </ScrollView>
@@ -191,66 +219,73 @@ import ImageZoom from 'react-native-image-pan-zoom';
   } 
   
   
-  class trespuntotres extends React.Component {
+class trespuntotres extends React.Component {
     render() {
       return (  
-	      <Container style={styles.fondo}>
+	<Container style={styles.fondo}>
         	<StatusBar 
             	barStyle="light-content"
             	backgroundColor='#FF473A'
             	animated = {true}
-            	hidden = {false} />               
-          <ScrollView>
-          <View style={styles.titulo}>  
-           <Text><H1>3.3 Tamaño o capacidad del proyecto</H1></Text>
-          </View>
-	        <View
-            style={{
-              borderBottomColor: '#eeeeee',
-              borderBottomWidth: 1,
-              marginLeft:10,
-              marginRight:10,
-            }}
-          />
+            	hidden = {false} />
+               
+          	<ScrollView>
+        <View style={styles.titulo}>  
+	<Text><H1>3.3 Tamaño o capacidad del proyecto</H1></Text>
+	</View>
+	<View
+          style={{
+            borderBottomColor: '#eeeeee',
+            borderBottomWidth: 1,
+            marginLeft:10,
+            marginRight:10,
+          }}
+        />
 	
-          <View style={styles.cuerpo}>
-              <Text style={styles.letras}>
-                De acuerdo con Baca (2006), el tamaño de un proyecto puede estar en función de dos rubros:
-              </Text>          
-          </View>	
-	        <Image
-            style = {[styles.imagenes,{height:300}]}
-            source={require('../../../images/Unidad3/porcentaje.png')}
-            resizeMode = 'center'
-            />
-          <View style={styles.cuerpo}>
-            <Text style={styles.letras}>
-              El porcentaje del área de mercado que cubrirá   	
-            </Text>          
-          </View>          
-          <View style={styles.cuerpo}>
-            <Text >
-              Es decir, como empresarios debemos tener una idea clara del porcentaje de mercado que estimamos cubrir o atender. 
-            Este porcentaje está en función de factores tales como la demanda, la oferta y también de la capacidad productiva de la empresa. 
-            Puede darse el caso que la demanda sea mayor a lo que la empresa puede producir dada su infraestructura.  	
-            </Text>          
-          </View>          
-          <Image
-            style = {[styles.imagenes,{height:300}]}
-            source={require('../../../images/Unidad3/cantidad.png')}
-            resizeMode = 'center'
+	<View style={styles.cuerpo}>
+          <Text style={styles.letras}>
+	  De acuerdo con Baca (2006), el tamaño de un proyecto puede estar en función de dos rubros:
+	</Text>          
+          </View>
+		
+	 <Image
+          style = {[styles.imagenes,{height:300}]}
+          source={require('../../../images/unidad3/porcentaje.png')}
+          resizeMode = 'center'
           />
           <View style={styles.cuerpo}>
-            <Text style={styles.letras}>
-              La cantidad de bienes o servicios que producirá  	
+          <Text style={styles.letras}>
+            El porcentaje del área de mercado que cubrirá   	
             </Text>          
-          </View>          
+          </View>
+          
           <View style={styles.cuerpo}>
-              <Text >
-                Se refiere al tamaño técnico o capacidad instalada, 
-                  ésta última se expresa en unidades de producción en una unidad de tiempo  	
-              </Text>          
-          </View>         
+          <Text >
+            Es decir, como empresarios debemos tener una idea clara del porcentaje de mercado que estimamos cubrir o atender. 
+          Este porcentaje está en función de factores tales como la demanda, la oferta y también de la capacidad productiva de la empresa. 
+          Puede darse el caso que la demanda sea mayor a lo que la empresa puede producir dada su infraestructura.  	
+            </Text>          
+          </View>
+          
+          <Image
+          style = {[styles.imagenes,{height:300}]}
+          source={require('../../../images/unidad3/cantidad.png')}
+          resizeMode = 'center'
+          />
+          <View style={styles.cuerpo}>
+          <Text style={styles.letras}>
+            La cantidad de bienes o servicios que producirá  	
+            </Text>          
+          </View>
+          
+          <View style={styles.cuerpo}>
+          <Text >
+            	Se refiere al tamaño técnico o capacidad instalada, 
+                ésta última se expresa en unidades de producción en una unidad de tiempo  	
+            </Text>          
+          </View>
+ 
+          
           <View style={styles.cuerpo}>
           <Text style={styles.letras}>
            Tabla 6. Fuente: Elaboración propia con base en Baca, G. (2006). 
@@ -281,18 +316,18 @@ import ImageZoom from 'react-native-image-pan-zoom';
           <View style={styles.cuerpo}>
           <Text >
           a.- Capacidad de diseño: es la producción máxima estimada (planeada) que se puede lograr bajo condiciones ideales de operación.
-
+            {"\n"}{"\n"}
           b.-Capacidad del sistema: es la producción máxima que el sistema (recursos humanos, maquinaria e infraestructura ) puede generar en forma integrada.
           Cabe mencionar que, la mayoría de las empresas no operan a su máxima capacidad, por factores como la falta de mantenimiento de la maquinaria, 
           los errores en el personal, los tiempos perdidos, los cuellos de botella etc.
-          
+          {"\n"}{"\n"}
           c.- Capacidad real: es la producción real obtenida en un período determinado, tomando en cuenta las contingencias que se presentaron en la producción.
             </Text>          
           </View>
           
           <Image
-          style = {[styles.imagenes,{height:300}]}
-          source={require('../../../images/Unidad3/capacidades.png')}
+          style = {[styles.imagenes,{height:150}]}
+          source={require('../../../images/unidad3/capacidades.png')}
           resizeMode = 'center'
           />
              
@@ -310,14 +345,14 @@ import ImageZoom from 'react-native-image-pan-zoom';
           <Text >
             Si tenemos claro cuál es el tamaño de nuestro proyecto podremos estimar en forma más objetiva el monto de la inversión requerida y el nivel de operación, que a su vez, 
             nos permitirá cuantificar los costos de funcionamiento y los ingresos proyectados. 
-
+            {"\n"}{"\n"}
             Los factores que determinan el tamaño de una nueva unidad de producción (proyecto) son:
             </Text>          
           </View>
           
           <Image
-          style = {[styles.imagenes,{height:300}]}
-          source={require('../../../images/Unidad3/3.3.2.png')}
+          style = {[styles.imagenes,{height:150}]}
+          source={require('../../../images/unidad3/3.3.2.png')}
           resizeMode = 'center'
           />
           <View style={styles.cuerpo}>
@@ -329,27 +364,34 @@ import ImageZoom from 'react-native-image-pan-zoom';
           <Text >
           A.-El tamaño del proyecto y la demanda. Es quizá el factor más importante para determinar el tamaño del proyecto; para estimar en términos objetivos la demanda actual y futura que habrá de atenderse, se debe tomar en cuenta tanto la dinámica del mercado como la capacidad productiva de la empresa.
             En cuanto a la demanda y la capacidad instalada se pueden presentar estas situaciones:
+            {"\n"}{"\n"}
             -Si la capacidad es: es mayor que la demanda; es decir, tener un tamaño sobreestimado puede generar capacidad instalada ociosa, lo que significa que se está invirtiendo en activos improductivos.
+            {"\n"}{"\n"}
             -Si la capacidad es menor que la demanda; es decir, tener capacidad instalada insuficiente se puede perder mercado por falta de atención.
+            {"\n"}{"\n"}
           B.-El tamaño del proyecto y la tecnología Existen procesos productivos que exigen una cantidad mínima de producción, porque si se produce debajo de dicha cantidad los costos serían tan elevados que no se justificaría la operación de la planta. Lo que significa que la automatización de un proceso exige un nivel mínimo de producción para que sea rentable.
+          {"\n"}{"\n"}
           C.-El tamaño del proyecto y la disponibilidad de insumos Se tendrá que hacer un estudio de quiénes serán los proveedores de los insumos actuales y futuros requeridos para fabricar los productos o para prestar los servicios durante el tiempo que funcionará el proyecto de inversión. Es importante que en la medida de lo posible se garantice el volumen, precio, calidad y tiempos de entrega de los insumos; aunque también valdría la pena considerar un plan de contingencia para aquellos casos en el que el abastecimiento no sea totalmente seguro y poder adquirir insumos sustitutos o bien conseguirlos en el extranjero.
+          {"\n"}{"\n"}
           D.-El tamaño del proyecto y el financiamiento. Si eres microempresario te recomendamos acercarte a la banca de desarrollo o de segundo piso quienes, siempre y cuando cumplas con los requisitos solicitados, pueden financiarte tu proyecto con tasas de interés más bajas que las que puedes conseguir en la banca comercial. Adicionalmente, hoy día tienes varias opciones como las fondeadoras.
+          {"\n"}{"\n"}
           E.-El tamaño del proyecto y la inversión. Definitivamente este factor va de la mano con el tamaño del proyecto, proyectos más grandes requerirán mayores montos de inversión lo que muchas veces exige recurrir a fuentes de financiamiento.
+          {"\n"}{"\n"}
         </Text>          
           </View>
           <View style={styles.titulo}>  
 	<Text><H1>3.3.3 Programa de producción y ventas</H1></Text>
 	</View>
         <Image
-          style = {[styles.imagenes,{height:300}]}
-          source={require('../../../images/Unidad3/333.png')}
+          style = {[styles.imagenes,{height:200}]}
+          source={require('../../../images/unidad3/333.png')}
           resizeMode = 'center'
           />
           
           <View style={styles.cuerpo}>
           <Text >
           El programa de producción es un documento en donde se especifica por escrito la cantidad de producción por unidad de tiempo. Con dicha programación se determina cuándo se debe iniciar y terminar cada lote de producción, qué operaciones se van a utilizar, con qué máquina y con qué operarios y demás recursos que se necesiten. 
-
+          {"\n"}{"\n"}
           El programa de producción se formula con base en un presupuesto de ventas, el cual puede fundamentarse en la demanda estimada y/o en la capacidad productiva de la empresa de acuerdo a su infraestructura. 
             </Text>          
           </View>
@@ -360,16 +402,17 @@ import ImageZoom from 'react-native-image-pan-zoom';
         <View style={styles.cuerpo}>
           <Text >
          Debido a variedad y complejidad de los procesos productivos es casi imposible desarrollar un método estandarizado que nos ayude a determinar la capacidad actual y futura de una planta productiva. 
-
+         {"\n"}{"\n"}
          Existen al menos tres métodos con los que podemos estimar las dimensiones de la planta:
             </Text>          
           </View>
-          
-          <Image
-          style = {[styles.imagenes,{height:300}]}
-          source={require('../../../images/Unidad3/3.3.4.png')}
-          resizeMode = 'center'
-          />
+          <ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={210}
+                       imageWidth={width}
+                       imageHeight={210}>
+                <Image style={{width:width, height:210}}
+                      source={require('../../../images/unidad3/3.3.4.png')}/>
+          </ImageZoom> 
           
           <View style={styles.cuerpo}>
           <Text >
@@ -377,12 +420,14 @@ import ImageZoom from 'react-native-image-pan-zoom';
           encontrarás más información de cada uno de los métodos mencionados anteriormente.
             </Text>          
           </View>
-          
+          <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/s/c3ld0pq2vmnl54g/determinar.pdf?dl=1')}>
          <Image
-          style = {[styles.imagenes,{height:300}]}
-          source={require('../../../images/Unidad3/L5.png')}
+          style = {[styles.imagenes,{height:100}]}
+          source={require('../../../images/unidad3/L5.png')}
           resizeMode = 'center'
           />
+          
+          </TouchableHighlight>
         
         
           
@@ -393,7 +438,7 @@ import ImageZoom from 'react-native-image-pan-zoom';
     }
   }
   
-  class trespuntocuatro extends React.Component {
+class trespuntocuatro extends React.Component {
     render() {
       return (  
 	<Container style={styles.fondo}>
@@ -423,8 +468,8 @@ import ImageZoom from 'react-native-image-pan-zoom';
           </View>
 		
 	 <Image
-          style = {[styles.imagenes,{height:300}]}
-          source={require('../../../images/Unidad3/34.png')}
+          style = {[styles.imagenes,{height:150}]}
+          source={require('../../../images/unidad3/34.png')}
           resizeMode = 'center'
           />
           <View style={styles.cuerpo}>
@@ -442,8 +487,8 @@ import ImageZoom from 'react-native-image-pan-zoom';
 	</Text>          
           </View>
         <Image
-          style = {[styles.imagenes,{height:300}]}
-          source={require('../../../images/Unidad3/341.png')}
+          style = {[styles.imagenes,{height:200}]}
+          source={require('../../../images/unidad3/341.png')}
           resizeMode = 'center'
           />
           <View style={styles.cuerpo}>
@@ -467,36 +512,26 @@ import ImageZoom from 'react-native-image-pan-zoom';
           sino también el de instalaciones eléctricas, sanitarias, gas, etc. 
 	</Text>          
           </View>
-          <Image
-          style = {[styles.imagenes,{height:300}]}
-          source={require('../../../images/Unidad3/Planos.jpg')}
-          resizeMode = 'center'
-          />
-          <View style={styles.cuerpo}>
-          <Text>
-                Imagen 3.14. Fuente: Elaboración propia            
-          </Text>          
-          </View>
            <View style={styles.titulo}>  
-	<Text><H1>3.4.3 Descripción y diseño del proceso de producción</H1></Text>
-	</View>
+      <Text><H1>3.4.3 Descripción y diseño del proceso de producción</H1></Text>
+      </View>
         
 
           <View style={styles.cuerpo}>
           <Text style={styles.letras}>
 	  Un proceso de producción es un procedimiento técnico que se utiliza para obtener los bienes y servicios a partir de insumos.
-
-  En sumamente importante tener bien definido el proceso productivo porque a partir de éste podrás determinar los requerimientos de insumos, mano de obra, infraestructura, maquinaria y equipos, mismos que deben cuantificarse en términos monetarios para saber el monto de la inversión inicial así como los costos de operación.
-
-  El proceso productivo debe describirse de manera clara y detallada; para posteriormente representarse en un diagrama. Algunos de los diagramas que existen para representar el proceso productivo son: diagrama de bloques, diagrama de flujo del proceso, cursograma analítico, diagrama de hilos y diagrama de recorrido. 
-
-  Ventajas e importancia de representar los procesos y procedimientos mediante diagramas:
+          {"\n"}{"\n"}
+En sumamente importante tener bien definido el proceso productivo porque a partir de éste podrás determinar los requerimientos de insumos, mano de obra, infraestructura, maquinaria y equipos, mismos que deben cuantificarse en términos monetarios para saber el monto de la inversión inicial así como los costos de operación.
+{"\n"}{"\n"}
+El proceso productivo debe describirse de manera clara y detallada; para posteriormente representarse en un diagrama. Algunos de los diagramas que existen para representar el proceso productivo son: diagrama de bloques, diagrama de flujo del proceso, cursograma analítico, diagrama de hilos y diagrama de recorrido. 
+{"\n"}{"\n"}
+Ventajas e importancia de representar los procesos y procedimientos mediante diagramas:
 	</Text>          
           </View>
           
           <Image
-          style = {[styles.imagenes,{height:300}]}
-          source={require('../../../images/Unidad3/ventajas.png')}
+          style = {[styles.imagenes,{height:80}]}
+          source={require('../../../images/unidad3/ventajas.png')}
           resizeMode = 'center'
           />
           
@@ -513,8 +548,8 @@ import ImageZoom from 'react-native-image-pan-zoom';
           </View>
           
           <Image
-          style = {[styles.imagenes,{height:300}]}
-          source={require('../../../images/Unidad3/L3.png')}
+          style = {[styles.imagenes,{height:100}]}
+          source={require('../../../images/unidad3/L3.png')}
           resizeMode = 'center'
           />
           <View style={styles.cuerpo}>
@@ -522,17 +557,20 @@ import ImageZoom from 'react-native-image-pan-zoom';
                 Después de leer el material anterior, realiza las evidencias de aprendizaje          
            </Text>          
           </View>
-          
+          <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/s/91o483mv0qqd2at/tresuno.pdf?dl=1')}>
           <Image
-          style = {[styles.imagenes,{height:300}]}
-          source={require('../../../images/Unidad3/ea1.png')}
+          style = {[styles.imagenes,{height:100}]}
+          source={require('../../../images/unidad3/ea1.png')}
           resizeMode = 'center'
           />
+          </TouchableHighlight>
+          <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/s/oxn9hv0upxkl9we/tresdos.pdf?dl=1')}>
           <Image
-          style = {[styles.imagenes,{height:300}]}
-          source={require('../../../images/Unidad3/ea2.png')}
+          style = {[styles.imagenes,{height:100}]}
+          source={require('../../../images/unidad3/ea2.png')}
           resizeMode = 'center'
           />
+          </TouchableHighlight>
           <View style={styles.titulo}>  
 	<Text><H1>3.4.4 Materia prima</H1></Text>
 	</View>
@@ -544,8 +582,8 @@ import ImageZoom from 'react-native-image-pan-zoom';
           </View>
           
           <Image
-          style = {[styles.imagenes,{height:300}]}
-          source={require('../../../images/Unidad3/345.png')}
+          style = {[styles.imagenes,{height:150}]}
+          source={require('../../../images/unidad3/345.png')}
           resizeMode = 'center'
           />
           <View style={styles.cuerpo}>
@@ -559,8 +597,8 @@ import ImageZoom from 'react-native-image-pan-zoom';
 	</View>
         
         <Image
-          style = {[styles.imagenes,{height:300}]}
-          source={require('../../../images/Unidad3/3.4.6.png')}
+          style = {[styles.imagenes,{height:150}]}
+          source={require('../../../images/unidad3/3.4.6.png')}
           resizeMode = 'center'
           />
            <View style={styles.cuerpo}>
@@ -573,7 +611,7 @@ import ImageZoom from 'react-native-image-pan-zoom';
           <Text style={styles.letras}>
 	  Para determinar la cantidad de materia prima que necesitas tendrás que basarte tanto en tu plan de producción (estimación del número de unidades a producir en un periodo de tiempo) 
            así como en tu proceso productivo,para que entre otros aspectos tomes en cuenta las mermas y los desperdicios y tengas la materia prima suficiente para cumplir con el plan de producción.
-           
+           {"\n"}{"\n"}
            Por otro lado, en la medida de lo posible, debes garantizar el abastecimiento y la calidad de las materias primas que requieres para tu proceso productivo e inclusive, 
            es recomendable investigar sobre la existencia de materias primas sustitutas para aquellos casos en que se escasee la materia prima que regularmente se ocupa en el proceso productivo.
 	</Text>          
@@ -590,8 +628,8 @@ import ImageZoom from 'react-native-image-pan-zoom';
           </View>
            
           <Image
-          style = {[styles.imagenes,{height:300}]}
-          source={require('../../../images/Unidad3/347.png')}
+          style = {[styles.imagenes,{height:150}]}
+          source={require('../../../images/unidad3/347.png')}
           resizeMode = 'center'
           />
            <View style={styles.cuerpo}>
@@ -606,7 +644,7 @@ import ImageZoom from 'react-native-image-pan-zoom';
           <Text style={styles.letras}>
 	  Después de determinar la cantidad y características de la maquinaria, equipo, tecnología y turnos de trabajo que se ocuparán en el proceso productivo, 
         es posible definir las necesidades de personal técnico.
-        
+        {"\n"}{"\n"}
         El personal técnico comprende:
 	</Text>          
           </View>
@@ -616,8 +654,8 @@ import ImageZoom from 'react-native-image-pan-zoom';
            </Text>          
           </View>
           <Image
-          style = {[styles.imagenes,{height:300}]}
-          source={require('../../../images/Unidad3/1.png')}
+          style = {[styles.imagenes,{height:150}]}
+          source={require('../../../images/unidad3/1.png')}
           resizeMode = 'center'
           />
           <View style={styles.cuerpo}>
@@ -631,8 +669,8 @@ import ImageZoom from 'react-native-image-pan-zoom';
            </Text>          
           </View>
           <Image
-          style = {[styles.imagenes,{height:300}]}
-          source={require('../../../images/Unidad3/4.png')}
+          style = {[styles.imagenes,{height:150}]}
+          source={require('../../../images/unidad3/3.png')}
           resizeMode = 'center'
           /> 
           <View style={styles.cuerpo}>
@@ -652,11 +690,13 @@ import ImageZoom from 'react-native-image-pan-zoom';
            <View style={styles.titulo}>  
 	<Text><H1>COSTO ANUAL DE PERSONAL TÉCNICO</H1></Text>
 	</View>
-        <Image
-          style = {[styles.imagenes,{height:300}]}
-          source={require('../../../images/Unidad3/tabla.png')}
-          resizeMode = 'center'
-          /> 
+          <ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={110}
+                       imageWidth={width}
+                       imageHeight={110}>
+                <Image style={{width:width, height:110}}
+                         source={require('../../../images/unidad3/tabla.png')}/>
+          </ImageZoom> 
           <View style={styles.cuerpo}>
           <Text>
           Tabla 8. Fuente: Elaboración propia
@@ -681,10 +721,13 @@ import ImageZoom from 'react-native-image-pan-zoom';
           <View style={styles.cuerpo}>
               <Text style={styles.letras}>
               Los requerimientos en cuanto a espacio físico se calculan una vez que se ha:
-
+              {"\n"}{"\n"}
                 A.-Definido el proceso productivo
+                {"\n"}{"\n"}
                 B.-Determinado la cantidad y características de la maquinaria y el equipo
+                {"\n"}{"\n"}
                 C.-Definido la cantidad de trabajadores y empleados necesarios para el funcionamiento de la empresa
+                
               </Text>          
           </View>
           
@@ -696,8 +739,8 @@ import ImageZoom from 'react-native-image-pan-zoom';
               </Text>          
           </View>
            <Image
-          style = {[styles.imagenes,{height:300}]}
-          source={require('../../../images/Unidad3/3.4.10.png')}
+          style = {[styles.imagenes,{height:150}]}
+          source={require('../../../images/unidad3/3.4.10.png')}
           resizeMode = 'center'
           /> 
           <View style={styles.cuerpo}>
@@ -711,11 +754,14 @@ import ImageZoom from 'react-native-image-pan-zoom';
             Es el momento de realizar la siguiente evidencia de aprendizaje
            </Text> 
            </View>
+           <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/s/snp6tckgtlcp48e/trescuatro.pdf?dl=1')}>
+          
            <Image
-          style = {[styles.imagenes,{height:300}]}
-          source={require('../../../images/Unidad3/ea4.png')}
+          style = {[styles.imagenes,{height:100}]}
+          source={require('../../../images/unidad3/ea4.png')}
           resizeMode = 'center'
           /> 
+          </TouchableHighlight>
           
           <View style={styles.titulo}>  
 	<Text><H1>3.4.10 Distribución de planta</H1></Text>
@@ -733,19 +779,23 @@ import ImageZoom from 'react-native-image-pan-zoom';
           <View style={styles.cuerpo}>
               <Text style={styles.letras}>
                 Los objetivos y principios básicos en la distribución de instalaciones son:
-
+                {"\n"}{"\n"}
 A.-Integración total. Consiste en incluir y unir todos los factores (personas, departamentos, maquinaria, etc) que intervienen en la distribución, de manera que se haga más eficiente el funcionamiento y la operación de la empresa.
+{"\n"}{"\n"}
 B.-Mínima distancia de recorrido. Busca que los materiales recorran una distancia mínima al menor costo.
+{"\n"}{"\n"}
 C.-Utilización del espacio cúbico. Consiste en ocupar el especio vertical y horizontal, sobre todo cuando los espacios son reducidos.
+{"\n"}{"\n"}
 D.-Seguridad y bienestar del trabajador. Éste debe ser el principal objetivo en toda distribución, se deben proporcionar las condiciones óptimas de seguridad y bienestar para los trabajadores.
+{"\n"}{"\n"}
 E.-Flexibilidad. En la medida de lo posible se debe procurar que la distribución sea fácilmente reajustable a los cambios que pudieran surgir; por ejemplo, un cambio en el tipo de proceso o bien el crecimiento de la planta.
 
               </Text>          
           </View>
           
            <Image
-               style = {[styles.imagenes, {height:300}]}
-               source={require('../../../images/Unidad3/1.png')}
+               style = {[styles.imagenes, {height:150}]}
+               source={require('../../../images/unidad3/34111.png')}
                resizeMode = 'center'
                />
                
@@ -754,12 +804,13 @@ E.-Flexibilidad. En la medida de lo posible se debe procurar que la distribució
                 En la siguiente tabla encontrarás más información de cada uno de los tipos de distribución:
               </Text>          
           </View>
-          
-          <Image
-               style = {[styles.imagenes, {height:300}]}
-               source={require('../../../images/Unidad3/tabla2.png')}
-               resizeMode = 'center'
-               />
+          <ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={350}
+                       imageWidth={width}
+                       imageHeight={350}>
+                <Image style={{width:width, height:350}}
+                        source={require('../../../images/unidad3/tabla2.png')}/>
+          </ImageZoom> 
                
                <View style={styles.cuerpo}>
           <Text>
@@ -774,27 +825,29 @@ E.-Flexibilidad. En la medida de lo posible se debe procurar que la distribució
                 En la siguiente lectura "Métodos para la distribución de las instalaciones" encontrarás más información acerca de estos métodos. 
               </Text>          
           </View>
-           
+          <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/s/w2mac9ac88w403a/distribucion.pdf?dl=1')}>
            <Image
-               style = {[styles.imagenes, {height:300}]}
-               source={require('../../../images/Unidad3/L1.png')}
+               style = {[styles.imagenes, {height:100}]}
+               source={require('../../../images/unidad3/L1.png')}
                resizeMode = 'center'
                />
+               </TouchableHighlight>
            <View style={styles.cuerpo}>
               <Text style={styles.letras}>
                 Ahora tienes un panorama de los aspectos que forman parte del estudio técnico, que en términos generales abarca el estudio y análisis de todo lo referente a la operación o funcionamiento del proyecto. 
-                
+                {"\n"}{"\n"}
                 Cuando existe evidencia clara de la factibilidad en el estudio técnico, se podrá continuar con el estudio administrativo y de organización, del que encontrarás información en la siguiente unidad temática.
-                
+                {"\n"}{"\n"}
                 Basándote en el tema "distribución de planta" así como en la lectura anterior, resuelve la siguiente evidencia:
               </Text>          
           </View>
-           
+          <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/s/na29cizeral894h/trescinco.pdf?dl=1')}>
            <Image
-               style = {[styles.imagenes, {height:300}]}
-               source={require('../../../images/Unidad3/ea5.png')}
+               style = {[styles.imagenes, {height:100}]}
+               source={require('../../../images/unidad3/ea5.png')}
                resizeMode = 'center'
                />
+               </TouchableHighlight>
                
           
 	</ScrollView>
