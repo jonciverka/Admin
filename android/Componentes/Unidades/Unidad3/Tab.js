@@ -559,7 +559,7 @@ class trespuntocuatro extends React.Component {
             	hidden = {false} />
                
           <ScrollView>
-           <View style={styles.containerr, {height: 7820}}>
+           <View style={styles.containerr, {height: 8250}}>
             <View style={styles.titulo}>  
               <Text><H1>3.4 Ingeniería del proyecto</H1></Text>
             </View>
@@ -947,6 +947,13 @@ class trespuntocuatro extends React.Component {
                }}
               />
             </View>
+            <ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={200}
+                       imageWidth={width}
+                       imageHeight={200}>
+                <Image style={{width:width, height:200}}
+                        source={require('../../../images/Unidad3/tabla9.png')}/>
+            </ImageZoom>
             <View style={styles.containerr, {height: 60}}>
               <WebView
                 source={{
@@ -957,6 +964,27 @@ class trespuntocuatro extends React.Component {
                   "</p>" 
                }}
               />
+            </View>
+            <View style={styles.containerr, {height: 40}}>
+              <WebView
+                source={{
+                  html:
+                  "<style>p{text-align:justify}</style>"+
+                  "<p>"+
+                  "Ahora realiza la evidencia de aprendizaje siguiente:"+
+                  "</p>" 
+               }}
+              />
+            </View>
+            <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/sh/rtqydo779cxsvfw/AADDTSWYQOCrEUPJrx78GSyza/Unidad3?dl=0&preview=trestres.pdf')}>
+              <Image
+              style = {[styles.imagenes,{height:100}]}
+              source={require('../../../images/Unidad3/ea2.png')}
+              resizeMode = 'center'
+              />
+            </TouchableHighlight>
+            <View style={styles.titulo}>  
+              <Text><H1>3.4.9 Requerimientos de espacios físicos</H1></Text>
             </View>
             <View style={styles.containerr, {height: 220}}>
               <WebView
