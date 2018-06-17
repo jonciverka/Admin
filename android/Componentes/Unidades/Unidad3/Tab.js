@@ -57,7 +57,7 @@ class trespuntouno extends React.Component {
       
     <Image
             style = {[styles.imagenes,{height:300}]}
-            source={require('../../../images/unidad3/EstudioTecnico.png')}
+            source={require('../../../images/Unidad3/EstudioTecnico.png')}
             resizeMode = 'center'
             />
     </ScrollView>
@@ -98,12 +98,12 @@ class trespuntodos extends React.Component {
     
    <Image
           style = {[styles.imagenes,{height:150}]}
-          source={require('../../../images/unidad3/locgeneral.png')}
+          source={require('../../../images/Unidad3/locgeneral.png')}
           resizeMode = 'center'
           />
   <Image
           style = {[styles.imagenes,{height:150}]}
-          source={require('../../../images/unidad3/location.png')}
+          source={require('../../../images/Unidad3/location.png')}
           resizeMode = 'center'
           />
   
@@ -127,7 +127,7 @@ class trespuntodos extends React.Component {
           </View>
           <Image
           style = {[styles.imagenes,{height:200}]}
-          source={require('../../../images/unidad3/macro.png')}
+          source={require('../../../images/Unidad3/macro.png')}
           resizeMode = 'center'
           />
   <View style={styles.titulo}>  
@@ -142,7 +142,7 @@ class trespuntodos extends React.Component {
     </View>
   <Image
           style = {[styles.imagenes,{height:200}]}
-          source={require('../../../images/unidad3/micro.png')}
+          source={require('../../../images/Unidad3/micro.png')}
           resizeMode = 'center'
           />
   <View style={styles.titulo}>  
@@ -157,7 +157,7 @@ class trespuntodos extends React.Component {
     </View>
      <Image
           style = {[styles.imagenes,{height:200}]}
-          source={require('../../../images/unidad3/3.2.3.png')}
+          source={require('../../../images/Unidad3/3.2.3.png')}
           resizeMode = 'center'
           />
           <View style={styles.cuerpo}>
@@ -174,7 +174,7 @@ class trespuntodos extends React.Component {
   <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/s/crqshwpjmxy2sfc/evaluacion.pdf?dl=1')}>
       <Image
           style = {[styles.imagenes,{height:100}]}
-          source={require('../../../images/unidad3/L4.png')}
+          source={require('../../../images/Unidad3/L4.png')}
           resizeMode = 'center'
           />
           </TouchableHighlight>
@@ -186,7 +186,7 @@ class trespuntodos extends React.Component {
         <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/s/k2ry8uyogmhgl6a/tresseis.pdf?dl=1')}>
           <Image
               style = {[styles.imagenes,{height:100}]}
-              source={require('../../../images/unidad3/ea6.png')}
+              source={require('../../../images/Unidad3/ea6.png')}
               resizeMode = 'center'
               />
           </TouchableHighlight>
@@ -203,7 +203,7 @@ class trespuntodos extends React.Component {
 
           <Image
           style = {[styles.imagenes,{height:200}]}
-          source={require('../../../images/unidad3/locesp.png')}
+          source={require('../../../images/Unidad3/locesp.png')}
           resizeMode = 'center'
           />
           
@@ -250,7 +250,7 @@ class trespuntotres extends React.Component {
 		
 	 <Image
           style = {[styles.imagenes,{height:300}]}
-          source={require('../../../images/unidad3/porcentaje.png')}
+          source={require('../../../images/Unidad3/porcentaje.png')}
           resizeMode = 'center'
           />
           <View style={styles.cuerpo}>
@@ -269,7 +269,7 @@ class trespuntotres extends React.Component {
           
           <Image
           style = {[styles.imagenes,{height:300}]}
-          source={require('../../../images/unidad3/cantidad.png')}
+          source={require('../../../images/Unidad3/cantidad.png')}
           resizeMode = 'center'
           />
           <View style={styles.cuerpo}>
@@ -327,7 +327,7 @@ class trespuntotres extends React.Component {
           
           <Image
           style = {[styles.imagenes,{height:150}]}
-          source={require('../../../images/unidad3/capacidades.png')}
+          source={require('../../../images/Unidad3/capacidades.png')}
           resizeMode = 'center'
           />
              
@@ -352,7 +352,7 @@ class trespuntotres extends React.Component {
           
           <Image
           style = {[styles.imagenes,{height:150}]}
-          source={require('../../../images/unidad3/3.3.2.png')}
+          source={require('../../../images/Unidad3/3.3.2.png')}
           resizeMode = 'center'
           />
           <View style={styles.cuerpo}>
@@ -384,7 +384,7 @@ class trespuntotres extends React.Component {
 	</View>
         <Image
           style = {[styles.imagenes,{height:200}]}
-          source={require('../../../images/unidad3/333.png')}
+          source={require('../../../images/Unidad3/333.png')}
           resizeMode = 'center'
           />
           
@@ -411,7 +411,7 @@ class trespuntotres extends React.Component {
                        imageWidth={width}
                        imageHeight={210}>
                 <Image style={{width:width, height:210}}
-                      source={require('../../../images/unidad3/3.3.4.png')}/>
+                      source={require('../../../images/Unidad3/3.3.4.png')}/>
           </ImageZoom> 
           
           <View style={styles.cuerpo}>
@@ -423,7 +423,7 @@ class trespuntotres extends React.Component {
           <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/s/c3ld0pq2vmnl54g/determinar.pdf?dl=1')}>
          <Image
           style = {[styles.imagenes,{height:100}]}
-          source={require('../../../images/unidad3/L5.png')}
+          source={require('../../../images/Unidad3/L5.png')}
           resizeMode = 'center'
           />
           
@@ -469,7 +469,7 @@ class trespuntocuatro extends React.Component {
 		
 	 <Image
           style = {[styles.imagenes,{height:150}]}
-          source={require('../../../images/unidad3/34.png')}
+          source={require('../../../images/Unidad3/34.png')}
           resizeMode = 'center'
           />
           <View style={styles.cuerpo}>
@@ -488,7 +488,7 @@ class trespuntocuatro extends React.Component {
           </View>
         <Image
           style = {[styles.imagenes,{height:200}]}
-          source={require('../../../images/unidad3/341.png')}
+          source={require('../../../images/Unidad3/341.png')}
           resizeMode = 'center'
           />
           <View style={styles.cuerpo}>
@@ -531,7 +531,7 @@ Ventajas e importancia de representar los procesos y procedimientos mediante dia
           
           <Image
           style = {[styles.imagenes,{height:80}]}
-          source={require('../../../images/unidad3/ventajas.png')}
+          source={require('../../../images/Unidad3/ventajas.png')}
           resizeMode = 'center'
           />
           
@@ -549,7 +549,7 @@ Ventajas e importancia de representar los procesos y procedimientos mediante dia
           
           <Image
           style = {[styles.imagenes,{height:100}]}
-          source={require('../../../images/unidad3/L3.png')}
+          source={require('../../../images/Unidad3/L3.png')}
           resizeMode = 'center'
           />
           <View style={styles.cuerpo}>
@@ -560,14 +560,14 @@ Ventajas e importancia de representar los procesos y procedimientos mediante dia
           <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/s/91o483mv0qqd2at/tresuno.pdf?dl=1')}>
           <Image
           style = {[styles.imagenes,{height:100}]}
-          source={require('../../../images/unidad3/ea1.png')}
+          source={require('../../../images/Unidad3/ea1.png')}
           resizeMode = 'center'
           />
           </TouchableHighlight>
           <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/s/oxn9hv0upxkl9we/tresdos.pdf?dl=1')}>
           <Image
           style = {[styles.imagenes,{height:100}]}
-          source={require('../../../images/unidad3/ea2.png')}
+          source={require('../../../images/Unidad3/ea2.png')}
           resizeMode = 'center'
           />
           </TouchableHighlight>
@@ -583,7 +583,7 @@ Ventajas e importancia de representar los procesos y procedimientos mediante dia
           
           <Image
           style = {[styles.imagenes,{height:150}]}
-          source={require('../../../images/unidad3/345.png')}
+          source={require('../../../images/Unidad3/345.png')}
           resizeMode = 'center'
           />
           <View style={styles.cuerpo}>
@@ -598,7 +598,7 @@ Ventajas e importancia de representar los procesos y procedimientos mediante dia
         
         <Image
           style = {[styles.imagenes,{height:150}]}
-          source={require('../../../images/unidad3/3.4.6.png')}
+          source={require('../../../images/Unidad3/3.4.6.png')}
           resizeMode = 'center'
           />
            <View style={styles.cuerpo}>
@@ -629,7 +629,7 @@ Ventajas e importancia de representar los procesos y procedimientos mediante dia
            
           <Image
           style = {[styles.imagenes,{height:150}]}
-          source={require('../../../images/unidad3/347.png')}
+          source={require('../../../images/Unidad3/347.png')}
           resizeMode = 'center'
           />
            <View style={styles.cuerpo}>
@@ -655,7 +655,7 @@ Ventajas e importancia de representar los procesos y procedimientos mediante dia
           </View>
           <Image
           style = {[styles.imagenes,{height:150}]}
-          source={require('../../../images/unidad3/1.png')}
+          source={require('../../../images/Unidad3/1.png')}
           resizeMode = 'center'
           />
           <View style={styles.cuerpo}>
@@ -670,7 +670,7 @@ Ventajas e importancia de representar los procesos y procedimientos mediante dia
           </View>
           <Image
           style = {[styles.imagenes,{height:150}]}
-          source={require('../../../images/unidad3/3.png')}
+          source={require('../../../images/Unidad3/3.png')}
           resizeMode = 'center'
           /> 
           <View style={styles.cuerpo}>
@@ -695,7 +695,7 @@ Ventajas e importancia de representar los procesos y procedimientos mediante dia
                        imageWidth={width}
                        imageHeight={110}>
                 <Image style={{width:width, height:110}}
-                         source={require('../../../images/unidad3/tabla.png')}/>
+                         source={require('../../../images/Unidad3/tabla.png')}/>
           </ImageZoom> 
           <View style={styles.cuerpo}>
           <Text>
@@ -740,7 +740,7 @@ Ventajas e importancia de representar los procesos y procedimientos mediante dia
           </View>
            <Image
           style = {[styles.imagenes,{height:150}]}
-          source={require('../../../images/unidad3/3.4.10.png')}
+          source={require('../../../images/Unidad3/3.4.10.png')}
           resizeMode = 'center'
           /> 
           <View style={styles.cuerpo}>
@@ -758,7 +758,7 @@ Ventajas e importancia de representar los procesos y procedimientos mediante dia
           
            <Image
           style = {[styles.imagenes,{height:100}]}
-          source={require('../../../images/unidad3/ea4.png')}
+          source={require('../../../images/Unidad3/ea4.png')}
           resizeMode = 'center'
           /> 
           </TouchableHighlight>
@@ -795,7 +795,7 @@ E.-Flexibilidad. En la medida de lo posible se debe procurar que la distribució
           
            <Image
                style = {[styles.imagenes, {height:150}]}
-               source={require('../../../images/unidad3/34111.png')}
+               source={require('../../../images/Unidad3/34111.png')}
                resizeMode = 'center'
                />
                
@@ -809,7 +809,7 @@ E.-Flexibilidad. En la medida de lo posible se debe procurar que la distribució
                        imageWidth={width}
                        imageHeight={350}>
                 <Image style={{width:width, height:350}}
-                        source={require('../../../images/unidad3/tabla2.png')}/>
+                        source={require('../../../images/Unidad3/tabla2.png')}/>
           </ImageZoom> 
                
                <View style={styles.cuerpo}>
@@ -828,7 +828,7 @@ E.-Flexibilidad. En la medida de lo posible se debe procurar que la distribució
           <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/s/w2mac9ac88w403a/distribucion.pdf?dl=1')}>
            <Image
                style = {[styles.imagenes, {height:100}]}
-               source={require('../../../images/unidad3/L1.png')}
+               source={require('../../../images/Unidad3/L1.png')}
                resizeMode = 'center'
                />
                </TouchableHighlight>
@@ -844,7 +844,7 @@ E.-Flexibilidad. En la medida de lo posible se debe procurar que la distribució
           <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/s/na29cizeral894h/trescinco.pdf?dl=1')}>
            <Image
                style = {[styles.imagenes, {height:100}]}
-               source={require('../../../images/unidad3/ea5.png')}
+               source={require('../../../images/Unidad3/ea5.png')}
                resizeMode = 'center'
                />
                </TouchableHighlight>

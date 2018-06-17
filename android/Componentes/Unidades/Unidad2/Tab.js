@@ -11,7 +11,7 @@ import {
 import {Button,Content,Container,ListItem,List,Card,Body,H1,Thumbnail,Rightpla,CardItem} from 'native-base'
 import { TabNavigator } from 'react-navigation';
 
-  class unopuntouno extends React.Component {
+  class dospuntouno extends React.Component {
     render() {
       return (        
         <Container style={styles.fondo}>
@@ -22,7 +22,7 @@ import { TabNavigator } from 'react-navigation';
             hidden = {false} /> 
           <ScrollView>
         <View style={styles.titulo}> 
-          <Text><H1>¿Qué es un proyecto?</H1></Text>          
+          <Text><H1>Estudio de mercado</H1></Text>          
         </View>
         <View
           style={{
@@ -34,98 +34,104 @@ import { TabNavigator } from 'react-navigation';
         />
         <View style={styles.cuerpo}>
           <Text style={styles.letras}>
-            Resulta sorprendente la cantidad y variedad de bienes y servicios que existen en el mercado; y espérate, 
-            porque con todo lo que hay en la actualidad ¡lo mejor está por venir!.{"\n"}{"\n"}
-          
-            Son muy pocos los productos que su éxito es meramente accidental
-            https://www.merca20.com/4-productos-que-se-hicieron-exitosos-por-accidente/ ;otros, son igual o más exitosos 
-            y han seguido un camino distinto, entonces la pregunta es ¿qué hay detrás de los productos y servicios exitosos?  
-            {"\n"}{"\n"}
-            Detrás de los productos y servicios exitosos hay: 
-            {"\n"}{"\n"}
-            Un equipo diverso y multidisciplinario
-            {"\n"}{"\n"}
-            Gran cantidad de horas invertidas en investigación, análisis, 
-            evaluación y documentación; es decir, se requiere de la generación y
-            evaluación de un proyecto de inversión
-            {"\n"}{"\n"}
-            Toma de decisiones
-            {"\n"}{"\n"}
-            Riesgos
-            {"\n"}{"\n"}
-            El término proyecto, tiene diferentes significados según el contexto en donde se utilice;
-            podemos hablar de un proyecto de vida, un proyecto académico o un proyecto de inversión,
-            entre otros. 
-            {"\n"}{"\n"}
-            La palabra proyecto proviene del latín proiectus, que a su vez deriva de proicere, 
-            pro (hacia delante) y iacere (lanzar) que literalmente significa lanzamiento hacia adelante,
-            hacia el futuro; entonces, el proyecto es un plan que se hace antes de dar forma definitiva a algo; 
-            se define como un conjunto de actividades coordinadas e interrelacionadas con las que se pretende 
-            cumplir con un fin específico.
-            {"\n"}{"\n"}
-            En cambio un PROYECTO DE INVERSIÓN es: 
-            {"\n"}{"\n"}
-            La búsqueda de una solución inteligente al planteamiento 
-            de un problema tendente a resolver, entre muchas, una necesidad humana. (citado en Geldes, n.d) 
-            {"\n"}{"\n"}
-            Es un plan que, si se le asigna determinado monto de capital y se le proporcionan insumos de varios tipos,
-            podrá producir un bien o un servicio, útil al ser humano o a la sociedad en general. (Baca, 2006) 
-            {"\n"}{"\n"}
-            Aquella propuesta de inversión, documentada y analizada técnica y económicamente, destinada a una futura 
-            unidad productiva, que prevé la obtención garantizada de bienes o servicios para satisfacer necesidades físicas
-            y psicosociales de una comunidad, en un tiempo y espacio definidos. (Nacional Financiera). 
-            {"\n"}{"\n"}
-            Para que lo visualices de manera más clara, te mostramos el siguiente esquema que representa lo que es un proyecto de inversión. 
+            Como recordarás, lo primero que debemos hacer antes de producir y comercializar cualquier bien o servicio es determinar si éste será aceptado y comprado por el consumidor y la única forma de saberlo es realizando un estudio de mercado. El estudio de mercado es el conjunto de acciones que se llevan a cabo para saber la respuesta del mercado ante un producto o servicio determinado; para ello es necesario desarrollar una investigación de mercado y diseñar las estrategias de mercadotecnia que emprenderá la empresa para lograr posicionarse en el mercado.{"\n"}{"\n"}
+            En términos generales la investigación de mercado contempla las siguientes actividades: recurrir a fuentes de información primaria y secundaria, realizar la segmentación de mercado, determinar y proyectar tanto la demanda como la oferta; en tanto que las de estrategias de mercadotecnia van orientadas al producto, precio, plaza y promoción (mezcla o mix de marketing).{"\n"}{"\n"}
+            Una vez que se ha realizado ese estudio o análisis de mercado se está en posibilidades de saber: 
           </Text>          
           </View>
-          <Image
-          style = {[styles.imagenes,{height:300}]}
-          source={require('../../../images/inv.png')}
-          resizeMode = 'cover'
-          />
-          
-        <View style={styles.cuerpo}>
-          <Text style={styles.letras}>
-          ¿Notas la diferencia entre un proyecto y un proyecto de inversión?
-          </Text>
-          <Card>
-            <CardItem>
-              <Body>
-              <Text style={styles.letras}>
-                Recuerda, el proyecto de inversión es un plan al que se le asignan recursos
-                 (humanos, materiales, técnicos y económicos) para la creación de bienes y/o la prestación de servicios que satisfagan una necesidad humana, con una intención económica 
-                (obtención de ganancias) o social (bienestar común, sin ánimo de lucro). 
-                </Text>
-              </Body>
-            </CardItem>
-          </Card>
-          <Text style={styles.letras}>
-          Ahora tienes los conocimientos necesarios 
-          para realizar la primera evidencia de aprendizaje, a medida que vayas
-           avanzado en el curso, encontrarás algunas otras: 
-          </Text>
-          </View>
-          <TouchableHighlight>
-          <Image
-          style = {[styles.imagenes,{height:70}]}
-          source={require('../../../images/boton1.png')}
+            <Image
+          style = {[styles.imagenes,{height:190}]}
+          source={require('../../../images/Unidad2/2.png')}
           resizeMode = 'stretch'
           />
-          </TouchableHighlight>
+          
+          <View style={styles.titulo}> 
+            <Text><H1>Conceptos: mercado, producto (descripción, naturaleza y usos) </H1></Text>          
+          </View>
+        <View
+          style={{
+            borderBottomColor: '#eeeeee',
+            borderBottomWidth: 1,
+            marginLeft:10,
+            marginRight:10,
+          }}
+        />
+        
+        <Image
+          style = {[styles.imagenes,{height:190}]}
+          source={require('../../../images/Unidad2/mercado.png')}
+          resizeMode = 'stretch'
+          />
+          
+              <Image
+          style = {[styles.imagenes,{height:190}]}
+          source={require('../../../images/Unidad2/producto.png')}
+          resizeMode = 'stretch'
+          />
+          
+              <Image
+          style = {[styles.imagenes,{height:190}]}
+          source={require('../../../images/Unidad2/descripcion.png')}
+          resizeMode = 'stretch'
+          />
+          
+          <Image
+          style = {[styles.imagenes,{height:200}]}
+          source={require('../../../images/Unidad2/naturaleza.png')}
+          resizeMode = 'stretch'
+          />
+          
+          <Image
+          style = {[styles.imagenes,{height:360}]}
+          source={require('../../../images/Unidad2/11.png')}
+          resizeMode = 'stretch'
+          />
+          
+          <Image
+          style = {[styles.imagenes,{height:240}]}
+          source={require('../../../images/Unidad2/22.png')}
+          resizeMode = 'stretch'
+          />
+          
+          <Image
+          style = {[styles.imagenes,{height:140}]}
+          source={require('../../../images/Unidad2/33.png')}
+          resizeMode = 'stretch'
+          />
+          
+          <Image
+          style = {[styles.imagenes,{height:280}]}
+          source={require('../../../images/Unidad2/44.png')}
+          resizeMode = 'stretch'
+          />
+          
+           <View style={styles.cuerpo}>
+            <Text style={styles.letras}>
+          Con lo que has aprendido hasta el momento en esta unidad temática ya tienes los elementos suficientes para realizar la siguiente evidencia de aprendizaje:
+             </Text>
+          </View>
+          
+          <Image
+          style = {[styles.imagenes,{height:70}]}
+          source={require('../../../images/Unidad2/ea1.png')}
+          resizeMode = 'stretch'
+          />
+          
         </ScrollView>
         </Container>
-      );
+);
     }
   }  
-  class unopuntodos extends React.Component {
+  class dospuntodos extends React.Component {
     render() {
       return (
         <Container style={styles.fondo}>
           <ScrollView>
-          <View style={styles.titulo}> 
-            <Text><H1>Tipos de proyectos de inversión </H1></Text>          
+
+        <View style={styles.titulo}> 
+            <Text><H1>Segmentación del mercado </H1></Text>          
           </View>
-          <View
+        <View
           style={{
             borderBottomColor: '#eeeeee',
             borderBottomWidth: 1,
@@ -135,47 +141,100 @@ import { TabNavigator } from 'react-navigation';
         />
           <View style={styles.cuerpo}>
             <Text style={styles.letras}>
-              En este momento te encuentras en un lugar específico, tal vez en tu casa, en la escuela, 
-              en el transporte o en cualquier otro sitio; independientemente de donde te encuentres, observa a tu alrededor
-              y te darás cuenta, por la gran cantidad de bienes y servicios, de la “presencia” de varias empresas que satisfacen
-              las necesidades de las personas en todos los aspectos de la vida cotidiana (vestimenta, calzado, útiles 
-              escolares, tecnología, alimentos, cosméticos, transporte, energía eléctrica, entre muchos otros) .
-              {"\n"}{"\n"}
-              Recuerda, siempre que haya necesidades que satisfacer o problemas que resolver existe la posibilidad de realizar un 
-              proyecto de inversión. Para que tengas una idea de algunas de las áreas en las que se pueden realizar proyectos de 
-              inversión, te invitamos a revisar el siguiente cuadro: 
-            </Text>
+           Antiguamente las empresas no se centraban en atender a grupos o segmentos específicos de consumidores; se dirigían a los mercados en forma indiscriminada y masiva. Actualmente, debido a las caracarecterísticas de la sociedad moderna (crecimiento de la población, cambio en los hábitos de consumo, la globalización, consumidores más exigentes) las empresas se ven en la necesidad de enfocarse a mercados cada vez más específicos y más atomizados, a esto se le conoce como:
+             </Text>
           </View>
-            <Image
-            style = {[styles.imagenes,{height:580}]}
-            source={require('../../../images/1.2.png')}
-            resizeMode = 'cover'
-            />          
-          <View style={styles.cuerpo}>            
-            <Text style={styles.letras}>
-              Cabe destacar que la clasificación de los proyectos no es mutuamente excluyente y se logra combinando 
-              los criterios con los que se identifica; por ejemplo, puede existir un proyecto de carácter privado, que 
-              pertenezca al sector industrial, cuya área de influencia sea local, de propósito múltiple con el objetivo de
-              ampliar la planta y de tamaño mediano.  
-            </Text>
-          </View>
+            
+            
           <Image
-          style = {[styles.imagenes,{height:250}]}
-          source={require('../../../images/img1.png')}
-          resizeMode = 'cover'
+          style = {[styles.imagenes,{height:320}]}
+          source={require('../../../images/Unidad2/1.png')}
+          resizeMode = 'stretch'
           />
+           
+          <View style={styles.cuerpo}>
+            <Text style={styles.letras}>
+           La escencia de la segmentación es conocer con mayor detalle a los consumidores; segmentar el mercado significa dividir el mercado total en grupos más pequeños y homogéneos. El segmento de mercado está compuesto por una parte de la población que está interesada en el producto que se oferta; este segmento se define en forma descriptiva y numérica.{"\n"}{"\n"}
+           Para segmentar el mercado se toman en cuenta distintas variables, Murcia (2010) propone las siguientes:
+             </Text>
+          </View>
+                
+          <Image
+          style = {[styles.imagenes,{height:190}]}
+          source={require('../../../images/Unidad2/demograficas.png')}
+          resizeMode = 'stretch'
+          />
+          
+             
+          <Image
+          style = {[styles.imagenes,{height:110}]}
+          source={require('../../../images/Unidad2/geograficas.png')}
+          resizeMode = 'stretch'
+          />
+          
+             
+          <Image
+          style = {[styles.imagenes,{height:130}]}
+          source={require('../../../images/Unidad2/psicograficas.png')}
+          resizeMode = 'stretch'
+          />
+          
+          <Image
+          style = {[styles.imagenes,{height:120}]}
+          source={require('../../../images/Unidad2/conductuales.png')}
+          resizeMode = 'stretch'
+          />
+          
+          
+          <View style={styles.titulo}> 
+            <Text><H1>Segmentación y evaluación del mercado meta </H1></Text>          
+          </View>
+        <View
+          style={{
+            borderBottomColor: '#eeeeee',
+            borderBottomWidth: 1,
+            marginLeft:10,
+            marginRight:10,
+          }}
+        />
+          <View style={styles.cuerpo}>
+            <Text style={styles.letras}>
+           Una vez que se ha realizado la segmentación y se han identificado los segmentos de mercado, se hace un análisis a conciencia con el propósito de definir si la empresa cuenta con los recursos y la capacidad necesarios para atender todos los segmentos, algunos de ellos, o solo a uno; esto es lo que se conoce como mercado meta, mercado objetivo o target, que consiste en seleccionar el segmento o segmentos que se tiene la capacidad de atender y enfocar en éste todos los esfuerzos de marketing.
+             </Text>
+          </View>
+          
+           <Image
+          style = {[styles.imagenes,{height:340}]}
+          source={require('../../../images/Unidad2/meta.png')}
+          resizeMode = 'stretch'
+          />
+          
+           <View style={styles.cuerpo}>
+            <Text style={styles.letras}>
+          Es momento de que realices la siguiente evidencia de aprendizaje:
+             </Text>
+          </View>
+          
+          
+          <Image
+          style = {[styles.imagenes,{height:70}]}
+          source={require('../../../images/Unidad2/ea4.png')}
+          resizeMode = 'stretch'
+          />
+          
+          
         </ScrollView>
         </Container>
       );
     }
   }
-  class unopuntotres extends React.Component {
+  class dospuntotres extends React.Component {
     render() {
       return (
         <Container style={styles.fondo}>
           <ScrollView>
           <View style={styles.titulo}> 
-            <Text><H1>Modelos de inversiones</H1></Text>          
+            <Text><H1>Estrategia del producto o servicio</H1></Text>          
           </View>
           <View
           style={{
@@ -187,22 +246,312 @@ import { TabNavigator } from 'react-navigation';
         />
         <View style={styles.cuerpo}>         
           <Text style={styles.letras}>
-            Los modelos de inversión son un apoyo importante para el emprendedor o empresario debido a que le permiten 
-            tener un mejor panorama de los futuros beneficios o posibles pérdidas que obtendrá al invertir en un proyecto 
-            determinado. Estos modelos coadyuvan a disminuir los riesgos derivados de toda inversión; dada la complejidad del mundo
-            de los negocios es imposible pensar que toda inversión va a ser exitosa por estar bien planeada y documentada.
-            {"\n"}{"\n"}
-            Existen diferentes clasificaciones de modelos de inversión, para efectos de esta UA abordaremos los siguientes:
-            por su operación, por su flujo de efectivo y por su punto de vista económico.
+            Recordemos que una estrategia está compuesta por una serie de acciones debidamente planeadas, entrelazadas, analizadas, evaluadas, y orientadas a lograr un determinado objetivo.{"\n"}{"\n"}
+            Si consideramos que el producto que ofrece una empresa constituye uno de sus pilares medulares, es imprescindible diseñar estrategias que posibiliten su aceptación y posicionamiento en el mercado. Es bien sabido que el fracaso de un producto se debe en gran parte a la falta de estrategias o bien al seguimiento de estrategias mal diseñadas o planteadas.
           </Text>  
           </View>        
           <Image
-          style = {[styles.imagenes,{height:250}]}
-          source={require('../../../images/1.3.png')}
-          resizeMode = 'cover'
+          style = {[styles.imagenes,{height:620}]}
+          source={require('../../../images/Unidad2/2.3.png')}
+          resizeMode = 'stretch'
           />
+          
+          
           <View style={styles.titulo}> 
-            <Text><H1>Por su operación </H1></Text>          
+            <Text><H1>Atributos del producto</H1></Text>          
+          </View>
+          <View
+          style={{
+            borderBottomColor: '#eeeeee',
+            borderBottomWidth: 1,
+            marginLeft:10,
+            marginRight:10,
+          }}
+        />
+        <View style={styles.cuerpo}>         
+          <Text style={styles.letras}>
+            Todos los productos cuentan con elementos centrales y complementarios; tienen atributos tangibles e intangibles que los identifican y los distinguen de otros productos. No todos los productos cuentan con los mismos atributos, éstos están en función del tipo de producto. Entre los principales atributos de un producto se encuentran:
+          </Text>  
+          </View>        
+          <Image
+          style = {[styles.imagenes,{height:1150}]}
+          source={require('../../../images/Unidad2/111.png')}
+          resizeMode = 'stretch'
+          />
+          
+          
+           <View style={styles.titulo}> 
+            <Text><H1>Estrategias de marca</H1></Text>          
+          </View>
+          <View
+          style={{
+            borderBottomColor: '#eeeeee',
+            borderBottomWidth: 1,
+            marginLeft:10,
+            marginRight:10,
+          }}
+        />
+        <View style={styles.cuerpo}>         
+          <Text style={styles.letras}>
+            Por su impacto económico la marca o branding debe diseñarse desde un punto de vista estratégico; por la marca un producto será reconocido, aceptado o posicionado en la mente del consumidor. Es importante destacar que algunas marcas representan el más importante y valioso activo de las empresas.{"\n"}{"\n"}
+            La marca se inscribe en el Instituto Mexicano de Propiedad Industrial (IMPI), que proteje legalmente a su propietario de forma que éste goza del derecho en exclusiva de comercializar sus productos o servicios en el país, bajo la marca en cuestión.
+          </Text>  
+          </View>        
+          <Image
+          style = {[styles.imagenes,{height:440}]}
+          source={require('../../../images/Unidad2/2.3.2.png')}
+          resizeMode = 'stretch'
+          />
+          
+          
+            <View style={styles.titulo}> 
+            <Text><H1>Estrategias de envase y etiquetado</H1></Text>          
+          </View>
+          <View
+          style={{
+            borderBottomColor: '#eeeeee',
+            borderBottomWidth: 1,
+            marginLeft:10,
+            marginRight:10,
+          }}
+        />
+        <View style={styles.cuerpo}>         
+          <Text style={styles.letras}>
+            Tanto el envase como el etiquetado son parte importante de la imagen del producto.
+          </Text>  
+          </View>        
+          <Image
+          style = {[styles.imagenes,{height:340}]}
+          source={require('../../../images/Unidad2/empaque.png')}
+          resizeMode = 'stretch'
+          />
+          <Image
+          style = {[styles.imagenes,{height:340}]}
+          source={require('../../../images/Unidad2/etiqueta.png')}
+          resizeMode = 'stretch'
+          />
+          <Image
+          style = {[styles.imagenes,{height:280}]}
+          source={require('../../../images/Unidad2/envase.png')}
+          resizeMode = 'stretch'
+          />
+          
+          
+            <View style={styles.titulo}> 
+            <Text><H1>Estrategias de servicios de apoyo</H1></Text>          
+          </View>
+          <View
+          style={{
+            borderBottomColor: '#eeeeee',
+            borderBottomWidth: 1,
+            marginLeft:10,
+            marginRight:10,
+          }}
+        />
+        <View style={styles.cuerpo}>         
+          <Text style={styles.letras}>
+            Los servicios son actividades o beneficios que un productor ofrece a un consumidor; en la actualidad existe un creciente interés en el servicio al cliente, y más aún, últimamente las empresas se están onfocando en crear experiencias para sus clientes, ésta es una de las formas más importantes de diferenciar a una empresa de otras.{"\n"}{"\n"}
+            El servicio de apoyo del producto se ha convertido en una ventaja competitiva determinante; las empresas que proporcionan un servicio de alta calidad sin duda superarán a los competidores que están menos orientados a los servicios.{"\n"}{"\n"}
+            Las empresas deben ser muy cuidadosas al identificar las necesidades de los clientes para diseñar tanto el producto como el sistema de apoyo al mismo.{"\n"}{"\n"}
+            Las tres preocupaciones principales del cliente con respecto al producto que adquieren son:
+          </Text>  
+          </View>        
+          <Image
+          style = {[styles.imagenes,{height:370}]}
+          source={require('../../../images/Unidad2/2.3.4.png')}
+          resizeMode = 'stretch'
+          />
+          <View style={styles.cuerpo}>         
+          <Text style={styles.letras}>
+           Por otro lado, los fabricantes deben establecer estrategias de cómo desean ofrecer el servicio posterior a la venta, incluyendo los servicios de mantenimiento, reparación, asesoría técnica y otros similares. Para ello podrían contar con un departamento de servicio al cliente; hacer convenios con distribuidores y detallistas para proporcionar los servicios; también podrían hacer que otras firmas independientes se encargaran de prestar dichos servicios.{"\n"}{"\n"}
+           Después de revisar los temas: mercado y producto, podrás realizar la siguiente evidencia de aprendizaje:
+          </Text>  
+          </View>        
+          <Image
+          style = {[styles.imagenes,{height:70}]}
+          source={require('../../../images/Unidad2/ea2.png')}
+          resizeMode = 'stretch'
+          />
+          
+            <View style={styles.cuerpo}>         
+          <Text style={styles.letras}>
+          Una vez terminada la actividad anterior, realiza la siguiente evidencia de aprendizaje:
+          </Text>  
+          </View>        
+          <Image
+          style = {[styles.imagenes,{height:70}]}
+          source={require('../../../images/Unidad2/ea7.png')}
+          resizeMode = 'stretch'
+          />
+          
+          
+            <View style={styles.titulo}> 
+            <Text><H1>Ciclo de vida del producto</H1></Text>          
+          </View>
+          <View
+          style={{
+            borderBottomColor: '#eeeeee',
+            borderBottomWidth: 1,
+            marginLeft:10,
+            marginRight:10,
+          }}
+        />
+        <View style={styles.cuerpo}>         
+          <Text style={styles.letras}>
+            Todos los días entran al mercado diferentes productos y servicios (De acuerdo con la agencia NIelsen son más de 300 los productos nuevos que se incorporan al mercado cada semana). Para las empresas, conocer la fase del ciclo en la que se encuentra su producto o servicio les permitirá diseñar la estrategia más eficaz para alargar su vida en un mercado cada vez más competitivo.{"\n"}{"\n"}
+            El descubrimiento del modelo de ciclo de vida del producto se debe a Theodore Levitt, quien empleó el concepto por primera vez en un artículo de 1965 publicado en la Harvard Bussines Review. Según Levitt los productos, al igual que los seres vivos, nacen, crecen, se desarrollan y mueren, El ciclo de vida de los productos se compone de las siguientes fases:
+          </Text>  
+          </View>        
+          <Image
+          style = {[styles.imagenes,{height:330}]}
+          source={require('../../../images/Unidad2/fases.png')}
+          resizeMode = 'stretch'
+          />
+          
+          
+          <Image
+          style = {[styles.imagenes,{height:350}]}
+          source={require('../../../images/Unidad2/grafica.png')}
+          resizeMode = 'stretch'
+          />
+          
+          <Image
+          style = {[styles.imagenes,{height:380}]}
+          source={require('../../../images/Unidad2/f1.png')}
+          resizeMode = 'stretch'
+          />
+          
+          <View style={styles.cuerpo}>         
+          <Text style={styles.letras}>
+            En resumen, en esta fase puede presentarse una rentabilidad negativa debido a que los costos y gastos necesarios para fabricar, lanzar y perfeccionar el producto son mayores en comparación con los ingresos que se obtienen por el volumen de ventas.
+          </Text>  
+          </View>     
+          
+          <Image
+          style = {[styles.imagenes,{height:390}]}
+          source={require('../../../images/Unidad2/f2.png')}
+          resizeMode = 'stretch'
+          />
+          
+          <View style={styles.cuerpo}>         
+          <Text style={styles.letras}>
+            En resumen, en esta fase se caracteriza por una rentabilidad positiva que debe reinvertirse, en su totalidad, para financiar el crecimiento y los esfuerzos técnicos, comerciales y de comunicación propios de esta fase.
+          </Text>  
+          </View>     
+          
+          <Image
+          style = {[styles.imagenes,{height:400}]}
+          source={require('../../../images/Unidad2/f3.png')}
+          resizeMode = 'stretch'
+          />
+          
+          <View style={styles.cuerpo}>         
+          <Text style={styles.letras}>
+            En resumen, la rentabilidad no es tan elevada como en la fase anterior, pero se producen excedentes de tesorería (ya que no hay necesidad de grandes inversiones), lo que permite el reparto de buenos dividendos, o invertir en otros productos que se hallen en las primeras fases de vida.
+          </Text>  
+          </View>     
+          
+          <Image
+          style = {[styles.imagenes,{height:230}]}
+          source={require('../../../images/Unidad2/f4.png')}
+          resizeMode = 'stretch'
+          />
+          
+          <View style={styles.cuerpo}>         
+          <Text style={styles.letras}>
+            En esta fase se deben tomar decisiones trascendentales: innovar o abandonar el producto.
+          </Text>  
+          </View>     
+          
+          <View style={styles.titulo}> 
+            <Text><H1>Conclusiones del estudio de las fases</H1></Text>          
+          </View>
+          <View
+          style={{
+            borderBottomColor: '#eeeeee',
+            borderBottomWidth: 1,
+            marginLeft:10,
+            marginRight:10,
+          }}
+        />
+        <View style={styles.cuerpo}>         
+          <Text style={styles.letras}>
+            Ubicar los productos en su fase es, sin duda, un paso indispensable para orientar la política de marketing de la empresa. Así, por ejemplo, sería absurdo realizar un gran esfuerzo para reducir el costo de un producto en fase de crecimiento, cuando en realidad es esta etapa los esfuerzos deben encaminarse a activar y atraer una demanda creciente.
+          </Text>  
+          </View>        
+          </ScrollView>
+        </Container>
+      );
+    }
+  }
+  class dospuntocuatro extends React.Component {
+    render() {
+      return (
+        <Container style={styles.fondo}>
+          <ScrollView>
+          <View style={styles.titulo}> 
+            <Text><H1>Análisis de la demanda</H1></Text>          
+          </View>
+          <View
+          style={{
+            borderBottomColor: '#eeeeee',
+            borderBottomWidth: 1,
+            marginLeft:10,
+            marginRight:10,
+          }}
+        />
+        <View style={styles.cuerpo}>         
+          <Text style={styles.letras}>
+           Con toda seguridad alguna vez has escuchado los términos demanda y oferta, pues son las plabras que más se utilizan en el mercado y en la economía, y por una buena razón: son las fuerzas que hacen que funcionen las economías de mercado.{"\n"}{"\n"}
+           Estudiar la demanda es muy complejo, entérminos generales se puede decir que la demanda describe el comportamiento del consumidor y su análisis tiene como finalidad estimar la cantidad de producto que el mercado estará dispuesto a adquirir.
+          </Text>  
+          </View>        
+          <Image
+          style = {[styles.imagenes,{height:400}]}
+          source={require('../../../images/Unidad2/2.4.png')}
+          resizeMode = 'stretch'
+          />
+          
+           <View style={styles.titulo}> 
+            <Text><H1>Demanda: conceptos</H1></Text>          
+          </View>
+          <View
+          style={{
+            borderBottomColor: '#eeeeee',
+            borderBottomWidth: 1,
+            marginLeft:10,
+            marginRight:10,
+          }}
+        />
+        <Image
+          style = {[styles.imagenes,{height:240}]}
+          source={require('../../../images/Unidad2/demanda.png')}
+          resizeMode = 'stretch'
+          />
+          <Image
+          style = {[styles.imagenes,{height:160}]}
+          source={require('../../../images/Unidad2/leydemanda.png')}
+          resizeMode = 'stretch'
+          />
+          <Image
+          style = {[styles.imagenes,{height:230}]}
+          source={require('../../../images/Unidad2/demandareal.png')}
+          resizeMode = 'stretch'
+          />
+        <View style={styles.cuerpo}>         
+          <Text style={styles.letras}>
+           Una vez que has revisado el tema de la demanda, ya cuentas con las bases para realizar la siguiente evidencia de aprendizaje:
+          </Text>  
+          </View>        
+          <Image
+          style = {[styles.imagenes,{height:70}]}
+          source={require('../../../images/Unidad2/ea3.png')}
+          resizeMode = 'stretch'
+          />
+          
+          
+          <View style={styles.titulo}> 
+            <Text><H1>Áreas de mercado</H1></Text>          
           </View>
           <View
           style={{
@@ -213,23 +562,206 @@ import { TabNavigator } from 'react-navigation';
           }}
         />
         
-          <View style={styles.cuerpo}>
-            <Text style={styles.letras}>
-            Este modelo está en función del tipo de proyecto y de sus características. Por ejemplo, 
-            se puede tener un proyecto para la prestación de algún servicio, para la compra-venta (comercio)
-            de bienes, o para la transformación de materia prima en bienes de consumo intermedio o en bienes de consumo final.
-            La operación en cada uno de estos proyectos es diferente, como también lo son el valor de la inversión y el
-            tiempo necesario para ponerlos en marcha. Adicionalmente, hay que considerar que hay proyectos que se caracterizan
-            por ser intensivos en capital (más automatizados) y otros por ser intensivos en mano de obra. 
-            </Text>
-          </View>
+        <View style={styles.cuerpo}>         
+          <Text style={styles.letras}>
+          El mercado se puede dividir en:{"\n"}{"\n"}
+          1.Mercado de bienes de consumo. Conformado por los mercados en donde se comercializan productos destinados a satisfacer las necesidades del cliente final.
+          </Text>  
+          </View>        
           <Image
-          style = {[styles.imagenes,{height:250}]}
-          source={require('../../../images/1.3.1.png')}
-          resizeMode = 'cover'
+          style = {[styles.imagenes,{height:400}]}
+          source={require('../../../images/Unidad2/0.png')}
+          resizeMode = 'stretch'
           />
+          <View style={styles.cuerpo}>         
+          <Text style={styles.letras}>
+          
+          2.Mercado de bienes industriales. Son aquellos mercados en donde se comercializan productos principalmente para ser utilizados en la elaboración de otros bienes.
+          </Text>  
+          </View>        
+          <Image
+          style = {[styles.imagenes,{height:400}]}
+          source={require('../../../images/Unidad2/00.png')}
+          resizeMode = 'stretch'
+          />
+          <View style={styles.cuerpo}>         
+          <Text style={styles.letras}>
+          El mercado se puede dividir en:{"\n"}{"\n"}
+          3.Mercado de servicios. Se refiere al mercado de los bienes o productos de naturaleza principalmente intangible; este mercado lo compone el sector terciario de la economía de un país.
+          </Text>  
+          </View>        
+          <Image
+          style = {[styles.imagenes,{height:400}]}
+          source={require('../../../images/Unidad2/000.png')}
+          resizeMode = 'stretch'
+          />
+          
+          
           <View style={styles.titulo}> 
-            <Text><H1>Por su flujo de efectivo  </H1></Text>          
+            <Text><H1>Tipos de demanda</H1></Text>          
+          </View>
+          <View
+          style={{
+            borderBottomColor: '#eeeeee',
+            borderBottomWidth: 1,
+            marginLeft:10,
+            marginRight:10,
+          }}
+        />
+        <View style={styles.cuerpo}>         
+          <Text style={styles.letras}>
+           De acuerdo con Baca (2006) los tipos de demanda son:
+          </Text>  
+          </View>        
+          <Image
+          style = {[styles.imagenes,{height:310}]}
+          source={require('../../../images/Unidad2/j.png')}
+          resizeMode = 'stretch'
+          />
+ 
+          <Image
+          style = {[styles.imagenes,{height:300}]}
+          source={require('../../../images/Unidad2/jj.png')}
+          resizeMode = 'stretch'
+          />
+          
+          <Image
+          style = {[styles.imagenes,{height:320}]}
+          source={require('../../../images/Unidad2/jjj.png')}
+          resizeMode = 'stretch'
+          />
+          
+          <Image
+          style = {[styles.imagenes,{height:320}]}
+          source={require('../../../images/Unidad2/jjjj.png')}
+          resizeMode = 'stretch'
+          />
+          
+          
+          
+          <View style={styles.titulo}> 
+            <Text><H1>Factores que afectan a la demanda</H1></Text>          
+          </View>
+          <View
+          style={{
+            borderBottomColor: '#eeeeee',
+            borderBottomWidth: 1,
+            marginLeft:10,
+            marginRight:10,
+          }}
+        />
+        <View style={styles.cuerpo}>         
+          <Text style={styles.letras}>
+           La demanda está en función de varios factores, como por ejemplo: de la necesidad real que se tiene del bien o servicio, del precio, del nivel de ingreso de la población y de algunos otros factores que a continuación se explican con más detalle.{"\n"}{"\n"}
+           Los economistas coinciden en que las principales razones por las que se desplaza la curva de la demanda son:{"\n"}{"\n"}
+           1.Preferencias y gustos de los consumidores: Además de considerar el ámbito económico en el que actúa el consumidor, debe tenerse en cuenta el ámbito social en el que se desenvuelve, ya que muchas veces el comportamiento social influido por factores como la moda, la publicidad o simplemente la temporada del año.{"\n"}{"\n"}
+           No es fácil hacer generalizaciones en cuanto a los gustos y las preferencias dado que son relativamente estables y algunas veces llegan a cambiar. Un cambio en los gustos y preferencias independiente al cambio de precio ocasiona un desplazamiento en la demanda.
+          </Text>  
+          </View>        
+          <Image
+          style = {[styles.imagenes,{height:400}]}
+          source={require('../../../images/Unidad2/G1.png')}
+          resizeMode = 'stretch'
+          />
+          
+          
+           <View style={styles.cuerpo}>         
+          <Text style={styles.letras}>
+          Por ejemplo:{"\n"}{"\n"}
+          La moda por una buena condición fisica puede aumentar la demanda de artículos deportivos{"\n"}{"\n"}
+          Si un personaje famoso empieza a usar un determinado bien, muchas personas demandarán más de este artículo{"\n"}{"\n"}
+          Hay consumidores que tienen un gusto especial por artículos antiguos o de colección{"\n"}{"\n"}
+          Mayor demanda de medicinas en épocas de frío, entre otras razones porque algunos consumidores prefieren prevenir enfermedades.{"\n"}{"\n"}
+          2.La información que poseen los consumidores: La informazión que tiene el consumidor acerca de un bien determinado, es otro de los factores que favorecen un desplazamiento de la curva de la demanda.{"\n"}{"\n"}
+          Ejemplos:{"\n"}{"\n"}
+          Si el consumidor tiene información acerca del peligro de fumar, es muy probable que disminuya la demanda de cigarros, y más aún con la nueva ley de no fumar en lugares cerrados y públicos{"\n"}{"\n"}
+          Al conocer los efectos del colesterol es posible que el consumidor reduzca el consumo de huevo, camarones, carne de res y por ejemplo aumente el consumo de carne de pollo o de pescado
+          </Text>  
+          </View>        
+          <Image
+          style = {[styles.imagenes,{height:400}]}
+          source={require('../../../images/Unidad2/G2.png')}
+          resizeMode = 'stretch'
+          />
+          
+          
+           <View style={styles.cuerpo}>         
+          <Text style={styles.letras}>
+          3.Ingreso de los consumidores (poder adquisitivo): Un incremento en el ingreso incrementa la demanda de más bienes y ésta disminuye cuando disminuye el ingreso. A mayor ingreso existe un mayor consumo de automóviles, viajes, comprad e casas, asistencias a más espectáculos, más ropa, más vacaciones etc.
+          </Text>  
+          </View>        
+          <Image
+          style = {[styles.imagenes,{height:400}]}
+          source={require('../../../images/Unidad2/G3.png')}
+          resizeMode = 'stretch'
+          />
+          
+          
+           <View style={styles.cuerpo}>         
+          <Text style={styles.letras}>
+           En relación a los tipos de bienes que adquiere el consumidor en función de sus ingresos, se puede hacer la siguiente clasificación:{"\n"}{"\n"}
+           a.Bienes Normales. Son aquellos bienes cuya demanda aumenta cuando aumenta el ingreso y disminuye cuando disminuye el ingreso. Los ejemplos más representativos son: la ropa, artículos perecederos (alimentos), asistencia a espectáculos, diversión, etc.{"\n"}{"\n"}
+           b.Bienes inferiores: Son aquellos bienes cuya demanda disminuye cuando aumenta el ingreso y la demanda se incrementa cuando disminuye el ingreso. {"\n"}{"\n"}
+           Algunos ejemplos son: {"\n"}{"\n"}
+           Pan del dia anterior{"\n"}{"\n"}
+           Alimentos próximos a caducar (fechas cortas){"\n"}{"\n"}
+           Uso del transporte público{"\n"}{"\n"}
+           Queso de puerco{"\n"}{"\n"}
+           4.La población (número de posibles consumidores): La demanda se ve afectada por el tamaño de la población, si el número de consumidores aumenta entonces la demanda aumentará.{"\n"}{"\n"}
+           Para poder tener un estimado de las demandas real y potencial se puede recurrir a la información que proporcionan algunas dependencias gubernamentales como el INEGI o el CONAPO, entre otros.
+          </Text>  
+          </View>        
+          <Image
+          style = {[styles.imagenes,{height:330}]}
+          source={require('../../../images/Unidad2/G4.png')}
+          resizeMode = 'stretch'
+          />
+          
+          
+           <View style={styles.cuerpo}>         
+          <Text style={styles.letras}>
+          5.Expectativas del consumidor: Las expectativas que tiene el consumidor pueden ser en cuanto a precio y en cuanto al ingreso:{"\n"}{"\n"}
+          a.En cuanto a precio.Si se sabe que en el futuro el precio del bien X disminuirá, la demanda actual de ese bien disminuye, pero si se sabe que en el futuro habrá un aumento del precio entonces la demanda acutal se incrementa.{"\n"}{"\n"}
+          Ejemplos:{"\n"}{"\n"}
+          Computadoras, cámaras fotográficas y de video, artículos navideños después de temporada, etc.{"\n"}{"\n"}
+          Si se tiene la expectativa de que el precio del dolár subirá, se incrementa la compra actual de dólares{"\n"}{"\n"}
+          Los boletos del metro, cuando se sabía que iban a subir de 2 a 3 pesos, se incrementó la demanda y esto pasaba cada que subian de precio{"\n"}{"\n"}
+          b.En cuanto a Ingreso. Si el consumidor tiene la expectativa de tener un mayor ingreso, definitivamente va a incrementar el consumo de algunos artículos y si por el contrario sabe que se quedará sin empleo, lo más seguro es que disminuya su consumo y si tiene tarjetas de crédito tal vez las cancele.{"\n"}{"\n"}
+          6. Los precios de los bienes estrechamente relacionados: Al hablar de bienes estrechamente relacionados nos referimos a los bienes sustitutos y a los bienes complementarios:{"\n"}{"\n"}
+          a. Bienes sustitutos. Son aquellos bienes que se pueden usar en lugar de otros, por tener algunas características similares.{"\n"}{"\n"}
+          Ejemplos: mantequilla y margarina; té y café; malboro y viceroy entre muchos otros. *NOTA: Un aumento en el precio de un bien sustituto ocasiona la demanda del otro bien.
+          </Text>  
+          </View>        
+          <Image
+          style = {[styles.imagenes,{height:360}]}
+          source={require('../../../images/Unidad2/G5.png')}
+          resizeMode = 'stretch'
+          />
+          
+          
+          
+           <View style={styles.cuerpo}>         
+          <Text style={styles.letras}>
+         b. Bienes complementarios. Un bien complementario es aquel que tiende a ser consumido o utilizado junto con otro bien. Ejemplos: impresoras y cartuchos o toner; café y azúcar; jamón y pan Bimbo; medias noches y salchichas; computadora y software; cepillo de dientes y pasta, entre muchos otros.
+          </Text>  
+          </View>        
+          <Image
+          style = {[styles.imagenes,{height:380}]}
+          source={require('../../../images/Unidad2/G6.png')}
+          resizeMode = 'stretch'
+          />
+          
+          
+           <View style={styles.cuerpo}>         
+          <Text style={styles.letras}>
+         *NOTA: Una reducción en el precio de alguno de ellos incrementa la demanda del otro, y de la misma manera un aumento en el precio de un bien complementario disminuye la demanda del otro.
+          </Text>  
+          </View>        
+          
+          
+          
+          <View style={styles.titulo}> 
+            <Text><H1>Determinación y proyección de la demanda</H1></Text>          
           </View>
           <View
           style={{
@@ -240,60 +772,417 @@ import { TabNavigator } from 'react-navigation';
           }}
         />
         
-          <View style={styles.cuerpo}>
-            <Text style={styles.letras}>
-            El flujo neto de efectivo (FNE) es el efectivo que queda una vez que se restan los egresos (costos y gastos)
-            a los ingresos. Antes de emprender un proyecto (realizar alguna inversión) se deben estimar los flujos netos
-            de efectivo que generará dicha inversión en un período de tiempo determinado.  
-            {"\n"}{"\n"}
-            La decisión de emprender o no un proyecto está en función de los FNE que se generan a partir de una inversión; 
-            un flujo de efectivo amplio da mayor seguridad y tranquilidad al inversionista permitiéndole cubrir los gastos y 
-            costos derivados del proyecto, brindándole la posibilidad de recuperar la inversión inicial y por otro lado, tomar 
-            nuevas decisiones de inversión.  
-            </Text>
-          </View>
-          <Image
-          style = {[styles.imagenes,{height:250}]}
-          source={require('../../../images/1.3.2.png')}
-          resizeMode = 'cover'
+        <Image
+          style = {[styles.imagenes,{height:160}]}
+          source={require('../../../images/Unidad2/u.png')}
+          resizeMode = 'stretch'
           />
-          <View style={styles.titulo}> 
-            <Text><H1>Por punto de vista económico  </H1></Text>          
-          </View>
-          <View
-          style={{
-            borderBottomColor: '#eeeeee',
-            borderBottomWidth: 1,
-            marginLeft:10,
-            marginRight:10,
-          }}
-        />        
-          <View style={styles.cuerpo}>
-            <Text style={styles.letras}>
-            Ninguna inversión está exenta de riesgo; sin embargo, lo que todo inversionista busca es maximizar utilidades; es decir, 
-            que su inversión sea rentable y recuperarla en el menor tiempo posible. Antes de emprender un proyecto éste debe ser 
-            evaluado desde el punto de vista económico, para determinar si es o no conveniente emprenderlo (viabilidad económico-financiera). 
-            Para evaluar un proyecto de inversión existen diferentes métodos que nos permiten determinar el tiempo en que se recupera la
-            inversión y calcular la rentabilidad del mismo, entre los métodos más comunes se encuentran:   
-            </Text>
-          </View>
+          
           <Image
-          style = {[styles.imagenes,{height:250}]}
-          source={require('../../../images/1.3.3.png')}
-          resizeMode = 'cover'
+          style = {[styles.imagenes,{height:430}]}
+          source={require('../../../images/Unidad2/uu.png')}
+          resizeMode = 'stretch'
+          />
+          
+          <Image
+          style = {[styles.imagenes,{height:400}]}
+          source={require('../../../images/Unidad2/uuu.png')}
+          resizeMode = 'stretch'
+          />
+        <View style={styles.cuerpo}>         
+          <Text style={styles.letras}>
+          Para profundizar en el tema, lee el siguiente material:
+          </Text>  
+          </View>        
+          <Image
+          style = {[styles.imagenes,{height:70}]}
+          source={require('../../../images/Unidad2/L2.png')}
+          resizeMode = 'stretch'
           />
           </ScrollView>
         </Container>
       );
     }
   }
-  class unopuntocuatro extends React.Component {
+  
+  class dospuntocinco extends React.Component {
+    render() {
+      return (
+        <Container style={styles.fondo}>
+          <ScrollView>
+          <View style={styles.titulo}> 
+            <Text><H1>Análisis de la oferta</H1></Text>          
+          </View>
+          <View
+          style={{
+            borderBottomColor: '#eeeeee',
+            borderBottomWidth: 1,
+            marginLeft:10,
+            marginRight:10,
+          }}
+        />
+          <View style={styles.cuerpo}>
+            <Text style={styles.letras}>
+             Mientras que la demanda describe el comportamiento de los consumidores, la oferta describe el comportamiento de los productores o empresarios.
+      {"\n"}{"\n"}
+            </Text>
+          </View>
+            <Image
+            style = {[styles.imagenes,{height:400}]}
+            source={require('../../../images/Unidad2/2.5.png')}
+            resizeMode = 'stretch'
+            />          
+       
+       <View style={styles.titulo}> 
+            <Text><H1>Oferta: concepto</H1></Text>          
+          </View>
+          <View
+            style={{
+              borderBottomColor: '#eeeeee',
+              borderBottomWidth: 1,
+              marginLeft:10,
+              marginRight:10,
+            }}
+          />
+      
+          <Image
+          style = {[styles.imagenes,{height:280}]}
+          source={require('../../../images/Unidad2/2.5.1.png')}
+          resizeMode = 'stretch'
+          />
+      
+      
+       <View style={styles.titulo}> 
+            <Text><H1>Tipos de oferta</H1></Text>          
+          </View>
+          <View
+            style={{
+              borderBottomColor: '#eeeeee',
+              borderBottomWidth: 1,
+              marginLeft:10,
+              marginRight:10,
+            }}
+          />
+        <View style={styles.cuerpo}>
+            <Text style={styles.letras}>
+      Principales tipos de oferta
+      {"\n"}{"\n"}
+      En relación con el número de oferentes se reconocen tres tipos:
+      {"\n"}{"\n"}
+       </Text>          
+           </View>  
+      
+          <Image
+          style = {[styles.imagenes,{height:310}]}
+          source={require('../../../images/Unidad2/2.5.2.png')}
+          resizeMode = 'stretch'
+          />
+      
+        <View style={styles.titulo}> 
+            <Text><H1> Análisis de la oferta: importaciones</H1></Text>          
+          </View>
+          <View
+            style={{
+              borderBottomColor: '#eeeeee',
+              borderBottomWidth: 1,
+              marginLeft:10,
+              marginRight:10,
+            }}
+          />
+        <View style={styles.cuerpo}>
+            <Text style={styles.letras}>
+      Con la globalización económica se promueve el comercio mundial y la especialización productiva, lo que permite aprovechar las capacidades
+      de cada país para producir los bienes que mejor puede obtener o fabricar; por lo que cada nación exportará las mercancías con las que es 
+      más competitiva e importará los productos que no puede producir o que produce en cantidades que no son suficientes para el consumo interno.
+      {"\n"}{"\n"}
+      En cuanto a la oferta se puede presentar el caso de que una empresa pretenda fabricar un producto que se importa parcialmente o que está 
+      dentro de la lista de tratados o acuerdos comerciales, en tal caso es importante analizar la tendencia de las importaciones de ese producto.
+      {"\n"}{"\n"}
+       </Text>          
+           </View>  
+      
+          <Image
+          style = {[styles.imagenes,{height:220}]}
+          source={require('../../../images/Unidad2/1a.png')}
+          resizeMode = 'stretch'
+          />
+      <Image
+          style = {[styles.imagenes,{height:170}]}
+          source={require('../../../images/Unidad2/2a.png')}
+          resizeMode = 'stretch'
+          />
+      
+      <View style={styles.cuerpo}>
+            <Text style={styles.letras}>
+      Según examen estadístico de comercio mundial publicado por la Organización Mundial de Comercio (OMC, 2016), México se encuentra en el lugar
+      12 de lista de los más grandes importadores mundiales de mercancías; el primer lugar corresponde a China, el segundo a Estados Unidos, el 
+      tercero a Alemania y el cuarto lugar lo tiene Japón. En el caso de México el 50.2% de las importaciones provienen de Estados Unidos; el 14.7% 
+      proviene de China; el 4.7% de Japón y del resto de los países (Corea del Sur, Alemania, Canadá, Malasia, Italia, Taiwán y España, por mencionar
+      los más importantes) se importa el 30.4% restante.
+      {"\n"}{"\n"}
+      Las importaciones son principalmente de bienes intermedios, es decir productos que aún deben pasar por procesos para su uso o consumo, siendo 
+      la industria automotriz una de las principales importadoras de este tipo de productos. 
+      Fuente: https://globalconnections.hsbc.com/mexico/es/articles/principales-importaciones-de-mexico
+      {"\n"}{"\n"}
+      Fuente: https://www.gob.mx/cms/uploads/attachment/file/207394/II_Comercio_exterior_-_marzo_2017.pdf 
+      {"\n"}{"\n"}
+      Conoce más acerca de las mercancías que importa México
+      {"\n"}{"\n"}
+      http://www.banxico.org.mx/SieInternet/consultarDirectorioInternetAction.do?accion=consultarCuadro&idCuadro=CE49
+       </Text>          
+           </View>  
+      
+      <View style={styles.titulo}> 
+            <Text><H1> Exportaciones y otros conceptos</H1></Text>          
+          </View>
+          <View
+            style={{
+              borderBottomColor: '#eeeeee',
+              borderBottomWidth: 1,
+              marginLeft:10,
+              marginRight:10,
+            }}
+          />
+        <Image
+          style = {[styles.imagenes,{height:400}]}
+          source={require('../../../images/Unidad2/33a.png')}
+          resizeMode = 'stretch'
+          />
+      
+        <View style={styles.cuerpo}>
+            <Text style={styles.letras}>
+      Según examen estadístico de comercio mundial publicado por la Organización Mundial de Comercio (OMC, 2016), México ocupa el lugar 13 
+      de los principales países exportadores de mercancías; su presencia en los mercados globales se debe en gran medida a los tratados comerciales,
+      su situación geográfica y la excelencia en su manufactura. 
+      {"\n"}{"\n"}
+       </Text>          
+           </View>  
+      
+          <Image
+          style = {[styles.imagenes,{height:160}]}
+          source={require('../../../images/Unidad2/4.png')}
+          resizeMode = 'stretch'
+          />
+      
+         <Image
+          style = {[styles.imagenes,{height:180}]}
+          source={require('../../../images/Unidad2/44a.png')}
+          resizeMode = 'stretch'
+          />
+      
+         <Image
+          style = {[styles.imagenes,{height:120}]}
+          source={require('../../../images/Unidad2/3.png')}
+          resizeMode = 'stretch'
+          />
+     
+    <View style={styles.cuerpo}>
+    <Text style={styles.letras}>
+    ¡El Banco Nacional de Comercio Exterior, S.N.C (Bancomext) financia a las empresas exportadoras mexicanas! Obtén más información: 
+    http://www.bancomext.com/empresas-que-apoyamos/exportadores
+    {"\n"}{"\n"}
+    </Text>          
+    </View>  
+           
+     <View style={styles.titulo}> 
+         <Text><H1>Análisis de la competencia (FODA), determinación y proyección de la oferta</H1></Text>          
+          </View>
+          <View
+            style={{
+              borderBottomColor: '#eeeeee',
+              borderBottomWidth: 1,
+              marginLeft:10,
+              marginRight:10,
+            }}
+          />
+      
+      <View style={styles.cuerpo}>
+    <Text style={styles.letras}>
+    El análisis DAFO o también conocido como la matriz FODA tiene su origen en el método de análisis de la competencia conocido como SWOT
+    (Strengths, Weakness, Opportunities, Threats). Esta herramienta se utiliza para analizar las Fortalezas, Oportunidades, Debilidades y
+    Amenazas de una empresa o producto, en el último caso se recomienda hacerse con al menos tres de los principales competidores. Para 
+    lo cual debemos identificar quiénes son nuestros competidores tanto directos como indirectos:
+    {"\n"}{"\n"}
+    </Text>          
+    </View>  
+    
+     <Image
+          style = {[styles.imagenes,{height:240}]}
+          source={require('../../../images/Unidad2/22a.png')}
+          resizeMode = 'stretch'
+          />
+    
+    <View style={styles.cuerpo}>
+    <Text style={styles.letras}>
+    ¿Qué información debemos conocer de los productos o servicios de la competencia?
+    {"\n"}{"\n"}
+    </Text>          
+    </View>  
+     <Image
+          style = {[styles.imagenes,{height:410}]}
+          source={require('../../../images/Unidad2/foda.png')}
+          resizeMode = 'stretch'
+          />
+      
+    <View style={styles.cuerpo}>
+    <Text style={styles.letras}>
+    Es de gran valor toda la información que se tenga acerca de la competencia; de ser posible hay que identificar tanto las estrategias
+    que les han funcionado como las que han fracasado. Entre más se conozca a la competencia se tendrán mayores probabilidades de diseñar
+    estrategias exitosas y tomar mejores decisiones.
+    {"\n"}{"\n"}
+      Proyección de la oferta
+    {"\n"}{"\n"}
+      Al igual que en la demanda, es necesario estimar la situación futura de la oferta. Para lo cual se usarán los datos históricos, 
+      se analizarán sus perspectivas y la facilidad o restricciones que se presentan a fin tener datos estadísticos más precisos.
+    {"\n"}{"\n"}
+      Las limitantes de la oferta futura pueden deberse a las instalaciones y equipamiento, el aprovisionamiento de las materias primas
+      principales, las condiciones institucionales, económicas, financieras, los nuevos proyectos, los permisos en trámite etc.
+    {"\n"}{"\n"}
+      Al realizar la investigación de la oferta actual, en ocasiones se logra identificar a inversionistas que también pretenden 
+      introducirse al mercado estudiado, por lo tanto, éstos se convierten en potenciales oferentes y deben ser considerados al 
+      cuantificar la oferta futura.
+    {"\n"}{"\n"}
+      Los métodos de proyección de la oferta dependen, al igual que en el caso de la demanda, de la información disponible. Por ello
+      se usarán los métodos estadísticos que mejor se adapten, después de analizar las restricciones (Nacional Financiera, 1998).
+    </Text>          
+    </View>  
+  
+    
+        </ScrollView>
+        </Container>
+      );
+    }
+  }
+  class dospuntoseis extends React.Component {
+    render() {
+      return (
+        <Container style={styles.fondo}>
+          <ScrollView>
+          <View style={styles.titulo}> 
+            <Text><H1>Análisis de los precios</H1></Text>          
+          </View>
+          <View
+          style={{
+            borderBottomColor: '#eeeeee',
+            borderBottomWidth: 1,
+            marginLeft:10,
+            marginRight:10,
+          }}
+        />
+    
+    <Image
+          style = {[styles.imagenes,{height:240}]}
+          source={require('../../../images/Unidad2/2.6.png')}
+          resizeMode = 'stretch'
+          />
+    
+        <View style={styles.cuerpo}>         
+          <Text style={styles.letras}>
+            Dado su efecto e impacto en el mercado las decisiones sobre precios son, probablemente, las más importantes para la vida de 
+      una empresa. Tradicionalmente el precio influye en la conducta del comprador, y muchas veces opera como principal determinante
+      en la decisión de compra. El precio sigue siendo uno de los elementos más importantes que determinan la participación en el 
+      mercado y la rentabilidad de una empresa. Una de las preguntas más frecuentes que se hace todo empresario es ¿en cuánto se 
+      debe vender el producto? 
+            {"\n"}{"\n"}
+          </Text>  
+          </View>        
+         
+        
+     <View style={styles.titulo}> 
+            <Text><H1>Precio: concepto</H1></Text>          
+          </View>
+          <View
+          style={{
+            borderBottomColor: '#eeeeee',
+            borderBottomWidth: 1,
+            marginLeft:10,
+            marginRight:10,
+          }}
+        /> 
+    <Image
+          style = {[styles.imagenes,{height:330}]}
+          source={require('../../../images/Unidad2/2.6.1.png')}
+          resizeMode = 'stretch'
+          />
+      
+       <View style={styles.titulo}> 
+            <Text><H1>Clasificación de precios</H1></Text>          
+          </View>
+          <View
+          style={{
+            borderBottomColor: '#eeeeee',
+            borderBottomWidth: 1,
+            marginLeft:10,
+            marginRight:10,
+          }}
+        /> 
+          <View style={styles.cuerpo}>
+            <Text style={styles.letras}>
+      De acuerdo con Baca (2006) los precios se pueden clasificar en:
+        {"\n"}{"\n"}
+            </Text>
+          </View>
+          <Image
+          style = {[styles.imagenes,{height:520}]}
+          source={require('../../../images/Unidad2/2.6.2.png')}
+          resizeMode = 'stretch'
+          />
+      
+        <View style={styles.titulo}> 
+            <Text><H1>Determinación y proyección del precio</H1></Text>          
+          </View>
+          <View
+          style={{
+            borderBottomColor: '#eeeeee',
+            borderBottomWidth: 1,
+            marginLeft:10,
+            marginRight:10,
+          }}
+        />   
+    
+    
+      <Image
+          style = {[styles.imagenes,{height:90}]}
+          source={require('../../../images/Unidad2/11a.png')}
+          resizeMode = 'stretch'
+          />
+    
+     <Image
+          style = {[styles.imagenes,{height:170}]}
+          source={require('../../../images/Unidad2/222.png')}
+          resizeMode = 'stretch'
+          />
+    
+    <Image
+          style = {[styles.imagenes,{height:110}]}
+          source={require('../../../images/Unidad2/333.png')}
+          resizeMode = 'stretch'
+          />
+          <View style={styles.cuerpo}>
+            <Text style={styles.letras}>
+      Nota: en la unidad V abordaremos con más detalle cómo se calcula el precio considerando los costos y gastos más la utilidad deseada.
+        {"\n"}{"\n"}
+            </Text>
+          </View>
+        
+    <Image
+          style = {[styles.imagenes,{height:230}]}
+          source={require('../../../images/Unidad2/444.png')}
+          resizeMode = 'stretch'
+          />
+    
+          </ScrollView>
+        </Container>
+      );
+    }
+  }
+  class dospuntosiete extends React.Component {
     render() {
       return (
       <Container style={styles.fondo}>
         <ScrollView>
           <View style={styles.titulo}> 
-          <Text><H1>¿Por qué son necesarios los proyectos de inversión?</H1></Text>          
+          <Text><H1>Análisis de la comercialización</H1></Text>          
         </View>
         <View
           style={{
@@ -305,40 +1194,130 @@ import { TabNavigator } from 'react-navigation';
         />
         <View style={styles.cuerpo}>            
           <Text style={styles.letras}>
-            La respuesta a la pregunta de ¿Por qué se invierte y por qué son necesarios los proyectos?, 
-            es evidente si consideramos que siempre que exista una necesidad humana que satisfacer habrá 
-            la posibilidad de invertir y para ello se requiere hacer un proyecto de inversión bien estructurado y evaluado. 
+           La comercialización es un aspecto vital para las empresas, es una decisión estratégica. De nada servirá elaborar el mejor producto
+       o proporcionar el mejor servicio a un precio competitivo, si no se cuenta con los medios para hacerlo llegar a los consumidores en
+       forma eficiente y eficaz.
+       {"\n"}{"\n"}
+          </Text>
+        </View>                  
+        <Image
+          style = {[styles.imagenes,{height:370}]}
+          source={require('../../../images/Unidad2/paraelvideo.png')}
+          resizeMode = 'stretch'
+          />
+          <View style={styles.cuerpo}>            
+            <Text style={styles.letras}>
+              Cadena distribución coca cola 
+      {"\n"}{"\n"}
+      Fuente: https://www.youtube.com/watch?v=-O1O1Fo5cek&index=16&list=LL5xM3FX_4F2jaohqjS6mSBQ
+            </Text>
+          </View>
+          <View style={styles.titulo}> 
+          <Text><H1>Importancia de la comercialización</H1></Text>          
+        </View>
+        <View
+          style={{
+            borderBottomColor: '#eeeeee',
+            borderBottomWidth: 1,
+            marginLeft:10,
+            marginRight:10,
+          }}
+        />
+     <View style={styles.cuerpo}>            
+          <Text style={styles.letras}>
+           A través de la comercialización la empresa dirige todos los esfuerzos para satisfacer a sus clientes y a cambio obtener rentabilidad;
+       la forma en que se lleva a cabo la comercialización definirá en gran medida la rentabilidad o no de la empresa, de ahí que las empresas
+       se enfocan en manejar la comercialización con mucho cuidado.
+       {"\n"}{"\n"}
+          </Text>
+        </View>                  
+        <Image
+          style = {[styles.imagenes,{height:370}]}
+          source={require('../../../images/Unidad2/2.7.1.png')}
+          resizeMode = 'stretch'
+          />
+
+      <View style={styles.titulo}> 
+          <Text><H1>Canales de distribución</H1></Text>          
+        </View>
+        <View
+          style={{
+            borderBottomColor: '#eeeeee',
+            borderBottomWidth: 1,
+            marginLeft:10,
+            marginRight:10,
+          }}
+        />
+     
+     <View style={styles.cuerpo}>            
+          <Text style={styles.letras}>
+         Un canal de distribución es la ruta que toma un producto para pasar del productor a los consumidores finales, deteniéndose
+         en varios puntos de esa trayectoria. En cada intermediario o punto en el que se detenga esa trayectoria existe un pago a 
+         transacción, además de un intercambio de información. El productor siempre tratará de elegir el canal más ventajoso desde 
+         todos los puntos de vista (Baca, 2006)
+       {"\n"}{"\n"}
+         Se denomina canal de comercialización a los agentes que se involucran para llevar el producto al consumidor (Nacional Financiera, 2001)
+       {"\n"}{"\n"}
+          </Text>
+        </View>                  
+        <Image
+          style = {[styles.imagenes,{height:240}]}
+          source={require('../../../images/Unidad2/acanal.png')}
+          resizeMode = 'stretch'
+          />
+    
+      <Image
+          style = {[styles.imagenes,{height:340}]}
+          source={require('../../../images/Unidad2/acanal2.png')}
+          resizeMode = 'stretch'
+          />
+    
+      <Image
+          style = {[styles.imagenes,{height:400}]}
+          source={require('../../../images/Unidad2/b.png')}
+          resizeMode = 'stretch'
+          />
+      
+       <Image
+          style = {[styles.imagenes,{height:440}]}
+          source={require('../../../images/Unidad2/c.png')}
+          resizeMode = 'stretch'
+          />
+      
+      <Image
+          style = {[styles.imagenes,{height:170}]}
+          source={require('../../../images/Unidad2/1.3.png')}
+          resizeMode = 'stretch'
+          />
+      
+     <View style={styles.titulo}> 
+          <Text><H1>Factores a considerar en la selección de un canal de comercialización</H1></Text>          
+        </View>
+        <View
+          style={{
+            borderBottomColor: '#eeeeee',
+            borderBottomWidth: 1,
+            marginLeft:10,
+            marginRight:10,
+          }}
+        />
+    
+     <View style={styles.cuerpo}>            
+          <Text style={styles.letras}>
+           La decisión sobre el canal o la combinación de canales de distribución más adecuado(s) para la empresa, está en función de sus objetivos en cuanto a:  
+       {"\n"}{"\n"}
+
           </Text>
         </View>                  
         <Image
           style = {[styles.imagenes,{height:400}]}
-          source={require('../../../images/1.4.png')}
-          resizeMode = 'cover'
-          />
-          <View style={styles.cuerpo}>            
-            <Text style={styles.letras}>
-              Una vez que revisaste el tema, elabora la siguiente evidencia de aprendizaje:  
-            </Text>
-          </View>
-          
-          <Image
-          style = {[styles.imagenes,{height:70}]}
-          source={require('../../../images/EA2.png')}
+          source={require('../../../images/Unidad2/2.7.3.png')}
           resizeMode = 'stretch'
           />
-        </ScrollView>
-        </Container>
-      );
-    }
-  }
-  class unopuntocinco extends React.Component {
-    render() {
-      return (
-        <Container style={styles.fondo}>
-        <ScrollView>
-          <View style={styles.titulo}> 
-          <Text><H1> Ciclo de vida de los proyectos </H1></Text>          
-        </View>        
+      
+     <View style={styles.titulo}> 
+          <Text><H1>Estrategias de promoción y publicidad</H1></Text>          
+        </View>
         <View
           style={{
             borderBottomColor: '#eeeeee',
@@ -347,81 +1326,52 @@ import { TabNavigator } from 'react-navigation';
             marginRight:10,
           }}
         />
-        <View style={styles.cuerpo}>            
+     <View style={styles.cuerpo}>            
           <Text style={styles.letras}>
-            De acuerdo con Fernández (2010) el ciclo de vida de un proyecto tiene las siguientes fases  
-          </Text>    
-        </View>              
-        <Image
-          style = {[styles.imagenes,{height:200}]}
-          source={require('../../../images/ciclo.png')}
-          resizeMode = 'cover'
-          />
-          <View style={styles.cuerpo}>            
-            <Text style={styles.letras}>
-              El ciclo de vida de un proyecto de inversión está en función del sector al que pertenece. 
-              Por ejemplo, si el proyecto es del sector privado, su ciclo empieza cuando se visualiza una 
-              necesidad que debe ser satisfecha o cuando se detecta la existencia de una oportunidad de inversión. 
-              En cambio, si se trata de un proyecto del sector público, el ciclo iniciará cuando se identifica la
-              existencia de un problema que debe ser resuelto. 
-              {"\n"}{"\n"}
-              En términos generales el ciclo de vida de un proyecto está conformado por al menos cuatro fases. 
-            </Text> 
-          </View>         
-          <Image
-          style = {[styles.imagenes,{height:400}]}
-          source={require('../../../images/etapa1.png')}
+      La publicidad es toda transmisión de información masiva, impersonal (se dirige a un público anónimo no identificado),
+      unilateral (no hay interrelación entre el emisor y el receptor del mensaje) a través de un medio de comunicación dirigida
+      a un público objetivo con la finalidad de estimular la demanda de un producto o de cambiar la opinión o comportamiento 
+      del consumidor.
+      {"\n"}{"\n"}
+          </Text>
+        </View>         
+  
+    <Image
+          style = {[styles.imagenes,{height:380}]}
+          source={require('../../../images/Unidad2/1111.png')}
           resizeMode = 'stretch'
           />
-          <Image
-          style = {[styles.imagenes,{height:300}]}
-          source={require('../../../images/etapa2.png')}
-          resizeMode = 'stretch'
-          />
-          <Image
-          style = {[styles.imagenes,{height:200}]}
-          source={require('../../../images/etapa3.png')}
-          resizeMode = 'stretch'
-          />
-          <View style={styles.cuerpo}>            
-            <Text style={styles.letras}>
-              Por otro lado, Nacional Financiera (2001), también aborda el proceso de inversión así como 
-              del ciclo de vida de un proyecto. En este sentido, la institución menciona que en los sistemas 
-              socioeconómicos donde prevalecen economías de mercado, se entiende por proceso de inversión a la 
-              actividad que consiste en asignar recursos económicos a fines productivos, mediante la formación 
-              bruta de capital fijo, con el propósito de recuperar con creces los recursos asignados. El proceso de
-              inversión comprende cuatro etapas completamente diferenciables en contenido y prácticamente sucesivas
-                e irreductibles: Preinversión, decisión, inversión y recuperación.  
-            </Text>
-          </View>
-          <Image
-          style = {[styles.imagenes,{height:150}]}
-          source={require('../../../images/1.1.4.png')}
-          resizeMode = 'stretch'
-          />
-          <View style={styles.cuerpo}>            
-            <Text style={styles.letras}>
-             A continuación se explican cada una de estas etapas.   
-            </Text>
-          </View>
-          <Image
-          style = {[styles.imagenes,{height:500}]}
-          source={require('../../../images/imagen9.png')}
+  
+  
+   <View style={styles.cuerpo}>            
+          <Text style={styles.letras}>
+      Para desarrollar un programa de publicidad se deben establecer objetivos claros y desarrollar una estrategia de 
+      posicionamiento y marketing. El diseño de la estrategia publicitaria incluye una serie de decisiones tales como:
+       {"\n"}{"\n"}
+          </Text>
+        </View>   
+
+    <Image
+          style = {[styles.imagenes,{height:260}]}
+          source={require('../../../images/Unidad2/2222.png')}
           resizeMode = 'stretch'
           />
 
-        </ScrollView>
-        </Container>
-      );
-    }
-  }
-  class unopuntoseis extends React.Component {
-    render() {
-      return (
-      <Container style={styles.fondo}>
-        <ScrollView>
-        <View style={styles.titulo}> 
-          <Text><H1> Formulación de proyectos  </H1></Text>          
+     <View style={styles.cuerpo}>            
+          <Text style={styles.letras}>
+       En el siguiente cuadro encontrarás información puntual acerca de la promoción y la publicidad.
+       {"\n"}{"\n"}
+          </Text>
+        </View>  
+    <Image
+          style = {[styles.imagenes,{height:140}]}
+          source={require('../../../images/Unidad2/publi.png')}
+          resizeMode = 'stretch'
+          />
+
+      
+    <View style={styles.titulo}> 
+          <Text><H1>Garantía del producto</H1></Text>          
         </View>
         <View
           style={{
@@ -430,255 +1380,52 @@ import { TabNavigator } from 'react-navigation';
             marginLeft:10,
             marginRight:10,
           }}
-        />
-        <View style={styles.cuerpo}>            
-          <Text style={styles.letras}>
-            La primera parte de todo proyecto de inversión deberá ser su presentación formal, 
-            misma que iniciará con una breve introducción que describa la reseña histórica del desarrollo del 
-            bien o servicio (incluyendo el por qué se pensó en emprenderlo vinculándolo con las condiciones 
-            económicas y sociales), el target al que va dirigido, el problema que resolverá o la necesidad que
-            cubrirá, los factores relevantes que influyen en su consumo, así como los principales usos del producto 
-            o servicio, y finalmente, los objetivos y limitaciones del proyecto. 
-            {"\n"}{"\n"}
-            Todo proyecto de inversión contiene al menos cinco secciones debidamente analizadas, documentadas y evaluadas: 
-          </Text> 
-        </View>                
-        <Image
-          style = {[styles.imagenes,{height:400}]}
-          source={require('../../../images/1.6.png')}
-          resizeMode = 'cover'
-          /> 
+        />  
           <View style={styles.cuerpo}>            
-            <Text style={styles.letras}>
-              Estas secciones se pueden apreciar en la siguiente imagen.  
-            </Text> 
-        </View> 
-          <Image
-          style = {[styles.imagenes,{height:200}]}
-          source={require('../../../images/2.png')}
-          resizeMode = 'cover'
-          /> 
-          <View style={styles.titulo}> 
-          <Text><H1>Estudio de mercado</H1></Text>          
-         </View>
-         <View
-          style={{
-            borderBottomColor: '#eeeeee',
-            borderBottomWidth: 1,
-            marginLeft:10,
-            marginRight:10,
-          }}
-        />
-        <View style={styles.cuerpo}>            
           <Text style={styles.letras}>
-            El objetivo general de este estudio es verificar la existencia de un mercado potencial insatisfecho y 
-            la factibilidad de introducir un bien o prestar un servicio en dicho mercado.           
-          </Text> 
-        </View> 
-          <Image
-          style = {[styles.imagenes,{height:250}]}
-          source={require('../../../images/1.6.1.png')}
-          resizeMode = 'cover'
-          /> 
-          <View
-          style={{
-            borderBottomColor: '#eeeeee',
-            borderBottomWidth: 1,
-            marginLeft:10,
-            marginRight:10,
-          }}
-        />
-        <View style={styles.cuerpo}>            
-          <Text style={styles.letras}>
-            Una vez que se ha descrito, en términos precisos, el producto o el servicio es necesario llevar 
-            a cabo una serie de estudios en fuentes primarias y secundarias para obtener información acerca de la 
-            oferta y la demanda tanto histórica como proyectada; se realiza un estudio de precios; se analizan y 
-            se definen los canales de distribución más adecuados y finalmente, se establecen estrategias de promoción 
-            y publicidad. 
-          </Text> 
-        </View>
-          <View style={styles.titulo}> 
-          <Text><H1>Estudio técnico</H1></Text>          
-         </View>
-         <View
-          style={{
-            borderBottomColor: '#eeeeee',
-            borderBottomWidth: 1,
-            marginLeft:10,
-            marginRight:10,
-          }}
-        />
-        <View style={styles.cuerpo}>            
-          <Text style={styles.letras}>
-              Tiene como objetivo demostrar que tecnológicamente es posible producir un bien o prestar un servicio una vez
-              que se verificó que no existe impedimento alguno en el abasto de todos los insumos necesarios para su producción.         
-            </Text> 
-        </View> 
-          <Image
-          style = {[styles.imagenes,{height:300}]}
-          source={require('../../../images/1.6.2.png')}
-          resizeMode = 'cover'
-          />
-          <View style={styles.titulo}> 
-          <Text><H1>Estudio administrativo y de organización</H1></Text>          
-         </View>          
-         <View
-          style={{
-            borderBottomColor: '#eeeeee',
-            borderBottomWidth: 1,
-            marginLeft:10,
-            marginRight:10,
-          }}
-        /> 
-          <Image
-          style = {[styles.imagenes,{height:300}]}
-          source={require('../../../images/1.6.3.png')}
-          resizeMode = 'cover'
-          />
-          <View style={styles.titulo}>
-          <Text><H1>Estudio financiero</H1></Text>          
-         </View>  
-         <View
-          style={{
-            borderBottomColor: '#eeeeee',
-            borderBottomWidth: 1,
-            marginLeft:10,
-            marginRight:10,
-          }}
-        /> 
-          <Image
-          style = {[styles.imagenes,{height:200}]}
-          source={require('../../../images/1.6.4.png')}
-          resizeMode = 'cover'
-          />
-          <View style={styles.titulo}>
-          <Text><H1>Estudio sustentable, social y financiero</H1></Text>          
-         </View>
-         <View
-          style={{
-            borderBottomColor: '#eeeeee',
-            borderBottomWidth: 1,
-            marginLeft:10,
-            marginRight:10,
-          }}
-        /> 
-        <View style={styles.cuerpo}>            
-          <Text style={styles.letras}>
-            Existe un compromiso mundial en cuanto a
-            la necesidad de realizar estudios y evaluación
-            del impacto ambiental que pueda derivarse de
-            la ejecución de un proyecto, lo que permite
-            tomar decisiones sobre su factibilidad ambiental. 
-            El impacto ambiental se refiere a los daños o transformaciones que las
-            acciones del ser humano pueden generar en la naturaleza. Cabe señalar que, 
-            con el crecimiento de las sociedades industrializadas y de los centros urbanos el impacto ambiental
-            es cada vez más notorio. El estudio de impacto ambiental puede hacerse en varias etapas, 
-            en paralelo con las etapas del proyecto que se pretende evaluar.
-          </Text> 
+       Existen dos tipos de garantías: las garantías legales, a las que se tienen derecho por ley y que se puede ejercitar
+       por un motivo concreto (que el producto no se ajusta a la descripción hecha por el vendedor o no posea las cualidades
+       que el vendedor presentó al cliente); y las garantías comerciales, que son las que ofrece el comerciante y son adicionales
+       a las garantías legales.
+       {"\n"}{"\n"}
+          </Text>
         </View>  
-          <Image
-          style = {[styles.imagenes,{height:150}]}
-          source={require('../../../images/1.6.5.png')}
-          resizeMode = 'cover'
+    <Image
+          style = {[styles.imagenes,{height:400}]}
+          source={require('../../../images/Unidad2/2.7.5.png')}
+          resizeMode = 'stretch'
           />
+
+      <View style={styles.cuerpo}>            
+          <Text style={styles.letras}>
+       Una vez realizada la investigación o el estudio de mercado, ahora sí se tendrá información suficiente para saber qué tantas 
+       posibilidades tiene el producto o el servicio de ser aceptado y vendido en el mercado; si el escenario es pesimista, no hay
+       que desanimarse, hay que replantear la idea y en un momento dado abandonarla e identificar otra idea de producto o servicio;
+       en el caso de que el escenario (previamente analizado y evaluado) sea optimista, entonces podemos decir que hay factibilidad
+       en el estudio de mercado y se deberá continuar con el estudio técnico, mismo que abordaremos en la siguiente unidad temática.
+       {"\n"}{"\n"}
+        Para concluir esta unidad temática, es necesario que realices las evidencia de aprendizaje: 
+       {"\n"}{"\n"} 
+          </Text>
+        </View>  
+    <Image
+          style = {[styles.imagenes,{height:70}]}
+          source={require('../../../images/Unidad2/EA2.7.png')}
+          resizeMode = 'stretch'
+          />
+    <Image
+          style = {[styles.imagenes,{height:70}]}
+          source={require('../../../images/Unidad2/EA2.8.png')}
+          resizeMode = 'stretch'
+          />
+     
+      
         </ScrollView>
-      </Container>
+        </Container>
       );
     }
   }
-  class unopuntosiete extends React.Component {
-    render() {
-      return (
-        <Container style={styles.fondo}>
-        <ScrollView>
-          <View style={styles.titulo}> 
-            <Text><H1> Técnica para la administración del proyecto Gráfica de Gantt  </H1></Text>          
-          </View>
-          <View
-          style={{
-            borderBottomColor: '#eeeeee',
-            borderBottomWidth: 1,
-            marginLeft:10,
-            marginRight:10,
-          }}
-          />
-          <View style={styles.cuerpo}>
-            <Text style={styles.letras}>
-              La gráfica de Gantt fue diseñada en 1910 por el ingeniero industrial de nacionalidad norteamericana Henry L. Gantt;
-              es una herramienta utilizada para la planeación, programación y seguimiento de las actividades de un proyecto; 
-              consta de un sistema de coordenadas:  
-              {"\n"}{"\n"}
-              Eje vertical. Se detallan las actividades o tareas del proyecto
-              {"\n"}{"\n"}
-              Eje horizontal. Se indican fechas en una escala de tiempo (hora, día, semana, mes, etc.)
-            </Text>
-          </View>                 
-          <Image
-            style = {[styles.imagenes,{height:150}]}
-            source={require('../../../images/gantt.png')}
-            resizeMode = 'cover'
-            /> 
-            <View style={styles.cuerpo}>
-              <Text style={styles.letras}>
-                Cada actividad se representa mediante un bloque rectangular cuya longitud indica por un lado,
-                la duración de cada una de las actividades y por otro, las tareas que se pueden realizar simultáneamente.
-                </Text>
-          </View>                   
-          <Image
-            style = {[styles.imagenes,{height:150}]}
-            source={require('../../../images/ventajas.png')}
-            resizeMode = 'cover'
-            />  
-            <View style={styles.cuerpo}>
-              <Text style={styles.letras}>
-                La Gráfica de Gantt es el antecedente de las técnicas que existen para la administración de proyectos.
-                La complejidad creciente de los proyectos actuales, ha exigido la utilización de técnicas y herramientas de
-                planeación más sistemáticas y más efectivas, con el propósito de optimizar la eficiencia en la ejecución de proyectos. 
-                {"\n"}{"\n"}
-                Para concluir esta unidad es necesario que realices, las evidencias de aprendizale 3,4 y 5 que a continuación encontrarás: 
-            </Text>
-          </View>    
-            
-          <TouchableHighlight>
-          <Image
-          style = {[styles.imagenes,{height:70}]}
-          source={require('../../../images/EA3.png')}
-          resizeMode = 'stretch'
-          />
-          </TouchableHighlight>
-          
-          <TouchableHighlight>
-          <Image
-          style = {[styles.imagenes,{height:70}]}
-          source={require('../../../images/EA4.png')}
-          resizeMode = 'stretch'
-          />
-          </TouchableHighlight>
-          
-          <TouchableHighlight>
-          <Image
-          style = {[styles.imagenes,{height:70}]}
-          source={require('../../../images/EA5.png')}
-          resizeMode = 'stretch'
-          />
-          </TouchableHighlight>
-          
-          <View style={styles.cuerpo}>
-              <Text style={styles.letras}>
-                ¡Felicidades! ya concluiste esta unidad temática; esperamos que ahora tengas una idea más clara de: lo que son los proyectos
-                de inversión, su clasificación, la razón de su importancia, su ciclo de vida, y su estructura, ésta última comprende los 
-                siguientes estudios: mercado, técnico, administración y organización, financiero y finalmente, el estudio sustentable. Cada
-                uno de dichos estudios requiere una exhaustiva investigación que nos brindará información y aprendizajes muy valiosos, base
-                para la toma de decisiones razonadas y fundamentadas; es por esta razón por la que en esta unidad de aprendizaje dedicamos 
-                una unidad temática para cada uno se estos estudios. En la siguiente unidad abordaremos el primero de ellos: el estudio de
-                mercado.
-              </Text>
-          </View> 
-          </ScrollView>
-          </Container>
-      );
-    }
-  }
+  
   var {width} = Dimensions.get('window');
   const styles = StyleSheet.create({
     fondo:{
@@ -702,13 +1449,13 @@ import { TabNavigator } from 'react-navigation';
   });
   
   export default TabNavigator({
-    '1.1': { screen: unopuntouno },
-    '1.2': { screen: unopuntodos },
-    '1.3': { screen: unopuntotres },
-    '1.4': { screen: unopuntocuatro },
-    '1.5': { screen: unopuntocinco },
-    '1.6': { screen: unopuntoseis },
-    '1.7': { screen: unopuntosiete }
+    '2.1': { screen: dospuntouno },
+    '2.2': { screen: dospuntodos },
+    '2.3': { screen: dospuntotres },
+    '2.4': { screen: dospuntocuatro },
+  '2.5': { screen: dospuntocinco },
+    '2.6': { screen: dospuntoseis },
+  '2.7': { screen: dospuntosiete },
   },{
     tabBarOptions: {
         activeTintColor: 'white',
