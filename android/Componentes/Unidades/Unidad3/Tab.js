@@ -448,6 +448,7 @@ class trespuntocuatro extends React.Component {
             	animated = {true}
             	hidden = {false} />
                
+<<<<<<< HEAD
           	<ScrollView>
         <View style={styles.titulo}>  
 	<Text><H1>3.4 Ingeniería del proyecto</H1></Text>
@@ -691,11 +692,371 @@ Ventajas e importancia de representar los procesos y procedimientos mediante dia
 	<Text><H1>COSTO ANUAL DE PERSONAL TÉCNICO</H1></Text>
 	</View>
           <ImageZoom cropWidth={Dimensions.get('window').width}
+=======
+          <ScrollView>
+           <View style={styles.containerr, {height: 7820}}>
+            <View style={styles.titulo}>  
+              <Text><H1>3.4 Ingeniería del proyecto</H1></Text>
+            </View>
+            <View style={styles.containerr, {height: 60}}>
+              <WebView
+                source={{
+                  html:
+                  "<style>p{text-align:justify}</style>"+
+                  "<p>"+
+                  "La ingeniería del proyecto se refiere a la etapa técnica del proyecto la cual comprende:"+
+                  "</p>" 
+               }}
+              />
+            </View>
+            <Image
+              style = {[styles.imagenes,{height:150}]}
+              source={require('../../../images/Unidad3/34.png')}
+              resizeMode = 'center'
+            />
+            <View style={styles.containerr, {height: 60}}>
+              <WebView
+                source={{
+                  html:
+                  "<style>p{text-align:justify}</style>"+
+                  "<p>"+
+                  "Imagen 3.12. Fuente: Elaboración propia con base en la bibliografía consultada"+
+                  "</p>" 
+               }}
+              />
+            </View>
+            <View style={styles.titulo}>  
+              <Text><H1>3.4.1 Definición técnica del producto</H1></Text>
+            </View>
+            <View style={styles.containerr, {height: 90}}>
+              <WebView
+                source={{
+                  html:
+                  "<style>p{text-align:justify}</style>"+
+                  "<p>"+
+                  "La especificación técnica de un producto se documenta en lo que se conoce como ficha técnica, "+
+                  "la cual contiene información básica, útil, clara y concisa del producto."+
+                  "</p>" 
+               }}
+              />
+            </View>
+            <Image
+              style = {[styles.imagenes,{height:200}]}
+              source={require('../../../images/Unidad3/341.png')}
+              resizeMode = 'center'
+            />
+            <View style={styles.containerr, {height: 40}}>
+              <WebView
+                source={{
+                  html:
+                  "<style>p{text-align:justify}</style>"+
+                  "<p>"+
+                  "Imagen 3.13. Fuente: Elaboración propia"+
+                  "</p>" 
+               }}
+              />
+            </View>
+            <View style={styles.containerr, {height: 80}}>
+              <WebView
+                source={{
+                  html:
+                  "<style>p{text-align:justify}</style>"+
+                  "<p>"+
+                  "Además de la información anterior, se puede añadir cualquier otro dato que se considere importante."+
+                  "</p>" 
+               }}
+              />
+            </View>
+            <View style={styles.titulo}>  
+              <Text><H1>3.4.2 Planos y especificaciones</H1></Text>
+            </View>
+            <View style={styles.containerr, {height: 190}}>
+              <WebView
+                source={{
+                  html:
+                  "<style>p{text-align:justify}</style>"+
+                  "<p>"+
+                  "Una vez que se han definido las dimensiones, características y la ubicación de cada una de las áreas que conformarán la empresa, se deberán diseñar los planos (representación gráfica a escala) correspondientes con todas las especificaciones."+ 
+                  "Hay que considerar que no solo se realiza el plano de la construcción, "+
+                  "sino también el de instalaciones eléctricas, sanitarias, gas, etc."+
+                  "</p>" 
+               }}
+              />
+            </View>
+            <View style={styles.titulo}>  
+              <Text><H1>3.4.3 Descripción y diseño del proceso de producción</H1></Text>
+            </View>
+            <View style={styles.containerr, {height: 450}}>
+              <WebView
+                source={{
+                  html:
+                  "<style>p{text-align:justify}</style>"+
+                  "<p>"+
+                  "Un proceso de producción es un procedimiento técnico que se utiliza para obtener los bienes y servicios a partir de insumos."+
+                  "</p>"+
+                  "<p>"+
+                  "En sumamente importante tener bien definido el proceso productivo porque a partir de éste podrás determinar los requerimientos de insumos, mano de obra, infraestructura, maquinaria y equipos, mismos que deben cuantificarse en términos monetarios para saber el monto de la inversión inicial así como los costos de operación."+
+                  "</p>"+
+                  "<p>"+
+                  "El proceso productivo debe describirse de manera clara y detallada; para posteriormente representarse en un diagrama. Algunos de los diagramas que existen para representar el proceso productivo son: diagrama de bloques, diagrama de flujo del proceso, cursograma analítico, diagrama de hilos y diagrama de recorrido."+
+                  "</p>"+
+                  "<p>"+
+                  "Ventajas e importancia de representar los procesos y procedimientos mediante diagramas:"+
+                  "</p>" 
+               }}
+              />
+            </View>
+            <Image
+              style = {[styles.imagenes,{height:80}]}
+              source={require('../../../images/Unidad3/ventajas.png')}
+              resizeMode = 'center'
+            />
+            <View style={styles.containerr, {height: 40}}>
+              <WebView
+                source={{
+                  html:
+                  "<style>p{text-align:justify}</style>"+
+                  "<p>"+
+                  "Imagen 3.15. Fuente: Elaboración propia"+
+                  "</p>" 
+               }}
+              />
+            </View>
+            <View style={styles.containerr, {height: 70}}>
+              <WebView
+                source={{
+                  html:
+                  "<style>p{text-align:justify}</style>"+
+                  "<p>"+
+                  "En la siguiente lectura \"Diagramas del proceso de producción\" encontrarás más información sobre el tema"+
+                  "</p>" 
+               }}
+              />
+            </View>
+            <Image
+              style = {[styles.imagenes,{height:100}]}
+              source={require('../../../images/Unidad3/L3.png')}
+              resizeMode = 'center'
+            />
+            <View style={styles.containerr, {height: 60}}>
+              <WebView
+                source={{
+                  html:
+                  "<style>p{text-align:justify}</style>"+
+                  "<p>"+
+                  "Después de leer el material anterior, realiza las evidencias de aprendizaje"+ 
+                  "</p>" 
+               }}
+              />
+            </View>
+            <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/s/91o483mv0qqd2at/tresuno.pdf?dl=1')}>
+              <Image
+              style = {[styles.imagenes,{height:100}]}
+              source={require('../../../images/Unidad3/ea1.png')}
+              resizeMode = 'center'
+              />
+            </TouchableHighlight>
+            <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/s/oxn9hv0upxkl9we/tresdos.pdf?dl=1')}>
+              <Image
+              style = {[styles.imagenes,{height:100}]}
+              source={require('../../../images/Unidad3/ea2.png')}
+              resizeMode = 'center'
+              />
+            </TouchableHighlight>
+            <View style={styles.titulo}>  
+              <Text><H1>3.4.4 Materia prima</H1></Text>
+            </View>
+            <View style={styles.containerr, {height: 150}}>
+              <WebView
+                source={{
+                  html:
+                  "<style>p{text-align:justify}</style>"+
+                  "<p>"+
+                  "Uno de los principales insumos en un proceso productivo es la materia prima, ésta forma parte del producto, por lo general los insumos son de origen agrícola (trigo, soya, frutas, etc); "+
+                  "acuícola (productos del mar); pecuario (ganadería), forestal (madera, leña, pasto, etc) y mineros (metales y minerales)."+ 
+                  "</p>" 
+               }}
+              />
+            </View>
+             <Image
+              style = {[styles.imagenes,{height:150}]}
+              source={require('../../../images/Unidad3/345.png')}
+              resizeMode = 'center'
+            />
+            <View style={styles.containerr, {height: 50}}>
+              <WebView
+                source={{
+                  html:
+                  "<style>p{text-align:justify}</style>"+
+                  "<p>"+
+                  "Imagen 3.16. Fuente: Elaboración propia"+ 
+                  "</p>" 
+               }}
+              />
+            </View>
+            <View style={styles.titulo}>  
+              <Text><H1>3.4.5 Determinación de los requerimientos y disponibilidad de materia prima</H1></Text>
+            </View>
+            <Image
+              style = {[styles.imagenes,{height:150}]}
+              source={require('../../../images/Unidad3/3.4.6.png')}
+              resizeMode = 'center'
+            />
+            <View style={styles.containerr, {height: 40}}>
+              <WebView
+                source={{
+                  html:
+                  "<style>p{text-align:justify}</style>"+
+                  "<p>"+
+                  "Imagen 3.17. Fuente: Elaboración propia"+ 
+                  "</p>" 
+               }}
+              />
+            </View>
+            <View style={styles.containerr, {height: 340}}>
+              <WebView
+                source={{
+                  html:
+                  "<style>p{text-align:justify}</style>"+
+                  "<p>"+
+                  "Para determinar la cantidad de materia prima que necesitas tendrás que basarte tanto en tu plan de producción (estimación del número de unidades a producir en un periodo de tiempo) "+
+                  "así como en tu proceso productivo,para que entre otros aspectos tomes en cuenta las mermas y los desperdicios y tengas la materia prima suficiente para cumplir con el plan de producción."+
+                  "</p>"+
+                  "<p>"+
+                  "Por otro lado, en la medida de lo posible, debes garantizar el abastecimiento y la calidad de las materias primas que requieres para tu proceso productivo e inclusive, "+
+                  "es recomendable investigar sobre la existencia de materias primas sustitutas para aquellos casos en que se escasee la materia prima que regularmente se ocupa en el proceso productivo."+ 
+                  "</p>" 
+               }}
+              />
+            </View>
+            <View style={styles.titulo}>  
+              <Text><H1>3.4.6 Estudio del medio ambiente</H1></Text>
+            </View>
+            <View style={styles.containerr, {height: 130}}>
+              <WebView
+                source={{
+                  html:
+                  "<style>p{text-align:justify}</style>"+
+                  "<p>"+
+                  "Los proyectos impactan en mayor o menor medida al medio ambiente, aunque cabe señalar que existen proyectos que su principal compromiso es mejorar "+
+                  "las condiciones ambientales a través de acciones para minimizar o anular el impacto negativo del proyecto sobre su entorno."+ 
+                  "</p>" 
+               }}
+              />
+            </View>
+            <Image
+              style = {[styles.imagenes,{height:150}]}
+              source={require('../../../images/Unidad3/347.png')}
+              resizeMode = 'center'
+            />
+            <View style={styles.containerr, {height: 40}}>
+              <WebView
+                source={{
+                  html:
+                  "<style>p{text-align:justify}</style>"+
+                  "<p>"+
+                  "Imagen 3.18. Fuente: Elaboración propia"+
+                  "</p>" 
+               }}
+              />
+            </View>
+            <View style={styles.titulo}>  
+              <Text><H1>3.4.7 Estimación de requerimientos de mano de obra</H1></Text>
+            </View>
+            <View style={styles.containerr, {height: 150}}>
+              <WebView
+                source={{
+                  html:
+                  "<style>p{text-align:justify}</style>"+
+                  "<p>"+
+                  "Después de determinar la cantidad y características de la maquinaria, equipo, tecnología y turnos de trabajo que se ocuparán en el proceso productivo, "+
+                  "es posible definir las necesidades de personal técnico."+
+                  "</p>"+
+                  "<p>"+
+                  "El personal técnico comprende:"+
+                  "</p>" 
+               }}
+              />
+            </View>
+            <View style={styles.containerr, {height: 40}}>
+              <WebView
+                source={{
+                  html:
+                  "<style>p{text-align:justify}</style>"+
+                  "<p>"+
+                  "Mano de obra directa"+
+                  "</p>" 
+               }}
+              />
+            </View>
+            <Image
+              style = {[styles.imagenes,{height:150}]}
+              source={require('../../../images/Unidad3/1.png')}
+              resizeMode = 'center'
+            />
+            <View style={styles.containerr, {height: 60}}>
+              <WebView
+                source={{
+                  html:
+                  "<style>p{text-align:justify}</style>"+
+                  "<p>"+
+                  "Personal que interviene directamente en el proceso productivo."+
+                  "</p>" 
+               }}
+              />
+            </View>
+            <View style={styles.containerr, {height: 40}}>
+              <WebView
+                source={{
+                  html:
+                  "<style>p{text-align:justify}</style>"+
+                  "<p>"+
+                  "Mano de obra indirecta"+
+                  "</p>" 
+               }}
+              />
+            </View>
+            <Image
+              style = {[styles.imagenes,{height:150}]}
+              source={require('../../../images/Unidad3/3.png')}
+              resizeMode = 'center'
+            />
+            <View style={styles.containerr, {height: 140}}>
+              <WebView
+                source={{
+                  html:
+                  "<style>p{text-align:justify}</style>"+
+                  "<p>"+
+                  "Personal que no interviene en forma directa en el proceso productivo; sin embargo, las actividades que realizan son igualmente importantes para que sea posible llevar a cabo la producción. "+
+                  "Por ejemplo, personal de limpieza, de vigilancia, supervisores de producción, etc."+
+                  "</p>" 
+               }}
+              />
+            </View> 
+            <View style={styles.containerr, {height: 140}}>
+              <WebView
+                source={{
+                  html:
+                  "<style>p{text-align:justify}</style>"+
+                  "<p>"+
+                  "Una vez que se ha determinado la cantidad y características del personal técnico que se requerirá, "+
+                  "es importante calcular cuál será el costo que implica tener a dicho personal; de manera muy sencilla "+
+                  "se puede calcular en una tabla como la siguiente:"+
+                  "</p>" 
+               }}
+              />
+            </View> 
+            <View style={styles.titulo}>  
+              <Text><H1>COSTO ANUAL DE PERSONAL TÉCNICO</H1></Text>
+            </View>
+            <ImageZoom cropWidth={Dimensions.get('window').width}
+>>>>>>> parent of eaf1a7a... Unidad 5 justificada y Unidad 3 con todas las imagenes
                        cropHeight={110}
                        imageWidth={width}
                        imageHeight={110}>
                 <Image style={{width:width, height:110}}
                          source={require('../../../images/Unidad3/tabla.png')}/>
+<<<<<<< HEAD
           </ImageZoom> 
           <View style={styles.cuerpo}>
           <Text>
@@ -805,6 +1166,172 @@ E.-Flexibilidad. En la medida de lo posible se debe procurar que la distribució
               </Text>          
           </View>
           <ImageZoom cropWidth={Dimensions.get('window').width}
+=======
+            </ImageZoom> 
+            <View style={styles.containerr, {height: 50}}>
+              <WebView
+                source={{
+                  html:
+                  "<style>p{text-align:justify}</style>"+
+                  "<p>"+
+                  "Tabla 8. Fuente: Elaboración propia"+
+                  "</p>" 
+               }}
+              />
+            </View>
+            <View style={styles.titulo}>  
+              <Text><H1>3.4.8 Selección de maquinaria y equipo</H1></Text>
+            </View>
+            <View style={styles.containerr, {height: 140}}>
+              <WebView
+                source={{
+                  html:
+                  "<style>p{text-align:justify}</style>"+
+                  "<p>"+
+                  "La maquinaria y el equipo se seleccionan en función de las características del proceso productivo, del nivel de operación requerido y en general, del tamaño del proyecto."+
+                  "Para seleccionar la maquinaria y equipo es importante tomar en cuenta los siguientes factores:"+
+                  "</p>" 
+               }}
+              />
+            </View>
+            <View style={styles.containerr, {height: 60}}>
+              <WebView
+                source={{
+                  html:
+                  "<style>p{text-align:justify}</style>"+
+                  "<p>"+
+                  "Tabla 9. Fuente: Elaboración propia con base en la bibliografía consultada"+
+                  "</p>" 
+               }}
+              />
+            </View>
+            <View style={styles.containerr, {height: 220}}>
+              <WebView
+                source={{
+                  html:
+                  "<style>p{text-align:justify}</style>"+
+                  "<p>"+
+                  "Los requerimientos en cuanto a espacio físico se calculan una vez que se ha:"+
+                  "</p>"+
+                  "<p>"+
+                  "A.-Definido el proceso productivo"+
+                  "</p>"+
+                  "<p>"+
+                  "B.-Determinado la cantidad y características de la maquinaria y el equipo"+
+                  "</p>"+
+                  "<p>"+
+                  "C.-Definido la cantidad de trabajadores y empleados necesarios para el funcionamiento de la empresa"+
+                  "</p>" 
+               }}
+              />
+            </View>
+            <View style={styles.containerr, {height: 190}}>
+              <WebView
+                source={{
+                  html:
+                  "<style>p{text-align:justify}</style>"+
+                  "<p>"+
+                  "Adicionalmente, se deben considerar los espacios en metros cuadrados para el almacén, bodegas, salas de espera, comedor, sala de juntas, "+
+                  "rutas de evacuación y de emergencia, sanitarios, estacionamiento, áreas verdes, caseta de vigilancia, "+
+                  "áreas de carga y de descarga, en caso de requerirse y cualquier otro espacio que se considere necesario."+
+                  "</p>" 
+               }}
+              />
+            </View>
+            <Image
+              style = {[styles.imagenes,{height:150}]}
+              source={require('../../../images/Unidad3/3.4.10.png')}
+              resizeMode = 'center'
+            />
+            <View style={styles.containerr, {height: 40}}>
+              <WebView
+                source={{
+                  html:
+                  "<style>p{text-align:justify}</style>"+
+                  "<p>"+
+                  "Imagen 3.19. Fuente: Elaboración propia"+
+                  "</p>" 
+               }}
+              />
+            </View>
+            <View style={styles.containerr, {height: 50}}>
+              <WebView
+                source={{
+                  html:
+                  "<style>p{text-align:justify}</style>"+
+                  "<p>"+
+                  "Es el momento de realizar la siguiente evidencia de aprendizaje"+
+                  "</p>" 
+               }}
+              />
+            </View>
+            <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/s/snp6tckgtlcp48e/trescuatro.pdf?dl=1')}>
+            <Image
+              style = {[styles.imagenes,{height:100}]}
+              source={require('../../../images/Unidad3/ea4.png')}
+              resizeMode = 'center'
+              /> 
+            </TouchableHighlight>
+            <View style={styles.titulo}>  
+              <Text><H1>3.4.10 Distribución de planta</H1></Text>
+            </View>
+            <View style={styles.containerr, {height: 110}}>
+              <WebView
+                source={{
+                  html:
+                  "<style>p{text-align:justify}</style>"+
+                  "<p>"+
+                  "Se refiere a la asignación de áreas y disposición física de las máquinas, departamentos, "+
+                  "estaciones de trabajo, áreas de almacenamiento, pasillos, espacios comunes y de seguridad "+
+                  "dentro de una instalación productiva."+
+                  "</p>" 
+               }}
+              />
+            </View> 
+            <View style={styles.containerr, {height: 400}}>
+              <WebView
+                source={{
+                  html:
+                  "<style>p{text-align:justify}</style>"+
+                  "<p>"+
+                  "Los objetivos y principios básicos en la distribución de instalaciones son:"+
+                  "</p>"+
+                  "<p>"+
+                  "A.-Integración total. Consiste en incluir y unir todos los factores (personas, departamentos, maquinaria, etc) que intervienen en la distribución, de manera que se haga más eficiente el funcionamiento y la operación de la empresa."+
+                  "</p>"+
+                  "<p>"+
+                  "B.-Mínima distancia de recorrido. Busca que los materiales recorran una distancia mínima al menor costo."+
+                  "</p>"+
+                  "<p>"+
+                  "C.-Utilización del espacio cúbico. Consiste en ocupar el especio vertical y horizontal, sobre todo cuando los espacios son reducidos."+
+                  "</p>"+
+                  "<p>"+
+                  "D.-Seguridad y bienestar del trabajador. Éste debe ser el principal objetivo en toda distribución, se deben proporcionar las condiciones óptimas de seguridad y bienestar para los trabajadores."+
+                  "</p>"+
+                  "<p>"+
+                  "E.-Flexibilidad. En la medida de lo posible se debe procurar que la distribución sea fácilmente reajustable a los cambios que pudieran surgir; por ejemplo, un cambio en el tipo de proceso o bien el crecimiento de la planta."+
+                  "</p>" 
+               }}
+              />
+            </View> 
+            <Image
+              style = {[styles.imagenes, {height:150}]}
+              source={require('../../../images/Unidad3/34111.png')}
+              resizeMode = 'center'
+            />
+            <View style={styles.containerr, {height: 90}}>
+              <WebView
+                source={{
+                  html:
+                  "<style>p{text-align:justify}</style>"+
+                  "<p>"+
+                  "En la siguiente tabla encontrarás más información de cada uno de los tipos de distribución:"+
+                  "</p>" 
+               }}
+              />
+            </View>
+            <ImageZoom cropWidth={Dimensions.get('window').width}
+>>>>>>> parent of eaf1a7a... Unidad 5 justificada y Unidad 3 con todas las imagenes
                        cropHeight={350}
                        imageWidth={width}
                        imageHeight={350}>
