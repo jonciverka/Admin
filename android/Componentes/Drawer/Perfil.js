@@ -31,7 +31,7 @@ export default class Perfil extends Component {
         Nombre:''
       }
     }
-    async componentWillMount(){
+async componentWillMount(){
   try{
     let user = await firebase.auth().currentUser;
     if(user){
@@ -40,25 +40,36 @@ export default class Perfil extends Component {
         email: user.email,
         Nombre : user.displayName
       })
-      //Alert.alert("Si hay personas logeadaas",JSON.stringify(this.state.Nombre))
+     // Alert.alert("Si hay personas logeadaas",JSON.stringify(this.state.Nombre))
     }else{
-     // Alert.alert("Es anonimo")
+    // Alert.alert("Es anonimo")
     }     
   }catch(error){
     Alert.alert("error al sacar uid")
   }
 }
 
+async _logout() {
+    try {
+        await firebase.auth().signOut();
+        this.props.navigation.navigate('login')
+    } catch (e) {
+        console.log(e);
+    }
+}
+
   render() {
-    const perfil = <View style={{marginTop: 40}}>
-                  <Text style={{marginTop: 5}}><H1> Inicia sesion para poer ver tu perfil.</H1> </Text>
+    const perfil = Alert.alert("Inicia Sesion para poder ver tu perfil");
                   
-                  </View>;
     const perfil2 =   <View style={{marginTop: 50}}>
                       <Text style={{marginTop: 5}}><H1> {this.state.Nombre}</H1> </Text>
                       <Text style={{marginTop: 5}}><H2> {this.state.email}</H2></Text>
                       <Text style={{marginTop: 5}}> <H2>Grupo </H2></Text>
+                      <Button onPress={()=>this._logout()}>
+                      <Text>Logout</Text>
+                      </Button>
                       </View>;
+                      
     let retorno;
 
     if(this.state.uid != ''){
@@ -89,6 +100,7 @@ export default class Perfil extends Component {
             marginTop:HEADER_MAX_HEIGHT
           }}>
             {retorno}
+            
           </View>
           <View style={{
             height:PROFILE_IMAGE_MAX_HEIGHT,

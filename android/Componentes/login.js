@@ -23,10 +23,9 @@ export default class login extends Component {
         this.state={
             Email:'',
             Password:'',
-            user :''
+            user :'', 
         }
-    }
-    
+    }    
     static navigationOptions={
         header: null,
     }
@@ -41,6 +40,19 @@ export default class login extends Component {
           Alert.alert("error",`${errors}`)
         })
     }
+    async componentWillMount(){
+        try{
+          let user = await firebase.auth().currentUser;
+          if(user){
+            this.props.navigation.navigate('index')
+          }else{
+          // Alert.alert("Es anonimo")
+          }     
+        }catch(error){
+          Alert.alert("error al sacar uid")
+        }
+      }
+
   render() {
     return (
         

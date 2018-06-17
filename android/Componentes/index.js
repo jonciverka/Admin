@@ -15,17 +15,6 @@ import Perfil from './Drawer/Perfil'
 import Cursos from './Drawer/Cursos'
 import Noticias  from './Drawer/Noticias'
 
-class index extends Component{
-  constructor(props){
-    super(props)
-    this.state={
-      uid:'',
-      email:'',
-      Nombre:''
-    }
-  }
-}
-
 const RootDrawer = DrawerNavigator({
     Home:{screen: Home},
     Perfil:{screen: Perfil},
