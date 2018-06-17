@@ -13,10 +13,11 @@ import {
   Image,Dimensions,ImageBackground,TouchableHighlight,Linking
 } from 'react-native';
 import {Header,Body,Title,Grid,Container,Col,H2,Left,Right} from 'native-base'
-
+import * as firebase from 'firebase';
 
 
 export default class Home extends Component {
+
   render() {
     return (
       <Container style={{

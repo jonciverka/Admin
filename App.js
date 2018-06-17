@@ -9,7 +9,7 @@ import {
   Platform,
   StyleSheet,
   Text,
-  View
+  View,Alert
 } from 'react-native';
 import {StackNavigator} from 'react-navigation'
 import login from './android/Componentes/login'
@@ -31,6 +31,10 @@ import * as firebase from 'firebase';
 export default class App extends Component {
   constructor(props){
     super(props)
+    this.state = {
+      loading: true,
+    };
+   
     firebase.initializeApp({
         apiKey: "AIzaSyAhfE_suTjV7EsT-gOluBtnecTeCiI6TKk",
         authDomain: "polilibro.firebaseapp.com",
@@ -38,14 +42,28 @@ export default class App extends Component {
         projectId: "polilibro",
         storageBucket: "polilibro.appspot.com",
         messagingSenderId: "616532161554"
-    
+     });
+  
 
+}
+componentDidMount() {
+  this.authSubscription = firebase.auth().onAuthStateChanged((user) => {
+    this.setState({
+      loading: false
+    });
   });
 }
+
+
   render() {
-    return (
-      <RootStack />
-    );
+    if (this.state.loading) return null;
+    if (this.state.user){
+      return <index />
+    } else{
+      return <RootStack />;
+    }
+    
+   
   }
 }
 
