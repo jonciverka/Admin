@@ -83,25 +83,25 @@ class dospuntouno extends React.Component {
           />
           
           <Image
-          style = {[styles.imagenes,{height:360}]}
+          style = {[styles.imagenes,{height:300}]}
           source={require('../../../images/Unidad2/1.png')}
           resizeMode = 'stretch'
           />
           
           <Image
-          style = {[styles.imagenes,{height:240}]}
+          style = {[styles.imagenes,{height:190}]}
           source={require('../../../images/Unidad2/22.png')}
           resizeMode = 'stretch'
           />
           
           <Image
-          style = {[styles.imagenes,{height:140}]}
+          style = {[styles.imagenes,{height:100}]}
           source={require('../../../images/Unidad2/3.png')}
           resizeMode = 'stretch'
           />
           
           <Image
-          style = {[styles.imagenes,{height:280}]}
+          style = {[styles.imagenes,{height:210}]}
           source={require('../../../images/Unidad2/4.png')}
           resizeMode = 'stretch'
           />
@@ -111,16 +111,17 @@ class dospuntouno extends React.Component {
           Con lo que has aprendido hasta el momento en esta unidad temática ya tienes los elementos suficientes para realizar la siguiente evidencia de aprendizaje:
              </Text>
           </View>
-          
+          <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/s/nb4on4f1nrhfgte/dosuno.pdf?dl=1')}>
           <Image
           style = {[styles.imagenes,{height:70}]}
           source={require('../../../images/Unidad2/ea1.png')}
           resizeMode = 'stretch'
           />
+           </TouchableHighlight>
           
         </ScrollView>
         </Container>
-);
+ );
     }
   }  
 class dospuntodos extends React.Component {
@@ -273,12 +274,7 @@ class dospuntotres extends React.Component {
           <Text style={styles.letras}>
             Todos los productos cuentan con elementos centrales y complementarios; tienen atributos tangibles e intangibles que los identifican y los distinguen de otros productos. No todos los productos cuentan con los mismos atributos, éstos están en función del tipo de producto. Entre los principales atributos de un producto se encuentran:
           </Text>  
-          </View>        
-          <Image
-          style = {[styles.imagenes,{height:1150}]}
-          source={require('../../../images/Unidad2/111.png')}
-          resizeMode = 'stretch'
-          />
+          </View>
           
           
            <View style={styles.titulo}> 
@@ -1373,11 +1369,6 @@ class dospuntosiete extends React.Component {
        {"\n"}{"\n"}
           </Text>
         </View>  
-    <Image
-          style = {[styles.imagenes,{height:140}]}
-          source={require('../../../images/Unidad2/publi.png')}
-          resizeMode = 'stretch'
-          />
 
       
     <View style={styles.titulo}> 
@@ -1420,12 +1411,12 @@ class dospuntosiete extends React.Component {
         </View>  
     <Image
           style = {[styles.imagenes,{height:70}]}
-          source={require('../../../images/Unidad2/EA2.7.png')}
+          source={require('../../../images/Unidad2/ea5.png')}
           resizeMode = 'stretch'
           />
     <Image
           style = {[styles.imagenes,{height:70}]}
-          source={require('../../../images/Unidad2/EA2.8.png')}
+          source={require('../../../images/Unidad2/ea5.png')}
           resizeMode = 'stretch'
           />
      
