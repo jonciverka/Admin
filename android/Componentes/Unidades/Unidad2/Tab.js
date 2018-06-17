@@ -111,28 +111,16 @@ class dospuntouno extends React.Component {
           Con lo que has aprendido hasta el momento en esta unidad temática ya tienes los elementos suficientes para realizar la siguiente evidencia de aprendizaje:
              </Text>
           </View>
-<<<<<<< HEAD
-          <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/s/nb4on4f1nrhfgte/dosuno.pdf?dl=1')}>
-=======
           
->>>>>>> parent of 5352542... Unidad 2 justificada
           <Image
           style = {[styles.imagenes,{height:70}]}
           source={require('../../../images/Unidad2/ea1.png')}
           resizeMode = 'stretch'
           />
-<<<<<<< HEAD
-          </TouchableHighlight>
-          </View>
-        </ScrollView>
-      </Container>
-  );
-=======
           
         </ScrollView>
         </Container>
 );
->>>>>>> parent of 5352542... Unidad 2 justificada
     }
   }  
 class dospuntodos extends React.Component {
@@ -157,30 +145,12 @@ class dospuntodos extends React.Component {
            Antiguamente las empresas no se centraban en atender a grupos o segmentos específicos de consumidores; se dirigían a los mercados en forma indiscriminada y masiva. Actualmente, debido a las caracarecterísticas de la sociedad moderna (crecimiento de la población, cambio en los hábitos de consumo, la globalización, consumidores más exigentes) las empresas se ven en la necesidad de enfocarse a mercados cada vez más específicos y más atomizados, a esto se le conoce como:
              </Text>
           </View>
-<<<<<<< HEAD
-           <Image
-            style = {[styles.imagenes,{height:300}]}
-            source={require('../../../images/Unidad2/11.png')}
-            resizeMode = 'stretch'
-          />
-          <View style={styles.containerr, {height: 210}}>
-          <WebView
-            source={{
-              html:
-              "<style>p{text-align:justify}</style>"+
-              "<p>"+
-              "La escencia de la segmentación es conocer con mayor detalle a los consumidores; segmentar el mercado significa dividir el mercado total en grupos más pequeños y homogéneos. El segmento de mercado está compuesto por una parte de la población que está interesada en el producto que se oferta; este segmento se define en forma descriptiva y numérica."+
-              "Para segmentar el mercado se toman en cuenta distintas variables, Murcia (2010) propone las siguientes:"+
-              "</p>" 
-           }}
-=======
             
             
           <Image
           style = {[styles.imagenes,{height:320}]}
           source={require('../../../images/Unidad2/1.png')}
           resizeMode = 'stretch'
->>>>>>> parent of 5352542... Unidad 2 justificada
           />
            
           <View style={styles.cuerpo}>
@@ -191,43 +161,20 @@ class dospuntodos extends React.Component {
           </View>
                 
           <Image
-<<<<<<< HEAD
-            style = {[styles.imagenes,{height:150}]}
-            source={require('../../../images/Unidad2/demograficas.png')}
-            resizeMode = 'stretch'
-=======
           style = {[styles.imagenes,{height:190}]}
           source={require('../../../images/Unidad2/demograficas.png')}
           resizeMode = 'stretch'
->>>>>>> parent of 5352542... Unidad 2 justificada
           />
           
              
           <Image
-<<<<<<< HEAD
-            style = {[styles.imagenes,{height:100}]}
-            source={require('../../../images/Unidad2/geograficas.png')}
-            resizeMode = 'stretch'
-=======
           style = {[styles.imagenes,{height:110}]}
           source={require('../../../images/Unidad2/geograficas.png')}
           resizeMode = 'stretch'
->>>>>>> parent of 5352542... Unidad 2 justificada
           />
           
              
           <Image
-<<<<<<< HEAD
-            style = {[styles.imagenes,{height:100}]}
-            source={require('../../../images/Unidad2/psicograficas.png')}
-            resizeMode = 'stretch'
-          />
-          
-          <Image
-            style = {[styles.imagenes,{height:100}]}
-            source={require('../../../images/Unidad2/conductuales.png')}
-            resizeMode = 'stretch'
-=======
           style = {[styles.imagenes,{height:130}]}
           source={require('../../../images/Unidad2/psicograficas.png')}
           resizeMode = 'stretch'
@@ -237,7 +184,6 @@ class dospuntodos extends React.Component {
           style = {[styles.imagenes,{height:120}]}
           source={require('../../../images/Unidad2/conductuales.png')}
           resizeMode = 'stretch'
->>>>>>> parent of 5352542... Unidad 2 justificada
           />
           
           
@@ -257,28 +203,11 @@ class dospuntodos extends React.Component {
            Una vez que se ha realizado la segmentación y se han identificado los segmentos de mercado, se hace un análisis a conciencia con el propósito de definir si la empresa cuenta con los recursos y la capacidad necesarios para atender todos los segmentos, algunos de ellos, o solo a uno; esto es lo que se conoce como mercado meta, mercado objetivo o target, que consiste en seleccionar el segmento o segmentos que se tiene la capacidad de atender y enfocar en éste todos los esfuerzos de marketing.
              </Text>
           </View>
-<<<<<<< HEAD
-          <Image
-            style = {[styles.imagenes,{height:300}]}
-            source={require('../../../images/Unidad2/meta.png')}
-            resizeMode = 'stretch'
-          />
-          <View style={styles.containerr, {height: 60}}>
-          <WebView
-            source={{
-              html:
-              "<style>p{text-align:justify}</style>"+
-              "<p>"+ 
-              "Es momento de que realices la siguiente evidencia de aprendizaje:"+
-              "</p>" 
-           }}
-=======
           
            <Image
           style = {[styles.imagenes,{height:340}]}
           source={require('../../../images/Unidad2/meta.png')}
           resizeMode = 'stretch'
->>>>>>> parent of 5352542... Unidad 2 justificada
           />
           
            <View style={styles.cuerpo}>
@@ -286,24 +215,15 @@ class dospuntodos extends React.Component {
           Es momento de que realices la siguiente evidencia de aprendizaje:
              </Text>
           </View>
-<<<<<<< HEAD
-          <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/s/62etyrujsvwq5yk/doscuatro.pdf?dl=1')}>
-=======
           
           
->>>>>>> parent of 5352542... Unidad 2 justificada
           <Image
           style = {[styles.imagenes,{height:70}]}
           source={require('../../../images/Unidad2/ea4.png')}
           resizeMode = 'stretch'
           />
-<<<<<<< HEAD
-          </TouchableHighlight>
-          </View>
-=======
           
           
->>>>>>> parent of 5352542... Unidad 2 justificada
         </ScrollView>
         </Container>
       );
@@ -317,26 +237,6 @@ class dospuntotres extends React.Component {
           <View style={styles.titulo}> 
             <Text><H1>Estrategia del producto o servicio</H1></Text>          
           </View>
-<<<<<<< HEAD
-          <View style={styles.containerr, {height: 270}}>
-          <WebView
-            source={{
-              html:
-              "<style>p{text-align:justify}</style>"+
-              "<p>"+
-              "Recordemos que una estrategia está compuesta por una serie de acciones debidamente planeadas, entrelazadas, analizadas, evaluadas, y orientadas a lograr un determinado objetivo."+
-              "</p>"+
-              "<p>"+
-              "Si consideramos que el producto que ofrece una empresa constituye uno de sus pilares medulares, es imprescindible diseñar estrategias que posibiliten su aceptación y posicionamiento en el mercado. Es bien sabido que el fracaso de un producto se debe en gran parte a la falta de estrategias o bien al seguimiento de estrategias mal diseñadas o planteadas."+
-              "</p>" 
-           }}
-          />
-          </View>
-           <Image
-            style = {[styles.imagenes,{height:600}]}
-            source={require('../../../images/Unidad2/2.3.png')}
-            resizeMode = 'stretch'
-=======
           <View
           style={{
             borderBottomColor: '#eeeeee',
@@ -355,48 +255,12 @@ class dospuntotres extends React.Component {
           style = {[styles.imagenes,{height:620}]}
           source={require('../../../images/Unidad2/2.3.png')}
           resizeMode = 'stretch'
->>>>>>> parent of 5352542... Unidad 2 justificada
           />
           
           
           <View style={styles.titulo}> 
             <Text><H1>Atributos del producto</H1></Text>          
           </View>
-<<<<<<< HEAD
-          <View style={styles.containerr, {height: 170}}>
-          <WebView
-            source={{
-              html:
-              "<style>p{text-align:justify}</style>"+
-              "<p>"+
-              "Todos los productos cuentan con elementos centrales y complementarios; tienen atributos tangibles e intangibles que los identifican y los distinguen de otros productos. No todos los productos cuentan con los mismos atributos, éstos están en función del tipo de producto. Entre los principales atributos de un producto se encuentran:"+
-              "</p>" 
-           }}
-          />
-          </View>
-          <View style={styles.titulo}> 
-            <Text><H1>Estrategias de marca</H1></Text>          
-          </View>
-            
-          <View style={styles.containerr, {height: 300}}>
-          <WebView
-            source={{
-              html:
-              "<style>p{text-align:justify}</style>"+
-              "<p>"+ 
-              "Por su impacto económico la marca o branding debe diseñarse desde un punto de vista estratégico; por la marca un producto será reconocido, aceptado o posicionado en la mente del consumidor. Es importante destacar que algunas marcas representan el más importante y valioso activo de las empresas."+
-              "</p>"+
-              "<p>"+
-              "La marca se inscribe en el Instituto Mexicano de Propiedad Industrial (IMPI), que proteje legalmente a su propietario de forma que éste goza del derecho en exclusiva de comercializar sus productos o servicios en el país, bajo la marca en cuestión."+
-              "</p>" 
-           }}
-          />
-          </View>
-          <Image
-            style = {[styles.imagenes,{height:400}]}
-            source={require('../../../images/Unidad2/2.3.2.png')}
-            resizeMode = 'stretch'
-=======
           <View
           style={{
             borderBottomColor: '#eeeeee',
@@ -438,40 +302,12 @@ class dospuntotres extends React.Component {
           style = {[styles.imagenes,{height:440}]}
           source={require('../../../images/Unidad2/2.3.2.png')}
           resizeMode = 'stretch'
->>>>>>> parent of 5352542... Unidad 2 justificada
           />
           
           
             <View style={styles.titulo}> 
             <Text><H1>Estrategias de envase y etiquetado</H1></Text>          
           </View>
-<<<<<<< HEAD
-          <View style={styles.containerr, {height: 60}}>
-          <WebView
-            source={{
-              html:
-              "<style>p{text-align:justify}</style>"+
-              "<p>"+ 
-              "Tanto el envase como el etiquetado son parte importante de la imagen del producto."+
-              "</p>" 
-           }}
-          />
-          </View>
-          <Image
-            style = {[styles.imagenes,{height:200}]}
-            source={require('../../../images/Unidad2/empaque.png')}
-            resizeMode = 'stretch'
-          />
-          <Image
-            style = {[styles.imagenes,{height:200}]}
-            source={require('../../../images/Unidad2/etiqueta.png')}
-            resizeMode = 'stretch'
-          />
-          <Image
-            style = {[styles.imagenes,{height:150}]}
-            source={require('../../../images/Unidad2/envase.png')}
-            resizeMode = 'stretch'
-=======
           <View
           style={{
             borderBottomColor: '#eeeeee',
@@ -499,72 +335,12 @@ class dospuntotres extends React.Component {
           style = {[styles.imagenes,{height:280}]}
           source={require('../../../images/Unidad2/envase.png')}
           resizeMode = 'stretch'
->>>>>>> parent of 5352542... Unidad 2 justificada
           />
           
           
             <View style={styles.titulo}> 
             <Text><H1>Estrategias de servicios de apoyo</H1></Text>          
           </View>
-<<<<<<< HEAD
-          <View style={styles.containerr, {height: 300}}>
-          <WebView
-            source={{
-              html:
-              "<style>p{text-align:justify}</style>"+
-              "<p>"+ 
-              "Los servicios son actividades o beneficios que un productor ofrece a un consumidor; en la actualidad existe un creciente interés en el servicio al cliente, y más aún, últimamente las empresas se están onfocando en crear experiencias para sus clientes, ésta es una de las formas más importantes de diferenciar a una empresa de otras."+
-              "</p>"+
-              "<p>"+
-              "El servicio de apoyo del producto se ha convertido en una ventaja competitiva determinante; las empresas que proporcionan un servicio de alta calidad sin duda superarán a los competidores que están menos orientados a los servicios."+
-              "</p>"+
-              "<p>"+
-              "Las empresas deben ser muy cuidadosas al identificar las necesidades de los clientes para diseñar tanto el producto como el sistema de apoyo al mismo."+
-              "</p>"+
-              "Las tres preocupaciones principales del cliente con respecto al producto que adquieren son:"+
-              "</p>" 
-           }}
-          />
-          </View>
-          <Image
-            style = {[styles.imagenes,{height:300}]}
-            source={require('../../../images/Unidad2/2.3.4.png')}
-            resizeMode = 'stretch'
-          />
-          <View style={styles.containerr, {height: 275}}>
-          <WebView
-            source={{
-              html:
-              "<style>p{text-align:justify}</style>"+
-              "<p>"+ 
-              "Por otro lado, los fabricantes deben establecer estrategias de cómo desean ofrecer el servicio posterior a la venta, incluyendo los servicios de mantenimiento, reparación, asesoría técnica y otros similares. Para ello podrían contar con un departamento de servicio al cliente; hacer convenios con distribuidores y detallistas para proporcionar los servicios; también podrían hacer que otras firmas independientes se encargaran de prestar dichos servicios."+
-              "</p>"+
-              "<p>"+
-              "Después de revisar los temas: mercado y producto, podrás realizar la siguiente evidencia de aprendizaje:"+
-              "</p>" 
-           }}
-          />
-          </View>
-          <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/s/00hlrcu0z28ora8/dosdos.pdf?dl=1')}>
-          <Image
-            style = {[styles.imagenes,{height:70}]}
-            source={require('../../../images/Unidad2/ea2.png')}
-            resizeMode = 'stretch'
-          />
-           </TouchableHighlight>
-          <View style={styles.containerr, {height: 60}}>
-          <WebView
-            source={{
-              html:
-              "<style>p{text-align:justify}</style>"+
-              "<p>"+ 
-              "Una vez terminada la actividad anterior, realiza la siguiente evidencia de aprendizaje:"+
-              "</p>" 
-           }}
-          />
-          </View>
-          <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/s/9m9d54eq78lge1j/dossiete.pdf?dl=1')}>
-=======
           <View
           style={{
             borderBottomColor: '#eeeeee',
@@ -603,20 +379,14 @@ class dospuntotres extends React.Component {
           Una vez terminada la actividad anterior, realiza la siguiente evidencia de aprendizaje:
           </Text>  
           </View>        
->>>>>>> parent of 5352542... Unidad 2 justificada
           <Image
           style = {[styles.imagenes,{height:70}]}
           source={require('../../../images/Unidad2/ea7.png')}
           resizeMode = 'stretch'
           />
-<<<<<<< HEAD
-           </TouchableHighlight>
-          <View style={styles.titulo}> 
-=======
           
           
             <View style={styles.titulo}> 
->>>>>>> parent of 5352542... Unidad 2 justificada
             <Text><H1>Ciclo de vida del producto</H1></Text>          
           </View>
           <View
@@ -641,42 +411,15 @@ class dospuntotres extends React.Component {
           
           
           <Image
-<<<<<<< HEAD
-            style = {[styles.imagenes,{height:200}]}
-            source={require('../../../images/Unidad2/fases.png')}
-            resizeMode = 'stretch'
-=======
           style = {[styles.imagenes,{height:350}]}
           source={require('../../../images/Unidad2/grafica.png')}
           resizeMode = 'stretch'
->>>>>>> parent of 5352542... Unidad 2 justificada
           />
           
           <Image
-<<<<<<< HEAD
-            style = {[styles.imagenes,{height:300}]}
-            source={require('../../../images/Unidad2/grafica.png')}
-            resizeMode = 'stretch'
-          />    
-          <Image
-            style = {[styles.imagenes,{height:250}]}
-            source={require('../../../images/Unidad2/f1.png')}
-            resizeMode = 'stretch'
-          />
-          <View style={styles.containerr, {height: 135}}>
-          <WebView
-            source={{
-              html:
-              "<style>p{text-align:justify}</style>"+
-              "<p>"+ 
-              "En resumen, en esta fase puede presentarse una rentabilidad negativa debido a que los costos y gastos necesarios para fabricar, lanzar y perfeccionar el producto son mayores en comparación con los ingresos que se obtienen por el volumen de ventas."+
-              "</p>" 
-           }}
-=======
           style = {[styles.imagenes,{height:380}]}
           source={require('../../../images/Unidad2/f1.png')}
           resizeMode = 'stretch'
->>>>>>> parent of 5352542... Unidad 2 justificada
           />
           
           <View style={styles.cuerpo}>         
@@ -686,25 +429,9 @@ class dospuntotres extends React.Component {
           </View>     
           
           <Image
-<<<<<<< HEAD
-            style = {[styles.imagenes,{height:350}]}
-            source={require('../../../images/Unidad2/f2.png')}
-            resizeMode = 'stretch'
-          />
-          <View style={styles.containerr, {height: 120}}>
-          <WebView
-            source={{
-              html:
-              "<style>p{text-align:justify}</style>"+
-              "<p>"+ 
-              "En resumen, en esta fase se caracteriza por una rentabilidad positiva que debe reinvertirse, en su totalidad, para financiar el crecimiento y los esfuerzos técnicos, comerciales y de comunicación propios de esta fase."+
-              "</p>" 
-           }}
-=======
           style = {[styles.imagenes,{height:390}]}
           source={require('../../../images/Unidad2/f2.png')}
           resizeMode = 'stretch'
->>>>>>> parent of 5352542... Unidad 2 justificada
           />
           
           <View style={styles.cuerpo}>         
@@ -714,25 +441,9 @@ class dospuntotres extends React.Component {
           </View>     
           
           <Image
-<<<<<<< HEAD
-            style = {[styles.imagenes,{height:300}]}
-            source={require('../../../images/Unidad2/f3.png')}
-            resizeMode = 'stretch'
-          />
-          <View style={styles.containerr, {height: 140}}>
-          <WebView
-            source={{
-              html:
-              "<style>p{text-align:justify}</style>"+
-              "<p>"+ 
-              "En resumen, la rentabilidad no es tan elevada como en la fase anterior, pero se producen excedentes de tesorería (ya que no hay necesidad de grandes inversiones), lo que permite el reparto de buenos dividendos, o invertir en otros productos que se hallen en las primeras fases de vida."+
-              "</p>" 
-           }}
-=======
           style = {[styles.imagenes,{height:400}]}
           source={require('../../../images/Unidad2/f3.png')}
           resizeMode = 'stretch'
->>>>>>> parent of 5352542... Unidad 2 justificada
           />
           
           <View style={styles.cuerpo}>         
@@ -742,25 +453,9 @@ class dospuntotres extends React.Component {
           </View>     
           
           <Image
-<<<<<<< HEAD
-            style = {[styles.imagenes,{height:150}]}
-            source={require('../../../images/Unidad2/f4.png')}
-            resizeMode = 'stretch'
-          />
-          <View style={styles.containerr, {height: 60}}>
-          <WebView
-            source={{
-              html:
-              "<style>p{text-align:justify}</style>"+
-              "<p>"+ 
-              "En esta fase se deben tomar decisiones trascendentales: innovar o abandonar el producto."+
-              "</p>" 
-           }}
-=======
           style = {[styles.imagenes,{height:230}]}
           source={require('../../../images/Unidad2/f4.png')}
           resizeMode = 'stretch'
->>>>>>> parent of 5352542... Unidad 2 justificada
           />
           
           <View style={styles.cuerpo}>         
@@ -798,26 +493,6 @@ class dospuntocuatro extends React.Component {
           <View style={styles.titulo}> 
             <Text><H1>Análisis de la demanda</H1></Text>          
           </View>
-<<<<<<< HEAD
-          <View style={styles.containerr, {height: 260}}>
-          <WebView
-            source={{
-              html:
-              "<style>p{text-align:justify}</style>"+
-              "<p>"+
-              "Con toda seguridad alguna vez has escuchado los términos demanda y oferta, pues son las plabras que más se utilizan en el mercado y en la economía, y por una buena razón: son las fuerzas que hacen que funcionen las economías de mercado."+
-              "</p>"+
-              "<p>"+
-              "Estudiar la demanda es muy complejo, entérminos generales se puede decir que la demanda describe el comportamiento del consumidor y su análisis tiene como finalidad estimar la cantidad de producto que el mercado estará dispuesto a adquirir."+
-              "</p>" 
-           }}
-          />
-          </View>
-           <Image
-            style = {[styles.imagenes,{height:300}]}
-            source={require('../../../images/Unidad2/2.4.png')}
-            resizeMode = 'stretch'
-=======
           <View
           style={{
             borderBottomColor: '#eeeeee',
@@ -836,18 +511,11 @@ class dospuntocuatro extends React.Component {
           style = {[styles.imagenes,{height:400}]}
           source={require('../../../images/Unidad2/2.4.png')}
           resizeMode = 'stretch'
->>>>>>> parent of 5352542... Unidad 2 justificada
           />
           
            <View style={styles.titulo}> 
             <Text><H1>Demanda: conceptos</H1></Text>          
           </View>
-<<<<<<< HEAD
-          <Image
-            style = {[styles.imagenes,{height:200}]}
-            source={require('../../../images/Unidad2/demanda.png')}
-            resizeMode = 'stretch'
-=======
           <View
           style={{
             borderBottomColor: '#eeeeee',
@@ -860,7 +528,6 @@ class dospuntocuatro extends React.Component {
           style = {[styles.imagenes,{height:240}]}
           source={require('../../../images/Unidad2/demanda.png')}
           resizeMode = 'stretch'
->>>>>>> parent of 5352542... Unidad 2 justificada
           />
 
            <ImageZoom cropWidth={Dimensions.get('window').width}
@@ -877,46 +544,6 @@ class dospuntocuatro extends React.Component {
           resizeMode = 'stretch'
           />
           <Image
-<<<<<<< HEAD
-            style = {[styles.imagenes,{height:200}]}
-            source={require('../../../images/Unidad2/demandareal.png')}
-            resizeMode = 'stretch'
-          />
-          <View style={styles.containerr, {height: 75}}>
-          <WebView
-            source={{
-              html:
-              "<style>p{text-align:justify}</style>"+
-              "<p>"+
-              "Una vez que has revisado el tema de la demanda, ya cuentas con las bases para realizar la siguiente evidencia de aprendizaje:"+
-              "</p>" 
-           }}
-          />
-          </View>
-          <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/s/6kzeepo5vsrjuwj/dostres.pdf?dl=1')}>
-          <Image
-            style = {[styles.imagenes,{height:70}]}
-            source={require('../../../images/Unidad2/ea3.png')}
-            resizeMode = 'stretch'
-          /> 
-           </TouchableHighlight>
-          <View style={styles.titulo}> 
-            <Text><H1>Áreas de mercado</H1></Text>          
-          </View>
-
-          <View style={styles.containerr, {height: 130}}>
-          <WebView
-            source={{
-              html:
-              "<style>p{text-align:justify}</style>"+
-              "<p>"+ 
-              "El mercado se puede dividir en:"+
-              "</p>"+
-              "<p>"+
-              "1. Mercado de bienes de consumo. Conformado por los mercados en donde se comercializan productos destinados a satisfacer las necesidades del cliente final."+
-              "</p>" 
-           }}
-=======
           style = {[styles.imagenes,{height:230}]}
           source={require('../../../images/Unidad2/demandareal.png')}
           resizeMode = 'stretch'
@@ -930,29 +557,12 @@ class dospuntocuatro extends React.Component {
           style = {[styles.imagenes,{height:70}]}
           source={require('../../../images/Unidad2/ea3.png')}
           resizeMode = 'stretch'
->>>>>>> parent of 5352542... Unidad 2 justificada
           />
           
           
           <View style={styles.titulo}> 
             <Text><H1>Áreas de mercado</H1></Text>          
           </View>
-<<<<<<< HEAD
-          <Image
-            style = {[styles.imagenes,{height:350}]}
-            source={require('../../../images/Unidad2/0.png')}
-            resizeMode = 'stretch'
-          />
-          <View style={styles.containerr, {height: 100}}>
-          <WebView
-            source={{
-              html:
-              "<style>p{text-align:justify}</style>"+
-              "<p>"+ 
-              "2.Mercado de bienes industriales. Son aquellos mercados en donde se comercializan productos principalmente para ser utilizados en la elaboración de otros bienes."+
-              "</p>" 
-           }}
-=======
           <View
           style={{
             borderBottomColor: '#eeeeee',
@@ -972,7 +582,6 @@ class dospuntocuatro extends React.Component {
           style = {[styles.imagenes,{height:400}]}
           source={require('../../../images/Unidad2/0.png')}
           resizeMode = 'stretch'
->>>>>>> parent of 5352542... Unidad 2 justificada
           />
           <View style={styles.cuerpo}>         
           <Text style={styles.letras}>
@@ -981,15 +590,9 @@ class dospuntocuatro extends React.Component {
           </Text>  
           </View>        
           <Image
-<<<<<<< HEAD
-            style = {[styles.imagenes,{height:200}]}
-            source={require('../../../images/Unidad2/00.png')}
-            resizeMode = 'stretch'
-=======
           style = {[styles.imagenes,{height:400}]}
           source={require('../../../images/Unidad2/00.png')}
           resizeMode = 'stretch'
->>>>>>> parent of 5352542... Unidad 2 justificada
           />
           <View style={styles.cuerpo}>         
           <Text style={styles.letras}>
@@ -998,38 +601,15 @@ class dospuntocuatro extends React.Component {
           </Text>  
           </View>        
           <Image
-<<<<<<< HEAD
-            style = {[styles.imagenes,{height:350}]}
-            source={require('../../../images/Unidad2/000.png')}
-            resizeMode = 'stretch'
-=======
           style = {[styles.imagenes,{height:400}]}
           source={require('../../../images/Unidad2/000.png')}
           resizeMode = 'stretch'
->>>>>>> parent of 5352542... Unidad 2 justificada
           />
           
           
           <View style={styles.titulo}> 
             <Text><H1>Tipos de demanda</H1></Text>          
           </View>
-<<<<<<< HEAD
-          <View style={styles.containerr, {height: 50}}>
-            <WebView
-              source={{
-                html:
-                "<style>p{text-align:justify}</style>"+
-                "<p>"+ 
-                "De acuerdo con Baca (2006) los tipos de demanda son:"+
-                "</p>" 
-             }}
-            />
-          </View>
-          <Image
-            style = {[styles.imagenes,{height:200}]}
-            source={require('../../../images/Unidad2/j.png')}
-            resizeMode = 'stretch'
-=======
           <View
           style={{
             borderBottomColor: '#eeeeee',
@@ -1047,43 +627,24 @@ class dospuntocuatro extends React.Component {
           style = {[styles.imagenes,{height:310}]}
           source={require('../../../images/Unidad2/j.png')}
           resizeMode = 'stretch'
->>>>>>> parent of 5352542... Unidad 2 justificada
           />
  
           <Image
-<<<<<<< HEAD
-            style = {[styles.imagenes,{height:200}]}
-            source={require('../../../images/Unidad2/jj.png')}
-            resizeMode = 'stretch'
-=======
           style = {[styles.imagenes,{height:300}]}
           source={require('../../../images/Unidad2/jj.png')}
           resizeMode = 'stretch'
->>>>>>> parent of 5352542... Unidad 2 justificada
           />
           
           <Image
-<<<<<<< HEAD
-            style = {[styles.imagenes,{height:200}]}
-            source={require('../../../images/Unidad2/jjj.png')}
-            resizeMode = 'stretch'
-=======
           style = {[styles.imagenes,{height:320}]}
           source={require('../../../images/Unidad2/jjj.png')}
           resizeMode = 'stretch'
->>>>>>> parent of 5352542... Unidad 2 justificada
           />
           
           <Image
-<<<<<<< HEAD
-            style = {[styles.imagenes,{height:200}]}
-            source={require('../../../images/Unidad2/jjjj.png')}
-            resizeMode = 'stretch'
-=======
           style = {[styles.imagenes,{height:320}]}
           source={require('../../../images/Unidad2/jjjj.png')}
           resizeMode = 'stretch'
->>>>>>> parent of 5352542... Unidad 2 justificada
           />
           
           
@@ -1091,131 +652,6 @@ class dospuntocuatro extends React.Component {
           <View style={styles.titulo}> 
             <Text><H1>Factores que afectan a la demanda</H1></Text>          
           </View>
-<<<<<<< HEAD
-          <View style={styles.containerr, {height: 480}}>
-            <WebView
-              source={{
-                html:
-                "<style>p{text-align:justify}</style>"+
-                "<p>"+ 
-                "La demanda está en función de varios factores, como por ejemplo: de la necesidad real que se tiene del bien o servicio, del precio, del nivel de ingreso de la población y de algunos otros factores que a continuación se explican con más detalle."+
-                "</p>"+
-                "<p>"+
-                "Los economistas coinciden en que las principales razones por las que se desplaza la curva de la demanda son:"+
-                "</p>"+
-                "<p>"+
-                "1. Preferencias y gustos de los consumidores: Además de considerar el ámbito económico en el que actúa el consumidor, debe tenerse en cuenta el ámbito social en el que se desenvuelve, ya que muchas veces el comportamiento social influido por factores como la moda, la publicidad o simplemente la temporada del año."+
-                "</p>"+
-                "<p>"+
-                "No es fácil hacer generalizaciones en cuanto a los gustos y las preferencias dado que son relativamente estables y algunas veces llegan a cambiar. Un cambio en los gustos y preferencias independiente al cambio de precio ocasiona un desplazamiento en la demanda."+
-                "</p>" 
-             }}
-            />
-          </View>
-          <Image
-            style = {[styles.imagenes,{height:200}]}
-            source={require('../../../images/Unidad2/G1.png')}
-            resizeMode = 'stretch'
-          />
-          <View style={styles.containerr, {height: 630}}>
-            <WebView
-              source={{
-                html:
-                "<style>p{text-align:justify}</style>"+
-                "<p>"+ 
-                "Por ejemplo:"+
-                "</p>"+
-                "<p>"+
-                "La moda por una buena condición fisica puede aumentar la demanda de artículos deportivos"+
-                "</p>"+
-                "<p>"+
-                "Si un personaje famoso empieza a usar un determinado bien, muchas personas demandarán más de este artículo"+
-                "</p>"+
-                "<p>"+
-                "Hay consumidores que tienen un gusto especial por artículos antiguos o de colección"+
-                "</p>"+
-                "<p>"+
-                "Mayor demanda de medicinas en épocas de frío, entre otras razones porque algunos consumidores prefieren prevenir enfermedades."+
-                "</p>"+
-                "<p>"+
-                "2. La información que poseen los consumidores: La informazión que tiene el consumidor acerca de un bien determinado, es otro de los factores que favorecen un desplazamiento de la curva de la demanda."+
-                "</p>"+
-                "<p>"+
-                "Ejemplos:"+
-                "</p>"+
-                "<p>"+
-                "Si el consumidor tiene información acerca del peligro de fumar, es muy probable que disminuya la demanda de cigarros, y más aún con la nueva ley de no fumar en lugares cerrados y públicos"+
-                "</p>"+
-                "<p>"+
-                "Al conocer los efectos del colesterol es posible que el consumidor reduzca el consumo de huevo, camarones, carne de res y por ejemplo aumente el consumo de carne de pollo o de pescado."+
-                "</p>" 
-             }}
-            />
-          </View>
-          <Image
-            style = {[styles.imagenes,{height:200}]}
-            source={require('../../../images/Unidad2/G2.png')}
-            resizeMode = 'stretch'
-          />
-          <View style={styles.containerr, {height: 150}}>
-            <WebView
-              source={{
-                html:
-                "<style>p{text-align:justify}</style>"+
-                "<p>"+ 
-                "3. Ingreso de los consumidores (poder adquisitivo): Un incremento en el ingreso incrementa la demanda de más bienes y ésta disminuye cuando disminuye el ingreso. A mayor ingreso existe un mayor consumo de automóviles, viajes, comprad e casas, asistencias a más espectáculos, más ropa, más vacaciones etc."+
-                "</p>" 
-             }}
-            />
-          </View>
-          <Image
-            style = {[styles.imagenes,{height:200}]}
-            source={require('../../../images/Unidad2/G3.png')}
-            resizeMode = 'stretch'
-          />
-          <View style={styles.containerr, {height: 690}}>
-            <WebView
-              source={{
-                html:
-                "<style>p{text-align:justify}</style>"+
-                "<p>"+ 
-                "En relación a los tipos de bienes que adquiere el consumidor en función de sus ingresos, se puede hacer la siguiente clasificación:"+
-                "</p>"+
-                "<p>"+
-                "a. Bienes Normales. Son aquellos bienes cuya demanda aumenta cuando aumenta el ingreso y disminuye cuando disminuye el ingreso. Los ejemplos más representativos son: la ropa, artículos perecederos (alimentos), asistencia a espectáculos, diversión, etc."+
-                "</p>"+
-                "<p>"+
-                "b. Bienes inferiores: Son aquellos bienes cuya demanda disminuye cuando aumenta el ingreso y la demanda se incrementa cuando disminuye el ingreso."+
-                "</p>"+
-                "<p>"+
-                "Algunos ejemplos son:"+
-                "</p>"+
-                "<p>"+
-                "Pan del dia anterior"+
-                "</p>"+
-                "<p>"+
-                "Alimentos próximos a caducar (fechas cortas)"+
-                "</p>"+
-                "<p>"+
-                "Uso del transporte público"+
-                "</p>"+
-                "<p>"+
-                "Queso de puerco"+
-                "</p>"+
-                "<p>"+
-                "4. La población (número de posibles consumidores): La demanda se ve afectada por el tamaño de la población, si el número de consumidores aumenta entonces la demanda aumentará."+
-                "</p>"+
-                "<p>"+
-                "Para poder tener un estimado de las demandas real y potencial se puede recurrir a la información que proporcionan algunas dependencias gubernamentales como el INEGI o el CONAPO, entre otros."+
-                "</p>" 
-             }}
-            />
-          </View>
-          <Image
-            style = {[styles.imagenes,{height:200}]}
-            source={require('../../../images/Unidad2/G4.png')}
-            resizeMode = 'stretch'
-=======
           <View
           style={{
             borderBottomColor: '#eeeeee',
@@ -1289,7 +725,6 @@ class dospuntocuatro extends React.Component {
           style = {[styles.imagenes,{height:330}]}
           source={require('../../../images/Unidad2/G4.png')}
           resizeMode = 'stretch'
->>>>>>> parent of 5352542... Unidad 2 justificada
           />
           
           
@@ -1308,27 +743,6 @@ class dospuntocuatro extends React.Component {
           </Text>  
           </View>        
           <Image
-<<<<<<< HEAD
-            style = {[styles.imagenes,{height:200}]}
-            source={require('../../../images/Unidad2/G5.png')}
-            resizeMode = 'stretch'
-          />
-          <View style={styles.containerr, {height: 145}}>
-            <WebView
-              source={{
-                html:
-                "<style>p{text-align:justify}</style>"+
-                "<p>"+ 
-                "b. Bienes complementarios. Un bien complementario es aquel que tiende a ser consumido o utilizado junto con otro bien. Ejemplos: impresoras y cartuchos o toner; café y azúcar; jamón y pan Bimbo; medias noches y salchichas; computadora y software; cepillo de dientes y pasta, entre muchos otros."+
-                "</p>" 
-             }}
-            />
-          </View>
-          <Image
-            style = {[styles.imagenes,{height:200}]}
-            source={require('../../../images/Unidad2/G6.png')}
-            resizeMode = 'stretch'
-=======
           style = {[styles.imagenes,{height:360}]}
           source={require('../../../images/Unidad2/G5.png')}
           resizeMode = 'stretch'
@@ -1345,7 +759,6 @@ class dospuntocuatro extends React.Component {
           style = {[styles.imagenes,{height:380}]}
           source={require('../../../images/Unidad2/G6.png')}
           resizeMode = 'stretch'
->>>>>>> parent of 5352542... Unidad 2 justificada
           />
           
           
@@ -1360,37 +773,6 @@ class dospuntocuatro extends React.Component {
           <View style={styles.titulo}> 
             <Text><H1>Determinación y proyección de la demanda</H1></Text>          
           </View>
-<<<<<<< HEAD
-          <Image
-            style = {[styles.imagenes,{height:100}]}
-            source={require('../../../images/Unidad2/u.png')}
-            resizeMode = 'stretch'
-          />
-          
-          <Image
-            style = {[styles.imagenes,{height:400}]}
-            source={require('../../../images/Unidad2/uu.png')}
-            resizeMode = 'stretch'
-          />
-          
-          <Image
-            style = {[styles.imagenes,{height:350}]}
-            source={require('../../../images/Unidad2/uuu.png')}
-            resizeMode = 'stretch'
-          />
-          <View style={styles.containerr, {height: 60}}>
-            <WebView
-              source={{
-                html:
-                "<style>p{text-align:justify}</style>"+
-                "<p>"+ 
-                "Para profundizar en el tema, lee el siguiente material:"+
-                "</p>" 
-             }}
-            />
-          </View>
-          <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/s/1h9av1jzsy613pm/Estimaci%C3%B3n%20de%20la%20demanda%20por_el_m%C3%A9todo_de_proporciones%20en_cadena.pdf?dl=1')}>
-=======
           <View
           style={{
             borderBottomColor: '#eeeeee',
@@ -1422,17 +804,11 @@ class dospuntocuatro extends React.Component {
           Para profundizar en el tema, lee el siguiente material:
           </Text>  
           </View>        
->>>>>>> parent of 5352542... Unidad 2 justificada
           <Image
           style = {[styles.imagenes,{height:70}]}
           source={require('../../../images/Unidad2/L2.png')}
           resizeMode = 'stretch'
           />
-<<<<<<< HEAD
-          </TouchableHighlight>
-            </View>
-=======
->>>>>>> parent of 5352542... Unidad 2 justificada
           </ScrollView>
         </Container>
       );
@@ -1603,41 +979,6 @@ class dospuntocinco extends React.Component {
           source={require('../../../images/Unidad2/44a.png')}
           resizeMode = 'stretch'
           />
-<<<<<<< HEAD
-          <View style={styles.containerr, {height: 110}}>
-            <WebView
-              source={{
-                html:
-                "<style>p{text-align:justify}</style>"+
-                "<p>"+ 
-                "¡El Banco Nacional de Comercio Exterior, S.N.C (Bancomext) financia a las empresas exportadoras mexicanas! Obtén más información: "+ 
-                "http://www.bancomext.com/empresas-que-apoyamos/exportadores"+               
-                "</p>" 
-             }}
-            />
-          </View>
-          <View style={styles.titulo}> 
-            <Text><H1>Análisis de la competencia (FODA), determinación y proyección de la oferta</H1></Text>          
-          </View>
-          <View style={styles.containerr, {height: 230}}>
-            <WebView
-              source={{
-                html:
-                "<style>p{text-align:justify}</style>"+
-                "<p>"+ 
-                "El análisis DAFO o también conocido como la matriz FODA tiene su origen en el método de análisis de la competencia conocido como SWOT "+
-                "(Strengths, Weakness, Opportunities, Threats). Esta herramienta se utiliza para analizar las Fortalezas, Oportunidades, Debilidades y "+
-                "Amenazas de una empresa o producto, en el último caso se recomienda hacerse con al menos tres de los principales competidores. Para "+
-                "lo cual debemos identificar quiénes son nuestros competidores tanto directos como indirectos:"+               
-                "</p>" 
-             }}
-            />
-          </View>
-          <Image
-            style = {[styles.imagenes,{height:240}]}
-            source={require('../../../images/Unidad2/22a.png')}
-            resizeMode = 'stretch'
-=======
       
          <Image
           style = {[styles.imagenes,{height:120}]}
@@ -1663,7 +1004,6 @@ class dospuntocinco extends React.Component {
               marginLeft:10,
               marginRight:10,
             }}
->>>>>>> parent of 5352542... Unidad 2 justificada
           />
       
       <View style={styles.cuerpo}>
@@ -1849,239 +1189,6 @@ class dospuntoseis extends React.Component {
 class dospuntosiete extends React.Component {
     render() {
       return (
-<<<<<<< HEAD
-        <Container style={styles.fondo}>
-          <ScrollView>
-           <View style={styles.containerr, {height: 6280}}>
-            <View style={styles.titulo}> 
-              <Text><H1>Análisis de la comercialización</H1></Text>          
-            </View>
-            <View style={styles.containerr, {height: 140}}>
-              <WebView
-                source={{
-                  html:
-                  "<style>p{text-align:justify}</style>"+
-                  "<p>"+
-                  "La comercialización es un aspecto vital para las empresas, es una decisión estratégica. De nada servirá elaborar el mejor producto "+
-                  "o proporcionar el mejor servicio a un precio competitivo, si no se cuenta con los medios para hacerlo llegar a los consumidores en "+
-                  "forma eficiente y eficaz."+
-                  "</p>" 
-               }}
-              />
-            </View>
-            <Image
-              style = {[styles.imagenes,{height:370}]}
-              source={require('../../../images/Unidad2/paraelvideo.png')}
-              resizeMode = 'stretch'
-            />
-            <View style={styles.containerr, {height: 80}}>
-              <WebView
-                source={{
-                  html:
-                  "<style>p{text-align:justify}</style>"+
-                  "<p>"+
-                  "Cadena distribución coca cola"+
-                  "</p>"+
-                  "<p>"+
-                  "Fuente: https://www.youtube.com/watch?v=-O1O1Fo5cek&index=16&list=LL5xM3FX_4F2jaohqjS6mSBQ"+
-                  "</p>" 
-               }}
-              />
-            </View>
-            <View style={styles.titulo}> 
-              <Text><H1>Importancia de la comercialización</H1></Text>          
-            </View>
-            <View style={styles.containerr, {height: 155}}>
-              <WebView
-                source={{
-                  html:
-                  "<style>p{text-align:justify}</style>"+
-                  "<p>"+
-                  "A través de la comercialización la empresa dirige todos los esfuerzos para satisfacer a sus clientes y a cambio obtener rentabilidad; "+
-                  "la forma en que se lleva a cabo la comercialización definirá en gran medida la rentabilidad o no de la empresa, de ahí que las empresas "+
-                  "se enfocan en manejar la comercialización con mucho cuidado."+
-                  "</p>" 
-               }}
-              />
-            </View>
-            <Image
-              style = {[styles.imagenes,{height:370}]}
-              source={require('../../../images/Unidad2/2.7.1.png')}
-              resizeMode = 'stretch'
-            />
-            <View style={styles.titulo}> 
-              <Text><H1>Canales de distribución</H1></Text>          
-            </View>
-            <View style={styles.containerr, {height: 270}}>
-              <WebView
-                source={{
-                  html:
-                  "<style>p{text-align:justify}</style>"+
-                  "<p>"+
-                  "Un canal de distribución es la ruta que toma un producto para pasar del productor a los consumidores finales, deteniéndose "+
-                  "en varios puntos de esa trayectoria. En cada intermediario o punto en el que se detenga esa trayectoria existe un pago a "+
-                  "transacción, además de un intercambio de información. El productor siempre tratará de elegir el canal más ventajoso desde "+
-                  "todos los puntos de vista (Baca, 2006)"+
-                  "</p>"+
-                  "<p>"+
-                  "Se denomina canal de comercialización a los agentes que se involucran para llevar el producto al consumidor (Nacional Financiera, 2001)"+
-                  "</p>" 
-               }}
-              />
-            </View>
-            <Image
-              style = {[styles.imagenes,{height:240}]}
-              source={require('../../../images/Unidad2/acanal.png')}
-              resizeMode = 'stretch'
-             />
-            <Image
-              style = {[styles.imagenes,{height:340}]}
-              source={require('../../../images/Unidad2/acanal2.png')}
-              resizeMode = 'stretch'
-            />        
-            <Image
-              style = {[styles.imagenes,{height:400}]}
-              source={require('../../../images/Unidad2/b.png')}
-              resizeMode = 'stretch'
-            />
-            <Image
-              style = {[styles.imagenes,{height:440}]}
-              source={require('../../../images/Unidad2/c.png')}
-              resizeMode = 'stretch'
-            />
-            <Image
-              style = {[styles.imagenes,{height:170}]}
-              source={require('../../../images/Unidad2/1.3.png')}
-              resizeMode = 'stretch'
-            />          
-            <View style={styles.titulo}> 
-              <Text><H1>Factores a considerar en la selección de un canal de comercialización</H1></Text>          
-            </View>
-            <View style={styles.containerr, {height: 80}}>
-              <WebView
-                source={{
-                  html:
-                  "<style>p{text-align:justify}</style>"+
-                  "<p>"+
-                  "La decisión sobre el canal o la combinación de canales de distribución más adecuado(s) para la empresa, está en función de sus objetivos en cuanto a:"+
-                  "</p>" 
-               }}
-              />
-            </View>
-            <Image
-              style = {[styles.imagenes,{height:400}]}
-              source={require('../../../images/Unidad2/2.7.3.png')}
-              resizeMode = 'stretch'
-            />
-            <View style={styles.titulo}> 
-              <Text><H1>Estrategias de promoción y publicidad</H1></Text>          
-            </View>
-            <View style={styles.containerr, {height: 170}}>
-              <WebView
-                source={{
-                  html:
-                  "<style>p{text-align:justify}</style>"+
-                  "<p>"+
-                  "La publicidad es toda transmisión de información masiva, impersonal (se dirige a un público anónimo no identificado), "+
-                  "unilateral (no hay interrelación entre el emisor y el receptor del mensaje) a través de un medio de comunicación dirigida "+
-                  "a un público objetivo con la finalidad de estimular la demanda de un producto o de cambiar la opinión o comportamiento "+
-                  "del consumidor."+
-                  "</p>" 
-               }}
-              />
-            </View>
-            <Image
-              style = {[styles.imagenes,{height:380}]}
-              source={require('../../../images/Unidad2/1111.png')}
-              resizeMode = 'stretch'
-            />
-            <View style={styles.containerr, {height: 110}}>
-              <WebView
-                source={{
-                  html:
-                  "<style>p{text-align:justify}</style>"+
-                  "<p>"+
-                  "Para desarrollar un programa de publicidad se deben establecer objetivos claros y desarrollar una estrategia de "+
-                  "posicionamiento y marketing. El diseño de la estrategia publicitaria incluye una serie de decisiones tales como:"+
-                  "</p>" 
-               }}
-              />
-            </View>
-            <Image
-              style = {[styles.imagenes,{height:260}]}
-              source={require('../../../images/Unidad2/2222.png')}
-              resizeMode = 'stretch'
-            />
-            <View style={styles.containerr, {height: 60}}>
-              <WebView
-                source={{
-                  html:
-                  "<style>p{text-align:justify}</style>"+
-                  "<p>"+
-                  "En el siguiente cuadro encontrarás información puntual acerca de la promoción y la publicidad."+
-                  "</p>" 
-               }}
-              />
-            </View>
-            <View style={styles.titulo}> 
-              <Text><H1>Garantía del producto</H1></Text>          
-            </View>
-            <View style={styles.containerr, {height: 170}}>
-              <WebView
-                source={{
-                  html:
-                  "<style>p{text-align:justify}</style>"+
-                  "<p>"+
-                  "Existen dos tipos de garantías: las garantías legales, a las que se tienen derecho por ley y que se puede ejercitar "+ 
-                  "por un motivo concreto (que el producto no se ajusta a la descripción hecha por el vendedor o no posea las cualidades "+
-                  "que el vendedor presentó al cliente); y las garantías comerciales, que son las que ofrece el comerciante y son adicionales "+
-                  "a las garantías legales."+
-                  "</p>" 
-               }}
-              />
-            </View>
-            <Image
-              style = {[styles.imagenes,{height:400}]}
-              source={require('../../../images/Unidad2/2.7.5.png')}
-              resizeMode = 'stretch'
-            />
-            <View style={styles.containerr, {height: 310}}>
-              <WebView
-                source={{
-                  html:
-                  "<style>p{text-align:justify}</style>"+
-                  "<p>"+
-                  "Una vez realizada la investigación o el estudio de mercado, ahora sí se tendrá información suficiente para saber qué tantas "+
-                  "posibilidades tiene el producto o el servicio de ser aceptado y vendido en el mercado; si el escenario es pesimista, no hay "+
-                  "que desanimarse, hay que replantear la idea y en un momento dado abandonarla e identificar otra idea de producto o servicio; "+
-                  "en el caso de que el escenario (previamente analizado y evaluado) sea optimista, entonces podemos decir que hay factibilidad "+
-                  "en el estudio de mercado y se deberá continuar con el estudio técnico, mismo que abordaremos en la siguiente unidad temática."+
-                  "</p>"+
-                  "<p>"+
-                  "Para concluir esta unidad temática, es necesario que realices las evidencia de aprendizaje:"+ 
-                  "</p>" 
-               }}
-              />
-            </View>
-            <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/s/3i84all86ab7ml6/doscinco.pdf?dl=1')}>
-
-            <Image
-              style = {[styles.imagenes,{height:70}]}
-              source={require('../../../images/Unidad2/ea5.png')}
-              resizeMode = 'stretch'
-            />
-             </TouchableHighlight>
-            <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/s/bq7r7o0ihc0gjos/dosseis.pdf?dl=1')}>
-
-            <Image
-              style = {[styles.imagenes,{height:70}]}
-              source={require('../../../images/Unidad2/ea6.png')}
-              resizeMode = 'stretch'
-            />
-             </TouchableHighlight>
-           </View>
-          </ScrollView>
-=======
       <Container style={styles.fondo}>
         <ScrollView>
           <View style={styles.titulo}> 
@@ -2324,7 +1431,6 @@ class dospuntosiete extends React.Component {
      
       
         </ScrollView>
->>>>>>> parent of 5352542... Unidad 2 justificada
         </Container>
       );
     }
