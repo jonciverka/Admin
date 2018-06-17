@@ -5,13 +5,14 @@ import {
   Text,
   View, WebView,
   Dimensions,
-  Image,StatusBar,
+  Image,StatusBar,Linking,
   ListView,ScrollView, TouchableNativeFeedback,Alert,TouchableOpacity,TouchableWithoutFeedback,TouchableHighlight
 } from 'react-native';
 import {Button,Content,Container,ListItem,List,Card,Body,H1,Thumbnail,Rightpla,CardItem} from 'native-base'
 import { TabNavigator } from 'react-navigation';
 
-  class dospuntouno extends React.Component {
+import ImageZoom from 'react-native-image-pan-zoom';
+class dospuntouno extends React.Component {
     render() {
       return (        
         <Container style={styles.fondo}>
@@ -74,14 +75,14 @@ import { TabNavigator } from 'react-navigation';
           />
           
           <Image
-          style = {[styles.imagenes,{height:200}]}
+          style = {[styles.imagenes,{height:100}]}
           source={require('../../../images/Unidad2/naturaleza.png')}
           resizeMode = 'stretch'
           />
           
           <Image
           style = {[styles.imagenes,{height:360}]}
-          source={require('../../../images/Unidad2/11.png')}
+          source={require('../../../images/Unidad2/1.png')}
           resizeMode = 'stretch'
           />
           
@@ -93,13 +94,13 @@ import { TabNavigator } from 'react-navigation';
           
           <Image
           style = {[styles.imagenes,{height:140}]}
-          source={require('../../../images/Unidad2/33.png')}
+          source={require('../../../images/Unidad2/3.png')}
           resizeMode = 'stretch'
           />
           
           <Image
           style = {[styles.imagenes,{height:280}]}
-          source={require('../../../images/Unidad2/44.png')}
+          source={require('../../../images/Unidad2/4.png')}
           resizeMode = 'stretch'
           />
           <View style={styles.containerr, {height: 90}}>
@@ -113,18 +114,20 @@ import { TabNavigator } from 'react-navigation';
            }}
           />
           </View>
+          <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/s/nb4on4f1nrhfgte/dosuno.pdf?dl=1')}>
           <Image
           style = {[styles.imagenes,{height:70}]}
           source={require('../../../images/Unidad2/ea1.png')}
           resizeMode = 'stretch'
           />
+          </TouchableHighlight>
           </View>
         </ScrollView>
       </Container>
-);
+  );
     }
   }  
-  class dospuntodos extends React.Component {
+class dospuntodos extends React.Component {
     render() {
       return (
         <Container style={styles.fondo}>
@@ -145,8 +148,8 @@ import { TabNavigator } from 'react-navigation';
           />
           </View>
            <Image
-            style = {[styles.imagenes,{height:320}]}
-            source={require('../../../images/Unidad2/1.png')}
+            style = {[styles.imagenes,{height:300}]}
+            source={require('../../../images/Unidad2/11.png')}
             resizeMode = 'stretch'
           />
           <View style={styles.containerr, {height: 210}}>
@@ -162,27 +165,27 @@ import { TabNavigator } from 'react-navigation';
           />
           </View>
           <Image
-            style = {[styles.imagenes,{height:190}]}
+            style = {[styles.imagenes,{height:150}]}
             source={require('../../../images/Unidad2/demograficas.png')}
             resizeMode = 'stretch'
           />
           
              
           <Image
-            style = {[styles.imagenes,{height:110}]}
+            style = {[styles.imagenes,{height:100}]}
             source={require('../../../images/Unidad2/geograficas.png')}
             resizeMode = 'stretch'
           />
           
              
           <Image
-            style = {[styles.imagenes,{height:130}]}
+            style = {[styles.imagenes,{height:100}]}
             source={require('../../../images/Unidad2/psicograficas.png')}
             resizeMode = 'stretch'
           />
           
           <Image
-            style = {[styles.imagenes,{height:120}]}
+            style = {[styles.imagenes,{height:100}]}
             source={require('../../../images/Unidad2/conductuales.png')}
             resizeMode = 'stretch'
           />
@@ -201,7 +204,7 @@ import { TabNavigator } from 'react-navigation';
           />
           </View>
           <Image
-            style = {[styles.imagenes,{height:340}]}
+            style = {[styles.imagenes,{height:300}]}
             source={require('../../../images/Unidad2/meta.png')}
             resizeMode = 'stretch'
           />
@@ -216,18 +219,20 @@ import { TabNavigator } from 'react-navigation';
            }}
           />
           </View>
+          <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/s/62etyrujsvwq5yk/doscuatro.pdf?dl=1')}>
           <Image
           style = {[styles.imagenes,{height:70}]}
           source={require('../../../images/Unidad2/ea4.png')}
           resizeMode = 'stretch'
           />
+          </TouchableHighlight>
           </View>
         </ScrollView>
         </Container>
       );
     }
-  }
-  class dospuntotres extends React.Component {
+ }
+class dospuntotres extends React.Component {
     render() {
       return (
         <Container style={styles.fondo}>
@@ -251,7 +256,7 @@ import { TabNavigator } from 'react-navigation';
           />
           </View>
            <Image
-            style = {[styles.imagenes,{height:620}]}
+            style = {[styles.imagenes,{height:600}]}
             source={require('../../../images/Unidad2/2.3.png')}
             resizeMode = 'stretch'
           />
@@ -269,16 +274,11 @@ import { TabNavigator } from 'react-navigation';
            }}
           />
           </View>
-          <Image
-            style = {[styles.imagenes,{height:1150}]}
-            source={require('../../../images/Unidad2/111.png')}
-            resizeMode = 'stretch'
-          />
           <View style={styles.titulo}> 
             <Text><H1>Estrategias de marca</H1></Text>          
           </View>
             
-          <View style={styles.containerr, {height: 280}}>
+          <View style={styles.containerr, {height: 300}}>
           <WebView
             source={{
               html:
@@ -293,7 +293,7 @@ import { TabNavigator } from 'react-navigation';
           />
           </View>
           <Image
-            style = {[styles.imagenes,{height:440}]}
+            style = {[styles.imagenes,{height:400}]}
             source={require('../../../images/Unidad2/2.3.2.png')}
             resizeMode = 'stretch'
           />
@@ -312,24 +312,24 @@ import { TabNavigator } from 'react-navigation';
           />
           </View>
           <Image
-            style = {[styles.imagenes,{height:340}]}
+            style = {[styles.imagenes,{height:200}]}
             source={require('../../../images/Unidad2/empaque.png')}
             resizeMode = 'stretch'
           />
           <Image
-            style = {[styles.imagenes,{height:340}]}
+            style = {[styles.imagenes,{height:200}]}
             source={require('../../../images/Unidad2/etiqueta.png')}
             resizeMode = 'stretch'
           />
           <Image
-            style = {[styles.imagenes,{height:280}]}
+            style = {[styles.imagenes,{height:150}]}
             source={require('../../../images/Unidad2/envase.png')}
             resizeMode = 'stretch'
           />
           <View style={styles.titulo}> 
             <Text><H1>Estrategias de servicios de apoyo</H1></Text>          
           </View>
-          <View style={styles.containerr, {height: 400}}>
+          <View style={styles.containerr, {height: 300}}>
           <WebView
             source={{
               html:
@@ -349,7 +349,7 @@ import { TabNavigator } from 'react-navigation';
           />
           </View>
           <Image
-            style = {[styles.imagenes,{height:370}]}
+            style = {[styles.imagenes,{height:300}]}
             source={require('../../../images/Unidad2/2.3.4.png')}
             resizeMode = 'stretch'
           />
@@ -367,11 +367,13 @@ import { TabNavigator } from 'react-navigation';
            }}
           />
           </View>
+          <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/s/00hlrcu0z28ora8/dosdos.pdf?dl=1')}>
           <Image
             style = {[styles.imagenes,{height:70}]}
             source={require('../../../images/Unidad2/ea2.png')}
             resizeMode = 'stretch'
           />
+           </TouchableHighlight>
           <View style={styles.containerr, {height: 60}}>
           <WebView
             source={{
@@ -383,11 +385,13 @@ import { TabNavigator } from 'react-navigation';
            }}
           />
           </View>
+          <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/s/9m9d54eq78lge1j/dossiete.pdf?dl=1')}>
           <Image
             style = {[styles.imagenes,{height:70}]}
             source={require('../../../images/Unidad2/ea7.png')}
             resizeMode = 'stretch'
           />
+           </TouchableHighlight>
           <View style={styles.titulo}> 
             <Text><H1>Ciclo de vida del producto</H1></Text>          
           </View>
@@ -406,17 +410,17 @@ import { TabNavigator } from 'react-navigation';
           />
           </View>
           <Image
-            style = {[styles.imagenes,{height:330}]}
+            style = {[styles.imagenes,{height:200}]}
             source={require('../../../images/Unidad2/fases.png')}
             resizeMode = 'stretch'
           />
           <Image
-            style = {[styles.imagenes,{height:350}]}
+            style = {[styles.imagenes,{height:300}]}
             source={require('../../../images/Unidad2/grafica.png')}
             resizeMode = 'stretch'
           />    
           <Image
-            style = {[styles.imagenes,{height:380}]}
+            style = {[styles.imagenes,{height:250}]}
             source={require('../../../images/Unidad2/f1.png')}
             resizeMode = 'stretch'
           />
@@ -432,7 +436,7 @@ import { TabNavigator } from 'react-navigation';
           />
           </View>
           <Image
-            style = {[styles.imagenes,{height:390}]}
+            style = {[styles.imagenes,{height:350}]}
             source={require('../../../images/Unidad2/f2.png')}
             resizeMode = 'stretch'
           />
@@ -448,7 +452,7 @@ import { TabNavigator } from 'react-navigation';
           />
           </View>
           <Image
-            style = {[styles.imagenes,{height:400}]}
+            style = {[styles.imagenes,{height:300}]}
             source={require('../../../images/Unidad2/f3.png')}
             resizeMode = 'stretch'
           />
@@ -464,7 +468,7 @@ import { TabNavigator } from 'react-navigation';
           />
           </View>
           <Image
-            style = {[styles.imagenes,{height:230}]}
+            style = {[styles.imagenes,{height:150}]}
             source={require('../../../images/Unidad2/f4.png')}
             resizeMode = 'stretch'
           />
@@ -499,7 +503,7 @@ import { TabNavigator } from 'react-navigation';
       );
     }
   }
-  class dospuntocuatro extends React.Component {
+class dospuntocuatro extends React.Component {
     render() {
       return (
         <Container style={styles.fondo}>
@@ -523,7 +527,7 @@ import { TabNavigator } from 'react-navigation';
           />
           </View>
            <Image
-            style = {[styles.imagenes,{height:400}]}
+            style = {[styles.imagenes,{height:300}]}
             source={require('../../../images/Unidad2/2.4.png')}
             resizeMode = 'stretch'
           />
@@ -531,17 +535,26 @@ import { TabNavigator } from 'react-navigation';
             <Text><H1>Demanda: conceptos</H1></Text>          
           </View>
           <Image
-            style = {[styles.imagenes,{height:240}]}
+            style = {[styles.imagenes,{height:200}]}
             source={require('../../../images/Unidad2/demanda.png')}
             resizeMode = 'stretch'
           />
+
+           <ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={180}
+                       imageWidth={width}
+                       imageHeight={180}>
+                <Image style={{width:width, height:180}}
+                       source={require('../../../images/Unidad2/demanda.png')}/>
+            </ImageZoom>
+            
           <Image
             style = {[styles.imagenes,{height:160}]}
             source={require('../../../images/Unidad2/leydemanda.png')}
             resizeMode = 'stretch'
           />
           <Image
-            style = {[styles.imagenes,{height:230}]}
+            style = {[styles.imagenes,{height:200}]}
             source={require('../../../images/Unidad2/demandareal.png')}
             resizeMode = 'stretch'
           />
@@ -556,11 +569,13 @@ import { TabNavigator } from 'react-navigation';
            }}
           />
           </View>
+          <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/s/6kzeepo5vsrjuwj/dostres.pdf?dl=1')}>
           <Image
             style = {[styles.imagenes,{height:70}]}
             source={require('../../../images/Unidad2/ea3.png')}
             resizeMode = 'stretch'
           /> 
+           </TouchableHighlight>
           <View style={styles.titulo}> 
             <Text><H1>Áreas de mercado</H1></Text>          
           </View>
@@ -580,7 +595,7 @@ import { TabNavigator } from 'react-navigation';
           />
           </View>
           <Image
-            style = {[styles.imagenes,{height:400}]}
+            style = {[styles.imagenes,{height:350}]}
             source={require('../../../images/Unidad2/0.png')}
             resizeMode = 'stretch'
           />
@@ -596,7 +611,7 @@ import { TabNavigator } from 'react-navigation';
           />
           </View>
           <Image
-            style = {[styles.imagenes,{height:400}]}
+            style = {[styles.imagenes,{height:200}]}
             source={require('../../../images/Unidad2/00.png')}
             resizeMode = 'stretch'
           />
@@ -615,7 +630,7 @@ import { TabNavigator } from 'react-navigation';
             />
           </View>
           <Image
-            style = {[styles.imagenes,{height:400}]}
+            style = {[styles.imagenes,{height:350}]}
             source={require('../../../images/Unidad2/000.png')}
             resizeMode = 'stretch'
           />
@@ -634,22 +649,22 @@ import { TabNavigator } from 'react-navigation';
             />
           </View>
           <Image
-            style = {[styles.imagenes,{height:310}]}
+            style = {[styles.imagenes,{height:200}]}
             source={require('../../../images/Unidad2/j.png')}
             resizeMode = 'stretch'
           />
           <Image
-            style = {[styles.imagenes,{height:300}]}
+            style = {[styles.imagenes,{height:200}]}
             source={require('../../../images/Unidad2/jj.png')}
             resizeMode = 'stretch'
           />
           <Image
-            style = {[styles.imagenes,{height:320}]}
+            style = {[styles.imagenes,{height:200}]}
             source={require('../../../images/Unidad2/jjj.png')}
             resizeMode = 'stretch'
           />
           <Image
-            style = {[styles.imagenes,{height:320}]}
+            style = {[styles.imagenes,{height:200}]}
             source={require('../../../images/Unidad2/jjjj.png')}
             resizeMode = 'stretch'
           />
@@ -677,7 +692,7 @@ import { TabNavigator } from 'react-navigation';
             />
           </View>
           <Image
-            style = {[styles.imagenes,{height:400}]}
+            style = {[styles.imagenes,{height:200}]}
             source={require('../../../images/Unidad2/G1.png')}
             resizeMode = 'stretch'
           />
@@ -717,7 +732,7 @@ import { TabNavigator } from 'react-navigation';
             />
           </View>
           <Image
-            style = {[styles.imagenes,{height:400}]}
+            style = {[styles.imagenes,{height:200}]}
             source={require('../../../images/Unidad2/G2.png')}
             resizeMode = 'stretch'
           />
@@ -733,7 +748,7 @@ import { TabNavigator } from 'react-navigation';
             />
           </View>
           <Image
-            style = {[styles.imagenes,{height:400}]}
+            style = {[styles.imagenes,{height:200}]}
             source={require('../../../images/Unidad2/G3.png')}
             resizeMode = 'stretch'
           />
@@ -776,7 +791,7 @@ import { TabNavigator } from 'react-navigation';
             />
           </View>
           <Image
-            style = {[styles.imagenes,{height:330}]}
+            style = {[styles.imagenes,{height:200}]}
             source={require('../../../images/Unidad2/G4.png')}
             resizeMode = 'stretch'
           />
@@ -819,7 +834,7 @@ import { TabNavigator } from 'react-navigation';
             />
           </View>
           <Image
-            style = {[styles.imagenes,{height:360}]}
+            style = {[styles.imagenes,{height:200}]}
             source={require('../../../images/Unidad2/G5.png')}
             resizeMode = 'stretch'
           />
@@ -835,7 +850,7 @@ import { TabNavigator } from 'react-navigation';
             />
           </View>
           <Image
-            style = {[styles.imagenes,{height:380}]}
+            style = {[styles.imagenes,{height:200}]}
             source={require('../../../images/Unidad2/G6.png')}
             resizeMode = 'stretch'
           />
@@ -854,19 +869,19 @@ import { TabNavigator } from 'react-navigation';
             <Text><H1>Determinación y proyección de la demanda</H1></Text>          
           </View>
           <Image
-            style = {[styles.imagenes,{height:160}]}
+            style = {[styles.imagenes,{height:100}]}
             source={require('../../../images/Unidad2/u.png')}
             resizeMode = 'stretch'
           />
           
           <Image
-            style = {[styles.imagenes,{height:430}]}
+            style = {[styles.imagenes,{height:400}]}
             source={require('../../../images/Unidad2/uu.png')}
             resizeMode = 'stretch'
           />
           
           <Image
-            style = {[styles.imagenes,{height:400}]}
+            style = {[styles.imagenes,{height:350}]}
             source={require('../../../images/Unidad2/uuu.png')}
             resizeMode = 'stretch'
           />
@@ -881,11 +896,13 @@ import { TabNavigator } from 'react-navigation';
              }}
             />
           </View>
+          <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/s/1h9av1jzsy613pm/Estimaci%C3%B3n%20de%20la%20demanda%20por_el_m%C3%A9todo_de_proporciones%20en_cadena.pdf?dl=1')}>
           <Image
             style = {[styles.imagenes,{height:70}]}
             source={require('../../../images/Unidad2/L2.png')}
             resizeMode = 'stretch'
           />
+          </TouchableHighlight>
             </View>
           </ScrollView>
         </Container>
@@ -893,7 +910,7 @@ import { TabNavigator } from 'react-navigation';
     }
   }
   
-  class dospuntocinco extends React.Component {
+class dospuntocinco extends React.Component {
     render() {
       return (
         <Container style={styles.fondo}>
@@ -1038,11 +1055,6 @@ import { TabNavigator } from 'react-navigation';
             source={require('../../../images/Unidad2/44a.png')}
             resizeMode = 'stretch'
           />
-         <Image
-            style = {[styles.imagenes,{height:120}]}
-            source={require('../../../images/Unidad2/3.png')}
-            resizeMode = 'stretch'
-          />
           <View style={styles.containerr, {height: 110}}>
             <WebView
               source={{
@@ -1132,7 +1144,7 @@ import { TabNavigator } from 'react-navigation';
       );
     }
   }
-  class dospuntoseis extends React.Component {
+class dospuntoseis extends React.Component {
     render() {
       return (
         <Container style={styles.fondo}>
@@ -1228,7 +1240,7 @@ import { TabNavigator } from 'react-navigation';
       );
     }
   }
-  class dospuntosiete extends React.Component {
+class dospuntosiete extends React.Component {
     render() {
       return (
         <Container style={styles.fondo}>
@@ -1404,11 +1416,6 @@ import { TabNavigator } from 'react-navigation';
                }}
               />
             </View>
-            <Image
-              style = {[styles.imagenes,{height:140}]}
-              source={require('../../../images/Unidad2/publi.png')}
-              resizeMode = 'stretch'
-            />
             <View style={styles.titulo}> 
               <Text><H1>Garantía del producto</H1></Text>          
             </View>
@@ -1449,16 +1456,22 @@ import { TabNavigator } from 'react-navigation';
                }}
               />
             </View>
+            <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/s/3i84all86ab7ml6/doscinco.pdf?dl=1')}>
+
             <Image
               style = {[styles.imagenes,{height:70}]}
-              source={require('../../../images/Unidad2/EA2.7.png')}
+              source={require('../../../images/Unidad2/ea5.png')}
               resizeMode = 'stretch'
             />
+             </TouchableHighlight>
+            <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/s/bq7r7o0ihc0gjos/dosseis.pdf?dl=1')}>
+
             <Image
               style = {[styles.imagenes,{height:70}]}
-              source={require('../../../images/Unidad2/EA2.8.png')}
+              source={require('../../../images/Unidad2/ea6.png')}
               resizeMode = 'stretch'
             />
+             </TouchableHighlight>
            </View>
           </ScrollView>
         </Container>
@@ -1466,8 +1479,8 @@ import { TabNavigator } from 'react-navigation';
     }
   }
   
-  var {width} = Dimensions.get('window');
-  const styles = StyleSheet.create({
+var {width} = Dimensions.get('window');
+const styles = StyleSheet.create({
     fondo:{
       backgroundColor : 'white'
       

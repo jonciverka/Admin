@@ -46,7 +46,7 @@ export default class Noticias extends Component {
         </Header>        
         
    
-    <Wordpress url={"https://polilibro.wordpress.com/"} 
+    <Wordpress url={"https://asdaasd445129182.wordpress.com/"} 
                 strings={strings} />
       </Container>
     );
