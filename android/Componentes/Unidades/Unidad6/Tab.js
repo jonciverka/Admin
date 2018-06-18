@@ -77,21 +77,25 @@ import ImageZoom from 'react-native-image-pan-zoom';
             por tres periodos:  
             </Text>
           </View>
-          <Image
-          style = {[styles.imagenes,{height:190}]}
-          source={require('../../../images/Unidad6/6.1.1.png')}
-          resizeMode = 'stretch'
-          />
+          <ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={199}
+                       imageWidth={width}
+                       imageHeight={199}>
+                <Image style={{width:width, height:199}}
+                        source={require('../../../images/Unidad6/6.1.1.png')}/>
+          </ImageZoom>
           <View style={styles.cuerpo}>
             <Text style={styles.letras}>
               En términos generales, la información del flujo de efectivo puede presentarse en un formato como el siguiente:
             </Text>
           </View>
-          <Image
-          style = {[styles.imagenes,{height:190}]}
-          source={require('../../../images/Unidad6/tabla1.png')}
-          resizeMode = 'stretch'
-          />
+          <ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={175}
+                       imageWidth={width}
+                       imageHeight={175}>
+                <Image style={{width:width, height:175}}
+                        source={require('../../../images/Unidad6/tabla1.png')}/>
+          </ImageZoom>
           <View style={styles.cuerpo}>
             <Text style={styles.letras}>
               Nota: La proyección de las ventas se hace con base en los objetivos de la empresa, en este ejemplo se 
@@ -168,11 +172,13 @@ import ImageZoom from 'react-native-image-pan-zoom';
               por el uso del dinero, proveniente de las distintas fuentes de financiamiento.
             </Text>
           </View>
-          <Image
-          style = {[styles.imagenes,{height:220}]}
-          source={require('../../../images/Unidad6/como.png')}
-          resizeMode = 'stretch'
-          />
+          <ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={220}
+                       imageWidth={width}
+                       imageHeight={220}>
+                <Image style={{width:width, height:220}}
+                        source={require('../../../images/Unidad6/como.png')}/>
+          </ImageZoom>
           <View style={styles.cuerpo}>            
             <Text style={styles.letras}>
               Ejemplo del cálculo de la TMAR cuando un capital proviene de varias fuentes: Para llevar a cabo un proyecto, se 
@@ -192,15 +198,17 @@ import ImageZoom from 'react-native-image-pan-zoom';
           resizeMode = 'stretch'
           />
           <Image
-          style = {[styles.imagenes,{height:120}]}
+          style = {[styles.imagenes,{height:90}]}
           source={require('../../../images/Unidad6/p2.png')}
           resizeMode = 'stretch'
           />
-          <Image
-          style = {[styles.imagenes,{height:150}]}
-          source={require('../../../images/Unidad6/tabla3.png')}
-          resizeMode = 'stretch'
-          />
+          <ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={100}
+                       imageWidth={width}
+                       imageHeight={100}>
+                <Image style={{width:width, height:100}}
+                        source={require('../../../images/Unidad6/tabla3.png')}/>
+          </ImageZoom>
           <View style={styles.cuerpo}>            
             <Text style={styles.letras}>
               Ahora ya sabes qué es el costo de capital TMAR o TREMA, es momento de realizar la siguiente 
@@ -282,11 +290,13 @@ import ImageZoom from 'react-native-image-pan-zoom';
             Para calcular el periodo de recuperación de la inversión podemos utilizar la siguiente fórmula: 
             </Text>
           </View>
-          <Image
-          style = {[styles.imagenes,{height:250}]}
-          source={require('../../../images/Unidad6/formula.png')}
-          resizeMode = 'stretch'
-          />
+          <ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={230}
+                       imageWidth={width}
+                       imageHeight={230}>
+                <Image style={{width:width, height:230}}
+                        source={require('../../../images/Unidad6/formula.png')}/>
+          </ImageZoom>
           <Image
           style = {[styles.imagenes,{height:200}]}
           source={require('../../../images/Unidad6/ventajas6.3.1.png')}
@@ -354,13 +364,15 @@ import ImageZoom from 'react-native-image-pan-zoom';
             siguiente manera: por cada peso que ingresa a la empresa por concepto de ventas 7.87 centavos son de utilidad.   
             </Text>
           </View>
+          <ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={140}
+                       imageWidth={width}
+                       imageHeight={140}>
+                <Image style={{width:width, height:140}}
+                        source={require('../../../images/Unidad6/RAT.png')}/>
+          </ImageZoom>
           <Image
-          style = {[styles.imagenes,{height:250}]}
-          source={require('../../../images/Unidad6/RAT.png')}
-          resizeMode = 'stretch'
-          />
-          <Image
-          style = {[styles.imagenes,{height:100}]}
+          style = {[styles.imagenes,{height:90}]}
           source={require('../../../images/Unidad6/form4.png')}
           resizeMode = 'stretch'
           />
@@ -376,7 +388,7 @@ import ImageZoom from 'react-native-image-pan-zoom';
           resizeMode = 'stretch'
           />
           <Image
-          style = {[styles.imagenes,{height:100}]}
+          style = {[styles.imagenes,{height:80}]}
           source={require('../../../images/Unidad6/form5.png')}
           resizeMode = 'stretch'
           />
@@ -430,11 +442,13 @@ import ImageZoom from 'react-native-image-pan-zoom';
             administración de activos y valuación de inversiones.  
             </Text>
           </View>
-          <Image
-          style = {[styles.imagenes,{height:350}]}
-          source={require('../../../images/Unidad6/6.3.4.png')}
-          resizeMode = 'stretch'
-          />
+          <ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={340}
+                       imageWidth={width}
+                       imageHeight={340}>
+                <Image style={{width:width, height:340}}
+                        source={require('../../../images/Unidad6/6.3.4.png')}/>
+          </ImageZoom>
           <View style={styles.titulo}> 
             <Text><H1>Razones financieras</H1></Text>          
           </View>
@@ -466,17 +480,19 @@ import ImageZoom from 'react-native-image-pan-zoom';
             índices para la valuación de las inversiones.{"\n"}{"\n"}    
             </Text>
           </View>
-          <Image
-          style = {[styles.imagenes,{height:350}]}
-          source={require('../../../images/Unidad6/6.3.4.repite.png')}
-          resizeMode = 'stretch'
-          />
+          <ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={340}
+                       imageWidth={width}
+                       imageHeight={340}>
+                <Image style={{width:width, height:340}}
+                        source={require('../../../images/Unidad6/6.3.4.repite.png')}/>
+          </ImageZoom>
           <View style={styles.cuerpo}>
             <Text style={styles.letras}>
               Para profundizar en este tema, te invitamos a leer el siguiente material:  
             </Text>
           </View>
-          <TouchableHighlight>
+          <TouchableHighlight onPress={() => Linking.openURL('https://www.dropbox.com/sh/rtqydo779cxsvfw/AADPcEYtudH0ojGMzmgsCihGa/Unidad6?dl=0&preview=RaonesFinancieras.pdf')}>
           <Image
             style = {[styles.imagenes,{height:70}]}
             source={require('../../../images/Unidad6/L6.png')}
@@ -539,11 +555,13 @@ import ImageZoom from 'react-native-image-pan-zoom';
             marginRight:10,
           }}
         />                       
-        <Image
-          style = {[styles.imagenes,{height:300}]}
-          source={require('../../../images/Unidad6/5.2.4.png')}
-          resizeMode = 'stretch'
-        />
+        <ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={155}
+                       imageWidth={width}
+                       imageHeight={155}>
+                <Image style={{width:width, height:155}}
+                        source={require('../../../images/Unidad6/5.2.4.png')}/>
+          </ImageZoom>
           <View style={styles.titulo}> 
             <Text><H1>Conceptos básicos:</H1></Text>          
           </View> 
@@ -556,7 +574,7 @@ import ImageZoom from 'react-native-image-pan-zoom';
           }}
         />     
           <Image
-            style = {[styles.imagenes,{height:420}]}
+            style = {[styles.imagenes,{height:400}]}
             source={require('../../../images/Unidad6/conceptos.png')}
             resizeMode = 'stretch'
           />
@@ -681,11 +699,13 @@ import ImageZoom from 'react-native-image-pan-zoom';
               dos formas: 
             </Text>
           </View>
-           <Image
-          style = {[styles.imagenes,{height:100}]}
-          source={require('../../../images/Unidad6/ab.png')}
-          resizeMode = 'stretch'
-          />
+           <ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={80}
+                       imageWidth={width}
+                       imageHeight={80}>
+                <Image style={{width:width, height:80}}
+                        source={require('../../../images/Unidad6/ab.png')}/>
+          </ImageZoom>
           <View style={styles.cuerpo}>            
             <Text style={styles.letras}>
               El criterio de aceptación por el método de la TIR establece que si ésta es mayor que la TMAR, 
@@ -726,13 +746,15 @@ import ImageZoom from 'react-native-image-pan-zoom';
           source={require('../../../images/Unidad6/tabla5.png')}
           resizeMode = 'stretch'
           />
+          <ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={90}
+                       imageWidth={width}
+                       imageHeight={90}>
+                <Image style={{width:width, height:90}}
+                        source={require('../../../images/Unidad6/p1.6.png')}/>
+          </ImageZoom>
           <Image
-          style = {[styles.imagenes,{height:120}]}
-          source={require('../../../images/Unidad6/p1.6.png')}
-          resizeMode = 'stretch'
-          />
-          <Image
-          style = {[styles.imagenes,{height:130}]}
+          style = {[styles.imagenes,{height:110}]}
           source={require('../../../images/Unidad6/tabla6.png')}
           resizeMode = 'stretch'
           />
@@ -748,11 +770,13 @@ import ImageZoom from 'react-native-image-pan-zoom';
               se usa el VAN o VPN.
             </Text>
           </View>
-          <Image
-          style = {[styles.imagenes,{height:70}]}
-          source={require('../../../images/Unidad6/p2.6.png')}
-          resizeMode = 'stretch'
-          />
+          <ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={40}
+                       imageWidth={width}
+                       imageHeight={40}>
+                <Image style={{width:width, height:40}}
+                        source={require('../../../images/Unidad6/p2.6.png')}/>
+          </ImageZoom>
           <Image
           style = {[styles.imagenes,{height:250}]}
           source={require('../../../images/Unidad6/tir.png')}
@@ -807,11 +831,13 @@ import ImageZoom from 'react-native-image-pan-zoom';
             marginRight:10,
           }}
         />     
-          <Image
-          style = {[styles.imagenes,{height:200}]}
-          source={require('../../../images/Unidad6/tabla.png')}
-          resizeMode = 'stretch'
-          />
+          <ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={420}
+                       imageWidth={width}
+                       imageHeight={420}>
+                <Image style={{width:width, height:420}}
+                        source={require('../../../images/Unidad6/tabla.png')}/>
+          </ImageZoom>
           <View style={styles.cuerpo}>            
             <Text style={styles.letras}>
               Para facilitar la comprensión d este método, nos apoyaremos en la línea de flujo de efectivo (Figura 43) 
@@ -920,7 +946,7 @@ import ImageZoom from 'react-native-image-pan-zoom';
               Pon a prueba tus conocimientos sobre el tema y realiza la siguiente evidencia de aprendizaje: 
             </Text>
           </View>
-          <TouchableHighlight onPress={() => Linking.openURL('https://www.dropbox.com/sh/rtqydo779cxsvfw/AADPcEYtudH0ojGMzmgsCihGa/Unidad6?dl=0&preview=seisseis.pdf')}>>
+          <TouchableHighlight onPress={() => Linking.openURL('https://www.dropbox.com/sh/rtqydo779cxsvfw/AADPcEYtudH0ojGMzmgsCihGa/Unidad6?dl=0&preview=seisseis.pdf')}>
           <Image
             style = {[styles.imagenes,{height:70}]}
             source={require('../../../images/Unidad6/VI6.png')}
@@ -985,23 +1011,27 @@ import ImageZoom from 'react-native-image-pan-zoom';
             marginRight:10,
           }}
         />     
-          <Image
-          style = {[styles.imagenes,{height:270}]}
-          source={require('../../../images/Unidad6/tablaCB.png')}
-          resizeMode = 'stretch'
-          />
+          <ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={140}
+                       imageWidth={width}
+                       imageHeight={140}>
+                <Image style={{width:width, height:140}}
+                        source={require('../../../images/Unidad6/tablaCB.png')}/>
+          </ImageZoom>
           <View style={styles.cuerpo}>            
             <Text style={styles.letras}>
               Considerando una tasa de actualización del 10%, vamos a determinar la relación Beneficio-Costo:
             </Text>
           </View>
+          <ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={120}
+                       imageWidth={width}
+                       imageHeight={120}>
+                <Image style={{width:width, height:120}}
+                        source={require('../../../images/Unidad6/tabla2CB.png')}/>
+          </ImageZoom>
           <Image
-          style = {[styles.imagenes,{height:180}]}
-          source={require('../../../images/Unidad6/tabla2CB.png')}
-          resizeMode = 'stretch'
-          />
-          <Image
-          style = {[styles.imagenes,{height:100}]}
+          style = {[styles.imagenes,{height:60}]}
           source={require('../../../images/Unidad6/formCB.png')}
           resizeMode = 'stretch'
           />
@@ -1095,7 +1125,7 @@ import ImageZoom from 'react-native-image-pan-zoom';
           </View>
           <TouchableHighlight  onPress={() => Linking.openURL('http://www.pudh.unam.mx/perseo/panorama-de-la-sociedad-2014-mexico-indicadores-sociales/')}>              
           <Image
-          style = {[styles.imagenes,{height:200}]}
+          style = {[styles.imagenes,{height:140}]}
           source={require('../../../images/Unidad6/btn.png')}
           resizeMode = 'stretch'
           />
@@ -1158,11 +1188,13 @@ import ImageZoom from 'react-native-image-pan-zoom';
               por empleo generado:
             </Text> 
           </View>
-          <Image
-          style = {[styles.imagenes,{height:200}]}
-          source={require('../../../images/Unidad6/tabla7.png')}
-          resizeMode = 'stretch'
-          />
+          <ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={180}
+                       imageWidth={width}
+                       imageHeight={180}>
+                <Image style={{width:width, height:180}}
+                        source={require('../../../images/Unidad6/tabla7.png')}/>
+          </ImageZoom>
           <View style={styles.cuerpo}>            
             <Text style={styles.letras}>
               Si analizas la información anterior comprenderás la razón por la que muchas empresas consideran y 

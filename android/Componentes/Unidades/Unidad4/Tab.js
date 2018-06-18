@@ -4,12 +4,13 @@ import {
   StyleSheet,
   Text,
   View,
-  Dimensions,
-  Image,StatusBar,
+  Dimensions,Linking,
+  Image,StatusBar,ImageBackground,
   ListView,ScrollView, TouchableNativeFeedback,Alert,TouchableOpacity,TouchableWithoutFeedback,TouchableHighlight
 } from 'react-native';
 import {Button,Content,Container,ListItem,List,Card,Body,H1,Thumbnail,Rightpla,CardItem} from 'native-base'
 import { TabNavigator } from 'react-navigation';
+import ImageZoom from 'react-native-image-pan-zoom';
 
   class cuatropuntouno extends React.Component {
     render() {
@@ -83,11 +84,13 @@ import { TabNavigator } from 'react-navigation';
           </View>
             
             
-          <Image
-          style = {[styles.imagenes,{height:190}]}
-          source={require('../../../images/Unidad4/4p1p1.png')}
-          resizeMode = 'cover'
-          />
+          <ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={180}
+                       imageWidth={width}
+                       imageHeight={180}>
+                <Image style={{width:width, height:180}}
+                        source={require('../../../images/Unidad4/4p1p1.png')}/>
+          </ImageZoom>
            
              
           <View style={styles.titulo}> 
@@ -118,11 +121,13 @@ import { TabNavigator } from 'react-navigation';
             
              </Text>
           </View>
-          <Image
-          style = {[styles.imagenes,{height:180}]}
-          source={require('../../../images/Unidad4/4p1p2.png')}
-          resizeMode = 'cover'
-          />
+          <ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={180}
+                       imageWidth={width}
+                       imageHeight={180}>
+                <Image style={{width:width, height:180}}
+                        source={require('../../../images/Unidad4/4p1p2.png')}/>
+          </ImageZoom>
           <View style={styles.cuerpo}>
             <Text style={styles.letras}>
             Una vez que leíste el tema, revisa las primeras diapositivas de la unidad 2 (mismas que encontrarás en la sección de recursos) y posteriormente resuelve la siguiente evidencia de aprendizaje:
@@ -173,11 +178,13 @@ import { TabNavigator } from 'react-navigation';
             
              </Text>
           </View>
-          <Image
-          style = {[styles.imagenes,{height:250}]}
-          source={require('../../../images/Unidad4/pira.png')}
-          resizeMode = 'cover'
-          />
+          <ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={220}
+                       imageWidth={width}
+                       imageHeight={220}>
+                <Image style={{width:width, height:220}}
+                        source={require('../../../images/Unidad4/pira.png')}/>
+          </ImageZoom>
           <View style={styles.cuerpo}>
             <Text style={styles.letras}>
             Algunos de los objetivos generales o de la Alta Gerencia podrían ser:
@@ -212,13 +219,14 @@ import { TabNavigator } from 'react-navigation';
           resizeMode = 'cover'
           />
           </TouchableHighlight>
-<TouchableHighlight onPress={() => Linking.openURL('https://www.dropbox.com/sh/rtqydo779cxsvfw/AAA3LTQnqu9vR-I0G-zhJy6_a/Unidad4?dl=0&preview=cuatrotres.pdf')}>
 
           <View style={styles.cuerpo}>
             <Text style={styles.letras}>
             Ahora ya cuentas con los elementos necesarios para realizar la siguiente evidencia de aprendizaje.
                          </Text>
                          </View>
+                         <TouchableHighlight onPress={() => Linking.openURL('https://www.dropbox.com/sh/rtqydo779cxsvfw/AAA3LTQnqu9vR-I0G-zhJy6_a/Unidad4?dl=0&preview=cuatrotres.pdf')}>
+
          <Image
           style = {[styles.imagenes,{height:70}]}
           source={require('../../../images/Unidad4/ev3.png')}
@@ -500,11 +508,13 @@ import { TabNavigator } from 'react-navigation';
            Los requisitos fiscales, legales y gubernamentales para iniciar actividades como PERSONA MORAL son: 
             </Text>
           </View>
-          <Image
-          style = {[styles.imagenes,{height:450}]}
-          source={require('../../../images/Unidad4/tabla.png')}
-          resizeMode = 'stretch'
-          />
+          <ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={420}
+                       imageWidth={width}
+                       imageHeight={420}>
+                <Image style={{width:width, height:420}}
+                        source={require('../../../images/Unidad4/tabla.png')}/>
+          </ImageZoom>
           
           <View style={styles.cuerpo}>
             <Text style={styles.letras}>
@@ -569,6 +579,9 @@ import { TabNavigator } from 'react-navigation';
     },
     letras:{
       color:'black'
+    },
+    imagefondo:{
+      flex:1
     }
   });
   
