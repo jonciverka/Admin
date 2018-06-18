@@ -9,7 +9,7 @@ import {
   Platform,
   StyleSheet,
   Text,Image,
-  View,Linking,Alert
+  View,Linking,Alert,ListView,ScrollView
 } from 'react-native';
 import {Button,Content,Container,Body,Header,H1,H2,H3} from 'native-base'
 
@@ -25,9 +25,12 @@ export default class Perfil extends Component {
     }
     constructor(props){
       super(props)
+      const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2})
       this.state={
         uid:'',
         email:'',
+        grupo:'',
+        dataSource:ds.cloneWithRows([]),
         Nombre:''
       }
     }
@@ -38,15 +41,43 @@ async componentWillMount(){
       this.setState({
         uid: user.uid,
         email: user.email,
-        Nombre : user.displayName
+        grupo : user.displayName
       })
-     // Alert.alert("Si hay personas logeadaas",JSON.stringify(this.state.Nombre))
-    }else{
-    // Alert.alert("Es anonimo")
-    }     
+    }   
   }catch(error){
     Alert.alert("error al sacar uid")
   }
+  let path = "/Grupos/"+this.state.grupo+"/Alumnos/"+this.state.uid;
+  firebase.database().ref(path).on('value',(snapshot) =>{
+      let data = snapshot.val()
+      if(data){
+        this.setState({
+          Nombre : data.Nombre,
+          Tareas :  this.state.dataSource.cloneWithRows(data.Tareas)
+          
+        })
+      }
+  })
+    
+  
+}
+renderRow(rowData){
+  return (
+  <View>    
+    <Content>     
+          <List>
+            <ListItem style={styles.card}>
+              <Body>
+                <Text note style={styles.precio}>{rowData.Nombre}</Text>
+                <Text note>{rowData.Calificacion}</Text>
+                <Text note>{rowData.Comentario}</Text>
+              </Body>
+            </ListItem>
+          </List>
+         
+        </Content>
+  </View>
+  )
 }
 
 async _logout() {
@@ -59,15 +90,32 @@ async _logout() {
 }
 
   render() {
-    const perfil = Alert.alert("Inicia Sesion para poder ver tu perfil");
+    const perfil = 
+                  <View style={{marginTop: 100}}>
+                  <Button  full  onPress={()=> this.props.navigation.navigate('login')}>
+                  <Text style={{marginTop: 5}}> <H2>Inicia sesion para poder ver tu perfil </H2></Text>
+                  <ScrollView> 
+                  <ListView
+                              enableEmptySections={true}
+                              renderRow={this.renderRow.bind(this)}
+                              dataSource={this.state.dataSource}
+                    /> 
+                    </ScrollView> 
+                  <Text>Login</Text>
+                  </Button>
+                  
+                  </View>;
+                  
                   
     const perfil2 =   <View style={{marginTop: 50}}>
                       <Text style={{marginTop: 5}}><H1> {this.state.Nombre}</H1> </Text>
                       <Text style={{marginTop: 5}}><H2> {this.state.email}</H2></Text>
-                      <Text style={{marginTop: 5}}> <H2>Grupo </H2></Text>
+                      <Text style={{marginTop: 5}}> <H2>{this.state.grupo} </H2></Text>
                       <Button onPress={()=>this._logout()}>
                       <Text>Logout</Text>
                       </Button>
+
+
                       </View>;
                       
     let retorno;

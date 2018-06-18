@@ -101,7 +101,7 @@ class dospuntouno extends React.Component {
           />
           
           <Image
-          style = {[styles.imagenes,{height:210}]}
+          style = {[styles.imagenes,{height:230}]}
           source={require('../../../images/Unidad2/4.png')}
           resizeMode = 'stretch'
           />
@@ -150,7 +150,7 @@ class dospuntodos extends React.Component {
             
           <Image
           style = {[styles.imagenes,{height:320}]}
-          source={require('../../../images/Unidad2/1.png')}
+          source={require('../../../images/Unidad2/11.png')}
           resizeMode = 'stretch'
           />
            
@@ -206,7 +206,7 @@ class dospuntodos extends React.Component {
           </View>
           
            <Image
-          style = {[styles.imagenes,{height:340}]}
+          style = {[styles.imagenes,{height:300}]}
           source={require('../../../images/Unidad2/meta.png')}
           resizeMode = 'stretch'
           />
@@ -318,17 +318,17 @@ class dospuntotres extends React.Component {
           </Text>  
           </View>        
           <Image
-          style = {[styles.imagenes,{height:340}]}
+          style = {[styles.imagenes,{height:200}]}
           source={require('../../../images/Unidad2/empaque.png')}
           resizeMode = 'stretch'
           />
           <Image
-          style = {[styles.imagenes,{height:340}]}
+          style = {[styles.imagenes,{height:200}]}
           source={require('../../../images/Unidad2/etiqueta.png')}
           resizeMode = 'stretch'
           />
           <Image
-          style = {[styles.imagenes,{height:280}]}
+          style = {[styles.imagenes,{height:200}]}
           source={require('../../../images/Unidad2/envase.png')}
           resizeMode = 'stretch'
           />
@@ -354,7 +354,7 @@ class dospuntotres extends React.Component {
           </Text>  
           </View>        
           <Image
-          style = {[styles.imagenes,{height:370}]}
+          style = {[styles.imagenes,{height:250}]}
           source={require('../../../images/Unidad2/2.3.4.png')}
           resizeMode = 'stretch'
           />
@@ -400,20 +400,20 @@ class dospuntotres extends React.Component {
           </Text>  
           </View>        
           <Image
-          style = {[styles.imagenes,{height:330}]}
+          style = {[styles.imagenes,{height:150}]}
           source={require('../../../images/Unidad2/fases.png')}
           resizeMode = 'stretch'
           />
           
           
           <Image
-          style = {[styles.imagenes,{height:350}]}
+          style = {[styles.imagenes,{height:250}]}
           source={require('../../../images/Unidad2/grafica.png')}
           resizeMode = 'stretch'
           />
           
           <Image
-          style = {[styles.imagenes,{height:380}]}
+          style = {[styles.imagenes,{height:300}]}
           source={require('../../../images/Unidad2/f1.png')}
           resizeMode = 'stretch'
           />
@@ -425,7 +425,7 @@ class dospuntotres extends React.Component {
           </View>     
           
           <Image
-          style = {[styles.imagenes,{height:390}]}
+          style = {[styles.imagenes,{height:300}]}
           source={require('../../../images/Unidad2/f2.png')}
           resizeMode = 'stretch'
           />
@@ -437,7 +437,7 @@ class dospuntotres extends React.Component {
           </View>     
           
           <Image
-          style = {[styles.imagenes,{height:400}]}
+          style = {[styles.imagenes,{height:350}]}
           source={require('../../../images/Unidad2/f3.png')}
           resizeMode = 'stretch'
           />
@@ -449,7 +449,7 @@ class dospuntotres extends React.Component {
           </View>     
           
           <Image
-          style = {[styles.imagenes,{height:230}]}
+          style = {[styles.imagenes,{height:150}]}
           source={require('../../../images/Unidad2/f4.png')}
           resizeMode = 'stretch'
           />
@@ -504,7 +504,7 @@ class dospuntocuatro extends React.Component {
           </Text>  
           </View>        
           <Image
-          style = {[styles.imagenes,{height:400}]}
+          style = {[styles.imagenes,{height:300}]}
           source={require('../../../images/Unidad2/2.4.png')}
           resizeMode = 'stretch'
           />
@@ -520,30 +520,29 @@ class dospuntocuatro extends React.Component {
             marginRight:10,
           }}
         />
-        <Image
-          style = {[styles.imagenes,{height:240}]}
-          source={require('../../../images/Unidad2/demanda.png')}
-          resizeMode = 'stretch'
-          />
+       
 
            <ImageZoom cropWidth={Dimensions.get('window').width}
-                       cropHeight={180}
+                       cropHeight={160}
                        imageWidth={width}
-                       imageHeight={180}>
-                <Image style={{width:width, height:180}}
+                       imageHeight={160}>
+                <Image style={{width:width, height:160}}
                        source={require('../../../images/Unidad2/demanda.png')}/>
             </ImageZoom>
             
+            
           <Image
-          style = {[styles.imagenes,{height:160}]}
+          style = {[styles.imagenes,{height:120}]}
           source={require('../../../images/Unidad2/leydemanda.png')}
           resizeMode = 'stretch'
           />
-          <Image
-          style = {[styles.imagenes,{height:230}]}
-          source={require('../../../images/Unidad2/demandareal.png')}
-          resizeMode = 'stretch'
-          />
+          <ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={170}
+                       imageWidth={width}
+                       imageHeight={170}>
+                <Image style={{width:width, height:170}}
+                        source={require('../../../images/Unidad2/demandareal.png')}/>
+            </ImageZoom>
         <View style={styles.cuerpo}>         
           <Text style={styles.letras}>
            Una vez que has revisado el tema de la demanda, ya cuentas con las bases para realizar la siguiente evidencia de aprendizaje:
@@ -575,7 +574,7 @@ class dospuntocuatro extends React.Component {
           </Text>  
           </View>        
           <Image
-          style = {[styles.imagenes,{height:400}]}
+          style = {[styles.imagenes,{height:300}]}
           source={require('../../../images/Unidad2/0.png')}
           resizeMode = 'stretch'
           />
@@ -586,7 +585,7 @@ class dospuntocuatro extends React.Component {
           </Text>  
           </View>        
           <Image
-          style = {[styles.imagenes,{height:400}]}
+          style = {[styles.imagenes,{height:300}]}
           source={require('../../../images/Unidad2/00.png')}
           resizeMode = 'stretch'
           />
@@ -597,7 +596,7 @@ class dospuntocuatro extends React.Component {
           </Text>  
           </View>        
           <Image
-          style = {[styles.imagenes,{height:400}]}
+          style = {[styles.imagenes,{height:300}]}
           source={require('../../../images/Unidad2/000.png')}
           resizeMode = 'stretch'
           />
@@ -618,27 +617,30 @@ class dospuntocuatro extends React.Component {
           <Text style={styles.letras}>
            De acuerdo con Baca (2006) los tipos de demanda son:
           </Text>  
-          </View>        
-          <Image
-          style = {[styles.imagenes,{height:310}]}
-          source={require('../../../images/Unidad2/j.png')}
-          resizeMode = 'stretch'
-          />
+          </View>  
+          <ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={200}
+                       imageWidth={width}
+                       imageHeight={200}>
+                <Image style={{width:width, height:200}}
+                        source={require('../../../images/Unidad2/j.png')}/>
+            </ImageZoom>
  
           <Image
-          style = {[styles.imagenes,{height:300}]}
+          style = {[styles.imagenes,{height:200}]}
           source={require('../../../images/Unidad2/jj.png')}
           resizeMode = 'stretch'
           />
+          <ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={200}
+                       imageWidth={width}
+                       imageHeight={200}>
+                <Image style={{width:width, height:200}}
+                         source={require('../../../images/Unidad2/jjj.png')}/>
+            </ImageZoom>
           
           <Image
-          style = {[styles.imagenes,{height:320}]}
-          source={require('../../../images/Unidad2/jjj.png')}
-          resizeMode = 'stretch'
-          />
-          
-          <Image
-          style = {[styles.imagenes,{height:320}]}
+          style = {[styles.imagenes,{height:200}]}
           source={require('../../../images/Unidad2/jjjj.png')}
           resizeMode = 'stretch'
           />
@@ -665,7 +667,7 @@ class dospuntocuatro extends React.Component {
           </Text>  
           </View>        
           <Image
-          style = {[styles.imagenes,{height:400}]}
+          style = {[styles.imagenes,{height:200}]}
           source={require('../../../images/Unidad2/G1.png')}
           resizeMode = 'stretch'
           />
@@ -685,7 +687,7 @@ class dospuntocuatro extends React.Component {
           </Text>  
           </View>        
           <Image
-          style = {[styles.imagenes,{height:400}]}
+          style = {[styles.imagenes,{height:200}]}
           source={require('../../../images/Unidad2/G2.png')}
           resizeMode = 'stretch'
           />
@@ -697,7 +699,7 @@ class dospuntocuatro extends React.Component {
           </Text>  
           </View>        
           <Image
-          style = {[styles.imagenes,{height:400}]}
+          style = {[styles.imagenes,{height:200}]}
           source={require('../../../images/Unidad2/G3.png')}
           resizeMode = 'stretch'
           />
@@ -718,7 +720,7 @@ class dospuntocuatro extends React.Component {
           </Text>  
           </View>        
           <Image
-          style = {[styles.imagenes,{height:330}]}
+          style = {[styles.imagenes,{height:200}]}
           source={require('../../../images/Unidad2/G4.png')}
           resizeMode = 'stretch'
           />
@@ -739,7 +741,7 @@ class dospuntocuatro extends React.Component {
           </Text>  
           </View>        
           <Image
-          style = {[styles.imagenes,{height:360}]}
+          style = {[styles.imagenes,{height:200}]}
           source={require('../../../images/Unidad2/G5.png')}
           resizeMode = 'stretch'
           />
@@ -752,7 +754,7 @@ class dospuntocuatro extends React.Component {
           </Text>  
           </View>        
           <Image
-          style = {[styles.imagenes,{height:380}]}
+          style = {[styles.imagenes,{height:200}]}
           source={require('../../../images/Unidad2/G6.png')}
           resizeMode = 'stretch'
           />
@@ -779,19 +781,13 @@ class dospuntocuatro extends React.Component {
         />
         
         <Image
-          style = {[styles.imagenes,{height:160}]}
+          style = {[styles.imagenes,{height:100}]}
           source={require('../../../images/Unidad2/u.png')}
           resizeMode = 'stretch'
           />
           
           <Image
-          style = {[styles.imagenes,{height:430}]}
-          source={require('../../../images/Unidad2/uu.png')}
-          resizeMode = 'stretch'
-          />
-          
-          <Image
-          style = {[styles.imagenes,{height:400}]}
+          style = {[styles.imagenes,{height:250}]}
           source={require('../../../images/Unidad2/uuu.png')}
           resizeMode = 'stretch'
           />
@@ -799,12 +795,14 @@ class dospuntocuatro extends React.Component {
           <Text style={styles.letras}>
           Para profundizar en el tema, lee el siguiente material:
           </Text>  
-          </View>        
+          </View>   
+          <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/s/1h9av1jzsy613pm/Estimaci%C3%B3n%20de%20la%20demanda%20por_el_m%C3%A9todo_de_proporciones%20en_cadena.pdf?dl=1')}>
           <Image
           style = {[styles.imagenes,{height:70}]}
           source={require('../../../images/Unidad2/L2.png')}
           resizeMode = 'stretch'
           />
+           </TouchableHighlight>
           </ScrollView>
         </Container>
       );
@@ -834,7 +832,7 @@ class dospuntocinco extends React.Component {
             </Text>
           </View>
             <Image
-            style = {[styles.imagenes,{height:400}]}
+            style = {[styles.imagenes,{height:300}]}
             source={require('../../../images/Unidad2/2.5.png')}
             resizeMode = 'stretch'
             />          
@@ -877,13 +875,14 @@ class dospuntocinco extends React.Component {
       {"\n"}{"\n"}
        </Text>          
            </View>  
-      
-          <Image
-          style = {[styles.imagenes,{height:310}]}
-          source={require('../../../images/Unidad2/2.5.2.png')}
-          resizeMode = 'stretch'
-          />
-      
+           <ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={310}
+                       imageWidth={width}
+                       imageHeight={310}>
+                <Image style={{width:width, height:310}}
+                        source={require('../../../images/Unidad2/2.5.2.png')}/>
+          
+          </ImageZoom>
         <View style={styles.titulo}> 
             <Text><H1> Análisis de la oferta: importaciones</H1></Text>          
           </View>
@@ -908,12 +907,12 @@ class dospuntocinco extends React.Component {
            </View>  
       
           <Image
-          style = {[styles.imagenes,{height:220}]}
+          style = {[styles.imagenes,{height:100}]}
           source={require('../../../images/Unidad2/1a.png')}
           resizeMode = 'stretch'
           />
       <Image
-          style = {[styles.imagenes,{height:170}]}
+          style = {[styles.imagenes,{height:100}]}
           source={require('../../../images/Unidad2/2a.png')}
           resizeMode = 'stretch'
           />
@@ -950,7 +949,7 @@ class dospuntocinco extends React.Component {
             }}
           />
         <Image
-          style = {[styles.imagenes,{height:400}]}
+          style = {[styles.imagenes,{height:350}]}
           source={require('../../../images/Unidad2/33a.png')}
           resizeMode = 'stretch'
           />
@@ -964,21 +963,9 @@ class dospuntocinco extends React.Component {
        </Text>          
            </View>  
       
-          <Image
-          style = {[styles.imagenes,{height:160}]}
-          source={require('../../../images/Unidad2/4.png')}
-          resizeMode = 'stretch'
-          />
-      
          <Image
-          style = {[styles.imagenes,{height:180}]}
+          style = {[styles.imagenes,{height:100}]}
           source={require('../../../images/Unidad2/44a.png')}
-          resizeMode = 'stretch'
-          />
-      
-         <Image
-          style = {[styles.imagenes,{height:120}]}
-          source={require('../../../images/Unidad2/3.png')}
           resizeMode = 'stretch'
           />
      
@@ -1013,7 +1000,7 @@ class dospuntocinco extends React.Component {
     </View>  
     
      <Image
-          style = {[styles.imagenes,{height:240}]}
+          style = {[styles.imagenes,{height:200}]}
           source={require('../../../images/Unidad2/22a.png')}
           resizeMode = 'stretch'
           />
@@ -1024,11 +1011,13 @@ class dospuntocinco extends React.Component {
     {"\n"}{"\n"}
     </Text>          
     </View>  
-     <Image
-          style = {[styles.imagenes,{height:410}]}
-          source={require('../../../images/Unidad2/foda.png')}
-          resizeMode = 'stretch'
-          />
+    <ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={350}
+                       imageWidth={width}
+                       imageHeight={350}>
+                <Image style={{width:width, height:350}}
+                       source={require('../../../images/Unidad2/foda.png')}/>
+      </ImageZoom>
       
     <View style={styles.cuerpo}>
     <Text style={styles.letras}>
@@ -1077,7 +1066,7 @@ class dospuntoseis extends React.Component {
         />
     
     <Image
-          style = {[styles.imagenes,{height:240}]}
+          style = {[styles.imagenes,{height:150}]}
           source={require('../../../images/Unidad2/2.6.png')}
           resizeMode = 'stretch'
           />
@@ -1106,7 +1095,7 @@ class dospuntoseis extends React.Component {
           }}
         /> 
     <Image
-          style = {[styles.imagenes,{height:330}]}
+          style = {[styles.imagenes,{height:300}]}
           source={require('../../../images/Unidad2/2.6.1.png')}
           resizeMode = 'stretch'
           />
@@ -1129,7 +1118,7 @@ class dospuntoseis extends React.Component {
             </Text>
           </View>
           <Image
-          style = {[styles.imagenes,{height:520}]}
+          style = {[styles.imagenes,{height:500}]}
           source={require('../../../images/Unidad2/2.6.2.png')}
           resizeMode = 'stretch'
           />
@@ -1148,19 +1137,19 @@ class dospuntoseis extends React.Component {
     
     
       <Image
-          style = {[styles.imagenes,{height:90}]}
+          style = {[styles.imagenes,{height:70}]}
           source={require('../../../images/Unidad2/11a.png')}
           resizeMode = 'stretch'
           />
     
      <Image
-          style = {[styles.imagenes,{height:170}]}
+          style = {[styles.imagenes,{height:100}]}
           source={require('../../../images/Unidad2/222.png')}
           resizeMode = 'stretch'
           />
     
     <Image
-          style = {[styles.imagenes,{height:110}]}
+          style = {[styles.imagenes,{height:80}]}
           source={require('../../../images/Unidad2/333.png')}
           resizeMode = 'stretch'
           />
@@ -1172,7 +1161,7 @@ class dospuntoseis extends React.Component {
           </View>
         
     <Image
-          style = {[styles.imagenes,{height:230}]}
+          style = {[styles.imagenes,{height:200}]}
           source={require('../../../images/Unidad2/444.png')}
           resizeMode = 'stretch'
           />
@@ -1207,7 +1196,7 @@ class dospuntosiete extends React.Component {
           </Text>
         </View>                  
         <Image
-          style = {[styles.imagenes,{height:370}]}
+          style = {[styles.imagenes,{height:300}]}
           source={require('../../../images/Unidad2/paraelvideo.png')}
           resizeMode = 'stretch'
           />
@@ -1236,12 +1225,7 @@ class dospuntosiete extends React.Component {
        se enfocan en manejar la comercialización con mucho cuidado.
        {"\n"}{"\n"}
           </Text>
-        </View>                  
-        <Image
-          style = {[styles.imagenes,{height:370}]}
-          source={require('../../../images/Unidad2/2.7.1.png')}
-          resizeMode = 'stretch'
-          />
+        </View>
 
       <View style={styles.titulo}> 
           <Text><H1>Canales de distribución</H1></Text>          
@@ -1267,31 +1251,31 @@ class dospuntosiete extends React.Component {
           </Text>
         </View>                  
         <Image
-          style = {[styles.imagenes,{height:240}]}
+          style = {[styles.imagenes,{height:200}]}
           source={require('../../../images/Unidad2/acanal.png')}
           resizeMode = 'stretch'
           />
     
       <Image
-          style = {[styles.imagenes,{height:340}]}
+          style = {[styles.imagenes,{height:150}]}
           source={require('../../../images/Unidad2/acanal2.png')}
           resizeMode = 'stretch'
           />
     
       <Image
-          style = {[styles.imagenes,{height:400}]}
+          style = {[styles.imagenes,{height:180}]}
           source={require('../../../images/Unidad2/b.png')}
           resizeMode = 'stretch'
           />
       
        <Image
-          style = {[styles.imagenes,{height:440}]}
+          style = {[styles.imagenes,{height:250}]}
           source={require('../../../images/Unidad2/c.png')}
           resizeMode = 'stretch'
           />
       
       <Image
-          style = {[styles.imagenes,{height:170}]}
+          style = {[styles.imagenes,{height:150}]}
           source={require('../../../images/Unidad2/1.3.png')}
           resizeMode = 'stretch'
           />
@@ -1316,7 +1300,7 @@ class dospuntosiete extends React.Component {
           </Text>
         </View>                  
         <Image
-          style = {[styles.imagenes,{height:400}]}
+          style = {[styles.imagenes,{height:300}]}
           source={require('../../../images/Unidad2/2.7.3.png')}
           resizeMode = 'stretch'
           />
@@ -1343,7 +1327,7 @@ class dospuntosiete extends React.Component {
         </View>         
   
     <Image
-          style = {[styles.imagenes,{height:380}]}
+          style = {[styles.imagenes,{height:300}]}
           source={require('../../../images/Unidad2/1111.png')}
           resizeMode = 'stretch'
           />
@@ -1358,7 +1342,7 @@ class dospuntosiete extends React.Component {
         </View>   
 
     <Image
-          style = {[styles.imagenes,{height:260}]}
+          style = {[styles.imagenes,{height:180}]}
           source={require('../../../images/Unidad2/2222.png')}
           resizeMode = 'stretch'
           />
@@ -1409,17 +1393,20 @@ class dospuntosiete extends React.Component {
        {"\n"}{"\n"} 
           </Text>
         </View>  
+        <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/s/3i84all86ab7ml6/doscinco.pdf?dl=1')}>
     <Image
           style = {[styles.imagenes,{height:70}]}
           source={require('../../../images/Unidad2/ea5.png')}
           resizeMode = 'stretch'
           />
+           </TouchableHighlight>
+           <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/s/bq7r7o0ihc0gjos/dosseis.pdf?dl=1')}>
     <Image
           style = {[styles.imagenes,{height:70}]}
-          source={require('../../../images/Unidad2/ea5.png')}
+          source={require('../../../images/Unidad2/ea6.png')}
           resizeMode = 'stretch'
-          />
-     
+          />            
+        </TouchableHighlight>
       
         </ScrollView>
         </Container>

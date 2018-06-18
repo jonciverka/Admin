@@ -19,11 +19,7 @@ import Wordpress from 'react-native-wordpress';
 export default class Noticias extends Component {
     
   render() {
-    let strings={
-        categories:"Categories", 
-        pages:"Pages", 
-        searchText:"Write anything for search", 
-        homepage:"Home", 
+    let strings={ 
         warningText:"Ops someting is wrong", 
         nowordpressText:"Your address may not be a Wordpress site", 
         noexternalUseText:"Your address is Wordpress site but not accepted external use",
@@ -33,21 +29,11 @@ export default class Noticias extends Component {
       <Container style={{
         backgroundColor:'white',
         
-        }}>      
-      <StatusBar 
-            barStyle="light-content"
-            backgroundColor='white'
-            animated = {true}
-            hidden = {false} /> 
-        <Header style={{backgroundColor:'white'}}>
-          <Body>
-            <Title style={{color:'#FF473A'}}>Noticias.</Title>
-          </Body>
-        </Header>        
+        }}>         
         
-   
-    <Wordpress url={"https://asdaasd445129182.wordpress.com/"} 
-                strings={strings} />
+        <Wordpress url={"https://josefina.mundosud.com/"} 
+        strings={strings}   />
+        
       </Container>
     );
   }

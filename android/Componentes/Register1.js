@@ -34,7 +34,7 @@ export default class Register1 extends Component {
         .then((LoggedInUser)=>{
          let user = firebase.auth().currentUser;
          user.updateProfile({
-            displayName: this.state.Nombre
+            displayName: this.state.grupo
          })
          this.setState({
             uid:user.uid
