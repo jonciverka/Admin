@@ -42,12 +42,7 @@ export default class Register1 extends Component {
          let Path_nombre = "/Grupos/"+this.state.grupo+"/Alumnos/"+this.state.uid;
          firebase.database().ref(Path_nombre).set({
              Nombre : this.state.Nombre
-         })
-        let Path = "/Grupos/"+this.state.grupo+"/Alumnos/"+this.state.uid+"/Tareas/Tarea1"         
-          firebase.database().ref(Path).set({
-            Calificacion:"Sin Calificar",
-            Comentario :"Sin Calificar"
-        })        
+         })        
           Alert.alert("Usuario Registrado")
           this.props.navigation.navigate("login")
         }).catch((error)=>{

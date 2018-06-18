@@ -8,10 +8,10 @@ import React, { Component } from 'react';
 import {
   Platform,
   StyleSheet,
-  Text,Image,
+  Image,Text,
   View,Linking,Alert,ListView,ScrollView
 } from 'react-native';
-import {Button,Content,Container,Body,Header,H1,H2,H3} from 'native-base'
+import {Button,Content,Container,ListItem,List,Card,Body,H3,H1,H2,Thumbnail,Rightpla,Separator,Icon, Left, Right,Title,Header} from 'native-base'
 
 import * as firebase from 'firebase';
 HEADER_MAX_HEIGHT = 120
@@ -30,7 +30,7 @@ export default class Perfil extends Component {
         uid:'',
         email:'',
         grupo:'',
-        dataSource:ds.cloneWithRows([]),
+        dataSource : ds.cloneWithRows([]),
         Nombre:''
       }
     }
@@ -53,7 +53,7 @@ async componentWillMount(){
       if(data){
         this.setState({
           Nombre : data.Nombre,
-          Tareas :  this.state.dataSource.cloneWithRows(data.Tareas)
+          dataSource :  this.state.dataSource.cloneWithRows(data.Tareas)
           
         })
       }
@@ -66,11 +66,11 @@ renderRow(rowData){
   <View>    
     <Content>     
           <List>
-            <ListItem style={styles.card}>
+            <ListItem >
               <Body>
-                <Text note style={styles.precio}>{rowData.Nombre}</Text>
-                <Text note>{rowData.Calificacion}</Text>
-                <Text note>{rowData.Comentario}</Text>
+                <Text note>Nombre de la tarea:<Text style={{color: 'black', fontSize: 15}}>{rowData.Nombre}</Text></Text>
+                <Text note>Calificacion:<Text style={{color: 'black', fontSize: 15}}> {rowData.Calificacion}</Text></Text>
+                <Text note>Comentario :<Text style={{color: 'black', fontSize: 15}}> {rowData.Comentario}</Text></Text>
               </Body>
             </ListItem>
           </List>
@@ -94,27 +94,36 @@ async _logout() {
                   <View style={{marginTop: 100}}>
                   <Button  full  onPress={()=> this.props.navigation.navigate('login')}>
                   <Text style={{marginTop: 5}}> <H2>Inicia sesion para poder ver tu perfil </H2></Text>
-                  <ScrollView> 
-                  <ListView
-                              enableEmptySections={true}
-                              renderRow={this.renderRow.bind(this)}
-                              dataSource={this.state.dataSource}
-                    /> 
-                    </ScrollView> 
+                  
                   <Text>Login</Text>
                   </Button>
                   
                   </View>;
                   
                   
-    const perfil2 =   <View style={{marginTop: 50}}>
-                      <Text style={{marginTop: 5}}><H1> {this.state.Nombre}</H1> </Text>
-                      <Text style={{marginTop: 5}}><H2> {this.state.email}</H2></Text>
-                      <Text style={{marginTop: 5}}> <H2>{this.state.grupo} </H2></Text>
-                      <Button onPress={()=>this._logout()}>
-                      <Text>Logout</Text>
-                      </Button>
-
+    const perfil2 =   <View >                      
+                      <Header noLeft>
+                      <Left>
+                         <Title style={{color:'white'}}>{this.state.grupo}</Title>
+                      </Left>
+                      <Body>
+                        <Title>{this.state.Nombre}</Title>
+                      </Body>
+                      <Right>
+                        <Button transparent onPress={()=>this._logout()}>
+                          <Text style={{color:'white'}}>Logout</Text>
+                        </Button>
+                      </Right>
+                    </Header>
+                      <View style={{ backgroundColor:'white'}}>
+                      
+                        <ListView
+                                    enableEmptySections={true}
+                                    renderRow={this.renderRow.bind(this)}
+                                    dataSource={this.state.dataSource}
+                          />   
+                      
+                      </View>
 
                       </View>;
                       
@@ -126,47 +135,8 @@ async _logout() {
       retorno = perfil
     }
     return (
-      <View style={{flex:1}}>
-        <View style = {{
-          position : 'absolute',
-          top :  0,
-          left :0,
-          right:0,
-          backgroundColor : '#F64747',
-          height : HEADER_MAX_HEIGHT
-
-        }}>
-        </View>
-        
-          <View style={{
-            position : 'absolute',
-            height : HEADER_MAX_HEIGHT*2-30,
-            backgroundColor:'white',
-            top :  0,
-            left :0,
-            right:0,
-            marginTop:HEADER_MAX_HEIGHT
-          }}>
+      <View >      
             {retorno}
-            
-          </View>
-          <View style={{
-            height:PROFILE_IMAGE_MAX_HEIGHT,
-            width : PROFILE_IMAGE_MAX_HEIGHT,
-            borderRadius : PROFILE_IMAGE_MAX_HEIGHT / 2,
-            borderColor : 'white',
-            borderWidth : 3,
-            overflow : 'hidden',
-            marginTop:HEADER_MAX_HEIGHT - (PROFILE_IMAGE_MAX_HEIGHT/2),
-            marginStart: 10
-         }}>
-         <Image source= {require('./../../images/user.png')}
-            style={{flex:1,width:null,height:null}}
-          >
-          </Image>
-          </View>
-
-          
       </View>
     );
   }

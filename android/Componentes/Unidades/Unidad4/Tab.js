@@ -133,7 +133,7 @@ import ImageZoom from 'react-native-image-pan-zoom';
             Una vez que leíste el tema, revisa las primeras diapositivas de la unidad 2 (mismas que encontrarás en la sección de recursos) y posteriormente resuelve la siguiente evidencia de aprendizaje:
              </Text>
           </View>
-          <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/sh/rtqydo779cxsvfw/AAA3LTQnqu9vR-I0G-zhJy6_a/Unidad4?dl=0&preview=cuatrouno.pdf')}>
+          <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/s/0ioe3p566g4e225/cuatrouno.pdf?dl=1')}>
           <Image
           style = {[styles.imagenes,{height:70}]}
           source={require('../../../images/Unidad4/ev1.png')}
@@ -212,7 +212,7 @@ import ImageZoom from 'react-native-image-pan-zoom';
             A continuación encontrarás la evidencia de aprendizaje IV.2 con la que obtendrás mayor compresión del tema:
                          </Text>
                          </View>
-            <TouchableHighlight onPress={() => Linking.openURL('https://www.dropbox.com/sh/rtqydo779cxsvfw/AAA3LTQnqu9vR-I0G-zhJy6_a/Unidad4?dl=0&preview=cuatrodos.pdf')}>
+            <TouchableHighlight onPress={() => Linking.openURL('https://www.dropbox.com/s/7yr0ukbwcwn17tf/cuatrodos.pdf?dl=1')}>
             <Image
           style = {[styles.imagenes,{height:70}]}
           source={require('../../../images/Unidad4/ev2.png')}
@@ -225,7 +225,7 @@ import ImageZoom from 'react-native-image-pan-zoom';
             Ahora ya cuentas con los elementos necesarios para realizar la siguiente evidencia de aprendizaje.
                          </Text>
                          </View>
-                         <TouchableHighlight onPress={() => Linking.openURL('https://www.dropbox.com/sh/rtqydo779cxsvfw/AAA3LTQnqu9vR-I0G-zhJy6_a/Unidad4?dl=0&preview=cuatrotres.pdf')}>
+                         <TouchableHighlight onPress={() => Linking.openURL('https://www.dropbox.com/s/1pke2szmwj7x1s2/cuatrotres.pdf?dl=1')}>
 
          <Image
           style = {[styles.imagenes,{height:70}]}
@@ -337,7 +337,7 @@ import ImageZoom from 'react-native-image-pan-zoom';
             Es momento de realizar la siguiente evidencia de aprendizaje:
             </Text>
           </View>
-          <TouchableHighlight onPress={() => Linking.openURL('https://www.dropbox.com/sh/rtqydo779cxsvfw/AAA3LTQnqu9vR-I0G-zhJy6_a/Unidad4?dl=0&preview=cuatroseis.pdf')}>
+          <TouchableHighlight onPress={() => Linking.openURL('https://www.dropbox.com/s/s735cc5lai348j2/cuatroseis.pdf?dl=1')}>
            <Image
           style = {[styles.imagenes,{height:70}]}
           source={require('../../../images/Unidad4/ev4.png')}
@@ -483,7 +483,7 @@ import ImageZoom from 'react-native-image-pan-zoom';
             Después de consultar el link anterior, realiza la siguiente actividad:
             </Text>
           </View>
-          <TouchableHighlight onPress={() => Linking.openURL('https://www.dropbox.com/sh/rtqydo779cxsvfw/AAA3LTQnqu9vR-I0G-zhJy6_a/Unidad4?dl=0&preview=cuatronueve.pdf')}>
+          <TouchableHighlight onPress={() => Linking.openURL('https://www.dropbox.com/s/f6gh13qgf1mw2bz/cuatronueve.pdf?dl=1')}>
           <Image
           style = {[styles.imagenes,{height:70}]}
           source={require('../../../images/Unidad4/ea9.png')}
@@ -521,28 +521,28 @@ import ImageZoom from 'react-native-image-pan-zoom';
            Para concluir está unidad temática es necesario realizar las siguientes evidencias de aprendizaje:
             </Text>
           </View>
-          <TouchableHighlight onPress={() => Linking.openURL('https://www.dropbox.com/sh/rtqydo779cxsvfw/AAA3LTQnqu9vR-I0G-zhJy6_a/Unidad4?dl=0&preview=cuatrocuatro.pdf')}>
+          <TouchableHighlight onPress={() => Linking.openURL('https://www.dropbox.com/s/5h9f0aq6fjlgsuc/cuatrocuatro.pdf?dl=1')}>
           <Image
           style = {[styles.imagenes,{height:70}]}
           source={require('../../../images/Unidad4/EA4.png')}
           resizeMode = 'stretch'
           />
           </TouchableHighlight>
-          <TouchableHighlight onPress={() => Linking.openURL('https://www.dropbox.com/sh/rtqydo779cxsvfw/AAA3LTQnqu9vR-I0G-zhJy6_a/Unidad4?dl=0&preview=cuatrocinco.pdf')}>
+          <TouchableHighlight onPress={() => Linking.openURL('https://www.dropbox.com/s/b3ke8kf1fo70nnn/cuatrocinco.pdf?dl=1')}>
           <Image
           style = {[styles.imagenes,{height:70}]}
           source={require('../../../images/Unidad4/EA5.png')}
           resizeMode = 'stretch'
           />
           </TouchableHighlight>
-          <TouchableHighlight onPress={() => Linking.openURL('https://www.dropbox.com/sh/rtqydo779cxsvfw/AAA3LTQnqu9vR-I0G-zhJy6_a/Unidad4?dl=0&preview=cuatrosiete.pdf')}>
+          <TouchableHighlight onPress={() => Linking.openURL('https://www.dropbox.com/s/qnl0ri41x5grnlh/cuatrosiete.pdf?dl=1')}>
           <Image
           style = {[styles.imagenes,{height:70}]}
           source={require('../../../images/Unidad4/ea7.png')}
           resizeMode = 'cover'
           />
           </TouchableHighlight>
-          <TouchableHighlight onPress={() => Linking.openURL('https://www.dropbox.com/sh/rtqydo779cxsvfw/AAA3LTQnqu9vR-I0G-zhJy6_a/Unidad4?dl=0&preview=cuatroocho.pdf')}>
+          <TouchableHighlight onPress={() => Linking.openURL('https://www.dropbox.com/s/dwr1ec3kp9sjntf/cuatroocho.pdf?dl=1')}>
           <Image
           style = {[styles.imagenes,{height:70}]}
           source={require('../../../images/Unidad4/ea8.png')}

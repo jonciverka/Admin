@@ -122,7 +122,7 @@ import ImageZoom from 'react-native-image-pan-zoom';
               siguiente evidencia de aprendeizaje: 
             </Text>
           </View>
-          <TouchableHighlight onPress={() => Linking.openURL('https://www.dropbox.com/sh/rtqydo779cxsvfw/AADPcEYtudH0ojGMzmgsCihGa/Unidad6?dl=0&preview=seistres.pdf')}>
+          <TouchableHighlight onPress={() => Linking.openURL('https://www.dropbox.com/s/ay31kkvq2vpjhle/seistres.pdf?dl=1')}>
           <Image
             style = {[styles.imagenes,{height:70}]}
             source={require('../../../images/Unidad6/VI3.png')}
@@ -215,7 +215,7 @@ import ImageZoom from 'react-native-image-pan-zoom';
               evidencia de aprendeizaje:
             </Text>
           </View>
-          <TouchableHighlight onPress={() => Linking.openURL('https://www.dropbox.com/sh/rtqydo779cxsvfw/AADPcEYtudH0ojGMzmgsCihGa/Unidad6?dl=0&preview=seiscuatro.pdf')}>
+          <TouchableHighlight onPress={() => Linking.openURL('https://www.dropbox.com/s/cishe82s1rgqw18/seiscuatro.pdf?dl=1')}>
           <Image
             style = {[styles.imagenes,{height:70}]}
             source={require('../../../images/Unidad6/VI4.png')}
@@ -312,7 +312,7 @@ import ImageZoom from 'react-native-image-pan-zoom';
               Aplica tus conocimientos y realiza la siguiente evidencia de aprendeizaje:
             </Text>
           </View>
-          <TouchableHighlight onPress={() => Linking.openURL('https://www.dropbox.com/sh/rtqydo779cxsvfw/AADPcEYtudH0ojGMzmgsCihGa/Unidad6?dl=0&preview=seiscinco.pdf')}>
+          <TouchableHighlight onPress={() => Linking.openURL('https://www.dropbox.com/s/6k5r5leyjabs6c6/seiscinco.pdf?dl=1')}>
           <Image
             style = {[styles.imagenes,{height:70}]}
             source={require('../../../images/Unidad6/VI5.png')}
@@ -492,7 +492,7 @@ import ImageZoom from 'react-native-image-pan-zoom';
               Para profundizar en este tema, te invitamos a leer el siguiente material:  
             </Text>
           </View>
-          <TouchableHighlight onPress={() => Linking.openURL('https://www.dropbox.com/sh/rtqydo779cxsvfw/AADPcEYtudH0ojGMzmgsCihGa/Unidad6?dl=0&preview=RaonesFinancieras.pdf')}>
+          <TouchableHighlight onPress={() => Linking.openURL('https://www.dropbox.com/s/ny1wd3sr9amcytw/RaonesFinancieras.pdf?dl=1')}>
           <Image
             style = {[styles.imagenes,{height:70}]}
             source={require('../../../images/Unidad6/L6.png')}
@@ -504,7 +504,7 @@ import ImageZoom from 'react-native-image-pan-zoom';
               Después de haber leído el material anterior realiza la siguiente evidencia de aprendeizaje:  
             </Text>
           </View>
-          <TouchableHighlight onPress={() => Linking.openURL('https://www.dropbox.com/sh/rtqydo779cxsvfw/AADPcEYtudH0ojGMzmgsCihGa/Unidad6?dl=0&preview=seisdos.pdf')}>
+          <TouchableHighlight onPress={() => Linking.openURL('https://www.dropbox.com/s/a5zp7xrw4tf92yh/seisuno.pdf?dl=1')}>
           <Image
             style = {[styles.imagenes,{height:70}]}
             source={require('../../../images/Unidad6/VI2.png')}
@@ -618,11 +618,13 @@ import ImageZoom from 'react-native-image-pan-zoom';
               Una vez concluida la lectura de este tema, realiza la siguiente evidencia de aprendizaje: 
             </Text>
           </View>
+          <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/s/a5zp7xrw4tf92yh/seisuno.pdf?dl=1')}>
           <Image
           style = {[styles.imagenes,{height:70}]}
           source={require('../../../images/Unidad6/VI1.png')}
           resizeMode = 'stretch'
           />
+           </TouchableHighlight>
           <View style={styles.titulo}> 
             <Text><H1>Punto de equilibrio</H1></Text>          
           </View>
@@ -792,7 +794,7 @@ import ImageZoom from 'react-native-image-pan-zoom';
               Para una mayor comprensión de este tema resuelve la siguiente evidencia de aprendeizaje: 
             </Text>
           </View>
-          <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/sh/rtqydo779cxsvfw/AADPcEYtudH0ojGMzmgsCihGa/Unidad6?dl=0&preview=seissiete.pdf')}>
+          <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/s/ljd7d8mpb7elqv5/seissiete.pdf?dl=1')}>
           <Image
             style = {[styles.imagenes,{height:70}]}
             source={require('../../../images/Unidad6/VI7.png')}

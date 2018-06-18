@@ -35,14 +35,6 @@ const RootDrawer = DrawerNavigator({
           <View style={styles.drawerHeader}>
           <ImageBackground source={require('./../images/material-design-4k.jpg.png')}  style={{flex:1}}>   
             <Body>
-            <Image
-            style={styles.drawerImage}
-               source={require('./../images/user.png')} />
-            <Text style={styles.texto}>
-            </Text>
-            <Text  style={styles.texto}>
-              Correo
-            </Text>
             </Body>
           </ImageBackground>
           </View>
