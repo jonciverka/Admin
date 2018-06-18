@@ -4,12 +4,13 @@ import {
   StyleSheet,
   Text,
   View,
-  Dimensions,
-  Image,StatusBar,
+  Dimensions,Linking,
+  Image,StatusBar,ImageBackground,
   ListView,ScrollView, TouchableNativeFeedback,Alert,TouchableOpacity,TouchableWithoutFeedback,TouchableHighlight
 } from 'react-native';
 import {Button,Content,Container,ListItem,List,Card,Body,H1,Thumbnail,Rightpla,CardItem} from 'native-base'
 import { TabNavigator } from 'react-navigation';
+import ImageZoom from 'react-native-image-pan-zoom';
 
   class seispuntouno extends React.Component {
     render() {
@@ -117,7 +118,7 @@ import { TabNavigator } from 'react-navigation';
               siguiente evidencia de aprendeizaje: 
             </Text>
           </View>
-          <TouchableHighlight>
+          <TouchableHighlight onPress={() => Linking.openURL('https://www.dropbox.com/sh/rtqydo779cxsvfw/AADPcEYtudH0ojGMzmgsCihGa/Unidad6?dl=0&preview=seistres.pdf')}>
           <Image
             style = {[styles.imagenes,{height:70}]}
             source={require('../../../images/Unidad6/VI3.png')}
@@ -206,7 +207,7 @@ import { TabNavigator } from 'react-navigation';
               evidencia de aprendeizaje:
             </Text>
           </View>
-          <TouchableHighlight>
+          <TouchableHighlight onPress={() => Linking.openURL('https://www.dropbox.com/sh/rtqydo779cxsvfw/AADPcEYtudH0ojGMzmgsCihGa/Unidad6?dl=0&preview=seiscuatro.pdf')}>
           <Image
             style = {[styles.imagenes,{height:70}]}
             source={require('../../../images/Unidad6/VI4.png')}
@@ -301,7 +302,7 @@ import { TabNavigator } from 'react-navigation';
               Aplica tus conocimientos y realiza la siguiente evidencia de aprendeizaje:
             </Text>
           </View>
-          <TouchableHighlight>
+          <TouchableHighlight onPress={() => Linking.openURL('https://www.dropbox.com/sh/rtqydo779cxsvfw/AADPcEYtudH0ojGMzmgsCihGa/Unidad6?dl=0&preview=seiscinco.pdf')}>
           <Image
             style = {[styles.imagenes,{height:70}]}
             source={require('../../../images/Unidad6/VI5.png')}
@@ -487,7 +488,7 @@ import { TabNavigator } from 'react-navigation';
               Después de haber leído el material anterior realiza la siguiente evidencia de aprendeizaje:  
             </Text>
           </View>
-          <TouchableHighlight>
+          <TouchableHighlight onPress={() => Linking.openURL('https://www.dropbox.com/sh/rtqydo779cxsvfw/AADPcEYtudH0ojGMzmgsCihGa/Unidad6?dl=0&preview=seisdos.pdf')}>
           <Image
             style = {[styles.imagenes,{height:70}]}
             source={require('../../../images/Unidad6/VI2.png')}
@@ -767,7 +768,7 @@ import { TabNavigator } from 'react-navigation';
               Para una mayor comprensión de este tema resuelve la siguiente evidencia de aprendeizaje: 
             </Text>
           </View>
-          <TouchableHighlight>
+          <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/sh/rtqydo779cxsvfw/AADPcEYtudH0ojGMzmgsCihGa/Unidad6?dl=0&preview=seissiete.pdf')}>
           <Image
             style = {[styles.imagenes,{height:70}]}
             source={require('../../../images/Unidad6/VI7.png')}
@@ -919,7 +920,7 @@ import { TabNavigator } from 'react-navigation';
               Pon a prueba tus conocimientos sobre el tema y realiza la siguiente evidencia de aprendizaje: 
             </Text>
           </View>
-          <TouchableHighlight>
+          <TouchableHighlight onPress={() => Linking.openURL('https://www.dropbox.com/sh/rtqydo779cxsvfw/AADPcEYtudH0ojGMzmgsCihGa/Unidad6?dl=0&preview=seisseis.pdf')}>>
           <Image
             style = {[styles.imagenes,{height:70}]}
             source={require('../../../images/Unidad6/VI6.png')}
@@ -1092,7 +1093,7 @@ import { TabNavigator } from 'react-navigation';
               Conoce más sobre sobre indicadores sociales en México: 
             </Text> 
           </View>
-          <TouchableHighlight>              
+          <TouchableHighlight  onPress={() => Linking.openURL('http://www.pudh.unam.mx/perseo/panorama-de-la-sociedad-2014-mexico-indicadores-sociales/')}>              
           <Image
           style = {[styles.imagenes,{height:200}]}
           source={require('../../../images/Unidad6/btn.png')}
@@ -1325,6 +1326,7 @@ import { TabNavigator } from 'react-navigation';
     }
   }  
   var {width} = Dimensions.get('window');
+  var {width} = Dimensions.get('window');
   const styles = StyleSheet.create({
     fondo:{
       backgroundColor : 'white'
@@ -1343,6 +1345,9 @@ import { TabNavigator } from 'react-navigation';
     },
     letras:{
       color:'black'
+    },
+    imagefondo:{
+      flex:1
     }
   });
   

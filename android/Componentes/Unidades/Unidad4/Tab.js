@@ -128,12 +128,13 @@ import { TabNavigator } from 'react-navigation';
             Una vez que leíste el tema, revisa las primeras diapositivas de la unidad 2 (mismas que encontrarás en la sección de recursos) y posteriormente resuelve la siguiente evidencia de aprendizaje:
              </Text>
           </View>
+          <TouchableHighlight  onPress={() => Linking.openURL('https://www.dropbox.com/sh/rtqydo779cxsvfw/AAA3LTQnqu9vR-I0G-zhJy6_a/Unidad4?dl=0&preview=cuatrouno.pdf')}>
           <Image
           style = {[styles.imagenes,{height:70}]}
           source={require('../../../images/Unidad4/ev1.png')}
           resizeMode = 'cover'
           />
-          
+           </TouchableHighlight>
           
           <View style={styles.titulo}> 
             <Text><H1>Planteamiento de objetivos del proyecto </H1></Text>          
@@ -204,11 +205,15 @@ import { TabNavigator } from 'react-navigation';
             A continuación encontrarás la evidencia de aprendizaje IV.2 con la que obtendrás mayor compresión del tema:
                          </Text>
                          </View>
+            <TouchableHighlight onPress={() => Linking.openURL('https://www.dropbox.com/sh/rtqydo779cxsvfw/AAA3LTQnqu9vR-I0G-zhJy6_a/Unidad4?dl=0&preview=cuatrodos.pdf')}>
             <Image
           style = {[styles.imagenes,{height:70}]}
           source={require('../../../images/Unidad4/ev2.png')}
           resizeMode = 'cover'
           />
+          </TouchableHighlight>
+<TouchableHighlight onPress={() => Linking.openURL('https://www.dropbox.com/sh/rtqydo779cxsvfw/AAA3LTQnqu9vR-I0G-zhJy6_a/Unidad4?dl=0&preview=cuatrotres.pdf')}>
+
           <View style={styles.cuerpo}>
             <Text style={styles.letras}>
             Ahora ya cuentas con los elementos necesarios para realizar la siguiente evidencia de aprendizaje.
@@ -219,6 +224,7 @@ import { TabNavigator } from 'react-navigation';
           source={require('../../../images/Unidad4/ev3.png')}
           resizeMode = 'cover'
           />
+          </TouchableHighlight>
         </ScrollView>
         </Container>
 );
@@ -323,11 +329,13 @@ import { TabNavigator } from 'react-navigation';
             Es momento de realizar la siguiente evidencia de aprendizaje:
             </Text>
           </View>
+          <TouchableHighlight onPress={() => Linking.openURL('https://www.dropbox.com/sh/rtqydo779cxsvfw/AAA3LTQnqu9vR-I0G-zhJy6_a/Unidad4?dl=0&preview=cuatroseis.pdf')}>
            <Image
           style = {[styles.imagenes,{height:70}]}
           source={require('../../../images/Unidad4/ev4.png')}
           resizeMode = 'cover'
           />
+          </TouchableHighlight>
           <View style={styles.titulo}> 
             <Text><H1>En la fase de diseño</H1></Text>          
           </View>
@@ -454,23 +462,26 @@ import { TabNavigator } from 'react-navigation';
             Para revisar todos los requisitos legales a nivel federal. estatal y local necesarios para el inicio de actividades del negocio los puedes encontrar dando click en la siguiente liga:
             </Text>
           </View>
+          <TouchableHighlight onPress={() => Linking.openURL('http://www.sedeco.cdmx.gob.mx/')}>
           <Image
           style = {[styles.imagenes,{height:100}]}
           source={require('../../../images/Unidad4/botones.png')}
           resizeMode = 'cover'
           />
-    
+          </TouchableHighlight>
         
           <View style={styles.cuerpo}>
             <Text style={styles.letras}>
             Después de consultar el link anterior, realiza la siguiente actividad:
             </Text>
           </View>
+          <TouchableHighlight onPress={() => Linking.openURL('https://www.dropbox.com/sh/rtqydo779cxsvfw/AAA3LTQnqu9vR-I0G-zhJy6_a/Unidad4?dl=0&preview=cuatronueve.pdf')}>
           <Image
           style = {[styles.imagenes,{height:70}]}
           source={require('../../../images/Unidad4/ea9.png')}
           resizeMode = 'stretch'
           />
+          </TouchableHighlight>
           <View style={styles.titulo}> 
             <Text><H1>Requisitos fiscales, legales y gubernamentales para el inicio de actividades de la empresa </H1></Text>          
           </View>
@@ -500,26 +511,34 @@ import { TabNavigator } from 'react-navigation';
            Para concluir está unidad temática es necesario realizar las siguientes evidencias de aprendizaje:
             </Text>
           </View>
+          <TouchableHighlight onPress={() => Linking.openURL('https://www.dropbox.com/sh/rtqydo779cxsvfw/AAA3LTQnqu9vR-I0G-zhJy6_a/Unidad4?dl=0&preview=cuatrocuatro.pdf')}>
           <Image
           style = {[styles.imagenes,{height:70}]}
           source={require('../../../images/Unidad4/EA4.png')}
           resizeMode = 'stretch'
           />
+          </TouchableHighlight>
+          <TouchableHighlight onPress={() => Linking.openURL('https://www.dropbox.com/sh/rtqydo779cxsvfw/AAA3LTQnqu9vR-I0G-zhJy6_a/Unidad4?dl=0&preview=cuatrocinco.pdf')}>
           <Image
           style = {[styles.imagenes,{height:70}]}
           source={require('../../../images/Unidad4/EA5.png')}
           resizeMode = 'stretch'
           />
+          </TouchableHighlight>
+          <TouchableHighlight onPress={() => Linking.openURL('https://www.dropbox.com/sh/rtqydo779cxsvfw/AAA3LTQnqu9vR-I0G-zhJy6_a/Unidad4?dl=0&preview=cuatrosiete.pdf')}>
           <Image
           style = {[styles.imagenes,{height:70}]}
           source={require('../../../images/Unidad4/ea7.png')}
           resizeMode = 'cover'
           />
+          </TouchableHighlight>
+          <TouchableHighlight onPress={() => Linking.openURL('https://www.dropbox.com/sh/rtqydo779cxsvfw/AAA3LTQnqu9vR-I0G-zhJy6_a/Unidad4?dl=0&preview=cuatroocho.pdf')}>
           <Image
           style = {[styles.imagenes,{height:70}]}
           source={require('../../../images/Unidad4/ea8.png')}
           resizeMode = 'cover'
           />
+          </TouchableHighlight>
            <View style={styles.cuerpo}>
             <Text style={styles.letras}>
            Al igual que los estudios previos (el de mercado y el técnico) con el estudio administrativo y de organización se obtiene información muy importante; sobre todo aquella que tiene que ver con la normatividad y requisitos fiscales, legales gubernamentales para el inicio de actividades de la empresa. Si ésta cumple con toda la normatividad y requisitos, entonces habrá factibilidad en el estudio administrativo y de organización y se puede continuar con el estudio financiero, tema del que trata la siguiente unidad temática.
