@@ -21,7 +21,8 @@ export default class Register extends Component {
         super(props)
         this.state={
             grupo:'',
-            contra:''
+            contras:'',
+            uid_grupo:''
 
         }
     }
@@ -29,7 +30,28 @@ export default class Register extends Component {
         header: null,
     }
     grupo =()=>{
-        let userNamePath = "/Grupos/"+this.state.grupo+"/contra"
+        let userNamePath2 = "/Grupos/"
+        firebase.database().ref(userNamePath2).on('value',(snapshot)=>{
+            let datas = snapshot.val() 
+           
+            if(datas){
+                for(let key in datas){
+                    let obj = datas[key]
+                    if(obj.name===this.state.grupo){
+                        if(obj.contra === this.state.contras){                            
+                                this.props.navigation.navigate('Register1',{grupo:this.state.grupo, uid_g:key})
+                           
+                        }
+                    }             
+                    
+                }
+            }
+
+            
+                                
+        })
+
+       /* let userNamePath = "/Grupos/"+this.state.grupo+"/contra"
         firebase.database().ref(userNamePath).on('value',(snapshot)=>{
             let data = snapshot.val() 
             if(data){
@@ -41,7 +63,7 @@ export default class Register extends Component {
             }else{
                 Alert.alert("Error","El Grupo no es correcto, intetalo de nuevo, si el error continua contacte con su profesor.")
             }                     
-        })        
+        })   */     
     }
 
   render() {
@@ -70,7 +92,7 @@ export default class Register extends Component {
                             <Input 
                             onChangeText = {
                                 (text) =>{
-                                    this.setState({contra:text})
+                                    this.setState({contras:text})
                                 }
                             }
                             placeholder="Clave del grupo" />

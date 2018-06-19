@@ -29,9 +29,10 @@ export default class Perfil extends Component {
       this.state={
         uid:'',
         email:'',
-        grupo:'',
+        uid_g:'',
         dataSource : ds.cloneWithRows([]),
-        Nombre:''
+        Nombre:'',
+        grupo:''
       }
     }
 async componentWillMount(){
@@ -41,13 +42,24 @@ async componentWillMount(){
       this.setState({
         uid: user.uid,
         email: user.email,
-        grupo : user.displayName
+        uid_g : user.displayName
       })
     }   
   }catch(error){
     Alert.alert("error al sacar uid")
   }
-  let path = "/Grupos/"+this.state.grupo+"/Alumnos/"+this.state.uid;
+  let path2 = "/Grupos/"+this.state.uid_g
+  firebase.database().ref(path2).on('value',(snapshot) =>{
+    let data = snapshot.val()
+    if(data){
+      this.setState({
+        grupo : data.name,
+        
+      })
+    }
+})
+
+  let path = "/Grupos/"+this.state.uid_g+"/Alumnos/"+this.state.uid;
   firebase.database().ref(path).on('value',(snapshot) =>{
       let data = snapshot.val()
       if(data){
@@ -91,11 +103,10 @@ async _logout() {
 
   render() {
     const perfil = 
-                  <View style={{marginTop: 100}}>
-                  <Button  full  onPress={()=> this.props.navigation.navigate('login')}>
+                  <View style={{marginTop: 0}}>
                   <Text style={{marginTop: 5}}> <H2>Inicia sesion para poder ver tu perfil </H2></Text>
-                  
-                  <Text>Login</Text>
+                  <Button  full  onPress={()=> this.props.navigation.navigate('login')}>         
+                  <Text style={{color:'white'}}>Login</Text>
                   </Button>
                   
                   </View>;
@@ -135,7 +146,7 @@ async _logout() {
       retorno = perfil
     }
     return (
-      <View >      
+      <View style={{backgroundColor:'white'}}>      
             {retorno}
       </View>
     );

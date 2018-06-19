@@ -19,7 +19,8 @@ export default class Register1 extends Component {
             Password:'',
             uid :'',
             grupo:navigation.getParam('grupo', 'NO-ID'),
-            Nombre:''
+            Nombre:'',
+            uid_g:navigation.getParam('uid_g', 'NO-GRUPO'),
         }
         
     }
@@ -34,12 +35,13 @@ export default class Register1 extends Component {
         .then((LoggedInUser)=>{
          let user = firebase.auth().currentUser;
          user.updateProfile({
-            displayName: this.state.grupo
+            displayName: this.state.uid_g
          })
          this.setState({
             uid:user.uid
          })
-         let Path_nombre = "/Grupos/"+this.state.grupo+"/Alumnos/"+this.state.uid;
+
+         let Path_nombre = "/Grupos/"+this.state.uid_g+"/Alumnos/"+this.state.uid;
          firebase.database().ref(Path_nombre).set({
              Nombre : this.state.Nombre
          })        
